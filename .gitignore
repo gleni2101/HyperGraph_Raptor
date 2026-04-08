@@ -1,0 +1,69 @@
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Build / packaging ---
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# --- Generated project artifacts ---
+artifacts/
+temp/
+
+# --- Logs / databases ---
+*.log
+*.sql
+*.sqlite
+
+# --- Secrets / local certs ---
+.env
+certs/
+
+# --- OS/editor files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Generic compiled binaries ---
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+Data/
+Temp Moved/
+
+.webui_secret_key
+
+.app.py
