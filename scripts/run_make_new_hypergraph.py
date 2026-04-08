@@ -178,7 +178,7 @@ def main() -> None:
         )
         current_merged_i = extract_idx(merged_graph_list[0]) if merged_graph_list else 0
 
-    print(f"[config] model={model_name} | url={base_url}")
+    print(f"[config] model={os.getenv('MODEL_NAME')} | url={os.getenv('URL')}")
     print(f"[config] thread={args.thread_index}/{args.total_threads} | merge_every={args.merge_every}")
     print(f"[config] current_merged_i={current_merged_i} | doc_count={len(doc_list)}")
     print(
@@ -232,7 +232,7 @@ def main() -> None:
         ]
         prompt_chars = len(prompt)
         print(
-            f"[llm] call #{call_id} | model={model_name} | "
+            f"[llm] call #{call_id} | model={os.getenv('MODEL_NAME')} | "
             f"prompt_len={prompt_chars} chars | schema={response_model.__name__}"
         )
         structured_llm = client.with_structured_output(response_model)
