@@ -477,6 +477,14 @@ def _recluster_if_needed(
     node_ids = [n.id for n in member_nodes]
     sub_clusters = assign_clusters(node_ids, sub_membership, threshold=membership_threshold)
 
+    # If clustering couldn't split (k=1), truncate to avoid infinite recursion
+    if len(sub_clusters) <= 1:
+        logger.warning(
+            "Recluster produced single cluster for %d nodes — truncating to fit budget",
+            len(member_nodes),
+        )
+        return ["\n---\n".join(n.text for n in member_nodes)]
+
     node_map = {n.id: n for n in member_nodes}
     result_texts: list[str] = []
     for members in sub_clusters.values():
