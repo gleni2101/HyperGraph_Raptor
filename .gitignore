@@ -61,7 +61,6 @@ Thumbs.db
 *.tar
 *.zip
 
-Data/
 Temp Moved/
 
 .webui_secret_key
