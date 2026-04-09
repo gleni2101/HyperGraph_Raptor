@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Hypergraph Visualization</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:#0f172a;color:#e2e8f0;font-family:Segoe UI,Arial,sans-serif;overflow:hidden}
+    #canvas{position:absolute;inset:0;width:100%;height:100vh}
+    svg{width:100%;height:100%}
+    .panel{
+      position:absolute;z-index:20;background:rgba(15,23,42,0.88);
+      border:1px solid rgba(148,163,184,0.18);border-radius:12px;
+      padding:12px 14px;backdrop-filter:blur(8px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.3);
+    }
+    #controls{top:16px;left:16px;width:310px}
+    #details{left:16px;bottom:16px;width:420px;max-height:220px;overflow:auto}
+    #stats{top:16px;right:16px;min-width:200px}
+    h2{font-size:17px;margin-bottom:8px;color:#e2e8f0}
+    .muted{color:#94a3b8;font-size:11px}
+    .legend{display:flex;gap:14px;margin:8px 0;font-size:11px;flex-wrap:wrap}
+    .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+    input{width:100%;padding:8px 10px;border:1px solid rgba(148,163,184,0.24);border-radius:8px;background:rgba(30,41,59,0.9);color:#fff;font-size:12px;margin:6px 0}
+    .row{margin:5px 0;font-size:12px}
+    .mono{font-family:Consolas,monospace;word-break:break-word;font-size:11px}
+    .he-label{fill:white;font-size:11px;pointer-events:none;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.8)}
+    .node-label{fill:#e2e8f0;font-size:10px;pointer-events:none}
+    .arrow-marker{}
+  </style>
+</head>
+<body>
+  <div id="canvas"><svg id="svg"></svg></div>
+  <div id="controls" class="panel">
+    <h2>Hypergraph Viewer</h2>
+    <div class="muted">Each coloured blob is a hyperedge — a set of nodes connected by one relation.<br>Arrow shows source → target direction inside the blob.</div>
+    <div class="legend">
+      <div><span class="dot" style="background:#60a5fa"></span>Entity node</div>
+      <div><span class="dot" style="background:rgba(200,150,80,0.7);border:2px solid #f59e0b"></span>Hyperedge blob</div>
+    </div>
+    <input id="searchInput" type="text" placeholder="Search node labels..."/>
+    <div class="muted">Hover blob/node for details · Drag nodes · Scroll to zoom</div>
+  </div>
+  <div id="stats" class="panel"></div>
+  <div id="details" class="panel">Hover over a node or hyperedge blob to inspect.</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script>
+  (function(){
+    const RAW = {"nodes": [{"id": "n_adcc6a56", "label": "**==> picture [86 x 66] intentionally omitted <==** ```...", "type": "concept"}, {"id": "n_f9b7a6c4", "label": "Thank you! Looney? Yes! Looney! Now you're talking! Loo...", "type": "concept"}, {"id": "n_bd68f0f7", "label": "Diminutive, ain't they? We seek the one they call Bugs...", "type": "concept"}, {"id": "n_bb3e41bc", "label": "``` ``` Page 6/33 ``` ``` You're covered with  ---  dro...", "type": "concept"}, {"id": "n_a7a332fc", "label": "Yes, Private Porkster? How about we challenge them to a...", "type": "concept"}, {"id": "n_8202c4d1", "label": "-Get the doctor. You all right? You sure? Come on, we'r...", "type": "concept"}, {"id": "n_9289ee69", "label": "-Nice shot. You can stop posing now. Good try. Not bad....", "type": "concept"}, {"id": "n_c50860fa", "label": "Pardon me, Mr. Jordan. Can l have your auto-- Your John...", "type": "concept"}, {"id": "n_406d0c72", "label": "Remember the tiny aliens l told you about? You've heard...", "type": "concept"}, {"id": "n_663a7807", "label": "Maybe nothing's wrong! Maybe it's just in our head. We'...", "type": "concept"}, {"id": "n_c0300cbc", "label": "Here l am, in the peak of my form... ...playing second...", "type": "concept"}, {"id": "n_97331ce7", "label": "Yeah. So? lt doesn't bother me. Let me help? Let me hel...", "type": "concept"}, {"id": "n_6a535a7d", "label": "Come on. Show me something! The duck! Oh, my! She was w...", "type": "concept"}, {"id": "n_5598fed9", "label": "So that's what happened to them. l think we should qui-...", "type": "concept"}, {"id": "n_e58aabb6", "label": "Fore! But, Mommy, l don't want to go to school today. l...", "type": "concept"}, {"id": "n_189b5450", "label": "This is why l was born. l thrive on pressure. Excuse me...", "type": "concept"}, {"id": "n_412468db", "label": "-lt stinks. l was thinking, could we stay here? Please!...", "type": "concept"}, {"id": "n_756d73f6", "label": "You going to work on your swing? Leave the baseball pla...", "type": "concept"}, {"id": "n_16eb889d", "label": "In a flashback after 12 AM, young Michael Jordan tell...", "type": "concept"}], "hyperedges": [{"id": "e_0c3a2a2c", "label": "In a flashback after 12 AM, young Michael Jordan tells his", "source_ids": ["n_adcc6a56", "n_f9b7a6c4", "n_bd68f0f7", "n_bb3e41bc", "n_a7a332fc", "n_8202c4d1", "n_9289ee69", "n_c50860fa", "n_406d0c72", "n_663a7807", "n_c0300cbc", "n_97331ce7", "n_6a535a7d", "n_5598fed9", "n_e58aabb6", "n_189b5450", "n_412468db", "n_756d73f6"], "target_ids": ["n_16eb889d"], "member_ids": ["n_adcc6a56", "n_f9b7a6c4", "n_bd68f0f7", "n_bb3e41bc", "n_a7a332fc", "n_8202c4d1", "n_9289ee69", "n_c50860fa", "n_406d0c72", "n_663a7807", "n_c0300cbc", "n_97331ce7", "n_6a535a7d", "n_5598fed9", "n_e58aabb6", "n_189b5450", "n_412468db", "n_756d73f6", "n_16eb889d"], "chunk_id": "raptor_L1_0000", "weight": 1.0}]};
+    const NODE_R = 14;
+    const PALETTE = [
+      "#7c3aed","#0ea5e9","#10b981","#f59e0b","#ef4444","#ec4899",
+      "#14b8a6","#f97316","#6366f1","#84cc16","#06b6d4","#a855f7"
+    ];
+
+    // ── build lookup ──────────────────────────────────────────────────────────
+    const nodeById = {};
+    RAW.nodes.forEach(n => { nodeById[n.id] = n; });
+
+    // ── D3 simulation nodes (mutable x,y) ─────────────────────────────────────
+    const simNodes = RAW.nodes.map(n => ({...n}));
+    const simNodeMap = {};
+    simNodes.forEach(n => { simNodeMap[n.id] = n; });
+
+    // ── edges for force layout (binary links within each hyperedge member set) ─
+    const simLinks = [];
+    RAW.hyperedges.forEach(he => {
+      const members = he.member_ids;
+      for (let i = 0; i < members.length; i++) {
+        for (let j = i+1; j < members.length; j++) {
+          simLinks.push({ source: members[i], target: members[j], he: he.id });
+        }
+      }
+    });
+
+    const W = window.innerWidth, H = window.innerHeight;
+    const svg = d3.select("#svg")
+      .attr("viewBox", `0 0 ${W} ${H}`)
+      .attr("preserveAspectRatio","xMidYMid meet");
+
+    // marker
+    svg.append("defs").append("marker")
+      .attr("id","arrowhead")
+      .attr("viewBox","0 -5 10 10")
+      .attr("refX",18).attr("refY",0)
+      .attr("markerWidth",6).attr("markerHeight",6)
+      .attr("orient","auto")
+      .append("path").attr("d","M0,-5L10,0L0,5").attr("fill","rgba(255,255,255,0.7)");
+
+    const gBlobs  = svg.append("g").attr("class","blobs");
+    const gArrows = svg.append("g").attr("class","arrows");
+    const gLabels = svg.append("g").attr("class","he-labels");
+    const gNodes  = svg.append("g").attr("class","nodes");
+    const gNLabels= svg.append("g").attr("class","node-labels");
+
+    // ── zoom / pan ────────────────────────────────────────────────────────────
+    const zoom = d3.zoom().scaleExtent([0.05,5]).on("zoom", e => {
+      [gBlobs,gArrows,gLabels,gNodes,gNLabels].forEach(g => g.attr("transform", e.transform));
+    });
+    svg.call(zoom);
+
+    // ── force simulation ──────────────────────────────────────────────────────
+    const sim = d3.forceSimulation(simNodes)
+      .force("link", d3.forceLink(simLinks).id(d=>d.id).distance(90).strength(0.25))
+      .force("charge", d3.forceManyBody().strength(-220))
+      .force("center", d3.forceCenter(W/2, H/2))
+      .force("collision", d3.forceCollide(NODE_R + 6))
+      .on("tick", ticked);
+
+    // ── convex-hull blob ──────────────────────────────────────────────────────
+    function hullPoints(ids, padding) {
+      const pts = [];
+      ids.forEach(id => {
+        const n = simNodeMap[id];
+        if (!n) return;
+        for (let a = 0; a < 8; a++) {
+          pts.push([n.x + Math.cos(a*Math.PI/4)*padding,
+                    n.y + Math.sin(a*Math.PI/4)*padding]);
+        }
+      });
+      if (pts.length < 3) {
+        // single node – draw a circle
+        const n = simNodeMap[ids[0]];
+        if (!n) return null;
+        for (let a = 0; a < 16; a++)
+          pts.push([n.x + Math.cos(a*Math.PI/8)*(padding+4),
+                    n.y + Math.sin(a*Math.PI/8)*(padding+4)]);
+      }
+      const hull = d3.polygonHull(pts);
+      return hull ? d3.line().x(d=>d[0]).y(d=>d[1]).curve(d3.curveCatmullRomClosed.alpha(0.5))(hull) : null;
+    }
+
+    function groupCentroid(ids) {
+      let sx=0,sy=0,c=0;
+      ids.forEach(id => {
+        const n = simNodeMap[id];
+        if (n){ sx+=n.x; sy+=n.y; c++; }
+      });
+      return c ? [sx/c, sy/c] : [W/2,H/2];
+    }
+
+    // ── render elements ───────────────────────────────────────────────────────
+    const highlightSet = new Set();  // ids that should be highlighted
+    let searchQuery = "";
+
+    const blobPaths = gBlobs.selectAll("path.blob")
+      .data(RAW.hyperedges).enter().append("path")
+      .attr("class","blob")
+      .attr("fill", (d,i) => PALETTE[i % PALETTE.length] + "28")
+      .attr("stroke", (d,i) => PALETTE[i % PALETTE.length])
+      .attr("stroke-width", 2)
+      .attr("stroke-linejoin","round")
+      .style("cursor","pointer")
+      .on("mouseover", showHEDetail)
+      .on("mouseout", clearDetail)
+      .on("click", (e,d) => e.stopPropagation());
+
+    const arrowLines = gArrows.selectAll("line.arrow")
+      .data(RAW.hyperedges).enter().append("line")
+      .attr("class","arrow")
+      .attr("stroke","rgba(255,255,255,0.55)")
+      .attr("stroke-width",1.5)
+      .attr("stroke-dasharray","5,3")
+      .attr("marker-end","url(#arrowhead)");
+
+    const heLabelTexts = gLabels.selectAll("text.he-label")
+      .data(RAW.hyperedges).enter().append("text")
+      .attr("class","he-label")
+      .attr("text-anchor","middle")
+      .attr("dy","0.35em")
+      .text(d => d.label)
+      .style("cursor","pointer")
+      .on("mouseover", showHEDetail)
+      .on("mouseout", clearDetail);
+
+    const nodeSel = gNodes.selectAll("circle.node")
+      .data(simNodes).enter().append("circle")
+      .attr("class","node")
+      .attr("r", NODE_R)
+      .attr("fill", "#60a5fa")
+      .attr("stroke","#0f172a")
+      .attr("stroke-width",2)
+      .style("cursor","grab")
+      .call(
+        d3.drag()
+          .on("start", (e,d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+          .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
+          .on("end",   (e,d) => { if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; })
+      )
+      .on("mouseover", showNodeDetail)
+      .on("mouseout", clearDetail);
+
+    const nodeLabelSel = gNLabels.selectAll("text.node-label")
+      .data(simNodes).enter().append("text")
+      .attr("class","node-label")
+      .attr("text-anchor","middle")
+      .attr("dy","0.35em")
+      .text(d => d.label)
+      .style("pointer-events","none");
+
+    function ticked() {
+      blobPaths.each(function(d) {
+        const path = hullPoints(d.member_ids, NODE_R + 20);
+        d3.select(this).attr("d", path || "");
+      });
+
+      arrowLines.each(function(d) {
+        const sc = groupCentroid(d.source_ids.length ? d.source_ids : d.member_ids);
+        const tc = groupCentroid(d.target_ids.length ? d.target_ids : d.member_ids);
+        d3.select(this)
+          .attr("x1",sc[0]).attr("y1",sc[1])
+          .attr("x2",tc[0]).attr("y2",tc[1]);
+      });
+
+      heLabelTexts.each(function(d) {
+        const c = groupCentroid(d.member_ids);
+        d3.select(this).attr("x",c[0]).attr("y",c[1]-NODE_R-24);
+      });
+
+      nodeSel.attr("cx",d=>d.x).attr("cy",d=>d.y);
+      nodeLabelSel.attr("x",d=>d.x).attr("y",d=>d.y);
+
+      applySearch();
+      updateStats();
+    }
+
+    // ── detail panel ─────────────────────────────────────────────────────────
+    const det = document.getElementById("details");
+
+    function showHEDetail(e,d) {
+      det.innerHTML = `
+        <div class="row"><strong style="font-size:13px">${d.label}</strong> <span class="muted">(hyperedge)</span></div>
+        <div class="row"><strong>Sources:</strong> <span class="mono">${d.source_ids.map(id=>nodeById[id]?.label||id).join(", ")||"—"}</span></div>
+        <div class="row"><strong>Targets:</strong> <span class="mono">${d.target_ids.map(id=>nodeById[id]?.label||id).join(", ")||"—"}</span></div>
+        <div class="row"><strong>All members:</strong> <span class="mono">${d.member_ids.map(id=>nodeById[id]?.label||id).join(", ")}</span></div>
+        <div class="row"><strong>Chunk:</strong> <span class="mono">${d.chunk_id}</span></div>
+      `;
+    }
+
+    function showNodeDetail(e,d) {
+      det.innerHTML = `
+        <div class="row"><strong style="font-size:13px">${d.label}</strong></div>
+        <div class="row"><strong>Type:</strong> <span class="mono">${d.type||"concept"}</span></div>
+        <div class="row"><strong>ID:</strong> <span class="mono">${d.id}</span></div>
+      `;
+    }
+
+    function clearDetail() {
+      det.innerHTML = "Hover over a node or hyperedge blob to inspect.";
+    }
+
+    // ── stats panel ───────────────────────────────────────────────────────────
+    const statEl = document.getElementById("stats");
+    function updateStats() {
+      const vis = simNodes.filter(n=>!n._hidden).length;
+      statEl.innerHTML = `
+        <div class="row"><strong>Nodes:</strong> ${RAW.nodes.length}</div>
+        <div class="row"><strong>Hyperedges:</strong> ${RAW.hyperedges.length}</div>
+        <div class="row"><strong>Visible:</strong> ${vis} nodes</div>
+      `;
+    }
+
+    // ── search ────────────────────────────────────────────────────────────────
+    document.getElementById("searchInput").addEventListener("input", e => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      applySearch();
+    });
+
+    function applySearch() {
+      if (!searchQuery) {
+        nodeSel.attr("opacity",1);
+        nodeLabelSel.attr("opacity",1);
+        blobPaths.attr("opacity",1);
+        arrowLines.attr("opacity",1);
+        heLabelTexts.attr("opacity",1);
+        simNodes.forEach(n=>n._hidden=false);
+        return;
+      }
+      simNodes.forEach(n => { n._hidden = !n.label.toLowerCase().includes(searchQuery); });
+      nodeSel.attr("opacity",d=>d._hidden?0.12:1);
+      nodeLabelSel.attr("opacity",d=>d._hidden?0.05:1);
+
+      // dim hyperedges whose members are all hidden
+      blobPaths.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 0.85 : 0.08;
+      });
+      arrowLines.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 0.7 : 0.05;
+      });
+      heLabelTexts.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 1 : 0.05;
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

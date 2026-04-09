@@ -1,0 +1,229 @@
+{
+  "nodes": [
+    {
+      "id": "raptor_L0_0000",
+      "level": 0,
+      "type": "leaf",
+      "name": "**==> picture [86 x 66] intentionally omitted <==** ``` Scripts.com ``` ## **`Space Jam`** ``` By Leo Benvenuti ``` ``` ...",
+      "token_count": 499
+    },
+    {
+      "id": "raptor_L0_0001",
+      "level": 0,
+      "type": "leaf",
+      "name": "Thank you! Looney? Yes! Looney! Now you're talking! Looney! Looney! That's it! That's the word l was looking for! Get th...",
+      "token_count": 495
+    },
+    {
+      "id": "raptor_L0_0002",
+      "level": 0,
+      "type": "leaf",
+      "name": "Diminutive, ain't they? We seek the one they call Bugs Bunny. -Have you seen him? -Where is he? ls he around? Bugs Bunny...",
+      "token_count": 487
+    },
+    {
+      "id": "raptor_L0_0003",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` Page 6/33 ``` ``` You're covered with\n\n---\n\ndrool! That's your dog. What's wrong with Jeff? He lost 32 points in...",
+      "token_count": 497
+    },
+    {
+      "id": "raptor_L0_0004",
+      "level": 0,
+      "type": "leaf",
+      "name": "Yes, Private Porkster? How about we challenge them to a... ...spelling bee? Say... ...we could have a bowling tournament...",
+      "token_count": 497
+    },
+    {
+      "id": "raptor_L0_0005",
+      "level": 0,
+      "type": "leaf",
+      "name": "-Get the doctor. You all right? You sure? Come on, we're okay. Come on, let's go. Come on, Patrick. Showtime! What's wro...",
+      "token_count": 499
+    },
+    {
+      "id": "raptor_L0_0006",
+      "level": 0,
+      "type": "leaf",
+      "name": "-Nice shot. You can stop posing now. Good try. Not bad. -Something for you to shoot at. -Hit it good. Do my best. Good s...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0007",
+      "level": 0,
+      "type": "leaf",
+      "name": "Pardon me, Mr. Jordan. Can l have your auto-- Your John Hancock, please? Let the doctor take a look. A little high. Goin...",
+      "token_count": 496
+    },
+    {
+      "id": "raptor_L0_0008",
+      "level": 0,
+      "type": "leaf",
+      "name": "Remember the tiny aliens l told you about? You've heard of the Dream Team? We're the Mean Team, wussieman! ``` ``` Page ...",
+      "token_count": 496
+    },
+    {
+      "id": "raptor_L0_0009",
+      "level": 0,
+      "type": "leaf",
+      "name": "Maybe nothing's wrong! Maybe it's just in our head. We're fine. lt's psychosomatic. Or has to do with the moon. l'll nev...",
+      "token_count": 493
+    },
+    {
+      "id": "raptor_L0_0010",
+      "level": 0,
+      "type": "leaf",
+      "name": "Here l am, in the peak of my form... ...playing second banana to some sort of harebrain.... This could be useful. lf thi...",
+      "token_count": 499
+    },
+    {
+      "id": "raptor_L0_0011",
+      "level": 0,
+      "type": "leaf",
+      "name": "Yeah. So? lt doesn't bother me. Let me help? Let me help! l can help! What can you do? l may not be tall, but... ...l'm ...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0012",
+      "level": 0,
+      "type": "leaf",
+      "name": "Come on. Show me something! The duck! Oh, my! She was wide open. Watch the screen! Watch out! Get him! How did he do tha...",
+      "token_count": 493
+    },
+    {
+      "id": "raptor_L0_0013",
+      "level": 0,
+      "type": "leaf",
+      "name": "So that's what happened to them. l think we should qui-- qui-- forfeit. Listen, l didn't get dragged down here to lose t...",
+      "token_count": 499
+    },
+    {
+      "id": "raptor_L0_0014",
+      "level": 0,
+      "type": "leaf",
+      "name": "Fore! But, Mommy, l don't want to go to school today. l want to stay home and bake cookies with you. l'm open! Heads up!...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0015",
+      "level": 0,
+      "type": "leaf",
+      "name": "This is why l was born. l thrive on pressure. Excuse me, sorry. Easy on the trousers, Daf. Pardon me. Mr. Murray, someth...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0016",
+      "level": 0,
+      "type": "leaf",
+      "name": "-lt stinks. l was thinking, could we stay here? Please! Oh, brother. l don't know if you guys are looney enough. Looney ...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0017",
+      "level": 0,
+      "type": "leaf",
+      "name": "You going to work on your swing? Leave the baseball player alone. He doesn't play basketball now. He probably doesn't ha...",
+      "token_count": 162
+    },
+    {
+      "id": "raptor_L1_0000",
+      "level": 1,
+      "type": "summary",
+      "name": "\n\nIn a flashback after 12 AM, young Michael Jordan tells his father he plans to play at North Carolina, join the NBA, an...",
+      "token_count": 329
+    }
+  ],
+  "links": [
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0000",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0001",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0002",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0003",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0004",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0005",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0006",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0007",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0008",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0009",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0010",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0011",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0012",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0013",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0014",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0015",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0016",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0017",
+      "weight": 1.0
+    }
+  ]
+}

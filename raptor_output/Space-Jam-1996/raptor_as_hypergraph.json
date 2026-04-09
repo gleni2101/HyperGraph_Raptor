@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "created_at": "2026-04-09T16:20:54.567433",
+    "source_document": "raptor_tree",
+    "version": "2.0"
+  },
+  "nodes": {
+    "n_02c32bcd": {
+      "id": "n_02c32bcd",
+      "label": "**==> picture [86 x 66] intentionally omitted <==** ```...",
+      "type": "concept"
+    },
+    "n_4a843144": {
+      "id": "n_4a843144",
+      "label": "Thank you! Looney? Yes! Looney! Now you're talking! Loo...",
+      "type": "concept"
+    },
+    "n_63ff3ed9": {
+      "id": "n_63ff3ed9",
+      "label": "Diminutive, ain't they? We seek the one they call Bugs...",
+      "type": "concept"
+    },
+    "n_a5701db3": {
+      "id": "n_a5701db3",
+      "label": "``` ``` Page 6/33 ``` ``` You're covered with  ---  dro...",
+      "type": "concept"
+    },
+    "n_041e9283": {
+      "id": "n_041e9283",
+      "label": "Yes, Private Porkster? How about we challenge them to a...",
+      "type": "concept"
+    },
+    "n_13ed3904": {
+      "id": "n_13ed3904",
+      "label": "-Get the doctor. You all right? You sure? Come on, we'r...",
+      "type": "concept"
+    },
+    "n_95e4ff6e": {
+      "id": "n_95e4ff6e",
+      "label": "-Nice shot. You can stop posing now. Good try. Not bad....",
+      "type": "concept"
+    },
+    "n_bb00ab4e": {
+      "id": "n_bb00ab4e",
+      "label": "Pardon me, Mr. Jordan. Can l have your auto-- Your John...",
+      "type": "concept"
+    },
+    "n_24cd051b": {
+      "id": "n_24cd051b",
+      "label": "Remember the tiny aliens l told you about? You've heard...",
+      "type": "concept"
+    },
+    "n_a0376aba": {
+      "id": "n_a0376aba",
+      "label": "Maybe nothing's wrong! Maybe it's just in our head. We'...",
+      "type": "concept"
+    },
+    "n_51560427": {
+      "id": "n_51560427",
+      "label": "Here l am, in the peak of my form... ...playing second...",
+      "type": "concept"
+    },
+    "n_538901b7": {
+      "id": "n_538901b7",
+      "label": "Yeah. So? lt doesn't bother me. Let me help? Let me hel...",
+      "type": "concept"
+    },
+    "n_ea20ccfd": {
+      "id": "n_ea20ccfd",
+      "label": "Come on. Show me something! The duck! Oh, my! She was w...",
+      "type": "concept"
+    },
+    "n_97e311e9": {
+      "id": "n_97e311e9",
+      "label": "So that's what happened to them. l think we should qui-...",
+      "type": "concept"
+    },
+    "n_f691b288": {
+      "id": "n_f691b288",
+      "label": "Fore! But, Mommy, l don't want to go to school today. l...",
+      "type": "concept"
+    },
+    "n_31fbd6ab": {
+      "id": "n_31fbd6ab",
+      "label": "This is why l was born. l thrive on pressure. Excuse me...",
+      "type": "concept"
+    },
+    "n_95aa93a1": {
+      "id": "n_95aa93a1",
+      "label": "-lt stinks. l was thinking, could we stay here? Please!...",
+      "type": "concept"
+    },
+    "n_8a9c6a73": {
+      "id": "n_8a9c6a73",
+      "label": "You going to work on your swing? Leave the baseball pla...",
+      "type": "concept"
+    },
+    "n_cc1f3c91": {
+      "id": "n_cc1f3c91",
+      "label": "In a flashback after 12 AM, young Michael Jordan tell...",
+      "type": "concept"
+    }
+  },
+  "hyperedges": [
+    {
+      "id": "e_f3bb6246",
+      "label": "In a flashback after 12 AM, young Michael Jordan tells his",
+      "source": [
+        "**==> picture [86 x 66] intentionally omitted <==** ```...",
+        "Thank you! Looney? Yes! Looney! Now you're talking! Loo...",
+        "Diminutive, ain't they? We seek the one they call Bugs...",
+        "``` ``` Page 6/33 ``` ``` You're covered with  ---  dro...",
+        "Yes, Private Porkster? How about we challenge them to a...",
+        "-Get the doctor. You all right? You sure? Come on, we'r...",
+        "-Nice shot. You can stop posing now. Good try. Not bad....",
+        "Pardon me, Mr. Jordan. Can l have your auto-- Your John...",
+        "Remember the tiny aliens l told you about? You've heard...",
+        "Maybe nothing's wrong! Maybe it's just in our head. We'...",
+        "Here l am, in the peak of my form... ...playing second...",
+        "Yeah. So? lt doesn't bother me. Let me help? Let me hel...",
+        "Come on. Show me something! The duck! Oh, my! She was w...",
+        "So that's what happened to them. l think we should qui-...",
+        "Fore! But, Mommy, l don't want to go to school today. l...",
+        "This is why l was born. l thrive on pressure. Excuse me...",
+        "-lt stinks. l was thinking, could we stay here? Please!...",
+        "You going to work on your swing? Leave the baseball pla..."
+      ],
+      "target": [
+        "In a flashback after 12 AM, young Michael Jordan tell..."
+      ],
+      "weight": 1.0,
+      "chunk_id": "raptor_L1_0000"
+    }
+  ]
+}

@@ -1,0 +1,6018 @@
+{
+  "metadata": {
+    "created_at": "2026-04-09T14:24:28.253835",
+    "source_document": "0_Space-Jam-1996",
+    "version": "2.0"
+  },
+  "nodes": {
+    "n_a262878f": {
+      "id": "n_a262878f",
+      "label": "Space Jam",
+      "type": "concept"
+    },
+    "n_c7b9e83c": {
+      "id": "n_c7b9e83c",
+      "label": "Leo Benvenuti",
+      "type": "concept"
+    },
+    "n_ac89c899": {
+      "id": "n_ac89c899",
+      "label": "Scripts.com",
+      "type": "concept"
+    },
+    "n_49fa80ef": {
+      "id": "n_49fa80ef",
+      "label": "33",
+      "type": "concept"
+    },
+    "n_a4f0a2d9": {
+      "id": "n_a4f0a2d9",
+      "label": "Michael",
+      "type": "concept"
+    },
+    "n_eaf97826": {
+      "id": "n_eaf97826",
+      "label": "Pops",
+      "type": "concept"
+    },
+    "n_894a5526": {
+      "id": "n_894a5526",
+      "label": "Basketball",
+      "type": "concept"
+    },
+    "n_e65a6794": {
+      "id": "n_e65a6794",
+      "label": "North Carolina",
+      "type": "concept"
+    },
+    "n_cc4dc54a": {
+      "id": "n_cc4dc54a",
+      "label": "NBA",
+      "type": "concept"
+    },
+    "n_b6e29291": {
+      "id": "n_b6e29291",
+      "label": "Baseball",
+      "type": "concept"
+    },
+    "n_34fb8e1e": {
+      "id": "n_34fb8e1e",
+      "label": "last game",
+      "type": "concept"
+    },
+    "n_7e10a0bd": {
+      "id": "n_7e10a0bd",
+      "label": "Pitcher",
+      "type": "concept"
+    },
+    "n_1eaaeadb": {
+      "id": "n_1eaaeadb",
+      "label": "Outfield",
+      "type": "concept"
+    },
+    "n_0af89e09": {
+      "id": "n_0af89e09",
+      "label": "Customers",
+      "type": "concept"
+    },
+    "n_1285de7a": {
+      "id": "n_1285de7a",
+      "label": "Current attractions",
+      "type": "concept"
+    },
+    "n_91b59646": {
+      "id": "n_91b59646",
+      "label": "Venue",
+      "type": "concept"
+    },
+    "n_1a76d0ec": {
+      "id": "n_1a76d0ec",
+      "label": "Boss",
+      "type": "concept"
+    },
+    "n_dc2fd947": {
+      "id": "n_dc2fd947",
+      "label": "New attractions",
+      "type": "concept"
+    },
+    "n_c8e0efb3": {
+      "id": "n_c8e0efb3",
+      "label": "The customer is always right",
+      "type": "concept"
+    },
+    "n_a444bb3d": {
+      "id": "n_a444bb3d",
+      "label": "Subordinate",
+      "type": "concept"
+    },
+    "n_8d4acf32": {
+      "id": "n_8d4acf32",
+      "label": "Looney",
+      "type": "concept"
+    },
+    "n_1ac8c36a": {
+      "id": "n_1ac8c36a",
+      "label": "Big, shiny new things",
+      "type": "concept"
+    },
+    "n_924266db": {
+      "id": "n_924266db",
+      "label": "Looney Tunes",
+      "type": "concept"
+    },
+    "n_d016e7ac": {
+      "id": "n_d016e7ac",
+      "label": "Earth",
+      "type": "concept"
+    },
+    "n_d8d89cab": {
+      "id": "n_d8d89cab",
+      "label": "Moron Mountain Minions",
+      "type": "concept"
+    },
+    "n_0882e49e": {
+      "id": "n_0882e49e",
+      "label": "Michael Jordan",
+      "type": "concept"
+    },
+    "n_88c8ae49": {
+      "id": "n_88c8ae49",
+      "label": "uniform",
+      "type": "concept"
+    },
+    "n_92b97b01": {
+      "id": "n_92b97b01",
+      "label": "basketball",
+      "type": "concept"
+    },
+    "n_f81f7a37": {
+      "id": "n_f81f7a37",
+      "label": "strikeout",
+      "type": "concept"
+    },
+    "n_7ab65428": {
+      "id": "n_7ab65428",
+      "label": "Stan Podolak",
+      "type": "concept"
+    },
+    "n_a28487c6": {
+      "id": "n_a28487c6",
+      "label": "publicist",
+      "type": "concept"
+    },
+    "n_ab62a34f": {
+      "id": "n_ab62a34f",
+      "label": "the Baron",
+      "type": "concept"
+    },
+    "n_ae4103cf": {
+      "id": "n_ae4103cf",
+      "label": "Bugs Bunny",
+      "type": "concept"
+    },
+    "n_ff61e5d6": {
+      "id": "n_ff61e5d6",
+      "label": "great big long ears",
+      "type": "concept"
+    },
+    "n_3a280659": {
+      "id": "n_3a280659",
+      "label": "hopping",
+      "type": "concept"
+    },
+    "n_b3356fab": {
+      "id": "n_b3356fab",
+      "label": "What's up, doc?",
+      "type": "concept"
+    },
+    "n_00c61f3e": {
+      "id": "n_00c61f3e",
+      "label": "Elmer Fudd",
+      "type": "concept"
+    },
+    "n_1e53ee1f": {
+      "id": "n_1e53ee1f",
+      "label": "whopper headache",
+      "type": "concept"
+    },
+    "n_33f785a1": {
+      "id": "n_33f785a1",
+      "label": "Moron Mountain",
+      "type": "concept"
+    },
+    "n_316e1e8d": {
+      "id": "n_316e1e8d",
+      "label": "unnamed speaker",
+      "type": "concept"
+    },
+    "n_1dfca7c6": {
+      "id": "n_1dfca7c6",
+      "label": "Mr. Looney Tune",
+      "type": "concept"
+    },
+    "n_3ae884d1": {
+      "id": "n_3ae884d1",
+      "label": "bunny",
+      "type": "concept"
+    },
+    "n_0dbb370a": {
+      "id": "n_0dbb370a",
+      "label": "gather up Tune pals",
+      "type": "concept"
+    },
+    "n_18277107": {
+      "id": "n_18277107",
+      "label": "unnamed captors",
+      "type": "concept"
+    },
+    "n_205946a2": {
+      "id": "n_205946a2",
+      "label": "Tune pals",
+      "type": "concept"
+    },
+    "n_3ff3a136": {
+      "id": "n_3ff3a136",
+      "label": "exit on 65",
+      "type": "concept"
+    },
+    "n_e0b34890": {
+      "id": "n_e0b34890",
+      "label": "not clearly marked",
+      "type": "concept"
+    },
+    "n_7babfb3a": {
+      "id": "n_7babfb3a",
+      "label": "Stan",
+      "type": "concept"
+    },
+    "n_ab9d3e14": {
+      "id": "n_ab9d3e14",
+      "label": "Mike",
+      "type": "concept"
+    },
+    "n_47e74021": {
+      "id": "n_47e74021",
+      "label": "Sherm",
+      "type": "concept"
+    },
+    "n_1a01939f": {
+      "id": "n_1a01939f",
+      "label": "greatest athlete that's ever lived",
+      "type": "concept"
+    },
+    "n_fbeddb20": {
+      "id": "n_fbeddb20",
+      "label": "vehicle",
+      "type": "concept"
+    },
+    "n_ea3caca5": {
+      "id": "n_ea3caca5",
+      "label": "door",
+      "type": "concept"
+    },
+    "n_f98eca5d": {
+      "id": "n_f98eca5d",
+      "label": "classic",
+      "type": "concept"
+    },
+    "n_e46ed23f": {
+      "id": "n_e46ed23f",
+      "label": "smoking",
+      "type": "concept"
+    },
+    "n_d90ef8f4": {
+      "id": "n_d90ef8f4",
+      "label": "house",
+      "type": "concept"
+    },
+    "n_1b1afa61": {
+      "id": "n_1b1afa61",
+      "label": "Colonial",
+      "type": "concept"
+    },
+    "n_ca5ac05e": {
+      "id": "n_ca5ac05e",
+      "label": "Charles",
+      "type": "concept"
+    },
+    "n_ea701151": {
+      "id": "n_ea701151",
+      "label": "Mr. Jordan",
+      "type": "concept"
+    },
+    "n_32882bf7": {
+      "id": "n_32882bf7",
+      "label": "dog",
+      "type": "concept"
+    },
+    "n_77d9d6c0": {
+      "id": "n_77d9d6c0",
+      "label": "Pooch",
+      "type": "concept"
+    },
+    "n_fe4aca23": {
+      "id": "n_fe4aca23",
+      "label": "Jeff",
+      "type": "concept"
+    },
+    "n_9752a45c": {
+      "id": "n_9752a45c",
+      "label": "game",
+      "type": "concept"
+    },
+    "n_b8816ba4": {
+      "id": "n_b8816ba4",
+      "label": "average",
+      "type": "concept"
+    },
+    "n_5f1c70f1": {
+      "id": "n_5f1c70f1",
+      "label": "32 points",
+      "type": "concept"
+    },
+    "n_fe2e872a": {
+      "id": "n_fe2e872a",
+      "label": ".685",
+      "type": "concept"
+    },
+    "n_520bf5b3": {
+      "id": "n_520bf5b3",
+      "label": "Meal",
+      "type": "concept"
+    },
+    "n_52693667": {
+      "id": "n_52693667",
+      "label": "Chicken",
+      "type": "concept"
+    },
+    "n_79b4126b": {
+      "id": "n_79b4126b",
+      "label": "Collard greens",
+      "type": "concept"
+    },
+    "n_9aeb4fc1": {
+      "id": "n_9aeb4fc1",
+      "label": "career day",
+      "type": "concept"
+    },
+    "n_ea1b2459": {
+      "id": "n_ea1b2459",
+      "label": "3",
+      "type": "concept"
+    },
+    "n_a4926c85": {
+      "id": "n_a4926c85",
+      "label": ".214",
+      "type": "concept"
+    },
+    "n_edc570b1": {
+      "id": "n_edc570b1",
+      "label": "weight",
+      "type": "concept"
+    },
+    "n_de60d1b6": {
+      "id": "n_de60d1b6",
+      "label": "TV",
+      "type": "concept"
+    },
+    "n_e6aa10e1": {
+      "id": "n_e6aa10e1",
+      "label": "Road Runner",
+      "type": "concept"
+    },
+    "n_39106fe2": {
+      "id": "n_39106fe2",
+      "label": "Cartoon Characters",
+      "type": "concept"
+    },
+    "n_c6f4500e": {
+      "id": "n_c6f4500e",
+      "label": "Cartoon Character Union Meeting",
+      "type": "concept"
+    },
+    "n_abb5e224": {
+      "id": "n_abb5e224",
+      "label": "emergency",
+      "type": "concept"
+    },
+    "n_c0e709eb": {
+      "id": "n_c0e709eb",
+      "label": "Document",
+      "type": "concept"
+    },
+    "n_008534fb": {
+      "id": "n_008534fb",
+      "label": "7/33",
+      "type": "concept"
+    },
+    "n_a1e48fa7": {
+      "id": "n_a1e48fa7",
+      "label": "Captors",
+      "type": "concept"
+    },
+    "n_fefedf79": {
+      "id": "n_fefedf79",
+      "label": "Prisoners",
+      "type": "concept"
+    },
+    "n_9ebf8df4": {
+      "id": "n_9ebf8df4",
+      "label": "theme park in outer space",
+      "type": "concept"
+    },
+    "n_11d08660": {
+      "id": "n_11d08660",
+      "label": "customers",
+      "type": "concept"
+    },
+    "n_458623e0": {
+      "id": "n_458623e0",
+      "label": "Rule book",
+      "type": "concept"
+    },
+    "n_20f1e493": {
+      "id": "n_20f1e493",
+      "label": "Give them a chance to defend themselves",
+      "type": "concept"
+    },
+    "n_c50b320c": {
+      "id": "n_c50b320c",
+      "label": "defend themselves",
+      "type": "concept"
+    },
+    "n_9f4624f8": {
+      "id": "n_9f4624f8",
+      "label": "Leader",
+      "type": "concept"
+    },
+    "n_04aa3eb6": {
+      "id": "n_04aa3eb6",
+      "label": "troops",
+      "type": "concept"
+    },
+    "n_230bb509": {
+      "id": "n_230bb509",
+      "label": "Private Porkster",
+      "type": "concept"
+    },
+    "n_374892e7": {
+      "id": "n_374892e7",
+      "label": "battlefield",
+      "type": "concept"
+    },
+    "n_038b7f6b": {
+      "id": "n_038b7f6b",
+      "label": "spelling bee",
+      "type": "concept"
+    },
+    "n_ef491829": {
+      "id": "n_ef491829",
+      "label": "Unnamed character",
+      "type": "concept"
+    },
+    "n_9f7d98da": {
+      "id": "n_9f7d98da",
+      "label": "Sly",
+      "type": "concept"
+    },
+    "n_8afa1b5d": {
+      "id": "n_8afa1b5d",
+      "label": "Take a deep breath",
+      "type": "concept"
+    },
+    "n_cee89c2f": {
+      "id": "n_cee89c2f",
+      "label": "Little bird",
+      "type": "concept"
+    },
+    "n_668fc8ea": {
+      "id": "n_668fc8ea",
+      "label": "Wait till old lady's gone",
+      "type": "concept"
+    },
+    "n_96b9d795": {
+      "id": "n_96b9d795",
+      "label": "Invading aliens",
+      "type": "concept"
+    },
+    "n_a99582f3": {
+      "id": "n_a99582f3",
+      "label": "Small arms",
+      "type": "concept"
+    },
+    "n_d0f80fd5": {
+      "id": "n_d0f80fd5",
+      "label": "Short legs",
+      "type": "concept"
+    },
+    "n_b82c84ac": {
+      "id": "n_b82c84ac",
+      "label": "Not very fast",
+      "type": "concept"
+    },
+    "n_174b4ecb": {
+      "id": "n_174b4ecb",
+      "label": "Can't jump high",
+      "type": "concept"
+    },
+    "n_bc177613": {
+      "id": "n_bc177613",
+      "label": "Humans",
+      "type": "concept"
+    },
+    "n_5e4b7b67": {
+      "id": "n_5e4b7b67",
+      "label": "Basketball game",
+      "type": "concept"
+    },
+    "n_db42200a": {
+      "id": "n_db42200a",
+      "label": "5 men",
+      "type": "concept"
+    },
+    "n_7c020d9e": {
+      "id": "n_7c020d9e",
+      "label": "National Basketball Association",
+      "type": "concept"
+    },
+    "n_02baccfa": {
+      "id": "n_02baccfa",
+      "label": "Best players in the world",
+      "type": "concept"
+    },
+    "n_2562bdc5": {
+      "id": "n_2562bdc5",
+      "label": "Barkley",
+      "type": "concept"
+    },
+    "n_f179a97a": {
+      "id": "n_f179a97a",
+      "label": "Opponents",
+      "type": "concept"
+    },
+    "n_660cdc91": {
+      "id": "n_660cdc91",
+      "label": "Spectators",
+      "type": "concept"
+    },
+    "n_c1ed0edf": {
+      "id": "n_c1ed0edf",
+      "label": "Barkley is killing us",
+      "type": "concept"
+    },
+    "n_ceb3563e": {
+      "id": "n_ceb3563e",
+      "label": "Someone's killing someone",
+      "type": "concept"
+    },
+    "n_51c33041": {
+      "id": "n_51c33041",
+      "label": "Antagonist",
+      "type": "concept"
+    },
+    "n_5cfff5d3": {
+      "id": "n_5cfff5d3",
+      "label": "Talent",
+      "type": "concept"
+    },
+    "n_23769b02": {
+      "id": "n_23769b02",
+      "label": "Game",
+      "type": "concept"
+    },
+    "n_4eb9c473": {
+      "id": "n_4eb9c473",
+      "label": "Fatigue",
+      "type": "concept"
+    },
+    "n_fd5d6748": {
+      "id": "n_fd5d6748",
+      "label": "Teammate",
+      "type": "concept"
+    },
+    "n_6e0a4e2f": {
+      "id": "n_6e0a4e2f",
+      "label": "Patrick",
+      "type": "concept"
+    },
+    "n_60281731": {
+      "id": "n_60281731",
+      "label": "Showtime",
+      "type": "concept"
+    },
+    "n_74c7f5e2": {
+      "id": "n_74c7f5e2",
+      "label": "5 NBA players",
+      "type": "concept"
+    },
+    "n_3eac440b": {
+      "id": "n_3eac440b",
+      "label": "Disabled list",
+      "type": "concept"
+    },
+    "n_6204ff0d": {
+      "id": "n_6204ff0d",
+      "label": "Last 24 hours",
+      "type": "concept"
+    },
+    "n_2f4cbbd2": {
+      "id": "n_2f4cbbd2",
+      "label": "Text Chunk",
+      "type": "concept"
+    },
+    "n_f9d23ab5": {
+      "id": "n_f9d23ab5",
+      "label": "12/33",
+      "type": "concept"
+    },
+    "n_9471a30d": {
+      "id": "n_9471a30d",
+      "label": "13/33",
+      "type": "concept"
+    },
+    "n_ffe7f5ed": {
+      "id": "n_ffe7f5ed",
+      "label": "Speaker",
+      "type": "concept"
+    },
+    "n_9bf898b8": {
+      "id": "n_9bf898b8",
+      "label": "associate",
+      "type": "concept"
+    },
+    "n_b972c000": {
+      "id": "n_b972c000",
+      "label": "personal assistant",
+      "type": "concept"
+    },
+    "n_4f3682dc": {
+      "id": "n_4f3682dc",
+      "label": "new players with talent",
+      "type": "concept"
+    },
+    "n_496c4918": {
+      "id": "n_496c4918",
+      "label": "professional career",
+      "type": "concept"
+    },
+    "n_591e82cf": {
+      "id": "n_591e82cf",
+      "label": "Unknown Speaker",
+      "type": "concept"
+    },
+    "n_9b93fb26": {
+      "id": "n_9b93fb26",
+      "label": "Larry Bird",
+      "type": "concept"
+    },
+    "n_99f038d7": {
+      "id": "n_99f038d7",
+      "label": "Advisor",
+      "type": "concept"
+    },
+    "n_68b134ce": {
+      "id": "n_68b134ce",
+      "label": "Visualize where you want it to go",
+      "type": "concept"
+    },
+    "n_bc087890": {
+      "id": "n_bc087890",
+      "label": "Be the ball",
+      "type": "concept"
+    },
+    "n_1950b879": {
+      "id": "n_1950b879",
+      "label": "Golfer",
+      "type": "concept"
+    },
+    "n_8020fac3": {
+      "id": "n_8020fac3",
+      "label": "first hole in one",
+      "type": "concept"
+    },
+    "n_d52460c6": {
+      "id": "n_d52460c6",
+      "label": "Photographer",
+      "type": "concept"
+    },
+    "n_4af3507b": {
+      "id": "n_4af3507b",
+      "label": "picture",
+      "type": "concept"
+    },
+    "n_e9aabcf9": {
+      "id": "n_e9aabcf9",
+      "label": "Air Jordan",
+      "type": "concept"
+    },
+    "n_d209ffc2": {
+      "id": "n_d209ffc2",
+      "label": "Fan",
+      "type": "concept"
+    },
+    "n_28578c48": {
+      "id": "n_28578c48",
+      "label": "John Hancock",
+      "type": "concept"
+    },
+    "n_c9fb39b1": {
+      "id": "n_c9fb39b1",
+      "label": "Doctor",
+      "type": "concept"
+    },
+    "n_f888559c": {
+      "id": "n_f888559c",
+      "label": "Aliens from outer space",
+      "type": "concept"
+    },
+    "n_7f84e965": {
+      "id": "n_7f84e965",
+      "label": "Protagonists",
+      "type": "concept"
+    },
+    "n_d2d75a71": {
+      "id": "n_d2d75a71",
+      "label": "theme park",
+      "type": "concept"
+    },
+    "n_76247d69": {
+      "id": "n_76247d69",
+      "label": "basketball game",
+      "type": "concept"
+    },
+    "n_bb566745": {
+      "id": "n_bb566745",
+      "label": "little",
+      "type": "concept"
+    },
+    "n_4dc1cc62": {
+      "id": "n_4dc1cc62",
+      "label": "huge",
+      "type": "concept"
+    },
+    "n_11bfa44e": {
+      "id": "n_11bfa44e",
+      "label": "stand-up",
+      "type": "concept"
+    },
+    "n_da031f88": {
+      "id": "n_da031f88",
+      "label": "wild animals",
+      "type": "concept"
+    },
+    "n_f0b4e862": {
+      "id": "n_f0b4e862",
+      "label": "baseball game",
+      "type": "concept"
+    },
+    "n_1b29115e": {
+      "id": "n_1b29115e",
+      "label": "tomorrow",
+      "type": "concept"
+    },
+    "n_a2bfb98a": {
+      "id": "n_a2bfb98a",
+      "label": "in a long time",
+      "type": "concept"
+    },
+    "n_68427236": {
+      "id": "n_68427236",
+      "label": "Mike is gone",
+      "type": "concept"
+    },
+    "n_370dd4a7": {
+      "id": "n_370dd4a7",
+      "label": "some new people",
+      "type": "concept"
+    },
+    "n_c72577c7": {
+      "id": "n_c72577c7",
+      "label": "You",
+      "type": "concept"
+    },
+    "n_3161d82e": {
+      "id": "n_3161d82e",
+      "label": "David Stern",
+      "type": "concept"
+    },
+    "n_a40d4799": {
+      "id": "n_a40d4799",
+      "label": "Facility",
+      "type": "concept"
+    },
+    "n_aa576c7f": {
+      "id": "n_aa576c7f",
+      "label": "hoops",
+      "type": "concept"
+    },
+    "n_54bbdaaa": {
+      "id": "n_54bbdaaa",
+      "label": "weights",
+      "type": "concept"
+    },
+    "n_2bceca0c": {
+      "id": "n_2bceca0c",
+      "label": "balls",
+      "type": "concept"
+    },
+    "n_edd392ea": {
+      "id": "n_edd392ea",
+      "label": "a mess",
+      "type": "concept"
+    },
+    "n_af283694": {
+      "id": "n_af283694",
+      "label": "Content",
+      "type": "concept"
+    },
+    "n_9a73751d": {
+      "id": "n_9a73751d",
+      "label": "Warner Bros. lnc.",
+      "type": "concept"
+    },
+    "n_d3376002": {
+      "id": "n_d3376002",
+      "label": "Aliens",
+      "type": "concept"
+    },
+    "n_b617dbb4": {
+      "id": "n_b617dbb4",
+      "label": "Monstars",
+      "type": "concept"
+    },
+    "n_4ebd81a0": {
+      "id": "n_4ebd81a0",
+      "label": "Mean Team",
+      "type": "concept"
+    },
+    "n_2f37879b": {
+      "id": "n_2f37879b",
+      "label": "Dream Team",
+      "type": "concept"
+    },
+    "n_b94520be": {
+      "id": "n_b94520be",
+      "label": "14/33",
+      "type": "concept"
+    },
+    "n_1ab3334c": {
+      "id": "n_1ab3334c",
+      "label": "15/33",
+      "type": "concept"
+    },
+    "n_a66aedc0": {
+      "id": "n_a66aedc0",
+      "label": "pathetic",
+      "type": "concept"
+    },
+    "n_b68e86d4": {
+      "id": "n_b68e86d4",
+      "label": "mysterious ailment",
+      "type": "concept"
+    },
+    "n_40720447": {
+      "id": "n_40720447",
+      "label": "players",
+      "type": "concept"
+    },
+    "n_c66a6346": {
+      "id": "n_c66a6346",
+      "label": "coordination",
+      "type": "concept"
+    },
+    "n_002fd875": {
+      "id": "n_002fd875",
+      "label": "Coach",
+      "type": "concept"
+    },
+    "n_0efd774e": {
+      "id": "n_0efd774e",
+      "label": "retired just in time",
+      "type": "concept"
+    },
+    "n_2ce3eada": {
+      "id": "n_2ce3eada",
+      "label": "wear Nikes",
+      "type": "concept"
+    },
+    "n_85181b17": {
+      "id": "n_85181b17",
+      "label": "grab Gatorade",
+      "type": "concept"
+    },
+    "n_7d5deb36": {
+      "id": "n_7d5deb36",
+      "label": "get Big Mac",
+      "type": "concept"
+    },
+    "n_eb716d63": {
+      "id": "n_eb716d63",
+      "label": "Team",
+      "type": "concept"
+    },
+    "n_c67af626": {
+      "id": "n_c67af626",
+      "label": "Los Angeles Forum",
+      "type": "concept"
+    },
+    "n_2c9963c5": {
+      "id": "n_2c9963c5",
+      "label": "Lakers",
+      "type": "concept"
+    },
+    "n_5d1cfcb4": {
+      "id": "n_5d1cfcb4",
+      "label": "court",
+      "type": "concept"
+    },
+    "n_3a124b52": {
+      "id": "n_3a124b52",
+      "label": "5 minutes",
+      "type": "concept"
+    },
+    "n_9301c57e": {
+      "id": "n_9301c57e",
+      "label": "locker room",
+      "type": "concept"
+    },
+    "n_0ecb3271": {
+      "id": "n_0ecb3271",
+      "label": "germs",
+      "type": "concept"
+    },
+    "n_0fb2fcc1": {
+      "id": "n_0fb2fcc1",
+      "label": "Ewing",
+      "type": "concept"
+    },
+    "n_32105c97": {
+      "id": "n_32105c97",
+      "label": "New York",
+      "type": "concept"
+    },
+    "n_75229845": {
+      "id": "n_75229845",
+      "label": "Cedric",
+      "type": "concept"
+    },
+    "n_8bb535d3": {
+      "id": "n_8bb535d3",
+      "label": "Bacteria",
+      "type": "concept"
+    },
+    "n_aa82da78": {
+      "id": "n_aa82da78",
+      "label": "speed of light",
+      "type": "concept"
+    },
+    "n_7aa2fbb1": {
+      "id": "n_7aa2fbb1",
+      "label": "Situation",
+      "type": "concept"
+    },
+    "n_446dd8dd": {
+      "id": "n_446dd8dd",
+      "label": "Invasion of the Body Snatchers",
+      "type": "concept"
+    },
+    "n_226a23b9": {
+      "id": "n_226a23b9",
+      "label": "dress in hallway",
+      "type": "concept"
+    },
+    "n_af9a08b7": {
+      "id": "n_af9a08b7",
+      "label": "played basketball",
+      "type": "concept"
+    },
+    "n_f28e2a74": {
+      "id": "n_f28e2a74",
+      "label": "purple and gold",
+      "type": "concept"
+    },
+    "n_13a12ee6": {
+      "id": "n_13a12ee6",
+      "label": "Daffy",
+      "type": "concept"
+    },
+    "n_ee6f0396": {
+      "id": "n_ee6f0396",
+      "label": "little aliens",
+      "type": "concept"
+    },
+    "n_e312dd7e": {
+      "id": "n_e312dd7e",
+      "label": "boys",
+      "type": "concept"
+    },
+    "n_19cf63f0": {
+      "id": "n_19cf63f0",
+      "label": "height",
+      "type": "concept"
+    },
+    "n_955009fb": {
+      "id": "n_955009fb",
+      "label": "superstars",
+      "type": "concept"
+    },
+    "n_ce6a1c91": {
+      "id": "n_ce6a1c91",
+      "label": "monsters",
+      "type": "concept"
+    },
+    "n_38a5e237": {
+      "id": "n_38a5e237",
+      "label": "help",
+      "type": "concept"
+    },
+    "n_e3d0c8b3": {
+      "id": "n_e3d0c8b3",
+      "label": "little fella",
+      "type": "concept"
+    },
+    "n_bba7851e": {
+      "id": "n_bba7851e",
+      "label": "friend",
+      "type": "concept"
+    },
+    "n_8a27068d": {
+      "id": "n_8a27068d",
+      "label": "ally",
+      "type": "concept"
+    },
+    "n_05934fa4": {
+      "id": "n_05934fa4",
+      "label": "mama",
+      "type": "concept"
+    },
+    "n_5ec1512a": {
+      "id": "n_5ec1512a",
+      "label": "Madonna",
+      "type": "concept"
+    },
+    "n_8b50f045": {
+      "id": "n_8b50f045",
+      "label": "divot",
+      "type": "concept"
+    },
+    "n_6dbc215d": {
+      "id": "n_6dbc215d",
+      "label": "Lola Bunny",
+      "type": "concept"
+    },
+    "n_d345de7c": {
+      "id": "n_d345de7c",
+      "label": "Bugs",
+      "type": "concept"
+    },
+    "n_df5dfb70": {
+      "id": "n_df5dfb70",
+      "label": "doll",
+      "type": "concept"
+    },
+    "n_2d8b8b41": {
+      "id": "n_2d8b8b41",
+      "label": "sneakers",
+      "type": "concept"
+    },
+    "n_8d0a2607": {
+      "id": "n_8d0a2607",
+      "label": "North Carolina shorts",
+      "type": "concept"
+    },
+    "n_04950a62": {
+      "id": "n_04950a62",
+      "label": "Chicago Bulls uniform",
+      "type": "concept"
+    },
+    "n_5059d448": {
+      "id": "n_5059d448",
+      "label": "Michael's house",
+      "type": "concept"
+    },
+    "n_c2e4daa5": {
+      "id": "n_c2e4daa5",
+      "label": "3-D land",
+      "type": "concept"
+    },
+    "n_a0938fee": {
+      "id": "n_a0938fee",
+      "label": "Looney Tunes characters",
+      "type": "concept"
+    },
+    "n_90c56296": {
+      "id": "n_90c56296",
+      "label": "Michael's basketball stuff",
+      "type": "concept"
+    },
+    "n_973b16e2": {
+      "id": "n_973b16e2",
+      "label": "mugs",
+      "type": "concept"
+    },
+    "n_ec9a614b": {
+      "id": "n_ec9a614b",
+      "label": "lunch boxes",
+      "type": "concept"
+    },
+    "n_cdfcc2f1": {
+      "id": "n_cdfcc2f1",
+      "label": "0",
+      "type": "concept"
+    },
+    "n_84c23e71": {
+      "id": "n_84c23e71",
+      "label": "new agent",
+      "type": "concept"
+    },
+    "n_6e914ed0": {
+      "id": "n_6e914ed0",
+      "label": "trophy room",
+      "type": "concept"
+    },
+    "n_aed39882": {
+      "id": "n_aed39882",
+      "label": "Unnamed Character",
+      "type": "concept"
+    },
+    "n_46e3af36": {
+      "id": "n_46e3af36",
+      "label": "shorts",
+      "type": "concept"
+    },
+    "n_826274ae": {
+      "id": "n_826274ae",
+      "label": "dogs",
+      "type": "concept"
+    },
+    "n_0675bd5b": {
+      "id": "n_0675bd5b",
+      "label": "children",
+      "type": "concept"
+    },
+    "n_917ebc85": {
+      "id": "n_917ebc85",
+      "label": "Beethoven",
+      "type": "concept"
+    },
+    "n_8dbbab5d": {
+      "id": "n_8dbbab5d",
+      "label": "big basketball game",
+      "type": "concept"
+    },
+    "n_9ede0f4b": {
+      "id": "n_9ede0f4b",
+      "label": "your dad",
+      "type": "concept"
+    },
+    "n_fc6ee63e": {
+      "id": "n_fc6ee63e",
+      "label": "Little aliens from outer space",
+      "type": "concept"
+    },
+    "n_afa20daf": {
+      "id": "n_afa20daf",
+      "label": "your bodies",
+      "type": "concept"
+    },
+    "n_1c7b2890": {
+      "id": "n_1c7b2890",
+      "label": "furry creatures",
+      "type": "concept"
+    },
+    "n_36c6e2c7": {
+      "id": "n_36c6e2c7",
+      "label": "golf hole",
+      "type": "concept"
+    },
+    "n_834c9525": {
+      "id": "n_834c9525",
+      "label": "The Ducks",
+      "type": "concept"
+    },
+    "n_9f4b40f6": {
+      "id": "n_9f4b40f6",
+      "label": "Mickey Mouse organization",
+      "type": "concept"
+    },
+    "n_2ec88d77": {
+      "id": "n_2ec88d77",
+      "label": "practice",
+      "type": "concept"
+    },
+    "n_7f9d2aab": {
+      "id": "n_7f9d2aab",
+      "label": "Stan's friends",
+      "type": "concept"
+    },
+    "n_92c58f1f": {
+      "id": "n_92c58f1f",
+      "label": "cartoon characters",
+      "type": "concept"
+    },
+    "n_72a9678d": {
+      "id": "n_72a9678d",
+      "label": "Crowd",
+      "type": "concept"
+    },
+    "n_df96434b": {
+      "id": "n_df96434b",
+      "label": "baldy",
+      "type": "concept"
+    },
+    "n_4c693dd5": {
+      "id": "n_4c693dd5",
+      "label": "washed up",
+      "type": "concept"
+    },
+    "n_d5a9212d": {
+      "id": "n_d5a9212d",
+      "label": "Supporter",
+      "type": "concept"
+    },
+    "n_869fcf59": {
+      "id": "n_869fcf59",
+      "label": "Charles Barkley",
+      "type": "concept"
+    },
+    "n_284f3756": {
+      "id": "n_284f3756",
+      "label": "Electrolyte levels",
+      "type": "concept"
+    },
+    "n_874afc43": {
+      "id": "n_874afc43",
+      "label": "glucose",
+      "type": "concept"
+    },
+    "n_fc22fc80": {
+      "id": "n_fc22fc80",
+      "label": "CBCs",
+      "type": "concept"
+    },
+    "n_57a207b2": {
+      "id": "n_57a207b2",
+      "label": "RBCs",
+      "type": "concept"
+    },
+    "n_927adf2d": {
+      "id": "n_927adf2d",
+      "label": "stress test",
+      "type": "concept"
+    },
+    "n_7ba1b9e9": {
+      "id": "n_7ba1b9e9",
+      "label": "neurological battery",
+      "type": "concept"
+    },
+    "n_af33ffea": {
+      "id": "n_af33ffea",
+      "label": "EEG",
+      "type": "concept"
+    },
+    "n_ce78fdb0": {
+      "id": "n_ce78fdb0",
+      "label": "Girl",
+      "type": "concept"
+    },
+    "n_8a252f73": {
+      "id": "n_8a252f73",
+      "label": "five feet nothing",
+      "type": "concept"
+    },
+    "n_124506c0": {
+      "id": "n_124506c0",
+      "label": "Creature",
+      "type": "concept"
+    },
+    "n_4b135c3a": {
+      "id": "n_4b135c3a",
+      "label": "back",
+      "type": "concept"
+    },
+    "n_dfbda7e2": {
+      "id": "n_dfbda7e2",
+      "label": "brain",
+      "type": "concept"
+    },
+    "n_f07134c8": {
+      "id": "n_f07134c8",
+      "label": "MRI",
+      "type": "concept"
+    },
+    "n_abec4c0b": {
+      "id": "n_abec4c0b",
+      "label": "EKG",
+      "type": "concept"
+    },
+    "n_7322a066": {
+      "id": "n_7322a066",
+      "label": "x-ray",
+      "type": "concept"
+    },
+    "n_2d912d58": {
+      "id": "n_2d912d58",
+      "label": "laser beam",
+      "type": "concept"
+    },
+    "n_f88f1a78": {
+      "id": "n_f88f1a78",
+      "label": "swearing",
+      "type": "concept"
+    },
+    "n_93c0f948": {
+      "id": "n_93c0f948",
+      "label": "getting technicals",
+      "type": "concept"
+    },
+    "n_4f444d1b": {
+      "id": "n_4f444d1b",
+      "label": "trash-talking",
+      "type": "concept"
+    },
+    "n_c4ddc7a4": {
+      "id": "n_c4ddc7a4",
+      "label": "farm",
+      "type": "concept"
+    },
+    "n_61a5bef7": {
+      "id": "n_61a5bef7",
+      "label": "jungle",
+      "type": "concept"
+    },
+    "n_675fb4a3": {
+      "id": "n_675fb4a3",
+      "label": "Unnamed Speaker",
+      "type": "concept"
+    },
+    "n_362cc138": {
+      "id": "n_362cc138",
+      "label": "slow",
+      "type": "concept"
+    },
+    "n_890fd53b": {
+      "id": "n_890fd53b",
+      "label": "large",
+      "type": "concept"
+    },
+    "n_b60e71a7": {
+      "id": "n_b60e71a7",
+      "label": "dork",
+      "type": "concept"
+    },
+    "n_cabd51b4": {
+      "id": "n_cabd51b4",
+      "label": "cheerleader",
+      "type": "concept"
+    },
+    "n_3b36c671": {
+      "id": "n_3b36c671",
+      "label": "Mr. Commissioner",
+      "type": "concept"
+    },
+    "n_1dbadcbe": {
+      "id": "n_1dbadcbe",
+      "label": "team owners",
+      "type": "concept"
+    },
+    "n_1c0cea20": {
+      "id": "n_1c0cea20",
+      "label": "basketball this season",
+      "type": "concept"
+    },
+    "n_87c00f59": {
+      "id": "n_87c00f59",
+      "label": "health of our players",
+      "type": "concept"
+    },
+    "n_fc840e51": {
+      "id": "n_fc840e51",
+      "label": "the place",
+      "type": "concept"
+    },
+    "n_ae863a73": {
+      "id": "n_ae863a73",
+      "label": "sealed off",
+      "type": "concept"
+    },
+    "n_c76a6a45": {
+      "id": "n_c76a6a45",
+      "label": "Tazmanian Devil",
+      "type": "concept"
+    },
+    "n_145b48fe": {
+      "id": "n_145b48fe",
+      "label": "Tune Squad",
+      "type": "concept"
+    },
+    "n_1db20a7f": {
+      "id": "n_1db20a7f",
+      "label": "2 foot 4",
+      "type": "concept"
+    },
+    "n_5805b58f": {
+      "id": "n_5805b58f",
+      "label": "The Wonder From Down Under",
+      "type": "concept"
+    },
+    "n_0e8ea46b": {
+      "id": "n_0e8ea46b",
+      "label": "small forward",
+      "type": "concept"
+    },
+    "n_6e4b38da": {
+      "id": "n_6e4b38da",
+      "label": "3 foot 2",
+      "type": "concept"
+    },
+    "n_0c57dd08": {
+      "id": "n_0c57dd08",
+      "label": "The Heartthrob of the Hoops",
+      "type": "concept"
+    },
+    "n_ab096c06": {
+      "id": "n_ab096c06",
+      "label": "Daffy Duck",
+      "type": "concept"
+    },
+    "n_ab12bbff": {
+      "id": "n_ab12bbff",
+      "label": "power forward",
+      "type": "concept"
+    },
+    "n_95c91e4d": {
+      "id": "n_95c91e4d",
+      "label": "The Quackster of the Courts",
+      "type": "concept"
+    },
+    "n_c031cf8a": {
+      "id": "n_c031cf8a",
+      "label": "point guard",
+      "type": "concept"
+    },
+    "n_fd094f76": {
+      "id": "n_fd094f76",
+      "label": "3 foot 3",
+      "type": "concept"
+    },
+    "n_ac958c22": {
+      "id": "n_ac958c22",
+      "label": "co-captain of the Tune Squad",
+      "type": "concept"
+    },
+    "n_4adff600": {
+      "id": "n_4adff600",
+      "label": "The Doctor of Delight",
+      "type": "concept"
+    },
+    "n_8921fdb2": {
+      "id": "n_8921fdb2",
+      "label": "player-coach of the Tune Squad",
+      "type": "concept"
+    },
+    "n_15ac7392": {
+      "id": "n_15ac7392",
+      "label": "6 foot 6",
+      "type": "concept"
+    },
+    "n_03ff7bd6": {
+      "id": "n_03ff7bd6",
+      "label": "His Royal Airness",
+      "type": "concept"
+    },
+    "n_ac2d232b": {
+      "id": "n_ac2d232b",
+      "label": "Audience",
+      "type": "concept"
+    },
+    "n_77cc7a29": {
+      "id": "n_77cc7a29",
+      "label": "Looney Tune",
+      "type": "concept"
+    },
+    "n_a1de652c": {
+      "id": "n_a1de652c",
+      "label": "Challengers",
+      "type": "concept"
+    },
+    "n_5d556273": {
+      "id": "n_5d556273",
+      "label": "Ultimate Game",
+      "type": "concept"
+    },
+    "n_7e699ec6": {
+      "id": "n_7e699ec6",
+      "label": "Moron",
+      "type": "concept"
+    },
+    "n_a140173d": {
+      "id": "n_a140173d",
+      "label": "Unnamed Player",
+      "type": "concept"
+    },
+    "n_a822f79d": {
+      "id": "n_a822f79d",
+      "label": "take it to the rack",
+      "type": "concept"
+    },
+    "n_78a3a09e": {
+      "id": "n_78a3a09e",
+      "label": "have fun",
+      "type": "concept"
+    },
+    "n_e20b5e0b": {
+      "id": "n_e20b5e0b",
+      "label": "Mr. J",
+      "type": "concept"
+    },
+    "n_ab58656a": {
+      "id": "n_ab58656a",
+      "label": "Physical violence",
+      "type": "concept"
+    },
+    "n_047868ad": {
+      "id": "n_047868ad",
+      "label": "the rules",
+      "type": "concept"
+    },
+    "n_6237cea7": {
+      "id": "n_6237cea7",
+      "label": "Server",
+      "type": "concept"
+    },
+    "n_6c0d7940": {
+      "id": "n_6c0d7940",
+      "label": "Original Recipe",
+      "type": "concept"
+    },
+    "n_4ab53f4b": {
+      "id": "n_4ab53f4b",
+      "label": "Extra Crispy",
+      "type": "concept"
+    },
+    "n_ed9c0224": {
+      "id": "n_ed9c0224",
+      "label": "Pie",
+      "type": "concept"
+    },
+    "n_9530dbb2": {
+      "id": "n_9530dbb2",
+      "label": "Pork chop",
+      "type": "concept"
+    },
+    "n_93ad6faf": {
+      "id": "n_93ad6faf",
+      "label": "Sorbet",
+      "type": "concept"
+    },
+    "n_8eb50f6f": {
+      "id": "n_8eb50f6f",
+      "label": "Mr. Swackhammer",
+      "type": "concept"
+    },
+    "n_11d88fd5": {
+      "id": "n_11d88fd5",
+      "label": "the boss",
+      "type": "concept"
+    },
+    "n_14ca913c": {
+      "id": "n_14ca913c",
+      "label": "NBA players",
+      "type": "concept"
+    },
+    "n_eda12e30": {
+      "id": "n_eda12e30",
+      "label": "Half-time",
+      "type": "concept"
+    },
+    "n_7ac19a4d": {
+      "id": "n_7ac19a4d",
+      "label": "Losing Team",
+      "type": "concept"
+    },
+    "n_7b552330": {
+      "id": "n_7b552330",
+      "label": "slaves",
+      "type": "concept"
+    },
+    "n_3679e755": {
+      "id": "n_3679e755",
+      "label": "chubby boy",
+      "type": "concept"
+    },
+    "n_f5d0cd7b": {
+      "id": "n_f5d0cd7b",
+      "label": "locker",
+      "type": "concept"
+    },
+    "n_f65eb346": {
+      "id": "n_f65eb346",
+      "label": "spy",
+      "type": "concept"
+    },
+    "n_46ee0c9f": {
+      "id": "n_46ee0c9f",
+      "label": "bug-zapper",
+      "type": "concept"
+    },
+    "n_026c120b": {
+      "id": "n_026c120b",
+      "label": "come together",
+      "type": "concept"
+    },
+    "n_83ceea44": {
+      "id": "n_83ceea44",
+      "label": "believe in ourselves",
+      "type": "concept"
+    },
+    "n_9b58a4c7": {
+      "id": "n_9b58a4c7",
+      "label": "Player",
+      "type": "concept"
+    },
+    "n_5b050b46": {
+      "id": "n_5b050b46",
+      "label": "mouse",
+      "type": "concept"
+    },
+    "n_6eefb8d9": {
+      "id": "n_6eefb8d9",
+      "label": "Opponent",
+      "type": "concept"
+    },
+    "n_b7b7c58f": {
+      "id": "n_b7b7c58f",
+      "label": "Female Player",
+      "type": "concept"
+    },
+    "n_4548e2df": {
+      "id": "n_4548e2df",
+      "label": "This document",
+      "type": "concept"
+    },
+    "n_09456f53": {
+      "id": "n_09456f53",
+      "label": "27/33",
+      "type": "concept"
+    },
+    "n_12394e39": {
+      "id": "n_12394e39",
+      "label": "Time out",
+      "type": "concept"
+    },
+    "n_e25b058f": {
+      "id": "n_e25b058f",
+      "label": "The team",
+      "type": "concept"
+    },
+    "n_70c9b0db": {
+      "id": "n_70c9b0db",
+      "label": "a fifth player",
+      "type": "concept"
+    },
+    "n_9b1ab187": {
+      "id": "n_9b1ab187",
+      "label": "secret stuff",
+      "type": "concept"
+    },
+    "n_8657f843": {
+      "id": "n_8657f843",
+      "label": "water",
+      "type": "concept"
+    },
+    "n_d9f947d9": {
+      "id": "n_d9f947d9",
+      "label": "The players",
+      "type": "concept"
+    },
+    "n_2b8a9b27": {
+      "id": "n_2b8a9b27",
+      "label": "special stuff",
+      "type": "concept"
+    },
+    "n_76765915": {
+      "id": "n_76765915",
+      "label": "center",
+      "type": "concept"
+    },
+    "n_0d2bc018": {
+      "id": "n_0d2bc018",
+      "label": "the big guy",
+      "type": "concept"
+    },
+    "n_579934d8": {
+      "id": "n_579934d8",
+      "label": "The current location",
+      "type": "concept"
+    },
+    "n_d9405524": {
+      "id": "n_d9405524",
+      "label": "Looney Tune Land",
+      "type": "concept"
+    },
+    "n_e6ded19a": {
+      "id": "n_e6ded19a",
+      "label": "the game",
+      "type": "concept"
+    },
+    "n_c1c3b1b1": {
+      "id": "n_c1c3b1b1",
+      "label": "doc",
+      "type": "concept"
+    },
+    "n_0b6f98bc": {
+      "id": "n_0b6f98bc",
+      "label": "Your Airness",
+      "type": "concept"
+    },
+    "n_81b43788": {
+      "id": "n_81b43788",
+      "label": "Sir Altitude",
+      "type": "concept"
+    },
+    "n_1931af6f": {
+      "id": "n_1931af6f",
+      "label": "Dan Ackroyd",
+      "type": "concept"
+    },
+    "n_4ae6c58f": {
+      "id": "n_4ae6c58f",
+      "label": "this picture",
+      "type": "concept"
+    },
+    "n_eeede04c": {
+      "id": "n_eeede04c",
+      "label": "The fifth guy",
+      "type": "concept"
+    },
+    "n_f6a7f46e": {
+      "id": "n_f6a7f46e",
+      "label": "2 points",
+      "type": "concept"
+    },
+    "n_fcecff66": {
+      "id": "n_fcecff66",
+      "label": "Protagonist",
+      "type": "concept"
+    },
+    "n_62106adf": {
+      "id": "n_62106adf",
+      "label": "health class",
+      "type": "concept"
+    },
+    "n_f48ef0f2": {
+      "id": "n_f48ef0f2",
+      "label": "star attraction",
+      "type": "concept"
+    },
+    "n_5b32a813": {
+      "id": "n_5b32a813",
+      "label": "paying customers",
+      "type": "concept"
+    },
+    "n_80cd8a73": {
+      "id": "n_80cd8a73",
+      "label": "Deal",
+      "type": "concept"
+    },
+    "n_ac3e1f36": {
+      "id": "n_ac3e1f36",
+      "label": "Doc",
+      "type": "concept"
+    },
+    "n_5dfb8eeb": {
+      "id": "n_5dfb8eeb",
+      "label": "team",
+      "type": "concept"
+    },
+    "n_a2291c59": {
+      "id": "n_a2291c59",
+      "label": "child",
+      "type": "concept"
+    },
+    "n_ada4df9c": {
+      "id": "n_ada4df9c",
+      "label": "school",
+      "type": "concept"
+    },
+    "n_b7846e18": {
+      "id": "n_b7846e18",
+      "label": "Mommy",
+      "type": "concept"
+    },
+    "n_0d589c82": {
+      "id": "n_0d589c82",
+      "label": "Tunes",
+      "type": "concept"
+    },
+    "n_d5d98b32": {
+      "id": "n_d5d98b32",
+      "label": "girl bunny",
+      "type": "concept"
+    },
+    "n_7e36d1ad": {
+      "id": "n_7e36d1ad",
+      "label": "defense",
+      "type": "concept"
+    },
+    "n_76ec8e57": {
+      "id": "n_76ec8e57",
+      "label": "score",
+      "type": "concept"
+    },
+    "n_8d4365ab": {
+      "id": "n_8d4365ab",
+      "label": "pressure",
+      "type": "concept"
+    },
+    "n_11132be5": {
+      "id": "n_11132be5",
+      "label": "Daf",
+      "type": "concept"
+    },
+    "n_774c4f80": {
+      "id": "n_774c4f80",
+      "label": "trousers",
+      "type": "concept"
+    },
+    "n_86c65d74": {
+      "id": "n_86c65d74",
+      "label": "Mr. Murray",
+      "type": "concept"
+    },
+    "n_a7d0852b": {
+      "id": "n_a7d0852b",
+      "label": "Producer",
+      "type": "concept"
+    },
+    "n_3a7a71af": {
+      "id": "n_3a7a71af",
+      "label": "teamster",
+      "type": "concept"
+    },
+    "n_f9602999": {
+      "id": "n_f9602999",
+      "label": "undefeated",
+      "type": "concept"
+    },
+    "n_763ec9b0": {
+      "id": "n_763ec9b0",
+      "label": "knees",
+      "type": "concept"
+    },
+    "n_24d01d5e": {
+      "id": "n_24d01d5e",
+      "label": "friends",
+      "type": "concept"
+    },
+    "n_3b38a4d0": {
+      "id": "n_3b38a4d0",
+      "label": "spaceship",
+      "type": "concept"
+    },
+    "n_68d7b1da": {
+      "id": "n_68d7b1da",
+      "label": "clothes",
+      "type": "concept"
+    },
+    "n_f2310589": {
+      "id": "n_f2310589",
+      "label": "insignificant",
+      "type": "concept"
+    },
+    "n_3a36f5fd": {
+      "id": "n_3a36f5fd",
+      "label": "Page 28/33",
+      "type": "concept"
+    },
+    "n_9d8dad99": {
+      "id": "n_9d8dad99",
+      "label": "Page 29/33",
+      "type": "concept"
+    },
+    "n_ac33ddec": {
+      "id": "n_ac33ddec",
+      "label": "Mr. Bunny",
+      "type": "concept"
+    },
+    "n_50fea035": {
+      "id": "n_50fea035",
+      "label": "here",
+      "type": "concept"
+    },
+    "n_ff7b0da9": {
+      "id": "n_ff7b0da9",
+      "label": "there",
+      "type": "concept"
+    },
+    "n_fe0ee61d": {
+      "id": "n_fe0ee61d",
+      "label": "Current Time",
+      "type": "concept"
+    },
+    "n_5ac75a6e": {
+      "id": "n_5ac75a6e",
+      "label": "Quarter past seven",
+      "type": "concept"
+    },
+    "n_8511ad12": {
+      "id": "n_8511ad12",
+      "label": "Announcer",
+      "type": "concept"
+    },
+    "n_907d255a": {
+      "id": "n_907d255a",
+      "label": "Basketball players",
+      "type": "concept"
+    },
+    "n_e2af1d28": {
+      "id": "n_e2af1d28",
+      "label": "we suck",
+      "type": "concept"
+    },
+    "n_644745f1": {
+      "id": "n_644745f1",
+      "label": "Grandmother",
+      "type": "concept"
+    },
+    "n_dc25b6c7": {
+      "id": "n_dc25b6c7",
+      "label": "short guy",
+      "type": "concept"
+    },
+    "n_a2f1a71c": {
+      "id": "n_a2f1a71c",
+      "label": "baseball",
+      "type": "concept"
+    },
+    "n_2346f510": {
+      "id": "n_2346f510",
+      "label": "the ball",
+      "type": "concept"
+    },
+    "n_366e2f6c": {
+      "id": "n_366e2f6c",
+      "label": "bad game for the rest of your career",
+      "type": "concept"
+    },
+    "n_d4be95a4": {
+      "id": "n_d4be95a4",
+      "label": "Pat",
+      "type": "concept"
+    },
+    "n_f6e9e000": {
+      "id": "n_f6e9e000",
+      "label": "Mugsey",
+      "type": "concept"
+    },
+    "n_935ef46a": {
+      "id": "n_935ef46a",
+      "label": "handle the rock",
+      "type": "concept"
+    },
+    "n_69f3b46c": {
+      "id": "n_69f3b46c",
+      "label": "Round-Mound",
+      "type": "concept"
+    },
+    "n_e5d7646c": {
+      "id": "n_e5d7646c",
+      "label": "powers",
+      "type": "concept"
+    },
+    "n_26db55dd": {
+      "id": "n_26db55dd",
+      "label": "Teammates",
+      "type": "concept"
+    },
+    "n_b2ea028c": {
+      "id": "n_b2ea028c",
+      "label": "Star Trek",
+      "type": "concept"
+    },
+    "n_8a31a625": {
+      "id": "n_8a31a625",
+      "label": "Chicago Bulls",
+      "type": "concept"
+    },
+    "n_fea0db9f": {
+      "id": "n_fea0db9f",
+      "label": "Larry",
+      "type": "concept"
+    },
+    "n_147f1cd4": {
+      "id": "n_147f1cd4",
+      "label": "a star",
+      "type": "concept"
+    },
+    "n_f895dc0e": {
+      "id": "n_f895dc0e",
+      "label": "That's all, folks!",
+      "type": "concept"
+    },
+    "n_bd33e3a3": {
+      "id": "n_bd33e3a3",
+      "label": "Babe",
+      "type": "concept"
+    },
+    "n_fb1c967a": {
+      "id": "n_fb1c967a",
+      "label": "home",
+      "type": "concept"
+    }
+  },
+  "hyperedges": [
+    {
+      "id": "e_d421fcf5",
+      "label": "written_by",
+      "source": [
+        "Space Jam"
+      ],
+      "target": [
+        "Leo Benvenuti"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_a6fced3b",
+      "label": "hosted_on",
+      "source": [
+        "Space Jam"
+      ],
+      "target": [
+        "Scripts.com"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_13368668",
+      "label": "has_total_pages",
+      "source": [
+        "Space Jam"
+      ],
+      "target": [
+        "33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_402a95c5",
+      "label": "speaks_to",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Pops"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_48f3dcce",
+      "label": "father_of",
+      "source": [
+        "Pops"
+      ],
+      "target": [
+        "Michael"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_04f1841f",
+      "label": "practices_sport",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_3919870e",
+      "label": "aspires_to_attend",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "North Carolina"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_9f052313",
+      "label": "aspires_to_play_league",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "NBA"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_13bea33c",
+      "label": "aspires_to_play_sport",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Baseball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_b2614117",
+      "label": "played_sport",
+      "source": [
+        "Pops"
+      ],
+      "target": [
+        "Baseball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_ab6fbc8d",
+      "label": "narrates_future_retirement_from",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_6a0c96cf",
+      "label": "states_father_witnessed",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "last game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_9744eeca",
+      "label": "previously_played_position",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Pitcher"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_1fd2ada1",
+      "label": "plans_to_play_position",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Outfield"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_e9af8b52",
+      "label": "express_dissatisfaction_about",
+      "source": [
+        "Customers"
+      ],
+      "target": [
+        "Current attractions"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_43b44a08",
+      "label": "refuse_to_return_to",
+      "source": [
+        "Customers"
+      ],
+      "target": [
+        "Venue"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_6ef1895e",
+      "label": "demands",
+      "source": [
+        "Boss"
+      ],
+      "target": [
+        "New attractions"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_116fe350",
+      "label": "enforces_policy",
+      "source": [
+        "Boss"
+      ],
+      "target": [
+        "The customer is always right"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_5bb05ac5",
+      "label": "agree_on_theme",
+      "source": [
+        "Boss",
+        "Subordinate"
+      ],
+      "target": [
+        "Looney"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_2c0eccba",
+      "label": "requires",
+      "source": [
+        "Boss"
+      ],
+      "target": [
+        "Big, shiny new things"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d3aa95e25afa509d138372beb3a31c13"
+    },
+    {
+      "id": "e_53b1cf68",
+      "label": "are_from",
+      "source": [
+        "Looney Tunes"
+      ],
+      "target": [
+        "Earth"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_dd86620c",
+      "label": "plans_to_capture",
+      "source": [
+        "Moron Mountain Minions"
+      ],
+      "target": [
+        "Looney Tunes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_70643f9f",
+      "label": "ordered_to_retrieve",
+      "source": [
+        "Moron Mountain Minions"
+      ],
+      "target": [
+        "Looney Tunes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_427bb07b",
+      "label": "wears",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "uniform"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_36721e4e",
+      "label": "autographed",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_a1ec204f",
+      "label": "recorded",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "strikeout"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_7d8dcaf1",
+      "label": "has_occupation",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "publicist"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_e70cc36a",
+      "label": "employed_by",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "the Baron"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_255aff58",
+      "label": "aims_to_make_life_easier_for",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_997243af",
+      "label": "guarantees_protection_for",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_21c2562d",
+      "label": "offers_to_drive",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_917c27aa",
+      "label": "offers_to_pick_up_laundry_for",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_908d654f",
+      "label": "offers_to_baby_sit_kids_of",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_afab7d1b",
+      "label": "seeks",
+      "source": [
+        "Moron Mountain Minions"
+      ],
+      "target": [
+        "Bugs Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_a24932a8",
+      "label": "has_trait",
+      "source": [
+        "Bugs Bunny"
+      ],
+      "target": [
+        "great big long ears"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_0275d7b6",
+      "label": "moves_by",
+      "source": [
+        "Bugs Bunny"
+      ],
+      "target": [
+        "hopping"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_ee8f61ca",
+      "label": "says_phrase",
+      "source": [
+        "Bugs Bunny"
+      ],
+      "target": [
+        "What's up, doc?"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_1c6a654e",
+      "label": "suffers_from",
+      "source": [
+        "Elmer Fudd"
+      ],
+      "target": [
+        "whopper headache"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_ce8f1849",
+      "label": "claims_leap_for",
+      "source": [
+        "Moron Mountain Minions"
+      ],
+      "target": [
+        "Moron Mountain"
+      ],
+      "weight": 1.0,
+      "chunk_id": "020f1c2e3fc4ec0d3e65eacade457f4e"
+    },
+    {
+      "id": "e_9ee9ac4a",
+      "label": "addresses",
+      "source": [
+        "unnamed speaker"
+      ],
+      "target": [
+        "Mr. Looney Tune"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_a4e8d34a",
+      "label": "instructs",
+      "source": [
+        "unnamed speaker"
+      ],
+      "target": [
+        "bunny",
+        "gather up Tune pals"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_20405208",
+      "label": "transporting",
+      "source": [
+        "unnamed captors"
+      ],
+      "target": [
+        "bunny",
+        "Tune pals"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_b50873b0",
+      "label": "has_visibility_status",
+      "source": [
+        "exit on 65"
+      ],
+      "target": [
+        "not clearly marked"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_a7375f46",
+      "label": "knows",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "Mike"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_cd9f0a96",
+      "label": "has_alias",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "Sherm"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_62dc035c",
+      "label": "follows_career_of",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "Mike"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_4a22213d",
+      "label": "rates_as",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "Mike",
+        "greatest athlete that's ever lived"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_8d3c9f57",
+      "label": "has_malfunctioning_part",
+      "source": [
+        "vehicle"
+      ],
+      "target": [
+        "door"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_bcb94a9b",
+      "label": "has_classification",
+      "source": [
+        "vehicle"
+      ],
+      "target": [
+        "classic"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_77b1df0c",
+      "label": "has_condition",
+      "source": [
+        "vehicle"
+      ],
+      "target": [
+        "smoking"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_fdb2622c",
+      "label": "has_architectural_style",
+      "source": [
+        "house"
+      ],
+      "target": [
+        "Colonial"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_7bad5746",
+      "label": "attacks",
+      "source": [
+        "Charles"
+      ],
+      "target": [
+        "Mr. Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_f0474d79",
+      "label": "is_type",
+      "source": [
+        "Charles"
+      ],
+      "target": [
+        "dog"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_89f9ae74",
+      "label": "also_called",
+      "source": [
+        "Charles"
+      ],
+      "target": [
+        "Pooch"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_c98148f1",
+      "label": "played",
+      "source": [
+        "Jeff"
+      ],
+      "target": [
+        "game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_a16b6751",
+      "label": "declines_to_discuss",
+      "source": [
+        "Jeff"
+      ],
+      "target": [
+        "game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_afb3c616",
+      "label": "asks_wellbeing_of",
+      "source": [
+        "unnamed speaker"
+      ],
+      "target": [
+        "Jeff"
+      ],
+      "weight": 1.0,
+      "chunk_id": "de44e9a3a5cc918f97f14ab12614651f"
+    },
+    {
+      "id": "e_4f172ef6",
+      "label": "lost_points_in",
+      "source": [
+        "Jeff"
+      ],
+      "target": [
+        "average",
+        "32 points"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_7fef38a7",
+      "label": "has_batting_average",
+      "source": [
+        "Jeff"
+      ],
+      "target": [
+        ".685"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_adfb375c",
+      "label": "consists_of",
+      "source": [
+        "Meal"
+      ],
+      "target": [
+        "Chicken",
+        "Collard greens"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_1f27334b",
+      "label": "had_performance_type",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "career day"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_56531496",
+      "label": "had_strikeouts",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "3"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_ef02211a",
+      "label": "has_batting_average",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        ".214"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_033ecdbc",
+      "label": "has_batting_average_equal_to",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "weight"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_5252050b",
+      "label": "broadcasting",
+      "source": [
+        "TV"
+      ],
+      "target": [
+        "Michael Jordan",
+        "Road Runner"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_8305dac3",
+      "label": "attending",
+      "source": [
+        "Cartoon Characters"
+      ],
+      "target": [
+        "Cartoon Character Union Meeting"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_07609be6",
+      "label": "has_urgency",
+      "source": [
+        "Cartoon Character Union Meeting"
+      ],
+      "target": [
+        "emergency"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_034ae868",
+      "label": "has_page_number",
+      "source": [
+        "Document"
+      ],
+      "target": [
+        "7/33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_503e231e",
+      "label": "declared_status",
+      "source": [
+        "Captors"
+      ],
+      "target": [
+        "Prisoners"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_e2e88c84",
+      "label": "transporting_to",
+      "source": [
+        "Captors"
+      ],
+      "target": [
+        "theme park in outer space"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_f514104e",
+      "label": "displayed_for",
+      "source": [
+        "Prisoners"
+      ],
+      "target": [
+        "customers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_affd8323",
+      "label": "mandates",
+      "source": [
+        "Rule book"
+      ],
+      "target": [
+        "Give them a chance to defend themselves"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_ca082a1c",
+      "label": "must_allow",
+      "source": [
+        "Captors"
+      ],
+      "target": [
+        "Prisoners",
+        "defend themselves"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_f44a914f",
+      "label": "addressing",
+      "source": [
+        "Leader"
+      ],
+      "target": [
+        "troops"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_49fd79d0",
+      "label": "is_member_of",
+      "source": [
+        "Private Porkster"
+      ],
+      "target": [
+        "troops"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_011f7bd4",
+      "label": "selecting",
+      "source": [
+        "troops"
+      ],
+      "target": [
+        "battlefield"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_e4868524",
+      "label": "proposed_challenge",
+      "source": [
+        "Private Porkster"
+      ],
+      "target": [
+        "spelling bee"
+      ],
+      "weight": 1.0,
+      "chunk_id": "52dabbcdc9ad25f8fe96bb0814765b30"
+    },
+    {
+      "id": "e_3163c3bb",
+      "label": "instructs_action",
+      "source": [
+        "Unnamed character"
+      ],
+      "target": [
+        "Sly",
+        "Take a deep breath"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_13380e99",
+      "label": "plans_to_capture",
+      "source": [
+        "Unnamed character"
+      ],
+      "target": [
+        "Little bird",
+        "Wait till old lady's gone"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_ed2620c3",
+      "label": "have_physical_attributes",
+      "source": [
+        "Invading aliens"
+      ],
+      "target": [
+        "Small arms",
+        "Short legs",
+        "Not very fast",
+        "Can't jump high"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_1680deb1",
+      "label": "challenges_to_sport",
+      "source": [
+        "Invading aliens"
+      ],
+      "target": [
+        "Humans",
+        "Basketball game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_ba716c39",
+      "label": "has_team_size",
+      "source": [
+        "Basketball"
+      ],
+      "target": [
+        "5 men"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_9477202c",
+      "label": "features_players",
+      "source": [
+        "National Basketball Association"
+      ],
+      "target": [
+        "Best players in the world"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_dd8bf00e",
+      "label": "dominates_opponents",
+      "source": [
+        "Barkley"
+      ],
+      "target": [
+        "Opponents"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_433f8b43",
+      "label": "misinterprets_phrase",
+      "source": [
+        "Spectators"
+      ],
+      "target": [
+        "Barkley is killing us",
+        "Someone's killing someone"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_5a99da59",
+      "label": "steals_talent_from",
+      "source": [
+        "Antagonist"
+      ],
+      "target": [
+        "Barkley",
+        "Talent"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_aece109e",
+      "label": "experiences_fatigue_during",
+      "source": [
+        "Barkley"
+      ],
+      "target": [
+        "Game",
+        "Fatigue"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_812d1538",
+      "label": "calls_to_action",
+      "source": [
+        "Teammate"
+      ],
+      "target": [
+        "Patrick",
+        "Showtime"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_5a781fa0",
+      "label": "placed_on_disabled_list",
+      "source": [
+        "5 NBA players"
+      ],
+      "target": [
+        "Disabled list",
+        "Last 24 hours"
+      ],
+      "weight": 1.0,
+      "chunk_id": "1560ae21db9a5f4c3f808f6f79f573dd"
+    },
+    {
+      "id": "e_87a5d6a9",
+      "label": "contains_page_indicator",
+      "source": [
+        "Text Chunk"
+      ],
+      "target": [
+        "12/33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_9270d775",
+      "label": "contains_page_indicator",
+      "source": [
+        "Text Chunk"
+      ],
+      "target": [
+        "13/33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_d2ce1882",
+      "label": "addresses_as",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "associate",
+        "personal assistant"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_4f05c354",
+      "label": "calls_weapon",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "personal assistant"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_12fbee4a",
+      "label": "orders_to_leave",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "personal assistant"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_035934fa",
+      "label": "states_must_face_reality",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "NBA"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_277316a7",
+      "label": "needs",
+      "source": [
+        "NBA"
+      ],
+      "target": [
+        "new players with talent"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_5caaeb37",
+      "label": "asks_about_shot_at",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "professional career"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_8f0b75bc",
+      "label": "describes_as",
+      "source": [
+        "Unknown Speaker"
+      ],
+      "target": [
+        "basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_84d8ab80",
+      "label": "comments_on_race_of",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Larry Bird"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_96a7ee69",
+      "label": "compliments_shot_of",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Larry Bird"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_142edd8a",
+      "label": "advises_to",
+      "source": [
+        "Advisor"
+      ],
+      "target": [
+        "Visualize where you want it to go"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_9a9f6e9a",
+      "label": "advises_to",
+      "source": [
+        "Advisor"
+      ],
+      "target": [
+        "Be the ball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_5dbba05a",
+      "label": "achieves",
+      "source": [
+        "Golfer"
+      ],
+      "target": [
+        "first hole in one"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_883a5b23",
+      "label": "requests",
+      "source": [
+        "Photographer"
+      ],
+      "target": [
+        "picture"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_d28ce9f0",
+      "label": "identifies_as",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_72c9898b",
+      "label": "known_as",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "Air Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_f2a466f9",
+      "label": "requests_autograph_from",
+      "source": [
+        "Fan"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_11a9d87a",
+      "label": "requests_as_term_for",
+      "source": [
+        "Fan"
+      ],
+      "target": [
+        "John Hancock"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_1917fa31",
+      "label": "identifies_as",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Bugs Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_caab1a8d",
+      "label": "questions_reality_of",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Bugs Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_d5c2cb8b",
+      "label": "asks_to_examine",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Doctor"
+      ],
+      "weight": 1.0,
+      "chunk_id": "eeeb3ca3f339616fe37464f31461131e"
+    },
+    {
+      "id": "e_693b4f5e",
+      "label": "want_to_enslave_in",
+      "source": [
+        "Aliens from outer space"
+      ],
+      "target": [
+        "Protagonists",
+        "theme park"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_59028f9f",
+      "label": "challenged_to_game",
+      "source": [
+        "Protagonists"
+      ],
+      "target": [
+        "Aliens from outer space",
+        "basketball game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_6208384c",
+      "label": "transform_size_from_to",
+      "source": [
+        "Aliens from outer space"
+      ],
+      "target": [
+        "little",
+        "huge"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_54d5c606",
+      "label": "will_force_performance_type",
+      "source": [
+        "Aliens from outer space"
+      ],
+      "target": [
+        "Protagonists",
+        "stand-up"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_b9c0335a",
+      "label": "will_imprison_like",
+      "source": [
+        "Aliens from outer space"
+      ],
+      "target": [
+        "Protagonists",
+        "wild animals"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_595d5d34",
+      "label": "requests_help_from",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "Mike"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_dd5ad904",
+      "label": "has_scheduled_game",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "baseball game",
+        "tomorrow"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_8583f7de",
+      "label": "has_not_played_in",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "in a long time"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_ff9d87a3",
+      "label": "will_need_replacement_if",
+      "source": [
+        "NBA"
+      ],
+      "target": [
+        "Mike is gone",
+        "some new people"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_8785008d",
+      "label": "knows_person",
+      "source": [
+        "You"
+      ],
+      "target": [
+        "David Stern"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_40fdfe0f",
+      "label": "contains_equipment",
+      "source": [
+        "Facility"
+      ],
+      "target": [
+        "hoops",
+        "weights",
+        "balls"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_7be8954c",
+      "label": "has_condition",
+      "source": [
+        "Facility"
+      ],
+      "target": [
+        "a mess"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_dfe7bcfa",
+      "label": "is_exclusive_property_of",
+      "source": [
+        "Content"
+      ],
+      "target": [
+        "Warner Bros. lnc."
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_c1102d40",
+      "label": "is_trademark_of",
+      "source": [
+        "Content"
+      ],
+      "target": [
+        "Warner Bros. lnc."
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_bf6a562c",
+      "label": "are_named",
+      "source": [
+        "Aliens"
+      ],
+      "target": [
+        "Monstars"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_65ccc7ac",
+      "label": "call_themselves",
+      "source": [
+        "Aliens"
+      ],
+      "target": [
+        "Mean Team"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_f7bd1f37",
+      "label": "reference_group",
+      "source": [
+        "Aliens"
+      ],
+      "target": [
+        "Dream Team"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_0d923476",
+      "label": "has_page_number",
+      "source": [
+        "Document"
+      ],
+      "target": [
+        "14/33",
+        "15/33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_9dd9f11c",
+      "label": "is_described_as",
+      "source": [
+        "Stan Podolak"
+      ],
+      "target": [
+        "pathetic"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_795cf05e",
+      "label": "wants_to_avoid",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "Stan Podolak"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2386de356b5a9521ed6ad1acf323845b"
+    },
+    {
+      "id": "e_83529f2a",
+      "label": "affects",
+      "source": [
+        "mysterious ailment"
+      ],
+      "target": [
+        "players",
+        "coordination"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_4551704b",
+      "label": "addresses",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Coach"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_9deadd15",
+      "label": "states_status",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "retired just in time"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_e9a0ef86",
+      "label": "instructs",
+      "source": [
+        "Coach"
+      ],
+      "target": [
+        "Speaker",
+        "wear Nikes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_4f7ae9dd",
+      "label": "instructs",
+      "source": [
+        "Coach"
+      ],
+      "target": [
+        "Speaker",
+        "grab Gatorade"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_92a06829",
+      "label": "suggests",
+      "source": [
+        "Coach"
+      ],
+      "target": [
+        "get Big Mac"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_9d4d9d1e",
+      "label": "travels_to",
+      "source": [
+        "Team"
+      ],
+      "target": [
+        "Los Angeles Forum"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_afccc9cf",
+      "label": "refuses_to_take",
+      "source": [
+        "Lakers"
+      ],
+      "target": [
+        "court"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_7095268d",
+      "label": "starts_in",
+      "source": [
+        "Game"
+      ],
+      "target": [
+        "5 minutes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_1c5550bf",
+      "label": "cannot_enter",
+      "source": [
+        "Team"
+      ],
+      "target": [
+        "locker room"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_9ed784e6",
+      "label": "contains",
+      "source": [
+        "locker room"
+      ],
+      "target": [
+        "germs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_0b7def5c",
+      "label": "affected",
+      "source": [
+        "germs"
+      ],
+      "target": [
+        "Barkley",
+        "Ewing"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_44f363de",
+      "label": "affected_by_germs_in",
+      "source": [
+        "Barkley",
+        "Ewing"
+      ],
+      "target": [
+        "New York"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_fa49820f",
+      "label": "addresses",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Cedric"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_cb074e8a",
+      "label": "travels_faster_than",
+      "source": [
+        "Bacteria"
+      ],
+      "target": [
+        "speed of light"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_5d015cdc",
+      "label": "compared_to",
+      "source": [
+        "Situation"
+      ],
+      "target": [
+        "Invasion of the Body Snatchers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_15f79e6b",
+      "label": "instructs",
+      "source": [
+        "Coach"
+      ],
+      "target": [
+        "Team",
+        "dress in hallway"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_db6158d9",
+      "label": "asks_about",
+      "source": [
+        "Coach"
+      ],
+      "target": [
+        "Team",
+        "played basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_f1071d4e",
+      "label": "has_played",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_32c65ed1",
+      "label": "prefers",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "purple and gold"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_a840f376",
+      "label": "compliments",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Daffy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_0c06b6e3",
+      "label": "claim_turn_to_use",
+      "source": [
+        "little aliens"
+      ],
+      "target": [
+        "court"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_69be285d",
+      "label": "taunts_about",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "boys",
+        "height"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_70d233f1",
+      "label": "transformed_into",
+      "source": [
+        "little aliens"
+      ],
+      "target": [
+        "superstars"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_b33082b7",
+      "label": "identified_as",
+      "source": [
+        "little aliens"
+      ],
+      "target": [
+        "monsters"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_d759bb53",
+      "label": "identified_as",
+      "source": [
+        "little aliens"
+      ],
+      "target": [
+        "Monstars"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_32b91663",
+      "label": "needs",
+      "source": [
+        "Team"
+      ],
+      "target": [
+        "help"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_15518b32",
+      "label": "declared_as",
+      "source": [
+        "little fella"
+      ],
+      "target": [
+        "friend",
+        "ally"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b2946f709b6412b400fcfa9cdec1a6e7"
+    },
+    {
+      "id": "e_19a6b122",
+      "label": "accused_of_disobeying",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "mama"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_8198f372",
+      "label": "loves",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "mama"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_658ddb95",
+      "label": "states_will_not_date",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Madonna"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_7563d2c6",
+      "label": "fixes",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "divot"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_988f0e59",
+      "label": "has_name",
+      "source": [
+        "Lola Bunny"
+      ],
+      "target": [
+        "Lola Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_6d946972",
+      "label": "has_name",
+      "source": [
+        "Bugs"
+      ],
+      "target": [
+        "Bugs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_3a827fc2",
+      "label": "challenges_to_play",
+      "source": [
+        "Bugs"
+      ],
+      "target": [
+        "Lola Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_d4c62242",
+      "label": "objects_to_be_called",
+      "source": [
+        "Lola Bunny"
+      ],
+      "target": [
+        "doll"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_597adfed",
+      "label": "believes_is_interested_in",
+      "source": [
+        "Bugs"
+      ],
+      "target": [
+        "Lola Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_0ddd9a86",
+      "label": "needs",
+      "source": [
+        "Bugs"
+      ],
+      "target": [
+        "sneakers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_31b8daf7",
+      "label": "owns",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "North Carolina shorts"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_ddd78f8c",
+      "label": "wore_under",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Chicago Bulls uniform"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_98750ce5",
+      "label": "wore_during",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Chicago Bulls uniform"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_01101726",
+      "label": "located_in",
+      "source": [
+        "Michael's house"
+      ],
+      "target": [
+        "3-D land"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_8bea1b48",
+      "label": "searches_for",
+      "source": [
+        "Looney Tunes characters"
+      ],
+      "target": [
+        "Michael's basketball stuff"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_97510abe",
+      "label": "depicts",
+      "source": [
+        "mugs"
+      ],
+      "target": [
+        "Looney Tunes characters"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_edda17a9",
+      "label": "depicts",
+      "source": [
+        "lunch boxes"
+      ],
+      "target": [
+        "Looney Tunes characters"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_f34d1925",
+      "label": "earned_from_merchandise",
+      "source": [
+        "Looney Tunes characters"
+      ],
+      "target": [
+        "0"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_00b35188",
+      "label": "needs",
+      "source": [
+        "Looney Tunes characters"
+      ],
+      "target": [
+        "new agent"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_d6def3c8",
+      "label": "found",
+      "source": [
+        "Looney Tunes characters"
+      ],
+      "target": [
+        "trophy room"
+      ],
+      "weight": 1.0,
+      "chunk_id": "96fdbd36ac0d02af439610adfd194801"
+    },
+    {
+      "id": "e_b5635328",
+      "label": "finds",
+      "source": [
+        "Unnamed Character"
+      ],
+      "target": [
+        "shorts"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_b9d7ff1c",
+      "label": "vows_never_to_work_with",
+      "source": [
+        "Unnamed Character"
+      ],
+      "target": [
+        "dogs",
+        "children"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_bb4e6166",
+      "label": "identified_as",
+      "source": [
+        "Beethoven"
+      ],
+      "target": [
+        "dog"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_975a4d36",
+      "label": "have_upcoming_event",
+      "source": [
+        "Looney Tunes"
+      ],
+      "target": [
+        "big basketball game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_302335d4",
+      "label": "playing_in",
+      "source": [
+        "your dad"
+      ],
+      "target": [
+        "big basketball game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_58a70877",
+      "label": "possess",
+      "source": [
+        "Little aliens from outer space"
+      ],
+      "target": [
+        "your bodies"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_85a3716f",
+      "label": "need_talent_to_win_against",
+      "source": [
+        "Little aliens from outer space"
+      ],
+      "target": [
+        "Bugs Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_86104328",
+      "label": "abducted_by",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "furry creatures"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_8db9b58f",
+      "label": "abducted_at_location",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "golf hole"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_47ae202f",
+      "label": "suggests_team_name",
+      "source": [
+        "Unnamed Character"
+      ],
+      "target": [
+        "The Ducks"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_7a824c75",
+      "label": "compares_team_to",
+      "source": [
+        "Unnamed Character"
+      ],
+      "target": [
+        "Mickey Mouse organization"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_f44974f5",
+      "label": "hugs",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "Unnamed Character"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_fe86da08",
+      "label": "requests_return_for",
+      "source": [
+        "Unnamed Character"
+      ],
+      "target": [
+        "Stan",
+        "practice"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_af51f1fb",
+      "label": "helping_friends_in",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "basketball game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_a6d0809e",
+      "label": "are",
+      "source": [
+        "Stan's friends"
+      ],
+      "target": [
+        "cartoon characters"
+      ],
+      "weight": 1.0,
+      "chunk_id": "8314edeaaf2b58d9eb11a262ba6de5ac"
+    },
+    {
+      "id": "e_73c13783",
+      "label": "ceased_playing",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_8e570ff3",
+      "label": "insults",
+      "source": [
+        "Crowd"
+      ],
+      "target": [
+        "Michael",
+        "baldy",
+        "washed up"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_32e3b5f1",
+      "label": "declares_greatest",
+      "source": [
+        "Supporter"
+      ],
+      "target": [
+        "Michael"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_4102fb06",
+      "label": "warns_about_mistake",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "Crowd"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_4602f36e",
+      "label": "identifies_as",
+      "source": [
+        "Fan"
+      ],
+      "target": [
+        "Charles Barkley"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_8db9bcf0",
+      "label": "denies_identity",
+      "source": [
+        "Fan"
+      ],
+      "target": [
+        "Charles Barkley"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_907ba53a",
+      "label": "claims_resembles",
+      "source": [
+        "Fan"
+      ],
+      "target": [
+        "Charles Barkley"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_e54af8b0",
+      "label": "measures_levels",
+      "source": [
+        "Doctor"
+      ],
+      "target": [
+        "Electrolyte levels",
+        "glucose",
+        "CBCs",
+        "RBCs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_74565ee5",
+      "label": "schedules_medical_tests",
+      "source": [
+        "Doctor"
+      ],
+      "target": [
+        "stress test",
+        "neurological battery",
+        "EEG"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_7c3ef2c5",
+      "label": "has_height",
+      "source": [
+        "Girl"
+      ],
+      "target": [
+        "five feet nothing"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_7dbf611e",
+      "label": "blocks_shot_of",
+      "source": [
+        "Girl"
+      ],
+      "target": [
+        "Michael"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_0e9c5039",
+      "label": "invades_body",
+      "source": [
+        "Creature"
+      ],
+      "target": [
+        "Michael",
+        "back",
+        "brain"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_edec2c4d",
+      "label": "inquires_about_performance_limitations",
+      "source": [
+        "Doctor"
+      ],
+      "target": [
+        "Michael",
+        "basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_66eb2915",
+      "label": "undergoes_medical_procedures",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "MRI",
+        "EKG",
+        "x-ray",
+        "laser beam"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_f1a08fb6",
+      "label": "vows_to_cease",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "swearing",
+        "getting technicals",
+        "trash-talking"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_2b2a4fbe",
+      "label": "considers_employment_at",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "farm"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_e8b1144c",
+      "label": "considers_returning_to",
+      "source": [
+        "Michael"
+      ],
+      "target": [
+        "jungle"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d7e4fbf765ada47e0c5ef01e1b694e36"
+    },
+    {
+      "id": "e_56641311",
+      "label": "claims_personal_attributes_and_role",
+      "source": [
+        "Unnamed Speaker"
+      ],
+      "target": [
+        "slow",
+        "large",
+        "dork",
+        "cheerleader"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_2462cd7c",
+      "label": "suspends_season_due_to",
+      "source": [
+        "Mr. Commissioner",
+        "team owners"
+      ],
+      "target": [
+        "basketball this season",
+        "health of our players"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_9ef82076",
+      "label": "declares_location_status",
+      "source": [
+        "Mr. Commissioner"
+      ],
+      "target": [
+        "the place",
+        "sealed off"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_7be5436c",
+      "label": "introduced_as_team_member_with_stats",
+      "source": [
+        "Tazmanian Devil"
+      ],
+      "target": [
+        "Tune Squad",
+        "2 foot 4",
+        "The Wonder From Down Under"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_4d089cb9",
+      "label": "introduced_as_team_member_with_stats",
+      "source": [
+        "Lola Bunny"
+      ],
+      "target": [
+        "Tune Squad",
+        "small forward",
+        "3 foot 2",
+        "The Heartthrob of the Hoops"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_caa4108f",
+      "label": "introduced_as_team_member_with_stats",
+      "source": [
+        "Daffy Duck"
+      ],
+      "target": [
+        "Tune Squad",
+        "power forward",
+        "The Quackster of the Courts"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_00e659f0",
+      "label": "introduced_as_team_member_with_stats",
+      "source": [
+        "Bugs Bunny"
+      ],
+      "target": [
+        "Tune Squad",
+        "point guard",
+        "3 foot 3",
+        "co-captain of the Tune Squad",
+        "The Doctor of Delight"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_05e0e62a",
+      "label": "introduced_as_team_member_with_stats",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "Tune Squad",
+        "player-coach of the Tune Squad",
+        "6 foot 6",
+        "North Carolina",
+        "His Royal Airness"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_1d3d2f0d",
+      "label": "questions_identity_of",
+      "source": [
+        "Audience"
+      ],
+      "target": [
+        "Michael Jordan",
+        "Looney Tune"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_88f01b14",
+      "label": "competes_in_event_from_location",
+      "source": [
+        "Challengers"
+      ],
+      "target": [
+        "Ultimate Game",
+        "Moron"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_18cc0ef5",
+      "label": "expresses_game_intent",
+      "source": [
+        "Unnamed Player"
+      ],
+      "target": [
+        "take it to the rack",
+        "have fun"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2cb2659771df7c09c7561e612380e193"
+    },
+    {
+      "id": "e_47141721",
+      "label": "cheers_for",
+      "source": [
+        "Crowd"
+      ],
+      "target": [
+        "Monstars"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_8c65b5bb",
+      "label": "praises",
+      "source": [
+        "Teammate"
+      ],
+      "target": [
+        "Mr. J"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_d64759fb",
+      "label": "is_against",
+      "source": [
+        "Physical violence"
+      ],
+      "target": [
+        "the rules"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_5168df4f",
+      "label": "asks_order_preference",
+      "source": [
+        "Server"
+      ],
+      "target": [
+        "Original Recipe",
+        "Extra Crispy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_a22ed5f3",
+      "label": "offers_food",
+      "source": [
+        "Server"
+      ],
+      "target": [
+        "Pie",
+        "Pork chop",
+        "Sorbet"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_ad596bd9",
+      "label": "holds_role",
+      "source": [
+        "Mr. Swackhammer"
+      ],
+      "target": [
+        "the boss"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_44e4e1cf",
+      "label": "stole_talent_from",
+      "source": [
+        "Monstars"
+      ],
+      "target": [
+        "NBA players"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_ae6a2cdb",
+      "label": "leading_at",
+      "source": [
+        "Monstars"
+      ],
+      "target": [
+        "Half-time"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_7dc0b8a7",
+      "label": "travels_to",
+      "source": [
+        "Monstars"
+      ],
+      "target": [
+        "Moron Mountain"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_d106899a",
+      "label": "risks_becoming",
+      "source": [
+        "Losing Team"
+      ],
+      "target": [
+        "slaves"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_72dc008d",
+      "label": "identified_as",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "chubby boy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_5fd0b2a6",
+      "label": "found_in",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "locker"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_c617f9d3",
+      "label": "smells_like",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "spy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_c71695ef",
+      "label": "offers_service",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "publicist"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_84ef0183",
+      "label": "encountered",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "bug-zapper"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_29c529e1",
+      "label": "must_do",
+      "source": [
+        "Team"
+      ],
+      "target": [
+        "come together",
+        "believe in ourselves"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_9acff94a",
+      "label": "loves",
+      "source": [
+        "Player"
+      ],
+      "target": [
+        "basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_0b65d5a1",
+      "label": "selected",
+      "source": [
+        "Player"
+      ],
+      "target": [
+        "mouse"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_4a0958b1",
+      "label": "uses_insult",
+      "source": [
+        "Opponent"
+      ],
+      "target": [
+        "doll"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_7b98eece",
+      "label": "forbids_use_of_term",
+      "source": [
+        "Female Player"
+      ],
+      "target": [
+        "doll"
+      ],
+      "weight": 1.0,
+      "chunk_id": "a30c1a5b71bc5b31b7a067683bc1a632"
+    },
+    {
+      "id": "e_807355e4",
+      "label": "has_page_number",
+      "source": [
+        "This document"
+      ],
+      "target": [
+        "27/33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_090d5e10",
+      "label": "calls",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Time out"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_8492ac43",
+      "label": "needs",
+      "source": [
+        "The team"
+      ],
+      "target": [
+        "a fifth player"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_68e77bb8",
+      "label": "was_actually",
+      "source": [
+        "secret stuff"
+      ],
+      "target": [
+        "water"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_4e2b79a8",
+      "label": "possessed_internal",
+      "source": [
+        "The players"
+      ],
+      "target": [
+        "special stuff"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_b9d6b77f",
+      "label": "plays_position",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "center"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_19bbb513",
+      "label": "instructed_to_guard",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "the big guy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_4cef4608",
+      "label": "vows_to_defeat",
+      "source": [
+        "Stan"
+      ],
+      "target": [
+        "the big guy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_fa3a6f93",
+      "label": "is_named",
+      "source": [
+        "The current location"
+      ],
+      "target": [
+        "Looney Tune Land"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_e442186c",
+      "label": "forfeits_without",
+      "source": [
+        "The team"
+      ],
+      "target": [
+        "the game",
+        "a fifth player"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_1313bc54",
+      "label": "addresses",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "doc"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_44d2e040",
+      "label": "addressed_as",
+      "source": [
+        "Your Airness"
+      ],
+      "target": [
+        "Sir Altitude"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_db4fc63f",
+      "label": "observes_actor_in",
+      "source": [
+        "Speaker"
+      ],
+      "target": [
+        "Dan Ackroyd",
+        "this picture"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_14eae5fc",
+      "label": "identified_as",
+      "source": [
+        "Dan Ackroyd"
+      ],
+      "target": [
+        "The fifth guy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_4d16be33",
+      "label": "needs_to_score",
+      "source": [
+        "The team"
+      ],
+      "target": [
+        "2 points"
+      ],
+      "weight": 1.0,
+      "chunk_id": "98cae40686d5bb75f77838877c728f9a"
+    },
+    {
+      "id": "e_f131b3d9",
+      "label": "refuses_to_lose_to",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "Monstars"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_11eae20f",
+      "label": "declares_teammate_status_with",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "Team"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_a5b4d4f4",
+      "label": "consumes",
+      "source": [
+        "Team"
+      ],
+      "target": [
+        "secret stuff"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_0d199c21",
+      "label": "acknowledges_conflict_with",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "health class"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_912d42d9",
+      "label": "motivates_to_win",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "Team"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_698acfce",
+      "label": "negotiates_stakes_for",
+      "source": [
+        "Protagonist",
+        "Opponent"
+      ],
+      "target": [
+        "game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_6d543203",
+      "label": "promises_to_return_talent_to",
+      "source": [
+        "Opponent"
+      ],
+      "target": [
+        "NBA players"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_1b336d7b",
+      "label": "claims_ownership_of_if_win",
+      "source": [
+        "Opponent"
+      ],
+      "target": [
+        "Protagonist"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_7b70dd4d",
+      "label": "wants_for",
+      "source": [
+        "Opponent"
+      ],
+      "target": [
+        "Protagonist",
+        "Moron Mountain"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_f50ba4fd",
+      "label": "assigns_role_to",
+      "source": [
+        "Opponent"
+      ],
+      "target": [
+        "Protagonist",
+        "star attraction"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_77e43575",
+      "label": "must_sign_autographs_for",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "paying customers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_aa7149a8",
+      "label": "must_play_one_on_one_with",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "paying customers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_30040321",
+      "label": "predicted_to_lose_to",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "paying customers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_48014219",
+      "label": "finalizes_agreement",
+      "source": [
+        "Protagonist",
+        "Opponent"
+      ],
+      "target": [
+        "Deal"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_01ac55df",
+      "label": "questions_decision_of",
+      "source": [
+        "Teammate"
+      ],
+      "target": [
+        "Protagonist"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_d37a1ad6",
+      "label": "asks_opinion_from",
+      "source": [
+        "Teammate"
+      ],
+      "target": [
+        "Doc"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_c0b148c4",
+      "label": "has_faith_in",
+      "source": [
+        "Protagonist"
+      ],
+      "target": [
+        "team"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_b132cb2c",
+      "label": "refuses_to_attend",
+      "source": [
+        "child"
+      ],
+      "target": [
+        "school"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_ba4b65cc",
+      "label": "wants_to_bake_cookies_with",
+      "source": [
+        "child"
+      ],
+      "target": [
+        "Mommy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c6026dab0dabdf7a6dfc90c8dffc7d1e"
+    },
+    {
+      "id": "e_21ed1906",
+      "label": "passes_to",
+      "source": [
+        "Tunes"
+      ],
+      "target": [
+        "girl bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_091a3e31",
+      "label": "passes_to",
+      "source": [
+        "Tunes"
+      ],
+      "target": [
+        "Mike"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_3bf53648",
+      "label": "refuses_to_play",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "defense"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_72ebab47",
+      "label": "promises_to_if_given_ball",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "score"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_42bdc324",
+      "label": "thrives_on",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "pressure"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_a8e49083",
+      "label": "strains",
+      "source": [
+        "Daf"
+      ],
+      "target": [
+        "trousers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_6660e7ad",
+      "label": "knows",
+      "source": [
+        "Mr. Murray"
+      ],
+      "target": [
+        "Producer"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_69135cce",
+      "label": "arrived_via",
+      "source": [
+        "Mr. Murray"
+      ],
+      "target": [
+        "teamster"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_68864f31",
+      "label": "wins",
+      "source": [
+        "Tunes"
+      ],
+      "target": [
+        "game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_3f8696ff",
+      "label": "evaluates_skill_for",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "NBA"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_7551ccd8",
+      "label": "retires_from",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_964688ae",
+      "label": "wants_to_remain",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "undefeated"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_5087caa5",
+      "label": "has_injury",
+      "source": [
+        "Mike"
+      ],
+      "target": [
+        "knees"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_2e278d7d",
+      "label": "threatens_return_to",
+      "source": [
+        "friends"
+      ],
+      "target": [
+        "Moron Mountain"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_8cb1dd77",
+      "label": "boards",
+      "source": [
+        "friends"
+      ],
+      "target": [
+        "spaceship"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_587d175e",
+      "label": "restores_talent_of",
+      "source": [
+        "Bugs"
+      ],
+      "target": [
+        "friends"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_12fad9bd",
+      "label": "no_longer_fits",
+      "source": [
+        "friends"
+      ],
+      "target": [
+        "clothes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_015492a6",
+      "label": "feels",
+      "source": [
+        "friends"
+      ],
+      "target": [
+        "insignificant"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_c2cc05f5",
+      "label": "contains_page",
+      "source": [
+        "Document"
+      ],
+      "target": [
+        "Page 28/33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_a0744d0d",
+      "label": "contains_page",
+      "source": [
+        "Document"
+      ],
+      "target": [
+        "Page 29/33"
+      ],
+      "weight": 1.0,
+      "chunk_id": "7e7ca24e5fbc1aff2f5ccc5c1c54af5a"
+    },
+    {
+      "id": "e_6c381d33",
+      "label": "ask_favor_of",
+      "source": [
+        "Looney Tunes characters"
+      ],
+      "target": [
+        "Mr. Bunny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_008e2ef8",
+      "label": "request_to_stay_at",
+      "source": [
+        "Looney Tunes characters"
+      ],
+      "target": [
+        "here"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_159c3f06",
+      "label": "express_hatred_for",
+      "source": [
+        "Looney Tunes characters"
+      ],
+      "target": [
+        "there"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_6d5ab42d",
+      "label": "is",
+      "source": [
+        "Current Time"
+      ],
+      "target": [
+        "Quarter past seven"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_be850f0f",
+      "label": "has_scheduled_event",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "baseball game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_11a0c600",
+      "label": "has_time_remaining_for",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "5 minutes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_e2998cfa",
+      "label": "is_late_for",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "baseball game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_246f862e",
+      "label": "introduces",
+      "source": [
+        "Announcer"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_db65109b",
+      "label": "evaluate_performance_as",
+      "source": [
+        "Basketball players"
+      ],
+      "target": [
+        "we suck"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_5b9bacc1",
+      "label": "plays_better_than",
+      "source": [
+        "Grandmother"
+      ],
+      "target": [
+        "Basketball players"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_6163f5b3",
+      "label": "is_described_as",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "short guy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_1e4fe7e1",
+      "label": "currently_plays_sport",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "baseball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_69fa0066",
+      "label": "does_not_play_sport_now",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "basketball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_4d8fdb80",
+      "label": "urges_to_touch",
+      "source": [
+        "Unnamed Speaker"
+      ],
+      "target": [
+        "Michael Jordan",
+        "the ball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_4621a637",
+      "label": "warns_of_consequence",
+      "source": [
+        "Unnamed Speaker"
+      ],
+      "target": [
+        "Michael Jordan",
+        "bad game for the rest of your career"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_173ca091",
+      "label": "warns_to_be_careful",
+      "source": [
+        "Unnamed Speaker"
+      ],
+      "target": [
+        "Pat"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_a3959254",
+      "label": "touches",
+      "source": [
+        "Mugsey"
+      ],
+      "target": [
+        "the ball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_56f97897",
+      "label": "regains_skill",
+      "source": [
+        "Mugsey"
+      ],
+      "target": [
+        "handle the rock"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_93dea200",
+      "label": "touches",
+      "source": [
+        "Round-Mound"
+      ],
+      "target": [
+        "the ball"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_0f813d69",
+      "label": "regains_skill",
+      "source": [
+        "Round-Mound"
+      ],
+      "target": [
+        "powers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_7a99d2aa",
+      "label": "invites_to_play",
+      "source": [
+        "Teammates"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_3b246219",
+      "label": "advises_to_leave_alone",
+      "source": [
+        "Teammates"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_3cd996f3",
+      "label": "compared_to",
+      "source": [
+        "Situation"
+      ],
+      "target": [
+        "Star Trek"
+      ],
+      "weight": 1.0,
+      "chunk_id": "b21e6d058bb420d83a84718b2953c3d4"
+    },
+    {
+      "id": "e_8d15e0ba",
+      "label": "welcomes_back",
+      "source": [
+        "Chicago Bulls"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d792ce67f90ecfdb8eea1b786a9b3d94"
+    },
+    {
+      "id": "e_a1a28d42",
+      "label": "could_have_been",
+      "source": [
+        "Larry"
+      ],
+      "target": [
+        "Michael Jordan"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d792ce67f90ecfdb8eea1b786a9b3d94"
+    },
+    {
+      "id": "e_8d5f9998",
+      "label": "is_told_cannot_play",
+      "source": [
+        "Michael Jordan"
+      ],
+      "target": [
+        "the game"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d792ce67f90ecfdb8eea1b786a9b3d94"
+    },
+    {
+      "id": "e_28ae11ca",
+      "label": "claims_ownership_of",
+      "source": [
+        "a star"
+      ],
+      "target": [
+        "That's all, folks!"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d792ce67f90ecfdb8eea1b786a9b3d94"
+    },
+    {
+      "id": "e_ddf08226",
+      "label": "tells_to_step_aside",
+      "source": [
+        "a star"
+      ],
+      "target": [
+        "Babe"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d792ce67f90ecfdb8eea1b786a9b3d94"
+    },
+    {
+      "id": "e_5d7f4cdf",
+      "label": "asks_to_go_home",
+      "source": [
+        "a star"
+      ],
+      "target": [
+        "home"
+      ],
+      "weight": 1.0,
+      "chunk_id": "d792ce67f90ecfdb8eea1b786a9b3d94"
+    }
+  ]
+}
