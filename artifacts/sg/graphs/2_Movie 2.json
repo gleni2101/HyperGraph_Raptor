@@ -1,0 +1,1266 @@
+{
+  "metadata": {
+    "created_at": "2026-04-08T09:59:09.347369",
+    "source_document": "2_Movie 2",
+    "version": "2.0"
+  },
+  "nodes": {
+    "n_4e735444": {
+      "id": "n_4e735444",
+      "label": "The SpongeBob SquarePants Movie",
+      "type": "concept"
+    },
+    "n_194cb913": {
+      "id": "n_194cb913",
+      "label": "November 19, 2004",
+      "type": "concept"
+    },
+    "n_27db6910": {
+      "id": "n_27db6910",
+      "label": "Nickelodeon Movies",
+      "type": "concept"
+    },
+    "n_9ceac2a0": {
+      "id": "n_9ceac2a0",
+      "label": "Paramount Pictures",
+      "type": "concept"
+    },
+    "n_8a0593d1": {
+      "id": "n_8a0593d1",
+      "label": "Stephen Hillenburg",
+      "type": "concept"
+    },
+    "n_8b981171": {
+      "id": "n_8b981171",
+      "label": "Derek Drymon",
+      "type": "concept"
+    },
+    "n_d25fa461": {
+      "id": "n_d25fa461",
+      "label": "Tim Hill",
+      "type": "concept"
+    },
+    "n_55e55251": {
+      "id": "n_55e55251",
+      "label": "Kent Osborne",
+      "type": "concept"
+    },
+    "n_d716368c": {
+      "id": "n_d716368c",
+      "label": "Gregor Narholz",
+      "type": "concept"
+    },
+    "n_e5b833d9": {
+      "id": "n_e5b833d9",
+      "label": "87 Minutes",
+      "type": "concept"
+    },
+    "n_387cb39e": {
+      "id": "n_387cb39e",
+      "label": "PG",
+      "type": "concept"
+    },
+    "n_790d5365": {
+      "id": "n_790d5365",
+      "label": "$141 Million Worldwide",
+      "type": "concept"
+    },
+    "n_58c1bb7b": {
+      "id": "n_58c1bb7b",
+      "label": "Traditional 2D Animation",
+      "type": "concept"
+    },
+    "n_4cc420a5": {
+      "id": "n_4cc420a5",
+      "label": "CGI",
+      "type": "concept"
+    },
+    "n_d844af5c": {
+      "id": "n_d844af5c",
+      "label": "Live-Action",
+      "type": "concept"
+    },
+    "n_e9061304": {
+      "id": "n_e9061304",
+      "label": "Bikini Bottom",
+      "type": "concept"
+    },
+    "n_ed280709": {
+      "id": "n_ed280709",
+      "label": "Pacific Ocean",
+      "type": "concept"
+    },
+    "n_fe557c37": {
+      "id": "n_fe557c37",
+      "label": "SpongeBob SquarePants",
+      "type": "concept"
+    },
+    "n_2e8d2db9": {
+      "id": "n_2e8d2db9",
+      "label": "Tom Kenny",
+      "type": "concept"
+    },
+    "n_d0eb1e69": {
+      "id": "n_d0eb1e69",
+      "label": "Patrick Star",
+      "type": "concept"
+    },
+    "n_5768d89b": {
+      "id": "n_5768d89b",
+      "label": "Bill Fagerbakke",
+      "type": "concept"
+    },
+    "n_a5715f04": {
+      "id": "n_a5715f04",
+      "label": "Plankton",
+      "type": "concept"
+    },
+    "n_4c5d8d8d": {
+      "id": "n_4c5d8d8d",
+      "label": "Mr. Lawrence",
+      "type": "concept"
+    },
+    "n_054e7ef9": {
+      "id": "n_054e7ef9",
+      "label": "Chum Bucket",
+      "type": "concept"
+    },
+    "n_b4b85104": {
+      "id": "n_b4b85104",
+      "label": "King Neptune",
+      "type": "concept"
+    },
+    "n_a13c2919": {
+      "id": "n_a13c2919",
+      "label": "Jeffrey Tambor",
+      "type": "concept"
+    },
+    "n_43b148c3": {
+      "id": "n_43b148c3",
+      "label": "the seas",
+      "type": "concept"
+    },
+    "n_d6f99570": {
+      "id": "n_d6f99570",
+      "label": "Mr. Eugene Krabs",
+      "type": "concept"
+    },
+    "n_22455263": {
+      "id": "n_22455263",
+      "label": "Clancy Brown",
+      "type": "concept"
+    },
+    "n_88851cbe": {
+      "id": "n_88851cbe",
+      "label": "Krusty Krab",
+      "type": "concept"
+    },
+    "n_3dc82670": {
+      "id": "n_3dc82670",
+      "label": "Squidward Tentacles",
+      "type": "concept"
+    },
+    "n_033ecdb5": {
+      "id": "n_033ecdb5",
+      "label": "Rodger Bumpass",
+      "type": "concept"
+    },
+    "n_da998402": {
+      "id": "n_da998402",
+      "label": "Cashier",
+      "type": "concept"
+    },
+    "n_8ff7dc0f": {
+      "id": "n_8ff7dc0f",
+      "label": "Sandy Cheeks",
+      "type": "concept"
+    },
+    "n_85724d76": {
+      "id": "n_85724d76",
+      "label": "Carolyn Lawrence",
+      "type": "concept"
+    },
+    "n_d65c4253": {
+      "id": "n_d65c4253",
+      "label": "Texas",
+      "type": "concept"
+    },
+    "n_80a22015": {
+      "id": "n_80a22015",
+      "label": "Mindy",
+      "type": "concept"
+    },
+    "n_fe1bc940": {
+      "id": "n_fe1bc940",
+      "label": "Scarlett Johansson",
+      "type": "concept"
+    },
+    "n_411802eb": {
+      "id": "n_411802eb",
+      "label": "Cyclops",
+      "type": "concept"
+    },
+    "n_b958aae0": {
+      "id": "n_b958aae0",
+      "label": "Neil Ross",
+      "type": "concept"
+    },
+    "n_a53d8154": {
+      "id": "n_a53d8154",
+      "label": "Shell City",
+      "type": "concept"
+    },
+    "n_291d87a7": {
+      "id": "n_291d87a7",
+      "label": "King Neptune's crown",
+      "type": "concept"
+    },
+    "n_a0fc581a": {
+      "id": "n_a0fc581a",
+      "label": "The Campfire Song Song",
+      "type": "concept"
+    },
+    "n_5ad2f242": {
+      "id": "n_5ad2f242",
+      "label": "citizens of Bikini Bottom",
+      "type": "concept"
+    },
+    "n_61d97380": {
+      "id": "n_61d97380",
+      "label": "Dried sea creatures",
+      "type": "concept"
+    },
+    "n_7f2bc8cf": {
+      "id": "n_7f2bc8cf",
+      "label": "Plankton's minions",
+      "type": "concept"
+    },
+    "n_e6f31817": {
+      "id": "n_e6f31817",
+      "label": "Manager promotion",
+      "type": "concept"
+    },
+    "n_87745f01": {
+      "id": "n_87745f01",
+      "label": "David Hasselhoff",
+      "type": "concept"
+    },
+    "n_a12d0b6a": {
+      "id": "n_a12d0b6a",
+      "label": "Innocence vs. Cynicism",
+      "type": "concept"
+    },
+    "n_969eb6d1": {
+      "id": "n_969eb6d1",
+      "label": "Friendship and Loyalty",
+      "type": "concept"
+    },
+    "n_2d884624": {
+      "id": "n_2d884624",
+      "label": "Growing Up",
+      "type": "concept"
+    },
+    "n_e81d8ea1": {
+      "id": "n_e81d8ea1",
+      "label": "Greed vs. Integrity",
+      "type": "concept"
+    },
+    "n_8e1bc206": {
+      "id": "n_8e1bc206",
+      "label": "Innocence",
+      "type": "concept"
+    },
+    "n_067a3ee7": {
+      "id": "n_067a3ee7",
+      "label": "Integrity",
+      "type": "concept"
+    },
+    "n_8c934964": {
+      "id": "n_8c934964",
+      "label": "Cynicism",
+      "type": "concept"
+    },
+    "n_c610d1e4": {
+      "id": "n_c610d1e4",
+      "label": "Greed",
+      "type": "concept"
+    },
+    "n_eb352319": {
+      "id": "n_eb352319",
+      "label": "Series Finale",
+      "type": "concept"
+    },
+    "n_b9788842": {
+      "id": "n_b9788842",
+      "label": "end the story",
+      "type": "concept"
+    },
+    "n_f8b1e2f5": {
+      "id": "n_f8b1e2f5",
+      "label": "Nickelodeon",
+      "type": "concept"
+    },
+    "n_076e5115": {
+      "id": "n_076e5115",
+      "label": "SpongeBob SquarePants series",
+      "type": "concept"
+    },
+    "n_f2ba09c7": {
+      "id": "n_f2ba09c7",
+      "label": "Ocean Man",
+      "type": "concept"
+    },
+    "n_1c0c58b8": {
+      "id": "n_1c0c58b8",
+      "label": "Ween",
+      "type": "concept"
+    },
+    "n_05c1f764": {
+      "id": "n_05c1f764",
+      "label": "Avril Lavigne",
+      "type": "concept"
+    },
+    "n_8c323f1c": {
+      "id": "n_8c323f1c",
+      "label": "Wilco",
+      "type": "concept"
+    },
+    "n_80a1da69": {
+      "id": "n_80a1da69",
+      "label": "The Flaming Lips",
+      "type": "concept"
+    },
+    "n_c94969fa": {
+      "id": "n_c94969fa",
+      "label": "Goofy Goober Rock",
+      "type": "concept"
+    },
+    "n_05059fb0": {
+      "id": "n_05059fb0",
+      "label": "1980s rock movies",
+      "type": "concept"
+    },
+    "n_4ebf3d56": {
+      "id": "n_4ebf3d56",
+      "label": "The SpongeBob Movie: Sponge Out of Water",
+      "type": "concept"
+    },
+    "n_032668fb": {
+      "id": "n_032668fb",
+      "label": "2015",
+      "type": "concept"
+    },
+    "n_6ea8171e": {
+      "id": "n_6ea8171e",
+      "label": "The SpongeBob Movie: Sponge on the Run",
+      "type": "concept"
+    },
+    "n_c0d1a4cb": {
+      "id": "n_c0d1a4cb",
+      "label": "2020",
+      "type": "concept"
+    },
+    "n_b604054a": {
+      "id": "n_b604054a",
+      "label": "2018",
+      "type": "concept"
+    },
+    "n_f810dd85": {
+      "id": "n_f810dd85",
+      "label": "68%",
+      "type": "concept"
+    },
+    "n_d3e73bf8": {
+      "id": "n_d3e73bf8",
+      "label": "66/100",
+      "type": "concept"
+    },
+    "n_73b65bc4": {
+      "id": "n_73b65bc4",
+      "label": "A-",
+      "type": "concept"
+    },
+    "n_60b9905f": {
+      "id": "n_60b9905f",
+      "label": "The film",
+      "type": "concept"
+    },
+    "n_1326afa1": {
+      "id": "n_1326afa1",
+      "label": "children's entertainment",
+      "type": "concept"
+    },
+    "n_9bab8111": {
+      "id": "n_9bab8111",
+      "label": "adult humor",
+      "type": "concept"
+    },
+    "n_06a864e3": {
+      "id": "n_06a864e3",
+      "label": "slapstick for kids",
+      "type": "concept"
+    },
+    "n_0f6cf10d": {
+      "id": "n_0f6cf10d",
+      "label": "satire for adults",
+      "type": "concept"
+    },
+    "n_bf6f7df6": {
+      "id": "n_bf6f7df6",
+      "label": "early 2000s animation",
+      "type": "concept"
+    },
+    "n_31b5d43d": {
+      "id": "n_31b5d43d",
+      "label": "TV property",
+      "type": "concept"
+    },
+    "n_09518b2c": {
+      "id": "n_09518b2c",
+      "label": "big screen",
+      "type": "concept"
+    },
+    "n_8c69e349": {
+      "id": "n_8c69e349",
+      "label": "soul",
+      "type": "concept"
+    }
+  },
+  "hyperedges": [
+    {
+      "id": "e_5d109db4",
+      "label": "has_release_date",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "November 19, 2004"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_81d09752",
+      "label": "produced_by",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Nickelodeon Movies",
+        "Paramount Pictures"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_08f6c8b3",
+      "label": "directed_by",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Stephen Hillenburg"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_eee454cd",
+      "label": "written_by",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Stephen Hillenburg",
+        "Derek Drymon",
+        "Tim Hill",
+        "Kent Osborne"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_42fa9184",
+      "label": "has_score_by",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Gregor Narholz"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_605c3e1b",
+      "label": "has_runtime",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "87 Minutes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_25eeb6a3",
+      "label": "has_rating",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "PG"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_318b7c0a",
+      "label": "has_box_office",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "$141 Million Worldwide"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_81efa69f",
+      "label": "uses_animation_style",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Traditional 2D Animation",
+        "CGI",
+        "Live-Action"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_1da067a8",
+      "label": "set_in",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Bikini Bottom"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_7babd95f",
+      "label": "located_in",
+      "source": [
+        "Bikini Bottom"
+      ],
+      "target": [
+        "Pacific Ocean"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_ed5309cc",
+      "label": "voiced_by",
+      "source": [
+        "SpongeBob SquarePants"
+      ],
+      "target": [
+        "Tom Kenny"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_af8d3c56",
+      "label": "voiced_by",
+      "source": [
+        "Patrick Star"
+      ],
+      "target": [
+        "Bill Fagerbakke"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_4effc87a",
+      "label": "voiced_by",
+      "source": [
+        "Plankton"
+      ],
+      "target": [
+        "Mr. Lawrence"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_281f8e47",
+      "label": "owns",
+      "source": [
+        "Plankton"
+      ],
+      "target": [
+        "Chum Bucket"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_64598e35",
+      "label": "voiced_by",
+      "source": [
+        "King Neptune"
+      ],
+      "target": [
+        "Jeffrey Tambor"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_88acbdd7",
+      "label": "rules",
+      "source": [
+        "King Neptune"
+      ],
+      "target": [
+        "the seas"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_2ab258c1",
+      "label": "voiced_by",
+      "source": [
+        "Mr. Eugene Krabs"
+      ],
+      "target": [
+        "Clancy Brown"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_c93c8a8c",
+      "label": "owns",
+      "source": [
+        "Mr. Eugene Krabs"
+      ],
+      "target": [
+        "Krusty Krab"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_cfa7f704",
+      "label": "voiced_by",
+      "source": [
+        "Squidward Tentacles"
+      ],
+      "target": [
+        "Rodger Bumpass"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_a8b31dcd",
+      "label": "works_as",
+      "source": [
+        "Squidward Tentacles"
+      ],
+      "target": [
+        "Cashier"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_1637d4aa",
+      "label": "works_at",
+      "source": [
+        "Squidward Tentacles"
+      ],
+      "target": [
+        "Krusty Krab"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_865333f5",
+      "label": "voiced_by",
+      "source": [
+        "Sandy Cheeks"
+      ],
+      "target": [
+        "Carolyn Lawrence"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_d1307831",
+      "label": "originates_from",
+      "source": [
+        "Sandy Cheeks"
+      ],
+      "target": [
+        "Texas"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_9c050382",
+      "label": "voiced_by",
+      "source": [
+        "Mindy"
+      ],
+      "target": [
+        "Scarlett Johansson"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_1f188603",
+      "label": "is_daughter_of",
+      "source": [
+        "Mindy"
+      ],
+      "target": [
+        "King Neptune"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_1a2f050a",
+      "label": "portrayed_by",
+      "source": [
+        "Cyclops"
+      ],
+      "target": [
+        "Neil Ross"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_4cab5c99",
+      "label": "runs",
+      "source": [
+        "Cyclops"
+      ],
+      "target": [
+        "Shell City"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_aa9cdeff",
+      "label": "announces_as_manager",
+      "source": [
+        "Mr. Eugene Krabs"
+      ],
+      "target": [
+        "Squidward Tentacles"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_d60970dc",
+      "label": "steals",
+      "source": [
+        "Plankton"
+      ],
+      "target": [
+        "King Neptune's crown"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_d55cbd0c",
+      "label": "frames",
+      "source": [
+        "Plankton"
+      ],
+      "target": [
+        "Mr. Eugene Krabs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_a6d5263a",
+      "label": "freezes",
+      "source": [
+        "King Neptune"
+      ],
+      "target": [
+        "Mr. Eugene Krabs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_69174b6f",
+      "label": "sentences_to_execution",
+      "source": [
+        "King Neptune"
+      ],
+      "target": [
+        "Mr. Eugene Krabs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_5c6d171c",
+      "label": "gives_magic_bubbles_to",
+      "source": [
+        "Mindy"
+      ],
+      "target": [
+        "SpongeBob SquarePants",
+        "Patrick Star"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_af821646",
+      "label": "travel_to",
+      "source": [
+        "SpongeBob SquarePants",
+        "Patrick Star"
+      ],
+      "target": [
+        "Shell City"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_63cbb813",
+      "label": "sings",
+      "source": [
+        "SpongeBob SquarePants"
+      ],
+      "target": [
+        "The Campfire Song Song"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_7f72198d",
+      "label": "controls_with_mind_control_buckets",
+      "source": [
+        "Plankton"
+      ],
+      "target": [
+        "citizens of Bikini Bottom"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_5a3fd5c9",
+      "label": "attack",
+      "source": [
+        "Dried sea creatures"
+      ],
+      "target": [
+        "Plankton's minions"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_4aa4d091",
+      "label": "unfreezes",
+      "source": [
+        "King Neptune"
+      ],
+      "target": [
+        "Mr. Eugene Krabs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_2a87bbc5",
+      "label": "arrests",
+      "source": [
+        "King Neptune"
+      ],
+      "target": [
+        "Plankton"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_3abd013e",
+      "label": "offers_manager_promotion_to",
+      "source": [
+        "Mr. Eugene Krabs"
+      ],
+      "target": [
+        "SpongeBob SquarePants"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_72200246",
+      "label": "declines",
+      "source": [
+        "SpongeBob SquarePants"
+      ],
+      "target": [
+        "Manager promotion"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_d84f790f",
+      "label": "appears_in_as",
+      "source": [
+        "David Hasselhoff"
+      ],
+      "target": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_48177746",
+      "label": "gives_ride_to",
+      "source": [
+        "David Hasselhoff"
+      ],
+      "target": [
+        "SpongeBob SquarePants",
+        "Patrick Star"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_0f8a7cf2",
+      "label": "explores_theme",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Innocence vs. Cynicism",
+        "Friendship and Loyalty",
+        "Growing Up",
+        "Greed vs. Integrity"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_11f183de",
+      "label": "represents",
+      "source": [
+        "SpongeBob SquarePants"
+      ],
+      "target": [
+        "Innocence",
+        "Integrity"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_3ed7183c",
+      "label": "represents",
+      "source": [
+        "Plankton",
+        "Squidward Tentacles"
+      ],
+      "target": [
+        "Cynicism"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_36fda909",
+      "label": "represents",
+      "source": [
+        "Mr. Eugene Krabs"
+      ],
+      "target": [
+        "Greed"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_b1bd98f4",
+      "label": "intended_as",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Series Finale"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_6af2b38b",
+      "label": "wanted_to",
+      "source": [
+        "Stephen Hillenburg"
+      ],
+      "target": [
+        "end the story"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_9365b6a4",
+      "label": "continued",
+      "source": [
+        "Nickelodeon"
+      ],
+      "target": [
+        "SpongeBob SquarePants series"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_3c98f4be",
+      "label": "features_song",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Ocean Man"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_f38711f1",
+      "label": "performed_by",
+      "source": [
+        "Ocean Man"
+      ],
+      "target": [
+        "Ween"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_4e03d4b2",
+      "label": "features_music_by",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "Avril Lavigne",
+        "Wilco",
+        "The Flaming Lips"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_323f6378",
+      "label": "parodies",
+      "source": [
+        "Goofy Goober Rock"
+      ],
+      "target": [
+        "1980s rock movies"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_55697739",
+      "label": "has_sequel",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "The SpongeBob Movie: Sponge Out of Water"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_e5dcbdd0",
+      "label": "has_release_date",
+      "source": [
+        "The SpongeBob Movie: Sponge Out of Water"
+      ],
+      "target": [
+        "2015"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_401c14a3",
+      "label": "has_sequel",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "The SpongeBob Movie: Sponge on the Run"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_645d83d5",
+      "label": "has_release_date",
+      "source": [
+        "The SpongeBob Movie: Sponge on the Run"
+      ],
+      "target": [
+        "2020"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_5df7ba3e",
+      "label": "died_in",
+      "source": [
+        "Stephen Hillenburg"
+      ],
+      "target": [
+        "2018"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_e479bfa4",
+      "label": "has_rotten_tomatoes_score",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "68%"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_307d5462",
+      "label": "has_metacritic_score",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "66/100"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_47573303",
+      "label": "has_cinemascore",
+      "source": [
+        "The SpongeBob SquarePants Movie"
+      ],
+      "target": [
+        "A-"
+      ],
+      "weight": 1.0,
+      "chunk_id": "28ab73c34299cf6104f7a27ac1634f49"
+    },
+    {
+      "id": "e_cf6730ab",
+      "label": "bridges_gap_between",
+      "source": [
+        "The film"
+      ],
+      "target": [
+        "children's entertainment",
+        "adult humor"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0fd2e29fde84de066c9ea4d8e1e1b272"
+    },
+    {
+      "id": "e_56f6ac35",
+      "label": "utilizes_humor_elements",
+      "source": [
+        "The film"
+      ],
+      "target": [
+        "slapstick for kids",
+        "satire for adults"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0fd2e29fde84de066c9ea4d8e1e1b272"
+    },
+    {
+      "id": "e_c3847b20",
+      "label": "is_landmark_in",
+      "source": [
+        "The film"
+      ],
+      "target": [
+        "early 2000s animation"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0fd2e29fde84de066c9ea4d8e1e1b272"
+    },
+    {
+      "id": "e_b9e264f7",
+      "label": "transitions_property_to_medium",
+      "source": [
+        "The film"
+      ],
+      "target": [
+        "TV property",
+        "big screen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0fd2e29fde84de066c9ea4d8e1e1b272"
+    },
+    {
+      "id": "e_f01212b2",
+      "label": "retains_essence",
+      "source": [
+        "The film"
+      ],
+      "target": [
+        "soul"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0fd2e29fde84de066c9ea4d8e1e1b272"
+    }
+  ]
+}

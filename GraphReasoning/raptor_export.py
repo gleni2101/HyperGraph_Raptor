@@ -271,8 +271,12 @@ def raptor_to_hypergraph(index: RaptorIndex) -> "HypergraphBuilder":
 
     def _node_label(node: RaptorNode) -> str:
         """Short, unique label for visualization."""
-        snippet = node.text[:55].strip().replace("\n", " ")
-        return snippet + ("..." if len(node.text) > 55 else "")
+        raw_text = node.text or ""
+        snippet = raw_text[:55].strip().replace("\n", " ")
+        if snippet:
+            return snippet + ("..." if len(raw_text) > 55 else "")
+        # Fallback avoids empty labels that violate HypergraphBuilder invariants.
+        return f"{node.type}:{node.id}"
 
     # Group edges by parent → each parent = one cluster = one hyperedge
     parent_children: dict[str, list[tuple[str, float]]] = {}
@@ -290,12 +294,16 @@ def raptor_to_hypergraph(index: RaptorIndex) -> "HypergraphBuilder":
         for child_id, _weight in children:
             child_node = index.nodes.get(child_id)
             if child_node is not None:
-                child_labels.append(_node_label(child_node))
+                label = _node_label(child_node).strip()
+                if label:
+                    child_labels.append(label)
 
         if not child_labels:
             continue
 
-        parent_lbl = _node_label(parent_node)
+        parent_lbl = _node_label(parent_node).strip()
+        if not parent_lbl:
+            continue
         summary_snippet = parent_node.text[:60].strip().replace("\n", " ")
 
         builder.add_event(

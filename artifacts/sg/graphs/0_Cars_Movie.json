@@ -1,1355 +1,1075 @@
 {
   "metadata": {
-    "created_at": "2026-04-08T18:12:50.558659",
+    "created_at": "2026-04-09T12:28:28.543464",
     "source_document": "0_Cars_Movie",
     "version": "2.0"
   },
   "nodes": {
-    "n_1ae4190e": {
-      "id": "n_1ae4190e",
+    "n_f2c1b442": {
+      "id": "n_f2c1b442",
       "label": "Cars",
       "type": "concept"
     },
-    "n_9a12bb13": {
-      "id": "n_9a12bb13",
+    "n_374a8e57": {
+      "id": "n_374a8e57",
       "label": "Pixar Animation Studios",
       "type": "concept"
     },
-    "n_a3d6ee51": {
-      "id": "n_a3d6ee51",
+    "n_971351cf": {
+      "id": "n_971351cf",
       "label": "Walt Disney Pictures",
       "type": "concept"
     },
-    "n_31515448": {
-      "id": "n_31515448",
+    "n_12229990": {
+      "id": "n_12229990",
       "label": "John Lasseter",
       "type": "concept"
     },
-    "n_1bc47b25": {
-      "id": "n_1bc47b25",
+    "n_c0efab13": {
+      "id": "n_c0efab13",
       "label": "Joe Ranft",
       "type": "concept"
     },
-    "n_5c1ff915": {
-      "id": "n_5c1ff915",
+    "n_7d4b5e13": {
+      "id": "n_7d4b5e13",
       "label": "Dan Fogelman",
       "type": "concept"
     },
-    "n_f281d053": {
-      "id": "n_f281d053",
+    "n_9290aa38": {
+      "id": "n_9290aa38",
       "label": "Kiel Murray",
       "type": "concept"
     },
-    "n_6fd1f6dc": {
-      "id": "n_6fd1f6dc",
+    "n_80b222db": {
+      "id": "n_80b222db",
       "label": "Phil Lorin",
       "type": "concept"
     },
-    "n_e0a9bf79": {
-      "id": "n_e0a9bf79",
+    "n_33600124": {
+      "id": "n_33600124",
       "label": "Jorgen Klubien",
       "type": "concept"
     },
-    "n_124d6d33": {
-      "id": "n_124d6d33",
+    "n_691e558e": {
+      "id": "n_691e558e",
       "label": "June 9, 2006",
       "type": "concept"
     },
-    "n_0dfd7c6a": {
-      "id": "n_0dfd7c6a",
+    "n_c7cde551": {
+      "id": "n_c7cde551",
       "label": "Animated Comedy-Adventure",
       "type": "concept"
     },
-    "n_3327883c": {
-      "id": "n_3327883c",
+    "n_2a0fbda7": {
+      "id": "n_2a0fbda7",
       "label": "117 minutes",
       "type": "concept"
     },
-    "n_61e1bdf5": {
-      "id": "n_61e1bdf5",
-      "label": "Lightning McQueen",
-      "type": "concept"
-    },
-    "n_4f448dd4": {
-      "id": "n_4f448dd4",
-      "label": "rookie race car",
-      "type": "concept"
-    },
-    "n_0044a81d": {
-      "id": "n_0044a81d",
-      "label": "#95",
-      "type": "concept"
-    },
-    "n_80df4e29": {
-      "id": "n_80df4e29",
-      "label": "Rust-eze",
-      "type": "concept"
-    },
-    "n_12e497c9": {
-      "id": "n_12e497c9",
-      "label": "arrogant",
-      "type": "concept"
-    },
-    "n_fdc03ba2": {
-      "id": "n_fdc03ba2",
-      "label": "self-centered",
-      "type": "concept"
-    },
-    "n_4dd3f4ca": {
-      "id": "n_4dd3f4ca",
-      "label": "humility",
-      "type": "concept"
-    },
-    "n_b6f1e575": {
-      "id": "n_b6f1e575",
-      "label": "the value of friendship",
-      "type": "concept"
-    },
-    "n_e0cee5c2": {
-      "id": "n_e0cee5c2",
-      "label": "Mater",
-      "type": "concept"
-    },
-    "n_4bf30198": {
-      "id": "n_4bf30198",
-      "label": "rusty but lovable tow truck",
-      "type": "concept"
-    },
-    "n_9f18d5ce": {
-      "id": "n_9f18d5ce",
-      "label": "Radiator Springs",
-      "type": "concept"
-    },
-    "n_7fd921b9": {
-      "id": "n_7fd921b9",
-      "label": "Sally Carrera",
-      "type": "concept"
-    },
-    "n_c58dd815": {
-      "id": "n_c58dd815",
-      "label": "Porsche 911",
-      "type": "concept"
-    },
-    "n_67253675": {
-      "id": "n_67253675",
-      "label": "town attorney of Radiator Springs",
-      "type": "concept"
-    },
-    "n_e0be831e": {
-      "id": "n_e0be831e",
-      "label": "Los Angeles",
-      "type": "concept"
-    },
-    "n_69a04845": {
-      "id": "n_69a04845",
-      "label": "simpler existence in Radiator Springs",
-      "type": "concept"
-    },
-    "n_f722125b": {
-      "id": "n_f722125b",
-      "label": "Doc Hudson",
-      "type": "concept"
-    },
-    "n_536c2c54": {
-      "id": "n_536c2c54",
-      "label": "1951 Hudson Hornet",
-      "type": "concept"
-    },
-    "n_141b4f6a": {
-      "id": "n_141b4f6a",
-      "label": "town judge",
-      "type": "concept"
-    },
-    "n_58e16479": {
-      "id": "n_58e16479",
-      "label": "doctor",
-      "type": "concept"
-    },
-    "n_290b194c": {
-      "id": "n_290b194c",
-      "label": "Fabulous Hudson Hornet",
-      "type": "concept"
-    },
-    "n_49ebc7ec": {
-      "id": "n_49ebc7ec",
-      "label": "legendary three-time Piston Cup champion",
-      "type": "concept"
-    },
-    "n_af47aeff": {
-      "id": "n_af47aeff",
-      "label": "Sheriff",
-      "type": "concept"
-    },
-    "n_165a0243": {
-      "id": "n_165a0243",
-      "label": "law enforcement of Radiator Springs",
-      "type": "concept"
-    },
-    "n_46e703d4": {
-      "id": "n_46e703d4",
-      "label": "1949 Mercury Police Cruiser",
-      "type": "concept"
-    },
-    "n_aeb09026": {
-      "id": "n_aeb09026",
-      "label": "Ramone",
-      "type": "concept"
-    },
-    "n_6a011831": {
-      "id": "n_6a011831",
-      "label": "1959 Chevrolet Impala Lowrider",
-      "type": "concept"
-    },
-    "n_fba2a8d6": {
-      "id": "n_fba2a8d6",
-      "label": "body art shop",
-      "type": "concept"
-    },
-    "n_ce931378": {
-      "id": "n_ce931378",
-      "label": "repainting himself daily",
-      "type": "concept"
-    },
-    "n_a67f6401": {
-      "id": "n_a67f6401",
-      "label": "Flo",
-      "type": "concept"
-    },
-    "n_c2ab4f19": {
-      "id": "n_c2ab4f19",
-      "label": "1950s show car",
-      "type": "concept"
-    },
-    "n_db783a3a": {
-      "id": "n_db783a3a",
-      "label": "Flo's V8 Cafe",
-      "type": "concept"
-    },
-    "n_9b5b4518": {
-      "id": "n_9b5b4518",
-      "label": "local gas station",
-      "type": "concept"
-    },
-    "n_37265355": {
-      "id": "n_37265355",
-      "label": "diner",
-      "type": "concept"
-    },
-    "n_e84cacd0": {
-      "id": "n_e84cacd0",
-      "label": "Luigi",
-      "type": "concept"
-    },
-    "n_1b069d0a": {
-      "id": "n_1b069d0a",
-      "label": "yellow Fiat 500",
-      "type": "concept"
-    },
-    "n_b5d5d945": {
-      "id": "n_b5d5d945",
-      "label": "Luigi's Casa Della Tires",
-      "type": "concept"
-    },
-    "n_fa0128a2": {
-      "id": "n_fa0128a2",
-      "label": "Ferrari",
-      "type": "concept"
-    },
-    "n_4999707e": {
-      "id": "n_4999707e",
-      "label": "Guido",
-      "type": "concept"
-    },
-    "n_5a3c1547": {
-      "id": "n_5a3c1547",
-      "label": "small forklift assistant",
-      "type": "concept"
-    },
-    "n_06ad6c29": {
-      "id": "n_06ad6c29",
-      "label": "performing a real pit stop",
-      "type": "concept"
-    },
-    "n_2eca5af6": {
-      "id": "n_2eca5af6",
-      "label": "Sarge",
-      "type": "concept"
-    },
-    "n_d97ef1ae": {
-      "id": "n_d97ef1ae",
-      "label": "1941 Willys military jeep",
-      "type": "concept"
-    },
-    "n_44a30136": {
-      "id": "n_44a30136",
-      "label": "surplus store",
-      "type": "concept"
-    },
-    "n_59de11ee": {
-      "id": "n_59de11ee",
-      "label": "Fillmore",
-      "type": "concept"
-    },
-    "n_fe7464d4": {
-      "id": "n_fe7464d4",
-      "label": "1960 VW Bus",
-      "type": "concept"
-    },
-    "n_0d48fb32": {
-      "id": "n_0d48fb32",
-      "label": "local hippie",
-      "type": "concept"
-    },
-    "n_685ae139": {
-      "id": "n_685ae139",
-      "label": "organic fuel",
-      "type": "concept"
-    },
-    "n_5c232c98": {
-      "id": "n_5c232c98",
-      "label": "Red",
-      "type": "concept"
-    },
-    "n_4b4d63da": {
-      "id": "n_4b4d63da",
-      "label": "shy fire truck of Radiator Springs",
-      "type": "concept"
-    },
-    "n_16c91ffe": {
-      "id": "n_16c91ffe",
-      "label": "Lizzie",
-      "type": "concept"
-    },
-    "n_bd0c7c65": {
-      "id": "n_bd0c7c65",
-      "label": "1923 Ford Model T",
-      "type": "concept"
-    },
-    "n_c1bf2a59": {
-      "id": "n_c1bf2a59",
-      "label": "oldest resident of Radiator Springs",
-      "type": "concept"
-    },
-    "n_d14f24bd": {
-      "id": "n_d14f24bd",
-      "label": "Stanley",
-      "type": "concept"
-    },
-    "n_7d0aa4f1": {
-      "id": "n_7d0aa4f1",
-      "label": "Chick Hicks",
-      "type": "concept"
-    },
-    "n_7a2f7d85": {
-      "id": "n_7a2f7d85",
-      "label": "1979 Shyster Cremlin stock car",
-      "type": "concept"
-    },
-    "n_8738dfc6": {
-      "id": "n_8738dfc6",
-      "label": "#86",
-      "type": "concept"
-    },
-    "n_175ed2ad": {
-      "id": "n_175ed2ad",
-      "label": "The King (Strip Weathers)",
-      "type": "concept"
-    },
-    "n_f0409206": {
-      "id": "n_f0409206",
-      "label": "1970 Plymouth Superbird",
-      "type": "concept"
-    },
-    "n_50c16480": {
-      "id": "n_50c16480",
-      "label": "#43",
-      "type": "concept"
-    },
-    "n_a2bf6874": {
-      "id": "n_a2bf6874",
-      "label": "retiring veteran champion",
-      "type": "concept"
-    },
-    "n_c488f127": {
-      "id": "n_c488f127",
-      "label": "Richard Petty",
-      "type": "concept"
-    },
-    "n_3969dbcb": {
-      "id": "n_3969dbcb",
-      "label": "Mack",
-      "type": "concept"
-    },
-    "n_e6e63742": {
-      "id": "n_e6e63742",
-      "label": "loyal transport truck",
-      "type": "concept"
-    },
-    "n_eef98128": {
-      "id": "n_eef98128",
+    "n_06ad0b8f": {
+      "id": "n_06ad0b8f",
       "label": "final race of the Piston Cup season",
       "type": "concept"
     },
-    "n_7f6ca61d": {
-      "id": "n_7f6ca61d",
+    "n_52cfccae": {
+      "id": "n_52cfccae",
       "label": "Motor Speedway of the South",
       "type": "concept"
     },
-    "n_20638563": {
-      "id": "n_20638563",
+    "n_0f317073": {
+      "id": "n_0f317073",
       "label": "Strip \"The King\" Weathers",
       "type": "concept"
     },
-    "n_04339bba": {
-      "id": "n_04339bba",
-      "label": "Piston Cup championship",
+    "n_aea98a29": {
+      "id": "n_aea98a29",
+      "label": "Chick Hicks",
       "type": "concept"
     },
-    "n_bd1c6420": {
-      "id": "n_bd1c6420",
-      "label": "retiring legend",
+    "n_668254ed": {
+      "id": "n_668254ed",
+      "label": "Lightning McQueen",
       "type": "concept"
     },
-    "n_685f768c": {
-      "id": "n_685f768c",
-      "label": "perennial runner-up",
+    "n_b53afd2c": {
+      "id": "n_b53afd2c",
+      "label": "Piston Cup season",
       "type": "concept"
     },
-    "n_b25f06d1": {
-      "id": "n_b25f06d1",
-      "label": "brash rookie sensation",
+    "n_54a490d9": {
+      "id": "n_54a490d9",
+      "label": "pit crew",
       "type": "concept"
     },
-    "n_7e7a15f1": {
-      "id": "n_7e7a15f1",
-      "label": "his pit crew",
+    "n_074e78c3": {
+      "id": "n_074e78c3",
+      "label": "three-way tie",
       "type": "concept"
     },
-    "n_156f405c": {
-      "id": "n_156f405c",
-      "label": "everyone around him",
-      "type": "concept"
-    },
-    "n_03859b85": {
-      "id": "n_03859b85",
-      "label": "the final race of the Piston Cup season",
-      "type": "concept"
-    },
-    "n_bec7d5ef": {
-      "id": "n_bec7d5ef",
-      "label": "unprecedented three-way tie",
-      "type": "concept"
-    },
-    "n_73cf7e5f": {
-      "id": "n_73cf7e5f",
+    "n_7ffce02f": {
+      "id": "n_7ffce02f",
       "label": "tiebreaker race",
       "type": "concept"
     },
-    "n_cac36ac6": {
-      "id": "n_cac36ac6",
-      "label": "one week later",
-      "type": "concept"
-    },
-    "n_bfebc0e0": {
-      "id": "n_bfebc0e0",
+    "n_6e137779": {
+      "id": "n_6e137779",
       "label": "Los Angeles International Speedway",
       "type": "concept"
     },
-    "n_15e00724": {
-      "id": "n_15e00724",
+    "n_6e4ef47c": {
+      "id": "n_6e4ef47c",
+      "label": "one week later",
+      "type": "concept"
+    },
+    "n_4359f291": {
+      "id": "n_4359f291",
+      "label": "Piston Cup championship",
+      "type": "concept"
+    },
+    "n_03dc7b4b": {
+      "id": "n_03dc7b4b",
       "label": "Dinoco sponsorship",
       "type": "concept"
     },
-    "n_9bde8453": {
-      "id": "n_9bde8453",
-      "label": "the retiring King",
+    "n_99b3c748": {
+      "id": "n_99b3c748",
+      "label": "Mack",
       "type": "concept"
     },
-    "n_a86bb95c": {
-      "id": "n_a86bb95c",
-      "label": "drive through the night",
-      "type": "concept"
-    },
-    "n_a28510b3": {
-      "id": "n_a28510b3",
+    "n_171bca06": {
+      "id": "n_171bca06",
       "label": "California",
       "type": "concept"
     },
-    "n_667bd72d": {
-      "id": "n_667bd72d",
-      "label": "falls asleep at the wheel",
+    "n_14565683": {
+      "id": "n_14565683",
+      "label": "overnight drive",
       "type": "concept"
     },
-    "n_1970320e": {
-      "id": "n_1970320e",
+    "n_3c3e8c3b": {
+      "id": "n_3c3e8c3b",
       "label": "Boost",
       "type": "concept"
     },
-    "n_fef530b5": {
-      "id": "n_fef530b5",
+    "n_43394375": {
+      "id": "n_43394375",
       "label": "DJ",
       "type": "concept"
     },
-    "n_c339d8b4": {
-      "id": "n_c339d8b4",
+    "n_4a2ae014": {
+      "id": "n_4a2ae014",
       "label": "Wingo",
       "type": "concept"
     },
-    "n_aa60f620": {
-      "id": "n_aa60f620",
+    "n_9a62328d": {
+      "id": "n_9a62328d",
       "label": "Snot Rod",
       "type": "concept"
     },
-    "n_475dbbab": {
-      "id": "n_475dbbab",
-      "label": "Lightning McQueen tumbles out the back of the trailer onto the highway",
+    "n_18bb15c1": {
+      "id": "n_18bb15c1",
+      "label": "trailer",
       "type": "concept"
     },
-    "n_7dce3628": {
-      "id": "n_7dce3628",
-      "label": "lost and alone",
+    "n_3c4667c3": {
+      "id": "n_3c4667c3",
+      "label": "highway",
       "type": "concept"
     },
-    "n_5e38ba86": {
-      "id": "n_5e38ba86",
-      "label": "what he thinks is Mack",
+    "n_75b68901": {
+      "id": "n_75b68901",
+      "label": "Radiator Springs",
       "type": "concept"
     },
-    "n_ef4e5ed4": {
-      "id": "n_ef4e5ed4",
+    "n_5be332cd": {
+      "id": "n_5be332cd",
       "label": "Route 66",
       "type": "concept"
     },
-    "n_0c901328": {
-      "id": "n_0c901328",
-      "label": "the main road",
+    "n_2ceb7b6f": {
+      "id": "n_2ceb7b6f",
+      "label": "main road",
       "type": "concept"
     },
-    "n_ec446bf8": {
-      "id": "n_ec446bf8",
-      "label": "Lightning McQueen should fix the road he destroyed",
+    "n_0920f100": {
+      "id": "n_0920f100",
+      "label": "Sheriff",
       "type": "concept"
     },
-    "n_d11e2c26": {
-      "id": "n_d11e2c26",
+    "n_f70bf6fc": {
+      "id": "n_f70bf6fc",
+      "label": "Doc Hudson",
+      "type": "concept"
+    },
+    "n_a9502c0e": {
+      "id": "n_a9502c0e",
+      "label": "Sally Carrera",
+      "type": "concept"
+    },
+    "n_8f610747": {
+      "id": "n_8f610747",
       "label": "community service",
       "type": "concept"
     },
-    "n_b0a0c2d3": {
-      "id": "n_b0a0c2d3",
-      "label": "repave the entire stretch of road",
+    "n_26b63520": {
+      "id": "n_26b63520",
+      "label": "entire stretch of road",
       "type": "concept"
     },
-    "n_37397bb6": {
-      "id": "n_37397bb6",
+    "n_85484b59": {
+      "id": "n_85484b59",
       "label": "Bessie",
       "type": "concept"
     },
-    "n_70748412": {
-      "id": "n_70748412",
-      "label": "the road-repair job",
+    "n_a523a771": {
+      "id": "n_a523a771",
+      "label": "Lightning",
       "type": "concept"
     },
-    "n_2c635c6b": {
-      "id": "n_2c635c6b",
+    "n_cb9eef2e": {
+      "id": "n_cb9eef2e",
       "label": "terrible road surface",
       "type": "concept"
     },
-    "n_4f2b29ef": {
-      "id": "n_4f2b29ef",
-      "label": "race at Willy's Butte",
+    "n_020689e4": {
+      "id": "n_020689e4",
+      "label": "Willy's Butte",
       "type": "concept"
     },
-    "n_da944bc9": {
-      "id": "n_da944bc9",
-      "label": "Lightning wins",
+    "n_104c7d72": {
+      "id": "n_104c7d72",
+      "label": "Lightning can leave if wins",
       "type": "concept"
     },
-    "n_ee1ea076": {
-      "id": "n_ee1ea076",
-      "label": "Lightning can leave",
+    "n_a5d954ec": {
+      "id": "n_a5d954ec",
+      "label": "Lightning has to start the road over if loses",
       "type": "concept"
     },
-    "n_202a4fa7": {
-      "id": "n_202a4fa7",
-      "label": "Doc wins",
-      "type": "concept"
-    },
-    "n_aa1e7d2d": {
-      "id": "n_aa1e7d2d",
-      "label": "Lightning has to start the road over",
-      "type": "concept"
-    },
-    "n_6d741905": {
-      "id": "n_6d741905",
-      "label": "Doc Hudson's race challenge",
-      "type": "concept"
-    },
-    "n_112694e5": {
-      "id": "n_112694e5",
-      "label": "dirt track",
-      "type": "concept"
-    },
-    "n_22a6a34e": {
-      "id": "n_22a6a34e",
-      "label": "sharp turn",
-      "type": "concept"
-    },
-    "n_a0d19704": {
-      "id": "n_a0d19704",
+    "n_99468c3a": {
+      "id": "n_99468c3a",
       "label": "cactus patch",
       "type": "concept"
     },
-    "n_3e83fb58": {
-      "id": "n_3e83fb58",
-      "label": "the turn",
+    "n_6ad51fd4": {
+      "id": "n_6ad51fd4",
+      "label": "sharp turn",
       "type": "concept"
     },
-    "n_4a66c15c": {
-      "id": "n_4a66c15c",
-      "label": "start the road over",
+    "n_7f3b97b3": {
+      "id": "n_7f3b97b3",
+      "label": "road",
       "type": "concept"
     },
-    "n_24cdf998": {
-      "id": "n_24cdf998",
-      "label": "residents of Radiator Springs",
-      "type": "concept"
-    },
-    "n_41ddb8cf": {
-      "id": "n_41ddb8cf",
-      "label": "thriving stop on Route 66",
-      "type": "concept"
-    },
-    "n_8525a447": {
-      "id": "n_8525a447",
+    "n_96233946": {
+      "id": "n_96233946",
       "label": "Interstate 40",
       "type": "concept"
     },
-    "n_743055ee": {
-      "id": "n_743055ee",
-      "label": "travelers no longer came through",
+    "n_5bfcc33f": {
+      "id": "n_5bfcc33f",
+      "label": "Sally",
       "type": "concept"
     },
-    "n_83199f21": {
-      "id": "n_83199f21",
-      "label": "Radiator Springs slowly withered",
+    "n_842758c7": {
+      "id": "n_842758c7",
+      "label": "LA",
       "type": "concept"
     },
-    "n_a8061ede": {
-      "id": "n_a8061ede",
-      "label": "she left her high-powered life in LA and found real happiness in the slower pace of Radiator Springs",
+    "n_01a186d5": {
+      "id": "n_01a186d5",
+      "label": "Mater",
       "type": "concept"
     },
-    "n_54525c5a": {
-      "id": "n_54525c5a",
-      "label": "tractor tipping",
-      "type": "concept"
-    },
-    "n_681f1a31": {
-      "id": "n_681f1a31",
-      "label": "genuine uncomplicated friendship",
-      "type": "concept"
-    },
-    "n_86cd79a7": {
-      "id": "n_86cd79a7",
+    "n_661f3eeb": {
+      "id": "n_661f3eeb",
       "label": "Doc's garage",
       "type": "concept"
     },
-    "n_ae33f214": {
-      "id": "n_ae33f214",
+    "n_90544ba7": {
+      "id": "n_90544ba7",
       "label": "three Piston Cup trophies",
       "type": "concept"
     },
-    "n_00318bf5": {
-      "id": "n_00318bf5",
+    "n_a84906d2": {
+      "id": "n_a84906d2",
       "label": "newspaper clipping",
       "type": "concept"
     },
-    "n_fa77f24f": {
-      "id": "n_fa77f24f",
-      "label": "Doc Hudson is the Fabulous Hudson Hornet",
+    "n_31f1dc12": {
+      "id": "n_31f1dc12",
+      "label": "Fabulous Hudson Hornet",
       "type": "concept"
     },
-    "n_9e2acb39": {
-      "id": "n_9e2acb39",
-      "label": "racing legend from the 1950s",
+    "n_933de2c5": {
+      "id": "n_933de2c5",
+      "label": "1950s",
       "type": "concept"
     },
-    "n_4d930420": {
-      "id": "n_4d930420",
+    "n_ae8f31fd": {
+      "id": "n_ae8f31fd",
       "label": "terrible crash",
       "type": "concept"
     },
-    "n_deb731fe": {
-      "id": "n_deb731fe",
-      "label": "Doc Hudson recovers from crash",
-      "type": "concept"
-    },
-    "n_0826c9b7": {
-      "id": "n_0826c9b7",
-      "label": "racing had moved on without him",
-      "type": "concept"
-    },
-    "n_00361377": {
-      "id": "n_00361377",
+    "n_36d5024e": {
+      "id": "n_36d5024e",
       "label": "racing world",
       "type": "concept"
     },
-    "n_7a08e764": {
-      "id": "n_7a08e764",
-      "label": "being replaced and forgotten",
+    "n_f95dc392": {
+      "id": "n_f95dc392",
+      "label": "Ramone",
       "type": "concept"
     },
-    "n_8d159c3a": {
-      "id": "n_8d159c3a",
-      "label": "Doc Hudson bitter toward the racing world",
+    "n_e38a9cb9": {
+      "id": "n_e38a9cb9",
+      "label": "Luigi",
       "type": "concept"
     },
-    "n_888c881f": {
-      "id": "n_888c881f",
-      "label": "his past",
+    "n_608e92e7": {
+      "id": "n_608e92e7",
+      "label": "Guido",
       "type": "concept"
     },
-    "n_2115da2b": {
-      "id": "n_2115da2b",
-      "label": "the racing world is hollow and will chew him up and spit him out",
+    "n_48d57a9c": {
+      "id": "n_48d57a9c",
+      "label": "Flo's V8 Cafe",
       "type": "concept"
     },
-    "n_da2647a8": {
-      "id": "n_da2647a8",
-      "label": "the town and its residents",
-      "type": "concept"
-    },
-    "n_b56e6bae": {
-      "id": "n_b56e6bae",
-      "label": "new paint job",
-      "type": "concept"
-    },
-    "n_991d699d": {
-      "id": "n_991d699d",
-      "label": "new tires",
-      "type": "concept"
-    },
-    "n_fc384d01": {
-      "id": "n_fc384d01",
+    "n_5f378839": {
+      "id": "n_5f378839",
       "label": "Wheel Well Motel",
       "type": "concept"
     },
-    "n_b58232e2": {
-      "id": "n_b58232e2",
-      "label": "the town at sunset",
+    "n_eb9ad441": {
+      "id": "n_eb9ad441",
+      "label": "#95",
       "type": "concept"
     },
-    "n_fb2a2217": {
-      "id": "n_fb2a2217",
-      "label": "history of Route 66",
+    "n_1087e29b": {
+      "id": "n_1087e29b",
+      "label": "Rust-eze",
       "type": "concept"
     },
-    "n_50161cfc": {
-      "id": "n_50161cfc",
-      "label": "the Interstate took the magic of the journey away",
+    "n_cae99c49": {
+      "id": "n_cae99c49",
+      "label": "Arrogant and self-centered",
       "type": "concept"
     },
-    "n_c2ed2f41": {
-      "id": "n_c2ed2f41",
-      "label": "everyone",
+    "n_158a1a84": {
+      "id": "n_158a1a84",
+      "label": "humility",
       "type": "concept"
     },
-    "n_fdb594d5": {
-      "id": "n_fdb594d5",
-      "label": "cruise down the main drag",
+    "n_2e381876": {
+      "id": "n_2e381876",
+      "label": "the value of friendship",
       "type": "concept"
     },
-    "n_c2c8cb4e": {
-      "id": "n_c2c8cb4e",
-      "label": "all the neon lights of the old businesses",
+    "n_1b57b8d4": {
+      "id": "n_1b57b8d4",
+      "label": "rusty but lovable tow truck",
       "type": "concept"
     },
-    "n_01af8b9e": {
-      "id": "n_01af8b9e",
-      "label": "neon lights of the old businesses",
+    "n_097d1738": {
+      "id": "n_097d1738",
+      "label": "Porsche 911",
       "type": "concept"
     },
-    "n_5aa0fa31": {
-      "id": "n_5aa0fa31",
-      "label": "the town's former beauty",
+    "n_43a387e0": {
+      "id": "n_43a387e0",
+      "label": "town attorney of Radiator Springs",
       "type": "concept"
     },
-    "n_9c3a243a": {
-      "id": "n_9c3a243a",
-      "label": "as it once did",
+    "n_aa99e23c": {
+      "id": "n_aa99e23c",
+      "label": "Los Angeles",
       "type": "concept"
     },
-    "n_9b788561": {
-      "id": "n_9b788561",
-      "label": "the media",
+    "n_f66fb122": {
+      "id": "n_f66fb122",
+      "label": "1951 Hudson Hornet",
       "type": "concept"
     },
-    "n_e95e72dd": {
-      "id": "n_e95e72dd",
-      "label": "get Lightning out of town and out of their lives",
+    "n_3785c104": {
+      "id": "n_3785c104",
+      "label": "town judge",
       "type": "concept"
     },
-    "n_75d971a5": {
-      "id": "n_75d971a5",
-      "label": "the tiebreaker race",
+    "n_794b27e6": {
+      "id": "n_794b27e6",
+      "label": "doctor",
       "type": "concept"
     },
-    "n_f8f3c2a6": {
-      "id": "n_f8f3c2a6",
-      "label": "goodbye to Radiator Springs",
+    "n_1f17d933": {
+      "id": "n_1f17d933",
+      "label": "three-time Piston Cup champion",
       "type": "concept"
     },
-    "n_fbf9280e": {
-      "id": "n_fbf9280e",
-      "label": "stunned",
+    "n_e67c80ab": {
+      "id": "n_e67c80ab",
+      "label": "law enforcement of Radiator Springs",
       "type": "concept"
     },
-    "n_734eecec": {
-      "id": "n_734eecec",
+    "n_35f4dc0d": {
+      "id": "n_35f4dc0d",
+      "label": "1949 Mercury Police Cruiser",
+      "type": "concept"
+    },
+    "n_225735b1": {
+      "id": "n_225735b1",
+      "label": "1959 Chevrolet Impala Lowrider",
+      "type": "concept"
+    },
+    "n_9002400e": {
+      "id": "n_9002400e",
+      "label": "body art shop",
+      "type": "concept"
+    },
+    "n_96e5f512": {
+      "id": "n_96e5f512",
+      "label": "repaint himself daily",
+      "type": "concept"
+    },
+    "n_10797b6c": {
+      "id": "n_10797b6c",
+      "label": "Flo",
+      "type": "concept"
+    },
+    "n_da58d988": {
+      "id": "n_da58d988",
+      "label": "1950s show car",
+      "type": "concept"
+    },
+    "n_71d9e66e": {
+      "id": "n_71d9e66e",
+      "label": "yellow Fiat 500",
+      "type": "concept"
+    },
+    "n_0c942bbb": {
+      "id": "n_0c942bbb",
+      "label": "Luigi's Casa Della Tires",
+      "type": "concept"
+    },
+    "n_02b7bf44": {
+      "id": "n_02b7bf44",
+      "label": "Ferrari",
+      "type": "concept"
+    },
+    "n_f979fe58": {
+      "id": "n_f979fe58",
+      "label": "Luigi's small forklift assistant",
+      "type": "concept"
+    },
+    "n_b9b22474": {
+      "id": "n_b9b22474",
+      "label": "performing a real pit stop",
+      "type": "concept"
+    },
+    "n_59e9718f": {
+      "id": "n_59e9718f",
+      "label": "Sarge",
+      "type": "concept"
+    },
+    "n_f9073ed2": {
+      "id": "n_f9073ed2",
+      "label": "1941 Willys military jeep",
+      "type": "concept"
+    },
+    "n_4d770a72": {
+      "id": "n_4d770a72",
+      "label": "surplus store",
+      "type": "concept"
+    },
+    "n_0567efd1": {
+      "id": "n_0567efd1",
+      "label": "Fillmore",
+      "type": "concept"
+    },
+    "n_0db99d40": {
+      "id": "n_0db99d40",
+      "label": "1960 VW Bus",
+      "type": "concept"
+    },
+    "n_e962e6f9": {
+      "id": "n_e962e6f9",
+      "label": "local hippie",
+      "type": "concept"
+    },
+    "n_3eb95118": {
+      "id": "n_3eb95118",
+      "label": "organic fuel",
+      "type": "concept"
+    },
+    "n_4de61de1": {
+      "id": "n_4de61de1",
+      "label": "Red",
+      "type": "concept"
+    },
+    "n_bcb6ec13": {
+      "id": "n_bcb6ec13",
+      "label": "shy fire truck of Radiator Springs",
+      "type": "concept"
+    },
+    "n_119ac68b": {
+      "id": "n_119ac68b",
+      "label": "Lizzie",
+      "type": "concept"
+    },
+    "n_404c57f5": {
+      "id": "n_404c57f5",
+      "label": "1923 Ford Model T",
+      "type": "concept"
+    },
+    "n_8a22827d": {
+      "id": "n_8a22827d",
+      "label": "Stanley",
+      "type": "concept"
+    },
+    "n_d4984ae5": {
+      "id": "n_d4984ae5",
+      "label": "1979 Shyster Cremlin stock car",
+      "type": "concept"
+    },
+    "n_5027d55f": {
+      "id": "n_5027d55f",
+      "label": "#86",
+      "type": "concept"
+    },
+    "n_b033ccb3": {
+      "id": "n_b033ccb3",
+      "label": "The King (Strip Weathers)",
+      "type": "concept"
+    },
+    "n_fa316974": {
+      "id": "n_fa316974",
+      "label": "1970 Plymouth Superbird",
+      "type": "concept"
+    },
+    "n_2868a5ef": {
+      "id": "n_2868a5ef",
+      "label": "#43",
+      "type": "concept"
+    },
+    "n_1b60246d": {
+      "id": "n_1b60246d",
+      "label": "retiring veteran champion",
+      "type": "concept"
+    },
+    "n_5d6d2a9c": {
+      "id": "n_5d6d2a9c",
+      "label": "Richard Petty",
+      "type": "concept"
+    },
+    "n_551eefd4": {
+      "id": "n_551eefd4",
+      "label": "Lightning McQueen's loyal transport truck",
+      "type": "concept"
+    },
+    "n_646a60c8": {
+      "id": "n_646a60c8",
+      "label": "Radiator Springs residents",
+      "type": "concept"
+    },
+    "n_3b666e6d": {
+      "id": "n_3b666e6d",
+      "label": "main drag",
+      "type": "concept"
+    },
+    "n_c2db4516": {
+      "id": "n_c2db4516",
+      "label": "neon lights",
+      "type": "concept"
+    },
+    "n_2489920e": {
+      "id": "n_2489920e",
+      "label": "old businesses",
+      "type": "concept"
+    },
+    "n_21ee183d": {
+      "id": "n_21ee183d",
+      "label": "former beauty",
+      "type": "concept"
+    },
+    "n_e387e55d": {
+      "id": "n_e387e55d",
+      "label": "community",
+      "type": "concept"
+    },
+    "n_f35fcd54": {
+      "id": "n_f35fcd54",
+      "label": "media",
+      "type": "concept"
+    },
+    "n_cbbfb986": {
+      "id": "n_cbbfb986",
+      "label": "Lightning's departure",
+      "type": "concept"
+    },
+    "n_8b5af084": {
+      "id": "n_8b5af084",
       "label": "he made a mistake",
       "type": "concept"
     },
-    "n_5e683165": {
-      "id": "n_5e683165",
-      "label": "physically present but emotionally absent",
+    "n_0066e83e": {
+      "id": "n_0066e83e",
+      "label": "friends in Radiator Springs",
       "type": "concept"
     },
-    "n_f9ebba10": {
-      "id": "n_f9ebba10",
-      "label": "his friends in Radiator Springs",
+    "n_0150e3ba": {
+      "id": "n_0150e3ba",
+      "label": "race",
       "type": "concept"
     },
-    "n_4f280088": {
-      "id": "n_4f280088",
-      "label": "the race",
+    "n_a9837102": {
+      "id": "n_a9837102",
+      "label": "Lightning's crew chief",
       "type": "concept"
     },
-    "n_b245f604": {
-      "id": "n_b245f604",
-      "label": "distracted and unfocused",
+    "n_3becb816": {
+      "id": "n_3becb816",
+      "label": "Fabulous Hudson Hornet colors",
       "type": "concept"
     },
-    "n_0e8f09c6": {
-      "id": "n_0e8f09c6",
-      "label": "Lightning McQueen starts the race poorly",
+    "n_5dbadc28": {
+      "id": "n_5dbadc28",
+      "label": "town of Radiator Springs",
       "type": "concept"
     },
-    "n_4d5dc92a": {
-      "id": "n_4d5dc92a",
-      "label": "Doc Hudson's voice over the radio",
+    "n_9083eb1a": {
+      "id": "n_9083eb1a",
+      "label": "Lightning's pit crew",
       "type": "concept"
     },
-    "n_0fcfaabd": {
-      "id": "n_0fcfaabd",
-      "label": "Lightning McQueen's crew chief",
+    "n_b2399686": {
+      "id": "n_b2399686",
+      "label": "real pit stop",
       "type": "concept"
     },
-    "n_19340879": {
-      "id": "n_19340879",
-      "label": "his old Fabulous Hudson Hornet colors",
-      "type": "concept"
-    },
-    "n_293370e8": {
-      "id": "n_293370e8",
-      "label": "Lightning McQueen's pit crew",
-      "type": "concept"
-    },
-    "n_71423553": {
-      "id": "n_71423553",
-      "label": "a real pit stop",
-      "type": "concept"
-    },
-    "n_b7a07cfe": {
-      "id": "n_b7a07cfe",
+    "n_c9744a9c": {
+      "id": "n_c9744a9c",
       "label": "record time",
       "type": "concept"
     },
-    "n_3e6460fd": {
-      "id": "n_3e6460fd",
-      "label": "his friends",
+    "n_517b0f72": {
+      "id": "n_517b0f72",
+      "label": "contention",
       "type": "concept"
     },
-    "n_479ff1c0": {
-      "id": "n_479ff1c0",
-      "label": "Lightning McQueen surges back into contention",
-      "type": "concept"
-    },
-    "n_8e2d18cc": {
-      "id": "n_8e2d18cc",
-      "label": "final lap",
-      "type": "concept"
-    },
-    "n_c11dc122": {
-      "id": "n_c11dc122",
+    "n_c9d8ded1": {
+      "id": "n_c9d8ded1",
       "label": "The King",
       "type": "concept"
     },
-    "n_97112271": {
-      "id": "n_97112271",
-      "label": "Chick Hicks rams The King",
+    "n_941cf6a5": {
+      "id": "n_941cf6a5",
+      "label": "horrifying crash",
       "type": "concept"
     },
-    "n_41034f92": {
-      "id": "n_41034f92",
-      "label": "The King crash",
+    "n_feb3138c": {
+      "id": "n_feb3138c",
+      "label": "Doc Hudson's wreck",
       "type": "concept"
     },
-    "n_e40d842a": {
-      "id": "n_e40d842a",
-      "label": "Doc Hudson's wreck decades earlier",
+    "n_0ed8ca6a": {
+      "id": "n_0ed8ca6a",
+      "label": "Piston Cup",
       "type": "concept"
     },
-    "n_833b8406": {
-      "id": "n_833b8406",
-      "label": "the finish line",
+    "n_0c3a3f08": {
+      "id": "n_0c3a3f08",
+      "label": "The King's crumpled body",
       "type": "concept"
     },
-    "n_e23e67e1": {
-      "id": "n_e23e67e1",
-      "label": "win the Piston Cup",
-      "type": "concept"
-    },
-    "n_ad76a21f": {
-      "id": "n_ad76a21f",
-      "label": "The King's crumpled body on the infield",
-      "type": "concept"
-    },
-    "n_7781462e": {
-      "id": "n_7781462e",
+    "n_b090f5a9": {
+      "id": "n_b090f5a9",
       "label": "Doc's story",
       "type": "concept"
     },
-    "n_4f3f017c": {
-      "id": "n_4f3f017c",
-      "label": "racing abandoned Doc after his crash",
+    "n_c644ee91": {
+      "id": "n_c644ee91",
+      "label": "racing",
       "type": "concept"
     },
-    "n_86b6a78d": {
-      "id": "n_86b6a78d",
-      "label": "his brakes",
+    "n_aa0b64a5": {
+      "id": "n_aa0b64a5",
+      "label": "a choice",
       "type": "concept"
     },
-    "n_7ad6304b": {
-      "id": "n_7ad6304b",
-      "label": "just inches from the finish line",
+    "n_9035a473": {
+      "id": "n_9035a473",
+      "label": "finish line",
       "type": "concept"
     },
-    "n_2f448bbe": {
-      "id": "n_2f448bbe",
-      "label": "the Piston Cup",
+    "n_f943bb06": {
+      "id": "n_f943bb06",
+      "label": "The crowd",
       "type": "concept"
     },
-    "n_a901f61a": {
-      "id": "n_a901f61a",
-      "label": "Chick Hicks's victory",
+    "n_3d1236b2": {
+      "id": "n_3d1236b2",
+      "label": "Dinoco",
       "type": "concept"
     },
-    "n_b5dbe66d": {
-      "id": "n_b5dbe66d",
-      "label": "The King across the finish line",
-      "type": "concept"
-    },
-    "n_bef9dd0b": {
-      "id": "n_bef9dd0b",
-      "label": "The King finish his last race with dignity",
-      "type": "concept"
-    },
-    "n_e50a9118": {
-      "id": "n_e50a9118",
-      "label": "the crowd",
-      "type": "concept"
-    },
-    "n_82969322": {
-      "id": "n_82969322",
-      "label": "erupts",
-      "type": "concept"
-    },
-    "n_d79e4b14": {
-      "id": "n_d79e4b14",
-      "label": "on the podium",
-      "type": "concept"
-    },
-    "n_7c7e6338": {
-      "id": "n_7c7e6338",
-      "label": "Chick Hicks's hollow win",
-      "type": "concept"
-    },
-    "n_1723c58b": {
-      "id": "n_1723c58b",
-      "label": "nothing",
-      "type": "concept"
-    },
-    "n_d3ea29b6": {
-      "id": "n_d3ea29b6",
+    "n_5cab6bb4": {
+      "id": "n_5cab6bb4",
       "label": "Dinoco's owner",
       "type": "concept"
     },
-    "n_5756b6a3": {
-      "id": "n_5756b6a3",
-      "label": "helicopter ride for Mater",
+    "n_571ac96e": {
+      "id": "n_571ac96e",
+      "label": "helicopter ride",
       "type": "concept"
     },
-    "n_cede8df4": {
-      "id": "n_cede8df4",
-      "label": "a helicopter ride",
+    "n_7aadd18a": {
+      "id": "n_7aadd18a",
+      "label": "Tourists",
       "type": "concept"
     },
-    "n_01e13cdd": {
-      "id": "n_01e13cdd",
-      "label": "Lightning McQueen establishing racing headquarters in Radiator Springs",
+    "n_402f35bf": {
+      "id": "n_402f35bf",
+      "label": "Businesses",
       "type": "concept"
     },
-    "n_b19653f9": {
-      "id": "n_b19653f9",
-      "label": "Radiator Springs back on the map",
+    "n_2f872bce": {
+      "id": "n_2f872bce",
+      "label": "home",
       "type": "concept"
     },
-    "n_6ad7475a": {
-      "id": "n_6ad7475a",
-      "label": "tourists",
-      "type": "concept"
-    },
-    "n_4e6e2a28": {
-      "id": "n_4e6e2a28",
-      "label": "the businesses of Radiator Springs",
-      "type": "concept"
-    },
-    "n_ed7477c1": {
-      "id": "n_ed7477c1",
-      "label": "thriving crowds",
-      "type": "concept"
-    },
-    "n_3e223ec9": {
-      "id": "n_3e223ec9",
-      "label": "reborn",
-      "type": "concept"
-    },
-    "n_603036fa": {
-      "id": "n_603036fa",
-      "label": "relationship",
-      "type": "concept"
-    },
-    "n_8800aef2": {
-      "id": "n_8800aef2",
-      "label": "a home",
-      "type": "concept"
-    },
-    "n_0bf9aece": {
-      "id": "n_0bf9aece",
+    "n_c4962654": {
+      "id": "n_c4962654",
       "label": "real friends",
       "type": "concept"
     },
-    "n_a8e0a6ee": {
-      "id": "n_a8e0a6ee",
-      "label": "the understanding that life is about the journey, not just the finish line",
+    "n_643aeba5": {
+      "id": "n_643aeba5",
+      "label": "journey",
       "type": "concept"
     },
-    "n_fd1b642e": {
-      "id": "n_fd1b642e",
+    "n_ce29bee2": {
+      "id": "n_ce29bee2",
+      "label": "The film",
+      "type": "concept"
+    },
+    "n_46ffcf03": {
+      "id": "n_46ffcf03",
       "label": "the journey matters more than the destination",
       "type": "concept"
     },
-    "n_96b02507": {
-      "id": "n_96b02507",
-      "label": "Route 66's replacement by the Interstate",
+    "n_552e9567": {
+      "id": "n_552e9567",
+      "label": "the Interstate",
       "type": "concept"
     },
-    "n_b2b55efa": {
-      "id": "n_b2b55efa",
+    "n_e0dad8d6": {
+      "id": "n_e0dad8d6",
       "label": "modern life prioritizes speed and efficiency over experience and connection",
       "type": "concept"
     },
-    "n_a41fdc5b": {
-      "id": "n_a41fdc5b",
+    "n_fc6773a3": {
+      "id": "n_fc6773a3",
       "label": "selfish loner",
       "type": "concept"
     },
-    "n_fcfa15a7": {
-      "id": "n_fcfa15a7",
-      "label": "someone who values others and recognizes that no one succeeds alone",
+    "n_7f8abd19": {
+      "id": "n_7f8abd19",
+      "label": "I'm a one-man show",
       "type": "concept"
     },
-    "n_e7370d37": {
-      "id": "n_e7370d37",
-      "label": "Doc Hudson's story",
+    "n_b10f33d4": {
+      "id": "n_b10f33d4",
+      "label": "someone who values others",
       "type": "concept"
     },
-    "n_200080c1": {
-      "id": "n_200080c1",
-      "label": "what happens when someone is cast aside after giving everything",
+    "n_ee80aeea": {
+      "id": "n_ee80aeea",
+      "label": "no one succeeds alone",
       "type": "concept"
     },
-    "n_17484928": {
-      "id": "n_17484928",
+    "n_6ec44630": {
+      "id": "n_6ec44630",
+      "label": "Legacy and being forgotten",
+      "type": "concept"
+    },
+    "n_7a8653d3": {
+      "id": "n_7a8653d3",
+      "label": "being cast aside after giving everything",
+      "type": "concept"
+    },
+    "n_f0f7aa77": {
+      "id": "n_f0f7aa77",
       "label": "bitterness",
       "type": "concept"
     },
-    "n_d13d454d": {
-      "id": "n_d13d454d",
-      "label": "mentorship",
+    "n_e2acbcdf": {
+      "id": "n_e2acbcdf",
+      "label": "mentor",
       "type": "concept"
     },
-    "n_77a7be5d": {
-      "id": "n_77a7be5d",
-      "label": "Lightning McQueen's decision to forfeit the race to help The King finish",
+    "n_68e1ee20": {
+      "id": "n_68e1ee20",
+      "label": "forfeit the race to help The King finish",
       "type": "concept"
     },
-    "n_a9c70ff1": {
-      "id": "n_a9c70ff1",
+    "n_e631f97a": {
+      "id": "n_e631f97a",
+      "label": "Humility and sportsmanship",
+      "type": "concept"
+    },
+    "n_08d79af5": {
+      "id": "n_08d79af5",
       "label": "character growth",
       "type": "concept"
     },
-    "n_10ce3bca": {
-      "id": "n_10ce3bca",
+    "n_2845f797": {
+      "id": "n_2845f797",
       "label": "redemption",
       "type": "concept"
     },
-    "n_9c81b145": {
-      "id": "n_9c81b145",
+    "n_41e89f62": {
+      "id": "n_41e89f62",
       "label": "becoming a better car",
       "type": "concept"
     },
-    "n_e4da3f57": {
-      "id": "n_e4da3f57",
+    "n_baf475e3": {
+      "id": "n_baf475e3",
       "label": "re-engaging with the racing world he had shut out",
       "type": "concept"
     },
-    "n_74c523e0": {
-      "id": "n_74c523e0",
+    "n_e29ffffc": {
+      "id": "n_e29ffffc",
       "label": "I'm a precision instrument of speed and aerodynamics.",
       "type": "concept"
     },
-    "n_cc6b2057": {
-      "id": "n_cc6b2057",
+    "n_7a33c699": {
+      "id": "n_7a33c699",
       "label": "I'm happier than a tornado in a trailer park!",
       "type": "concept"
     },
-    "n_c0146ae2": {
-      "id": "n_c0146ae2",
+    "n_faee2b59": {
+      "id": "n_faee2b59",
       "label": "I create feelings in others that they themselves don't understand.",
       "type": "concept"
     },
-    "n_5553f7e7": {
-      "id": "n_5553f7e7",
+    "n_4b2f64dd": {
+      "id": "n_4b2f64dd",
       "label": "Turn right to go left.",
       "type": "concept"
     },
-    "n_d09964d7": {
-      "id": "n_d09964d7",
+    "n_7d97c154": {
+      "id": "n_7d97c154",
       "label": "It was the town that got to him. They changed him.",
       "type": "concept"
     },
-    "n_9d7770e1": {
-      "id": "n_9d7770e1",
+    "n_b7067071": {
+      "id": "n_b7067071",
       "label": "These are good folk around here, who care about one another. I don't want them depending on someone they can't count on.",
       "type": "concept"
     },
-    "n_fd2b76b0": {
-      "id": "n_fd2b76b0",
+    "n_0cfbc7c5": {
+      "id": "n_0cfbc7c5",
       "label": "I knew you couldn't drive. I didn't know you couldn't read.",
       "type": "concept"
     },
-    "n_a5e98268": {
-      "id": "n_a5e98268",
+    "n_bb4d24b8": {
+      "id": "n_bb4d24b8",
       "label": "Float like a Cadillac, sting like a Beemer.",
       "type": "concept"
     },
-    "n_ba358e8f": {
-      "id": "n_ba358e8f",
-      "label": "The Fabulous Hudson Hornet",
-      "type": "concept"
-    },
-    "n_b18c9da1": {
-      "id": "n_b18c9da1",
+    "n_4c53bc36": {
+      "id": "n_4c53bc36",
       "label": "There's a lot more to racing than just winning.",
       "type": "concept"
     },
-    "n_3119c195": {
-      "id": "n_3119c195",
+    "n_83943763": {
+      "id": "n_83943763",
+      "label": "The Fabulous Hudson Hornet",
+      "type": "concept"
+    },
+    "n_1bc8057e": {
+      "id": "n_1bc8057e",
       "label": "Real Gone",
       "type": "concept"
     },
-    "n_afac42ac": {
-      "id": "n_afac42ac",
+    "n_5fe1cffb": {
+      "id": "n_5fe1cffb",
       "label": "Sheryl Crow",
       "type": "concept"
     },
-    "n_52b66188": {
-      "id": "n_52b66188",
+    "n_6369bc24": {
+      "id": "n_6369bc24",
       "label": "Opening racing sequence",
       "type": "concept"
     },
-    "n_5bcb19f5": {
-      "id": "n_5bcb19f5",
+    "n_073f8813": {
+      "id": "n_073f8813",
       "label": "Life Is a Highway",
       "type": "concept"
     },
-    "n_0dd9c8df": {
-      "id": "n_0dd9c8df",
+    "n_8b7884eb": {
+      "id": "n_8b7884eb",
       "label": "Rascal Flatts",
       "type": "concept"
     },
-    "n_0a73a6c7": {
-      "id": "n_0a73a6c7",
+    "n_e19687ad": {
+      "id": "n_e19687ad",
       "label": "Lightning's road trip montage",
       "type": "concept"
     },
-    "n_69ef4d2f": {
-      "id": "n_69ef4d2f",
+    "n_17a46da4": {
+      "id": "n_17a46da4",
       "label": "Our Town",
       "type": "concept"
     },
-    "n_f1d386da": {
-      "id": "n_f1d386da",
+    "n_fbbe3e3f": {
+      "id": "n_fbbe3e3f",
       "label": "James Taylor",
       "type": "concept"
     },
-    "n_a7e6de03": {
-      "id": "n_a7e6de03",
+    "n_27ee3c71": {
+      "id": "n_27ee3c71",
       "label": "Radiator Springs' melancholy history",
       "type": "concept"
     },
-    "n_001b5321": {
-      "id": "n_001b5321",
+    "n_705c6601": {
+      "id": "n_705c6601",
       "label": "Academy Award for Best Original Song",
       "type": "concept"
     },
-    "n_79ffc6fc": {
-      "id": "n_79ffc6fc",
+    "n_bc90676c": {
+      "id": "n_bc90676c",
       "label": "Behind the Clouds",
       "type": "concept"
     },
-    "n_accf1f3f": {
-      "id": "n_accf1f3f",
+    "n_ee3ecc12": {
+      "id": "n_ee3ecc12",
       "label": "Brad Paisley",
       "type": "concept"
     },
-    "n_d7e3744f": {
-      "id": "n_d7e3744f",
+    "n_74917a7f": {
+      "id": "n_74917a7f",
       "label": "End credits",
       "type": "concept"
     },
-    "n_446eb0b6": {
-      "id": "n_446eb0b6",
+    "n_f20f2c81": {
+      "id": "n_f20f2c81",
       "label": "Chuck Berry",
       "type": "concept"
     },
-    "n_ae3c9a74": {
-      "id": "n_ae3c9a74",
+    "n_10dd5e5a": {
+      "id": "n_10dd5e5a",
       "label": "Classic Route 66 anthem",
       "type": "concept"
     },
-    "n_4c667c1c": {
-      "id": "n_4c667c1c",
+    "n_8d98b915": {
+      "id": "n_8d98b915",
       "label": "over $460 million worldwide",
       "type": "concept"
     },
-    "n_e9458677": {
-      "id": "n_e9458677",
-      "label": "one of Pixar's most lucrative franchises",
+    "n_68906e5a": {
+      "id": "n_68906e5a",
+      "label": "Pixar's most lucrative franchises",
       "type": "concept"
     },
-    "n_5dacb212": {
-      "id": "n_5dacb212",
+    "n_fbbbb043": {
+      "id": "n_fbbbb043",
+      "label": "Cars franchise",
+      "type": "concept"
+    },
+    "n_74a466d4": {
+      "id": "n_74a466d4",
       "label": "billions in merchandise revenue",
       "type": "concept"
     },
-    "n_cd3deee3": {
-      "id": "n_cd3deee3",
+    "n_7e9298ae": {
+      "id": "n_7e9298ae",
       "label": "Cars 2",
       "type": "concept"
     },
-    "n_3efcab72": {
-      "id": "n_3efcab72",
+    "n_7728d7a5": {
+      "id": "n_7728d7a5",
       "label": "2011",
       "type": "concept"
     },
-    "n_544fce41": {
-      "id": "n_544fce41",
+    "n_190e6d45": {
+      "id": "n_190e6d45",
       "label": "Cars 3",
       "type": "concept"
     },
-    "n_68148dc1": {
-      "id": "n_68148dc1",
+    "n_c94fba84": {
+      "id": "n_c94fba84",
       "label": "2017",
       "type": "concept"
     },
-    "n_acc71dfe": {
-      "id": "n_acc71dfe",
+    "n_3e92d841": {
+      "id": "n_3e92d841",
       "label": "Planes",
       "type": "concept"
     },
-    "n_827ab01c": {
-      "id": "n_827ab01c",
+    "n_cdb32035": {
+      "id": "n_cdb32035",
       "label": "2013",
       "type": "concept"
     },
-    "n_cbc556a2": {
-      "id": "n_cbc556a2",
+    "n_70143986": {
+      "id": "n_70143986",
       "label": "short films",
       "type": "concept"
     },
-    "n_f412fa53": {
-      "id": "n_f412fa53",
-      "label": "Cars Land at Disney California Adventure",
+    "n_c50a7e0e": {
+      "id": "n_c50a7e0e",
+      "label": "theme park attractions",
       "type": "concept"
     },
-    "n_dd354f24": {
-      "id": "n_dd354f24",
-      "label": "an extensive toy line",
+    "n_9bb1b937": {
+      "id": "n_9bb1b937",
+      "label": "extensive toy line",
       "type": "concept"
     },
-    "n_07859703": {
-      "id": "n_07859703",
+    "n_a59b4ed6": {
+      "id": "n_a59b4ed6",
+      "label": "Cars Land",
+      "type": "concept"
+    },
+    "n_085ca84e": {
+      "id": "n_085ca84e",
+      "label": "Disney California Adventure",
+      "type": "concept"
+    },
+    "n_e5218423": {
+      "id": "n_e5218423",
       "label": "Pixar's beloved head of story",
       "type": "concept"
     },
-    "n_bb7b47ed": {
-      "id": "n_bb7b47ed",
-      "label": "Joe Ranft's death in a car accident in 2005",
-      "type": "concept"
-    },
-    "n_d0b75b8e": {
-      "id": "n_d0b75b8e",
-      "label": "car accident",
-      "type": "concept"
-    },
-    "n_fc9cfde8": {
-      "id": "n_fc9cfde8",
+    "n_0f28786f": {
+      "id": "n_0f28786f",
       "label": "2005",
       "type": "concept"
     },
-    "n_4c5008ac": {
-      "id": "n_4c5008ac",
-      "label": "Joe Ranft's memory",
+    "n_32b91e55": {
+      "id": "n_32b91e55",
+      "label": "car accident",
       "type": "concept"
     },
-    "n_8ef84795": {
-      "id": "n_8ef84795",
-      "label": "Pixar's filmography",
+    "n_579526b5": {
+      "id": "n_579526b5",
+      "label": "John Lasseter's deeply personal love letter",
       "type": "concept"
     },
-    "n_a1dd209e": {
-      "id": "n_a1dd209e",
+    "n_6de960ab": {
+      "id": "n_6de960ab",
       "label": "classic American car culture",
       "type": "concept"
     },
-    "n_f6cddeaa": {
-      "id": "n_f6cddeaa",
-      "label": "the small towns that time forgot",
-      "type": "concept"
-    },
-    "n_b34db2de": {
-      "id": "n_b34db2de",
-      "label": "John Lasseter's deeply personal love letter to Route 66, classic American car culture, and the small towns that time forgot",
+    "n_293c695e": {
+      "id": "n_293c695e",
+      "label": "small towns that time forgot",
       "type": "concept"
     }
   },
   "hyperedges": [
     {
-      "id": "e_3d6f9196",
-      "label": "produced_by_studio",
+      "id": "e_355c2da9",
+      "label": "produced_by",
       "source": [
         "Cars"
       ],
@@ -1358,10 +1078,10 @@
         "Walt Disney Pictures"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "2ade8d2cee450d4ff542a95f03099fcd"
     },
     {
-      "id": "e_4583e71e",
+      "id": "e_c6043bd3",
       "label": "directed_by",
       "source": [
         "Cars"
@@ -1370,10 +1090,10 @@
         "John Lasseter"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "2ade8d2cee450d4ff542a95f03099fcd"
     },
     {
-      "id": "e_97a2a191",
+      "id": "e_3db13d2a",
       "label": "co_directed_by",
       "source": [
         "Cars"
@@ -1382,11 +1102,11 @@
         "Joe Ranft"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "2ade8d2cee450d4ff542a95f03099fcd"
     },
     {
-      "id": "e_b75db833",
-      "label": "written_by",
+      "id": "e_496b8eaf",
+      "label": "has_screenplay_by",
       "source": [
         "Cars"
       ],
@@ -1399,10 +1119,10 @@
         "Jorgen Klubien"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "2ade8d2cee450d4ff542a95f03099fcd"
     },
     {
-      "id": "e_13a39138",
+      "id": "e_5f0f8200",
       "label": "has_release_date",
       "source": [
         "Cars"
@@ -1411,10 +1131,10 @@
         "June 9, 2006"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "2ade8d2cee450d4ff542a95f03099fcd"
     },
     {
-      "id": "e_834ed81c",
+      "id": "e_c4cf2d27",
       "label": "has_genre",
       "source": [
         "Cars"
@@ -1423,10 +1143,10 @@
         "Animated Comedy-Adventure"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "2ade8d2cee450d4ff542a95f03099fcd"
     },
     {
-      "id": "e_cb1c994e",
+      "id": "e_794b489e",
       "label": "has_runtime",
       "source": [
         "Cars"
@@ -1435,452 +1155,10 @@
         "117 minutes"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "2ade8d2cee450d4ff542a95f03099fcd"
     },
     {
-      "id": "e_47beb141",
-      "label": "is_characterized_as",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "rookie race car",
-        "#95",
-        "Rust-eze"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_2b3ac021",
-      "label": "starts_as",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "arrogant",
-        "self-centered"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_f60f0550",
-      "label": "learns",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "humility",
-        "the value of friendship"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_da65faf8",
-      "label": "is_characterized_as",
-      "source": [
-        "Mater"
-      ],
-      "target": [
-        "rusty but lovable tow truck",
-        "Radiator Springs"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_11f09928",
-      "label": "becomes_best_friend_of",
-      "source": [
-        "Mater"
-      ],
-      "target": [
-        "Lightning McQueen"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_cfbd88c2",
-      "label": "is_characterized_as",
-      "source": [
-        "Sally Carrera"
-      ],
-      "target": [
-        "Porsche 911",
-        "town attorney of Radiator Springs"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_b74a6ec0",
-      "label": "left",
-      "source": [
-        "Sally Carrera"
-      ],
-      "target": [
-        "Los Angeles"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_b8bd8c58",
-      "label": "moved_for",
-      "source": [
-        "Sally Carrera"
-      ],
-      "target": [
-        "simpler existence in Radiator Springs"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_8db3bd64",
-      "label": "is_love_interest_of",
-      "source": [
-        "Sally Carrera"
-      ],
-      "target": [
-        "Lightning McQueen"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_9d342f5c",
-      "label": "is_characterized_as",
-      "source": [
-        "Doc Hudson"
-      ],
-      "target": [
-        "1951 Hudson Hornet",
-        "town judge",
-        "doctor"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_b7c07573",
-      "label": "is_secretly",
-      "source": [
-        "Doc Hudson"
-      ],
-      "target": [
-        "Fabulous Hudson Hornet",
-        "legendary three-time Piston Cup champion"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_ac856c26",
-      "label": "is_characterized_as",
-      "source": [
-        "Sheriff"
-      ],
-      "target": [
-        "law enforcement of Radiator Springs",
-        "1949 Mercury Police Cruiser"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_a350ffbf",
-      "label": "owns_and_operates",
-      "source": [
-        "Ramone"
-      ],
-      "target": [
-        "1959 Chevrolet Impala Lowrider",
-        "body art shop"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_5c13c8d8",
-      "label": "enjoys",
-      "source": [
-        "Ramone"
-      ],
-      "target": [
-        "repainting himself daily"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_60ecba2b",
-      "label": "owns_and_operates",
-      "source": [
-        "Flo"
-      ],
-      "target": [
-        "1950s show car",
-        "Flo's V8 Cafe",
-        "local gas station",
-        "diner"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_194dd0d8",
-      "label": "is_wife_of",
-      "source": [
-        "Flo"
-      ],
-      "target": [
-        "Ramone"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_ee24deb0",
-      "label": "owns_and_operates",
-      "source": [
-        "Luigi"
-      ],
-      "target": [
-        "yellow Fiat 500",
-        "Luigi's Casa Della Tires"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_10e4a0a5",
-      "label": "is_passionate_about",
-      "source": [
-        "Luigi"
-      ],
-      "target": [
-        "Ferrari"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_d49d0d30",
-      "label": "assists",
-      "source": [
-        "Guido"
-      ],
-      "target": [
-        "Luigi"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_d55d334c",
-      "label": "is_characterized_as",
-      "source": [
-        "Guido"
-      ],
-      "target": [
-        "small forklift assistant"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_1d8e3dcf",
-      "label": "dreams_of",
-      "source": [
-        "Guido"
-      ],
-      "target": [
-        "performing a real pit stop"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_c3baa07b",
-      "label": "owns_and_operates",
-      "source": [
-        "Sarge"
-      ],
-      "target": [
-        "1941 Willys military jeep",
-        "surplus store"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_76679c89",
-      "label": "bickers_with",
-      "source": [
-        "Sarge"
-      ],
-      "target": [
-        "Fillmore"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_229bac47",
-      "label": "is_characterized_as",
-      "source": [
-        "Fillmore"
-      ],
-      "target": [
-        "1960 VW Bus",
-        "local hippie",
-        "organic fuel"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_f5241e8a",
-      "label": "sells",
-      "source": [
-        "Fillmore"
-      ],
-      "target": [
-        "organic fuel"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_2d2dda9e",
-      "label": "is_characterized_as",
-      "source": [
-        "Red"
-      ],
-      "target": [
-        "shy fire truck of Radiator Springs"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_6a3fd305",
-      "label": "is_characterized_as",
-      "source": [
-        "Lizzie"
-      ],
-      "target": [
-        "1923 Ford Model T",
-        "oldest resident of Radiator Springs"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_42940faa",
-      "label": "is_widow_of",
-      "source": [
-        "Lizzie"
-      ],
-      "target": [
-        "Stanley"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_1ec78628",
-      "label": "founded",
-      "source": [
-        "Stanley"
-      ],
-      "target": [
-        "Radiator Springs"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_f5c0a57d",
-      "label": "is_characterized_as",
-      "source": [
-        "Chick Hicks"
-      ],
-      "target": [
-        "1979 Shyster Cremlin stock car",
-        "#86"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_d134d132",
-      "label": "is_rival_of",
-      "source": [
-        "Chick Hicks"
-      ],
-      "target": [
-        "Lightning McQueen"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_bbd65113",
-      "label": "is_characterized_as",
-      "source": [
-        "The King (Strip Weathers)"
-      ],
-      "target": [
-        "1970 Plymouth Superbird",
-        "#43",
-        "retiring veteran champion"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_fdcc3635",
-      "label": "modeled_after",
-      "source": [
-        "The King (Strip Weathers)"
-      ],
-      "target": [
-        "Richard Petty"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_e559d07b",
-      "label": "transports",
-      "source": [
-        "Mack"
-      ],
-      "target": [
-        "Lightning McQueen"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_5985cdf9",
-      "label": "is_characterized_as",
-      "source": [
-        "Mack"
-      ],
-      "target": [
-        "loyal transport truck"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_df6d6b89",
+      "id": "e_a15e1129",
       "label": "takes_place_at",
       "source": [
         "final race of the Piston Cup season"
@@ -1889,122 +1167,73 @@
         "Motor Speedway of the South"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_70aacb79",
-      "label": "are_tied_for",
+      "id": "e_5c527c77",
+      "label": "tied_for_championship_in",
       "source": [
         "Strip \"The King\" Weathers",
         "Chick Hicks",
         "Lightning McQueen"
       ],
       "target": [
-        "Piston Cup championship"
+        "Piston Cup season"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_bfdb2ebf",
-      "label": "is_characterized_as",
-      "source": [
-        "Strip \"The King\" Weathers"
-      ],
-      "target": [
-        "retiring legend"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_1c0953cb",
-      "label": "is_characterized_as",
-      "source": [
-        "Chick Hicks"
-      ],
-      "target": [
-        "perennial runner-up"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_9817e654",
-      "label": "is_characterized_as",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "brash rookie sensation"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_5833fc69",
+      "id": "e_c9ec66fb",
       "label": "refuses_help_from",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "his pit crew"
+        "pit crew"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_690bf27f",
-      "label": "alienates",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "everyone around him"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_f75b86f4",
+      "id": "e_311fdcb9",
       "label": "ends_in",
       "source": [
-        "the final race of the Piston Cup season"
+        "final race of the Piston Cup season"
       ],
       "target": [
-        "unprecedented three-way tie"
+        "three-way tie"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_fe66e00f",
-      "label": "is_scheduled_for",
+      "id": "e_d126dcba",
+      "label": "scheduled_at",
       "source": [
         "tiebreaker race"
       ],
       "target": [
-        "one week later",
         "Los Angeles International Speedway"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_66b77557",
-      "label": "wants_to_win",
+      "id": "e_5a6da5f4",
+      "label": "scheduled_for",
       "source": [
-        "Lightning McQueen"
+        "tiebreaker race"
       ],
       "target": [
-        "Dinoco sponsorship"
+        "one week later"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_b50a2c05",
-      "label": "earns",
+      "id": "e_74c5a16d",
+      "label": "earns_sponsorship",
       "source": [
         "Piston Cup championship"
       ],
@@ -2012,48 +1241,58 @@
         "Dinoco sponsorship"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_8eacff6b",
-      "label": "would_replace",
+      "id": "e_01ba5540",
+      "label": "replaces_sponsorship_of",
       "source": [
         "Dinoco sponsorship"
       ],
       "target": [
-        "the retiring King"
+        "Strip \"The King\" Weathers"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_5b41bf6a",
-      "label": "pressures_to_reach",
+      "id": "e_464db386",
+      "label": "pressures",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "Mack",
-        "drive through the night",
-        "California"
+        "Mack"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_80ee13a2",
-      "label": "does",
+      "id": "e_5ae452c2",
+      "label": "drives_to",
       "source": [
         "Mack"
       ],
       "target": [
-        "falls asleep at the wheel"
+        "California"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_86114a28",
+      "id": "e_92d5978f",
+      "label": "falls_asleep_during",
+      "source": [
+        "Mack"
+      ],
+      "target": [
+        "overnight drive"
+      ],
+      "weight": 1.0,
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
+    },
+    {
+      "id": "e_4ec01f68",
       "label": "startle",
       "source": [
         "Boost",
@@ -2065,75 +1304,82 @@
         "Mack"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_d9e0672f",
-      "label": "cause",
-      "source": [
-        "Boost",
-        "DJ",
-        "Wingo",
-        "Snot Rod",
-        "Mack"
-      ],
-      "target": [
-        "Lightning McQueen tumbles out the back of the trailer onto the highway"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_9dea94b3",
-      "label": "becomes",
+      "id": "e_af40d2e8",
+      "label": "tumbles_out_of",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "lost and alone"
+        "trailer"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_c9c6f71c",
+      "id": "e_179ec0b0",
+      "label": "becomes_lost_at",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "highway"
+      ],
+      "weight": 1.0,
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
+    },
+    {
+      "id": "e_6a802cb4",
       "label": "chases",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "what he thinks is Mack"
+        "Mack"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_5a60fc77",
+      "id": "e_bbf38e13",
       "label": "tears_through",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "Radiator Springs",
+        "Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
+    },
+    {
+      "id": "e_30304481",
+      "label": "located_on",
+      "source": [
+        "Radiator Springs"
+      ],
+      "target": [
         "Route 66"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_0e804ad6",
+      "id": "e_f7243b19",
       "label": "destroys",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "the main road"
+        "main road"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_f794223f",
+      "id": "e_0ce6c581",
       "label": "apprehends",
       "source": [
         "Sheriff"
@@ -2142,206 +1388,193 @@
         "Lightning McQueen"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_8fb750f0",
-      "label": "brings_before",
+      "id": "e_715e5cbb",
+      "label": "serves_as_judge_of",
       "source": [
-        "Sheriff"
+        "Doc Hudson"
       ],
       "target": [
-        "Doc Hudson"
+        "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_d92b7590",
-      "label": "initially_wants_to_kick_out_of_town",
+      "id": "e_fe4568c5",
+      "label": "brought_before",
       "source": [
-        "Doc Hudson"
-      ],
-      "target": [
         "Lightning McQueen"
       ],
+      "target": [
+        "Doc Hudson"
+      ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_3e8f0077",
-      "label": "argues_to",
+      "id": "e_63792c43",
+      "label": "serves_as_attorney_of",
       "source": [
         "Sally Carrera"
       ],
       "target": [
-        "Doc Hudson",
-        "Lightning McQueen should fix the road he destroyed"
+        "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_8a258fc7",
-      "label": "is_sentenced_to",
+      "id": "e_353ba0be",
+      "label": "argues_that_must_fix",
+      "source": [
+        "Sally Carrera"
+      ],
+      "target": [
+        "Lightning McQueen",
+        "main road"
+      ],
+      "weight": 1.0,
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
+    },
+    {
+      "id": "e_8380de04",
+      "label": "sentenced_to",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "community service",
-        "repave the entire stretch of road",
+        "community service"
+      ],
+      "weight": 1.0,
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
+    },
+    {
+      "id": "e_5b8e7335",
+      "label": "must_repave",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "entire stretch of road"
+      ],
+      "weight": 1.0,
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
+    },
+    {
+      "id": "e_afe360dc",
+      "label": "must_use",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
         "Bessie"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "bc38a9d6b2d1b2951b7e40e9c910a370"
     },
     {
-      "id": "e_2bf46f6f",
-      "label": "tries_to_rush",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "the road-repair job"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_86d7ba91",
+      "id": "e_a03a84ee",
       "label": "produces",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "terrible road surface"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_a600b2c9",
-      "label": "challenges_to",
+      "id": "e_27055102",
+      "label": "challenges_to_race_at",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "Lightning McQueen",
-        "race at Willy's Butte"
+        "Lightning",
+        "Willy's Butte"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_fd10fc7f",
-      "label": "would_allow",
+      "id": "e_6a2f584e",
+      "label": "sets_race_stakes",
       "source": [
-        "Lightning wins"
+        "Doc Hudson"
       ],
       "target": [
-        "Lightning can leave"
+        "Lightning can leave if wins",
+        "Lightning has to start the road over if loses"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_5a1ee5c3",
-      "label": "would_require",
+      "id": "e_9c21f7ab",
+      "label": "accepts_challenge_from",
       "source": [
-        "Doc wins"
+        "Lightning"
       ],
       "target": [
-        "Lightning has to start the road over"
+        "Doc Hudson"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_a70b368c",
-      "label": "accepts",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "Doc Hudson's race challenge"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_043c716d",
-      "label": "has_feature",
-      "source": [
-        "dirt track"
-      ],
-      "target": [
-        "sharp turn"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_74ddbeea",
+      "id": "e_8a8759f0",
       "label": "flies_off_into",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "cactus patch"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_18af428a",
-      "label": "navigates_expertly",
+      "id": "e_1e2eb30d",
+      "label": "navigates_turn_expertly",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "the turn"
+        "sharp turn"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_a24512e5",
-      "label": "is_forced_to",
+      "id": "e_ee4e0c76",
+      "label": "forced_to_start_over",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "start the road over"
+        "road"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_717e662c",
-      "label": "gets_to_know",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "residents of Radiator Springs"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_2596f770",
-      "label": "was_once",
+      "id": "e_1958d4fd",
+      "label": "was_thriving_stop_on",
       "source": [
         "Radiator Springs"
       ],
       "target": [
-        "thriving stop on Route 66"
+        "Route 66"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_7f444c79",
+      "id": "e_1f62cf52",
       "label": "bypasses",
       "source": [
         "Interstate 40"
@@ -2350,136 +1583,120 @@
         "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_605b2dc5",
-      "label": "causes",
+      "id": "e_3d8ff52b",
+      "label": "left_life_in",
       "source": [
-        "Interstate 40"
+        "Sally"
       ],
       "target": [
-        "travelers no longer came through",
-        "Radiator Springs slowly withered"
+        "LA"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_e54b80a2",
-      "label": "tells",
+      "id": "e_67ca528f",
+      "label": "finds_happiness_in",
       "source": [
-        "Sally Carrera"
+        "Sally"
       ],
       "target": [
-        "Lightning McQueen",
-        "she left her high-powered life in LA and found real happiness in the slower pace of Radiator Springs"
+        "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_4a26a756",
-      "label": "befriends",
+      "id": "e_716e745a",
+      "label": "befriends_unconditionally",
       "source": [
         "Mater"
       ],
       "target": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_dd32f180",
-      "label": "shares_with",
+      "id": "e_29c58b6a",
+      "label": "takes_tractor_tipping_with",
       "source": [
         "Mater"
       ],
       "target": [
-        "Lightning McQueen",
-        "tractor tipping",
-        "genuine uncomplicated friendship"
+        "Lightning"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_adb9d8af",
+      "id": "e_e9c38351",
       "label": "remains_cold_toward",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_540d34ec",
-      "label": "remains_antagonistic_toward",
-      "source": [
-        "Doc Hudson"
-      ],
-      "target": [
-        "Lightning McQueen"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_72bf5ca4",
+      "id": "e_dbbbe12f",
       "label": "explores",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "Doc's garage"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_43b7e35f",
-      "label": "discovers",
+      "id": "e_295c5eba",
+      "label": "discovers_in",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "three Piston Cup trophies",
         "newspaper clipping"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_a221d334",
-      "label": "reveals",
-      "source": [
-        "newspaper clipping"
-      ],
-      "target": [
-        "Doc Hudson is the Fabulous Hudson Hornet"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_4cc4f89b",
-      "label": "is_revealed_as",
+      "id": "e_0f564db8",
+      "label": "is_identity",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "racing legend from the 1950s"
+        "Fabulous Hudson Hornet"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_f3c40fcc",
-      "label": "suffers",
+      "id": "e_41a4933e",
+      "label": "was_legend_in",
+      "source": [
+        "Fabulous Hudson Hornet"
+      ],
+      "target": [
+        "1950s"
+      ],
+      "weight": 1.0,
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
+    },
+    {
+      "id": "e_ba65cb54",
+      "label": "had",
       "source": [
         "Doc Hudson"
       ],
@@ -2487,23 +1704,11 @@
         "terrible crash"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_fb2d3cbb",
-      "label": "followed_by",
-      "source": [
-        "Doc Hudson recovers from crash"
-      ],
-      "target": [
-        "racing had moved on without him"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_5181761b",
-      "label": "replaces_and_forgets",
+      "id": "e_fabf9c80",
+      "label": "moved_on_without",
       "source": [
         "racing world"
       ],
@@ -2511,236 +1716,798 @@
         "Doc Hudson"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_b9c93247",
-      "label": "leaves",
+      "id": "e_462e598a",
+      "label": "confronts_about_past",
       "source": [
-        "being replaced and forgotten"
+        "Lightning"
       ],
       "target": [
-        "Doc Hudson bitter toward the racing world"
+        "Doc Hudson"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_90116a38",
-      "label": "confronts_about",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "Doc Hudson",
-        "his past"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_1b1b9ffd",
-      "label": "warns",
+      "id": "e_4d072b49",
+      "label": "warns_about_hollowness_of",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "Lightning McQueen",
-        "the racing world is hollow and will chew him up and spit him out"
+        "racing world"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_5bd0a520",
-      "label": "begins_to_care_about",
+      "id": "e_dedd9724",
+      "label": "gets_paint_job_from",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "the town and its residents"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_e7d78c24",
-      "label": "gives",
-      "source": [
         "Ramone"
       ],
-      "target": [
-        "Lightning McQueen",
-        "new paint job"
-      ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_c5729452",
-      "label": "give",
+      "id": "e_82c31cac",
+      "label": "gets_tires_from",
       "source": [
+        "Lightning"
+      ],
+      "target": [
         "Luigi",
         "Guido"
       ],
-      "target": [
-        "Lightning McQueen",
-        "new tires"
-      ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_53273a9a",
+      "id": "e_3b72973f",
       "label": "fills_up_at",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "Flo's V8 Cafe"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_3b97ba73",
-      "label": "drive_to",
+      "id": "e_c286550d",
+      "label": "drives_to",
       "source": [
-        "Lightning McQueen",
-        "Sally Carrera"
+        "Lightning",
+        "Sally"
       ],
       "target": [
-        "Wheel Well Motel",
-        "the town at sunset"
+        "Wheel Well Motel"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_55deefa9",
-      "label": "tells_about",
+      "id": "e_4c1db6c4",
+      "label": "tells_history_of",
       "source": [
-        "Sally Carrera"
+        "Sally"
       ],
       "target": [
-        "Lightning McQueen",
-        "history of Route 66",
-        "the Interstate took the magic of the journey away"
+        "Route 66",
+        "Interstate 40"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
     },
     {
-      "id": "e_b862c9d7",
-      "label": "begins_to_fall_for",
+      "id": "e_b7b4998a",
+      "label": "falls_for",
+      "source": [
+        "Lightning"
+      ],
+      "target": [
+        "Sally",
+        "Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "4e7d46505a14c2f04042e093659d7a92"
+    },
+    {
+      "id": "e_1b744d25",
+      "label": "has_racing_number",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "Sally Carrera"
+        "#95"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
     },
     {
-      "id": "e_b2efe29b",
-      "label": "begins_to_love",
+      "id": "e_8b1d253a",
+      "label": "sponsored_by",
       "source": [
         "Lightning McQueen"
+      ],
+      "target": [
+        "Rust-eze"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_bf9a1538",
+      "label": "has_initial_trait",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Arrogant and self-centered"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_f30b2877",
+      "label": "learns",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "humility",
+        "the value of friendship"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_f51df72a",
+      "label": "is_type",
+      "source": [
+        "Mater"
+      ],
+      "target": [
+        "rusty but lovable tow truck"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_ca5da1e3",
+      "label": "resides_in",
+      "source": [
+        "Mater"
       ],
       "target": [
         "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
     },
     {
-      "id": "e_e1f1cfd0",
-      "label": "takes_on",
+      "id": "e_abf98652",
+      "label": "becomes_best_friend_of",
       "source": [
-        "Lightning McQueen"
+        "Mater"
       ],
       "target": [
-        "everyone",
-        "cruise down the main drag"
+        "Lightning McQueen"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
     },
     {
-      "id": "e_daa87bef",
+      "id": "e_31f1b956",
+      "label": "is_model",
+      "source": [
+        "Sally Carrera"
+      ],
+      "target": [
+        "Porsche 911"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_164a807a",
+      "label": "works_as",
+      "source": [
+        "Sally Carrera"
+      ],
+      "target": [
+        "town attorney of Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_401bfaa5",
+      "label": "relocated_from",
+      "source": [
+        "Sally Carrera"
+      ],
+      "target": [
+        "Los Angeles"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_55feded4",
+      "label": "is_love_interest_of",
+      "source": [
+        "Sally Carrera"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_6f3f2fd1",
+      "label": "is_model",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "1951 Hudson Hornet"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_7949328c",
+      "label": "works_as",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "town judge",
+        "doctor"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_3094cbd4",
+      "label": "has_secret_identity",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "Fabulous Hudson Hornet"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_3f97006b",
+      "label": "has_achievement",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "three-time Piston Cup champion"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_d5a23c9b",
+      "label": "works_as",
+      "source": [
+        "Sheriff"
+      ],
+      "target": [
+        "law enforcement of Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_d57eaaed",
+      "label": "is_model",
+      "source": [
+        "Sheriff"
+      ],
+      "target": [
+        "1949 Mercury Police Cruiser"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_97d376bc",
+      "label": "is_model",
+      "source": [
+        "Ramone"
+      ],
+      "target": [
+        "1959 Chevrolet Impala Lowrider"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_161a4b49",
+      "label": "owns",
+      "source": [
+        "Ramone"
+      ],
+      "target": [
+        "body art shop"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_a3d2741c",
+      "label": "has_habit",
+      "source": [
+        "Ramone"
+      ],
+      "target": [
+        "repaint himself daily"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_f75284e8",
+      "label": "is_spouse_of",
+      "source": [
+        "Ramone"
+      ],
+      "target": [
+        "Flo"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_a8cdc02d",
+      "label": "is_model",
+      "source": [
+        "Flo"
+      ],
+      "target": [
+        "1950s show car"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_5a421e46",
+      "label": "owns",
+      "source": [
+        "Flo"
+      ],
+      "target": [
+        "Flo's V8 Cafe"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_886d3c3b",
+      "label": "is_spouse_of",
+      "source": [
+        "Flo"
+      ],
+      "target": [
+        "Ramone"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_4ca4ac6d",
+      "label": "is_model",
+      "source": [
+        "Luigi"
+      ],
+      "target": [
+        "yellow Fiat 500"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_175ab45f",
+      "label": "owns",
+      "source": [
+        "Luigi"
+      ],
+      "target": [
+        "Luigi's Casa Della Tires"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_5646debd",
+      "label": "is_passionate_about",
+      "source": [
+        "Luigi"
+      ],
+      "target": [
+        "Ferrari"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_deadf517",
+      "label": "works_as",
+      "source": [
+        "Guido"
+      ],
+      "target": [
+        "Luigi's small forklift assistant"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_5ad10738",
+      "label": "has_dream",
+      "source": [
+        "Guido"
+      ],
+      "target": [
+        "performing a real pit stop"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_ac6f07f1",
+      "label": "is_model",
+      "source": [
+        "Sarge"
+      ],
+      "target": [
+        "1941 Willys military jeep"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_0f264ab9",
+      "label": "owns",
+      "source": [
+        "Sarge"
+      ],
+      "target": [
+        "surplus store"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_991875e2",
+      "label": "bickers_with",
+      "source": [
+        "Sarge"
+      ],
+      "target": [
+        "Fillmore"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_aade40d2",
+      "label": "is_model",
+      "source": [
+        "Fillmore"
+      ],
+      "target": [
+        "1960 VW Bus"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_a63caca1",
+      "label": "works_as",
+      "source": [
+        "Fillmore"
+      ],
+      "target": [
+        "local hippie"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_71c5cf52",
+      "label": "sells",
+      "source": [
+        "Fillmore"
+      ],
+      "target": [
+        "organic fuel"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_c961050b",
+      "label": "bickers_with",
+      "source": [
+        "Fillmore"
+      ],
+      "target": [
+        "Sarge"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_6dc02a50",
+      "label": "works_as",
+      "source": [
+        "Red"
+      ],
+      "target": [
+        "shy fire truck of Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_576b6fab",
+      "label": "is_model",
+      "source": [
+        "Lizzie"
+      ],
+      "target": [
+        "1923 Ford Model T"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_dcf020cd",
+      "label": "is_resident_of",
+      "source": [
+        "Lizzie"
+      ],
+      "target": [
+        "Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_4f03ec2b",
+      "label": "is_widow_of",
+      "source": [
+        "Lizzie"
+      ],
+      "target": [
+        "Stanley"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_94e11d83",
+      "label": "founded",
+      "source": [
+        "Stanley"
+      ],
+      "target": [
+        "Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_d0a72a02",
+      "label": "is_model",
+      "source": [
+        "Chick Hicks"
+      ],
+      "target": [
+        "1979 Shyster Cremlin stock car"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_402df66b",
+      "label": "has_racing_number",
+      "source": [
+        "Chick Hicks"
+      ],
+      "target": [
+        "#86"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_738b0134",
+      "label": "is_rival_of",
+      "source": [
+        "Chick Hicks"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_e138ce99",
+      "label": "is_model",
+      "source": [
+        "The King (Strip Weathers)"
+      ],
+      "target": [
+        "1970 Plymouth Superbird"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_a93b0743",
+      "label": "has_racing_number",
+      "source": [
+        "The King (Strip Weathers)"
+      ],
+      "target": [
+        "#43"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_3a040445",
+      "label": "has_status",
+      "source": [
+        "The King (Strip Weathers)"
+      ],
+      "target": [
+        "retiring veteran champion"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_6e7577c7",
+      "label": "modeled_after",
+      "source": [
+        "The King (Strip Weathers)"
+      ],
+      "target": [
+        "Richard Petty"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_13294740",
+      "label": "works_as",
+      "source": [
+        "Mack"
+      ],
+      "target": [
+        "Lightning McQueen's loyal transport truck"
+      ],
+      "weight": 1.0,
+      "chunk_id": "37b39ac0d0ca0b4557ce5c6d600594c2"
+    },
+    {
+      "id": "e_6305157a",
+      "label": "takes_for_cruise",
+      "source": [
+        "Lightning"
+      ],
+      "target": [
+        "Radiator Springs residents",
+        "main drag"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
+    },
+    {
+      "id": "e_4ba506cb",
       "label": "turns_on",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "all the neon lights of the old businesses"
+        "neon lights",
+        "old businesses"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_2644a6a2",
-      "label": "reveal",
-      "source": [
-        "neon lights of the old businesses"
-      ],
-      "target": [
-        "the town's former beauty"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_0be24f6b",
-      "label": "glows_for_one_night",
+      "id": "e_65146552",
+      "label": "glows_as",
       "source": [
         "Radiator Springs"
       ],
       "target": [
-        "as it once did"
+        "former beauty"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_a09db229",
+      "id": "e_d6c93a9d",
+      "label": "finishes",
+      "source": [
+        "Lightning"
+      ],
+      "target": [
+        "road"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
+    },
+    {
+      "id": "e_42e940e7",
+      "label": "bonds_with",
+      "source": [
+        "Lightning"
+      ],
+      "target": [
+        "community"
+      ],
+      "weight": 1.0,
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
+    },
+    {
+      "id": "e_3f329308",
       "label": "alerts",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "the media"
+        "media"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_2fb18dad",
-      "label": "hopes_to",
+      "id": "e_6fdee2ba",
+      "label": "calls",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "get Lightning out of town and out of their lives"
+        "media"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_3a7a06b1",
+      "id": "e_33552b18",
       "label": "descends_on",
       "source": [
-        "the media"
+        "media"
       ],
       "target": [
         "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_8656e9e0",
+      "id": "e_8d519532",
       "label": "arrives_at",
       "source": [
         "Mack"
@@ -2749,47 +2516,46 @@
         "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_516688cd",
-      "label": "is_whisked_away_to",
+      "id": "e_4be2c69e",
+      "label": "transported_to",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "California",
-        "the tiebreaker race"
+        "California"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_82b5638f",
-      "label": "cannot_say",
+      "id": "e_5e259675",
+      "label": "travels_for",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "goodbye to Radiator Springs"
+        "tiebreaker race"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_e649a659",
-      "label": "is_left",
+      "id": "e_c14934bc",
+      "label": "left_stunned_by",
       "source": [
         "Radiator Springs"
       ],
       "target": [
-        "stunned"
+        "Lightning's departure"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_416b9f6d",
+      "id": "e_5831b3b0",
       "label": "realizes",
       "source": [
         "Doc Hudson"
@@ -2798,131 +2564,107 @@
         "he made a mistake"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_1e1dfa87",
-      "label": "hosts",
+      "id": "e_99b3f184",
+      "label": "present_at",
       "source": [
+        "Lightning"
+      ],
+      "target": [
         "Los Angeles International Speedway"
       ],
-      "target": [
-        "tiebreaker race"
-      ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_e0156308",
-      "label": "is_during_race",
+      "id": "e_3729debf",
+      "label": "thinks_about",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "physically present but emotionally absent"
+        "friends in Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_e9729de7",
-      "label": "cannot_stop_thinking_about",
+      "id": "e_5d843bd4",
+      "label": "starts_poorly",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "his friends in Radiator Springs"
+        "race"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_91dd0428",
-      "label": "starts_poorly_in",
+      "id": "e_b6b8eba8",
+      "label": "hears_over_radio",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "the race"
+        "Doc Hudson"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_55076961",
-      "label": "causes",
-      "source": [
-        "distracted and unfocused"
-      ],
-      "target": [
-        "Lightning McQueen starts the race poorly"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_d431e5e6",
-      "label": "hears",
-      "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "Doc Hudson's voice over the radio"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_6105aebf",
+      "id": "e_7b9818b2",
       "label": "serves_as",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "Lightning McQueen's crew chief"
+        "Lightning's crew chief"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_62b2c148",
+      "id": "e_c4c823f8",
       "label": "wears",
       "source": [
         "Doc Hudson"
       ],
       "target": [
-        "his old Fabulous Hudson Hornet colors"
+        "Fabulous Hudson Hornet colors"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_2cc1a451",
+      "id": "e_7a98b2ab",
       "label": "serves_as",
       "source": [
-        "Radiator Springs"
+        "town of Radiator Springs"
       ],
       "target": [
-        "Lightning McQueen's pit crew"
+        "Lightning's pit crew"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_74fb9425",
-      "label": "gets_to_perform",
+      "id": "e_2961d294",
+      "label": "performs",
       "source": [
         "Guido"
       ],
       "target": [
-        "a real pit stop"
+        "real pit stop"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_2379a2c1",
-      "label": "performs_pit_stop_in",
+      "id": "e_9c5cb686",
+      "label": "completes_in",
       "source": [
         "Guido"
       ],
@@ -2930,23 +2672,11 @@
         "record time"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_4c926450",
-      "label": "stuns",
-      "source": [
-        "Guido"
-      ],
-      "target": [
-        "everyone"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_af6a56b7",
-      "label": "cheer_on",
+      "id": "e_e71c4d3a",
+      "label": "cheers_on",
       "source": [
         "Mater",
         "Luigi",
@@ -2958,51 +2688,51 @@
         "Red"
       ],
       "target": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_4df6e8d1",
-      "label": "is_inspired_by",
+      "id": "e_6480d92b",
+      "label": "inspires",
       "source": [
-        "Lightning McQueen"
+        "friends in Radiator Springs"
       ],
       "target": [
-        "his friends"
+        "Lightning"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_37e03299",
-      "label": "cause",
+      "id": "e_f11b8af7",
+      "label": "surges_into",
       "source": [
-        "his friends"
+        "Lightning"
       ],
       "target": [
-        "Lightning McQueen surges back into contention"
+        "contention"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_2423e868",
-      "label": "comes_down_to",
+      "id": "e_9ced14ef",
+      "label": "involves_competitors",
       "source": [
-        "final lap"
+        "race"
       ],
       "target": [
-        "Lightning McQueen",
+        "Lightning",
         "Chick Hicks",
         "The King"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_96ad1bda",
+      "id": "e_26d24347",
       "label": "deliberately_rams",
       "source": [
         "Chick Hicks"
@@ -3011,413 +2741,469 @@
         "The King"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_80284a40",
-      "label": "causes",
+      "id": "e_4aed99b8",
+      "label": "sent_into",
       "source": [
-        "Chick Hicks rams The King"
+        "The King"
       ],
       "target": [
-        "The King crash"
+        "horrifying crash"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_4e02440e",
+      "id": "e_7dde0ef7",
       "label": "mirrors",
       "source": [
-        "The King crash"
+        "horrifying crash"
       ],
       "target": [
-        "Doc Hudson's wreck decades earlier"
+        "Doc Hudson's wreck"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_1d242eba",
-      "label": "is_about_to_cross_for",
+      "id": "e_da414ce9",
+      "label": "about_to_win",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "the finish line",
-        "win the Piston Cup"
+        "Piston Cup"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_cfd50abe",
+      "id": "e_1971122b",
       "label": "sees",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "The King's crumpled body on the infield"
+        "The King's crumpled body"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_4a93d468",
+      "id": "e_a207e068",
       "label": "remembers",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "Doc's story",
-        "racing abandoned Doc after his crash"
+        "Doc's story"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_ab3f0a38",
-      "label": "slams_on",
+      "id": "e_aa9bdc15",
+      "label": "abandoned",
       "source": [
-        "Lightning McQueen"
+        "racing"
       ],
       "target": [
-        "his brakes"
+        "Doc Hudson"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_062160a6",
-      "label": "stops_at",
+      "id": "e_2cff7cee",
+      "label": "makes",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "just inches from the finish line"
+        "a choice"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "0ea40c3819e6d9170f3ff1807dd6d16e"
     },
     {
-      "id": "e_93722585",
+      "id": "e_c53d14c8",
+      "label": "slams_brakes_before",
+      "source": [
+        "Lightning"
+      ],
+      "target": [
+        "finish line"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
+    },
+    {
+      "id": "e_28350fd4",
       "label": "wins",
       "source": [
         "Chick Hicks"
       ],
       "target": [
-        "the Piston Cup"
+        "Piston Cup"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_78399870",
-      "label": "does_not_care_about",
+      "id": "e_aed56a3d",
+      "label": "pushes_across_finish_line",
       "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "Chick Hicks's victory"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_c30e3f41",
-      "label": "reverses_back_to",
-      "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "The King"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_271cc396",
-      "label": "pushes",
+      "id": "e_5d84fd7a",
+      "label": "enables_dignified_finish_for",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "The King across the finish line"
+        "The King"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_8efb845a",
-      "label": "helps",
+      "id": "e_149bfa1f",
+      "label": "boos_on_podium",
       "source": [
-        "Lightning McQueen"
+        "The crowd"
       ],
       "target": [
-        "The King finish his last race with dignity"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_72c7afb0",
-      "label": "does",
-      "source": [
-        "the crowd"
-      ],
-      "target": [
-        "erupts"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_0ef7fe7e",
-      "label": "is_booed",
-      "source": [
         "Chick Hicks"
       ],
-      "target": [
-        "on the podium"
-      ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_52bb9b7d",
-      "label": "means",
+      "id": "e_d0e917a3",
+      "label": "rejects_sponsorship_from",
       "source": [
-        "Chick Hicks's hollow win"
+        "Lightning"
       ],
       "target": [
-        "nothing"
+        "Dinoco"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_bbbdeedd",
-      "label": "turns_down",
+      "id": "e_637f546f",
+      "label": "retains_sponsorship_with",
       "source": [
-        "Lightning McQueen"
-      ],
-      "target": [
-        "Dinoco sponsorship"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_f67b8d04",
-      "label": "stays_loyal_to",
-      "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "Rust-eze"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_efeb772a",
+      "id": "e_e1597320",
       "label": "believed_in",
       "source": [
         "Rust-eze"
       ],
       "target": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_8ae1d18a",
+      "id": "e_5434a113",
       "label": "requests_favor_from",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "Dinoco's owner",
-        "helicopter ride for Mater"
+        "Dinoco's owner"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_9db03dbb",
-      "label": "has_always_dreamed_of",
+      "id": "e_8e988f50",
+      "label": "secures_helicopter_ride_for",
+      "source": [
+        "Lightning"
+      ],
+      "target": [
+        "Mater"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
+    },
+    {
+      "id": "e_81156b45",
+      "label": "dreams_of",
       "source": [
         "Mater"
       ],
       "target": [
-        "a helicopter ride"
+        "helicopter ride"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_46650124",
-      "label": "establishes_racing_headquarters_in",
+      "id": "e_f44a6546",
+      "label": "establishes_headquarters_in",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
         "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_6901eefd",
-      "label": "puts",
+      "id": "e_b919ba4e",
+      "label": "puts_back_on_map",
       "source": [
-        "Lightning McQueen establishing racing headquarters in Radiator Springs"
-      ],
-      "target": [
-        "Radiator Springs back on the map"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_48f06724",
-      "label": "begin_visiting_again",
-      "source": [
-        "tourists"
+        "Lightning"
       ],
       "target": [
         "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_82b13b7b",
-      "label": "reopen_to",
+      "id": "e_0d123bcf",
+      "label": "visit",
       "source": [
-        "the businesses of Radiator Springs"
+        "Tourists"
       ],
       "target": [
-        "thriving crowds"
-      ],
-      "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
-    },
-    {
-      "id": "e_c0440a62",
-      "label": "is",
-      "source": [
         "Radiator Springs"
       ],
-      "target": [
-        "reborn"
-      ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_b5c62c08",
-      "label": "begin",
+      "id": "e_c3f04888",
+      "label": "reopen_in",
       "source": [
-        "Lightning McQueen",
-        "Sally Carrera"
+        "Businesses"
       ],
       "target": [
-        "relationship"
+        "Radiator Springs"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_e07dc7cd",
-      "label": "finds",
+      "id": "e_0cf678e0",
+      "label": "begins_relationship_with",
       "source": [
-        "Lightning McQueen"
+        "Lightning"
       ],
       "target": [
-        "a home",
+        "Sally"
+      ],
+      "weight": 1.0,
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
+    },
+    {
+      "id": "e_c15cb028",
+      "label": "values_more_than_trophy",
+      "source": [
+        "Lightning"
+      ],
+      "target": [
+        "home",
         "real friends",
-        "the understanding that life is about the journey, not just the finish line"
+        "journey"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "c59e2cd916d85ab8a2e5045edc1a3c67"
     },
     {
-      "id": "e_27eaaee5",
-      "label": "has_theme",
+      "id": "e_b6ce38a1",
+      "label": "has_central_message",
       "source": [
-        "Cars"
+        "The film"
       ],
       "target": [
         "the journey matters more than the destination"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_56b1c429",
+      "id": "e_7c1348cd",
+      "label": "replaced_by",
+      "source": [
+        "Route 66"
+      ],
+      "target": [
+        "the Interstate"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_25f8772e",
       "label": "serves_as_metaphor_for",
       "source": [
-        "Route 66's replacement by the Interstate"
+        "Route 66",
+        "the Interstate"
       ],
       "target": [
         "modern life prioritizes speed and efficiency over experience and connection"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_b578a134",
-      "label": "transforms_from_to",
+      "id": "e_da15e47b",
+      "label": "transforms_from",
       "source": [
         "Lightning McQueen"
       ],
       "target": [
-        "selfish loner",
-        "someone who values others and recognizes that no one succeeds alone"
+        "selfish loner"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_c24adeab",
-      "label": "explores",
+      "id": "e_1f7385fe",
+      "label": "initially_claims",
       "source": [
-        "Doc Hudson's story"
+        "Lightning McQueen"
       ],
       "target": [
-        "what happens when someone is cast aside after giving everything"
+        "I'm a one-man show"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_e4227b0e",
-      "label": "can_give_way_to",
+      "id": "e_70c70621",
+      "label": "transforms_into",
       "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "someone who values others"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_f8e27d2f",
+      "label": "comes_to_recognize",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "no one succeeds alone"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_da5ed59e",
+      "label": "explores_theme_of",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "Legacy and being forgotten"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_f360a6c5",
+      "label": "experiences",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "being cast aside after giving everything"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_66ceeb7f",
+      "label": "overcomes",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
         "bitterness"
       ],
-      "target": [
-        "mentorship"
-      ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_9bdb8bcf",
+      "id": "e_23108152",
+      "label": "becomes",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "mentor"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_0e634375",
+      "label": "decides_to",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "forfeit the race to help The King finish"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_35e54b89",
       "label": "demonstrates",
       "source": [
-        "Lightning McQueen's decision to forfeit the race to help The King finish"
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Humility and sportsmanship"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_367b4217",
+      "label": "demonstrates",
+      "source": [
+        "Lightning McQueen"
       ],
       "target": [
         "character growth"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_37ad2ba7",
+      "id": "e_0c75d2fe",
       "label": "find",
       "source": [
         "Lightning McQueen",
@@ -3427,11 +3213,11 @@
         "redemption"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_4bf854ff",
-      "label": "finds_redemption_by",
+      "id": "e_9e739221",
+      "label": "achieves_redemption_by",
       "source": [
         "Lightning McQueen"
       ],
@@ -3439,11 +3225,11 @@
         "becoming a better car"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_2bf94794",
-      "label": "finds_redemption_by",
+      "id": "e_67b05c1f",
+      "label": "achieves_redemption_by",
       "source": [
         "Doc Hudson"
       ],
@@ -3451,10 +3237,10 @@
         "re-engaging with the racing world he had shut out"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_47fcbf89",
+      "id": "e_a0f26c1f",
       "label": "says",
       "source": [
         "Lightning McQueen"
@@ -3463,10 +3249,10 @@
         "I'm a precision instrument of speed and aerodynamics."
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_b6793e97",
+      "id": "e_3c6801c2",
       "label": "says",
       "source": [
         "Mater"
@@ -3475,11 +3261,11 @@
         "I'm happier than a tornado in a trailer park!"
       ],
       "weight": 1.0,
-      "chunk_id": "016a1887cd012a549bceafe43f47b059"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_7a8ba329",
-      "label": "is_quoted_as_saying",
+      "id": "e_b64b1ee8",
+      "label": "says",
       "source": [
         "Lightning McQueen"
       ],
@@ -3487,11 +3273,11 @@
         "I create feelings in others that they themselves don't understand."
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_28678cdc",
-      "label": "is_quoted_as_saying",
+      "id": "e_359edd11",
+      "label": "says",
       "source": [
         "Doc Hudson"
       ],
@@ -3499,11 +3285,11 @@
         "Turn right to go left."
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_7b9331bf",
-      "label": "is_quoted_as_saying",
+      "id": "e_1f468ff9",
+      "label": "says",
       "source": [
         "Sally Carrera"
       ],
@@ -3511,11 +3297,11 @@
         "It was the town that got to him. They changed him."
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_601f7f04",
-      "label": "is_quoted_as_saying",
+      "id": "e_19b9067b",
+      "label": "says",
       "source": [
         "Doc Hudson"
       ],
@@ -3523,11 +3309,11 @@
         "These are good folk around here, who care about one another. I don't want them depending on someone they can't count on."
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_1e880763",
-      "label": "is_quoted_as_saying",
+      "id": "e_ea138972",
+      "label": "says",
       "source": [
         "Doc Hudson"
       ],
@@ -3535,11 +3321,11 @@
         "I knew you couldn't drive. I didn't know you couldn't read."
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_6babf9e0",
-      "label": "is_quoted_as_saying",
+      "id": "e_8fee30eb",
+      "label": "says",
       "source": [
         "Lightning McQueen"
       ],
@@ -3547,63 +3333,143 @@
         "Float like a Cadillac, sting like a Beemer."
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_6b3966fc",
-      "label": "is_quoted_as_saying",
+      "id": "e_82c23106",
+      "label": "says",
       "source": [
-        "Doc Hudson",
-        "The Fabulous Hudson Hornet"
+        "Doc Hudson"
       ],
       "target": [
         "There's a lot more to racing than just winning."
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
     },
     {
-      "id": "e_e8db04ed",
-      "label": "is_featured_in",
+      "id": "e_3d428a0e",
+      "label": "has_alias",
       "source": [
-        "Real Gone",
+        "Doc Hudson"
+      ],
+      "target": [
+        "The Fabulous Hudson Hornet"
+      ],
+      "weight": 1.0,
+      "chunk_id": "e281eacf57066a405832ecdf4f294375"
+    },
+    {
+      "id": "e_805fc9f4",
+      "label": "features_song",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "Real Gone"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_76459f33",
+      "label": "performed_by",
+      "source": [
+        "Real Gone"
+      ],
+      "target": [
         "Sheryl Crow"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_595c5492",
+      "label": "featured_in_scene",
+      "source": [
+        "Real Gone"
       ],
       "target": [
         "Opening racing sequence"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_897583ad",
-      "label": "is_featured_in",
+      "id": "e_93414659",
+      "label": "features_song",
       "source": [
-        "Life Is a Highway",
+        "Cars"
+      ],
+      "target": [
+        "Life Is a Highway"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_be616877",
+      "label": "performed_by",
+      "source": [
+        "Life Is a Highway"
+      ],
+      "target": [
         "Rascal Flatts"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_d06cd3a1",
+      "label": "featured_in_scene",
+      "source": [
+        "Life Is a Highway"
       ],
       "target": [
         "Lightning's road trip montage"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_70220fe6",
-      "label": "is_featured_in",
+      "id": "e_5222c286",
+      "label": "features_song",
       "source": [
-        "Our Town",
+        "Cars"
+      ],
+      "target": [
+        "Our Town"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_ced127ba",
+      "label": "performed_by",
+      "source": [
+        "Our Town"
+      ],
+      "target": [
         "James Taylor"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_a8e51eeb",
+      "label": "featured_in_scene",
+      "source": [
+        "Our Town"
       ],
       "target": [
         "Radiator Springs' melancholy history"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_6bce575a",
-      "label": "was_nominated_for",
+      "id": "e_3d34c96a",
+      "label": "nominated_for",
       "source": [
         "Our Town"
       ],
@@ -3611,36 +3477,82 @@
         "Academy Award for Best Original Song"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_ee48b285",
-      "label": "is_featured_in",
+      "id": "e_d0712651",
+      "label": "features_song",
       "source": [
-        "Behind the Clouds",
+        "Cars"
+      ],
+      "target": [
+        "Behind the Clouds"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_c56e549f",
+      "label": "performed_by",
+      "source": [
+        "Behind the Clouds"
+      ],
+      "target": [
         "Brad Paisley"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_a9173a9c",
+      "label": "featured_in_scene",
+      "source": [
+        "Behind the Clouds"
       ],
       "target": [
         "End credits"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_afcaa748",
-      "label": "is",
+      "id": "e_2b53d9b0",
+      "label": "features_song",
       "source": [
-        "Route 66",
+        "Cars"
+      ],
+      "target": [
+        "Route 66"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_f5a9fa95",
+      "label": "performed_by",
+      "source": [
+        "Route 66"
+      ],
+      "target": [
         "Chuck Berry"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_d3923264",
+      "label": "described_as",
+      "source": [
+        "Route 66"
       ],
       "target": [
         "Classic Route 66 anthem"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_3347ac99",
+      "id": "e_3cf059ef",
       "label": "grossed",
       "source": [
         "Cars"
@@ -3649,34 +3561,34 @@
         "over $460 million worldwide"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_a196ffd0",
-      "label": "launched",
+      "id": "e_246742b9",
+      "label": "launched_franchise",
       "source": [
         "Cars"
       ],
       "target": [
-        "one of Pixar's most lucrative franchises"
+        "Pixar's most lucrative franchises"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_fc746d00",
-      "label": "generated",
+      "id": "e_33a4aad2",
+      "label": "generated_revenue",
       "source": [
-        "Cars"
+        "Cars franchise"
       ],
       "target": [
         "billions in merchandise revenue"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_e68fbc28",
+      "id": "e_b70a1e43",
       "label": "spawned_sequel",
       "source": [
         "Cars"
@@ -3685,11 +3597,11 @@
         "Cars 2"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_de4580a8",
-      "label": "has_release_year",
+      "id": "e_ccffff49",
+      "label": "has_release_date",
       "source": [
         "Cars 2"
       ],
@@ -3697,10 +3609,10 @@
         "2011"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_b327dcbf",
+      "id": "e_9139aca8",
       "label": "spawned_sequel",
       "source": [
         "Cars"
@@ -3709,11 +3621,11 @@
         "Cars 3"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_c7c80d9f",
-      "label": "has_release_year",
+      "id": "e_078d19d8",
+      "label": "has_release_date",
       "source": [
         "Cars 3"
       ],
@@ -3721,10 +3633,10 @@
         "2017"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_ebf3c80a",
+      "id": "e_6ebc5b29",
       "label": "spawned_spin_off_film",
       "source": [
         "Cars"
@@ -3733,11 +3645,11 @@
         "Planes"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_efa55a74",
-      "label": "has_release_year",
+      "id": "e_c28a0c75",
+      "label": "has_release_date",
       "source": [
         "Planes"
       ],
@@ -3745,47 +3657,49 @@
         "2013"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_2dab9dc4",
-      "label": "spawned",
+      "id": "e_272f26df",
+      "label": "spawned_media",
       "source": [
         "Cars"
       ],
       "target": [
-        "short films"
+        "short films",
+        "theme park attractions",
+        "extensive toy line"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_74a8b447",
-      "label": "spawned_theme_park_attraction",
+      "id": "e_05bccbcd",
+      "label": "located_at",
+      "source": [
+        "Cars Land"
+      ],
+      "target": [
+        "Disney California Adventure"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_82f6df68",
+      "label": "inspired_attraction",
       "source": [
         "Cars"
       ],
       "target": [
-        "Cars Land at Disney California Adventure"
+        "Cars Land"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_3a86e371",
-      "label": "spawned",
-      "source": [
-        "Cars"
-      ],
-      "target": [
-        "an extensive toy line"
-      ],
-      "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
-    },
-    {
-      "id": "e_6203a429",
-      "label": "worked_as",
+      "id": "e_96e5ec04",
+      "label": "held_role",
       "source": [
         "Joe Ranft"
       ],
@@ -3793,107 +3707,93 @@
         "Pixar's beloved head of story"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_033e4089",
-      "label": "worked_on",
-      "source": [
-        "Joe Ranft"
-      ],
-      "target": [
-        "Cars"
-      ],
-      "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
-    },
-    {
-      "id": "e_7924d30d",
-      "label": "was_joe_ranfts_last_project_before",
+      "id": "e_83d5e0ec",
+      "label": "was_last_project_of",
       "source": [
         "Cars"
       ],
       "target": [
-        "Joe Ranft's death in a car accident in 2005"
+        "Joe Ranft"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_baf27c27",
-      "label": "died_in",
+      "id": "e_05f6ea4a",
+      "label": "died_in_year",
       "source": [
         "Joe Ranft"
       ],
       "target": [
-        "car accident",
         "2005"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_ce97155e",
-      "label": "is_dedicated_to",
+      "id": "e_ca5c65b3",
+      "label": "died_in_incident",
+      "source": [
+        "Joe Ranft"
+      ],
+      "target": [
+        "car accident"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_afe2c514",
+      "label": "dedicated_to",
       "source": [
         "Cars"
       ],
       "target": [
-        "Joe Ranft's memory"
+        "Joe Ranft"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_74440d39",
-      "label": "holds_a_special_place_in",
+      "id": "e_56a7e836",
+      "label": "directed_by",
       "source": [
         "Cars"
       ],
       "target": [
-        "Pixar's filmography"
-      ],
-      "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
-    },
-    {
-      "id": "e_6f7ce8bf",
-      "label": "directed",
-      "source": [
         "John Lasseter"
       ],
-      "target": [
-        "Cars"
-      ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     },
     {
-      "id": "e_769fce4f",
-      "label": "is_a_love_letter_to",
+      "id": "e_1cec46f8",
+      "label": "described_as",
       "source": [
-        "Cars",
-        "John Lasseter"
+        "Cars"
+      ],
+      "target": [
+        "John Lasseter's deeply personal love letter"
+      ],
+      "weight": 1.0,
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
+    },
+    {
+      "id": "e_4791fb0b",
+      "label": "pays_tribute_to",
+      "source": [
+        "Cars"
       ],
       "target": [
         "Route 66",
         "classic American car culture",
-        "the small towns that time forgot"
+        "small towns that time forgot"
       ],
       "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
-    },
-    {
-      "id": "e_68d42de1",
-      "label": "is_described_as",
-      "source": [
-        "Cars"
-      ],
-      "target": [
-        "John Lasseter's deeply personal love letter to Route 66, classic American car culture, and the small towns that time forgot"
-      ],
-      "weight": 1.0,
-      "chunk_id": "b08032f40788d50fabb58f2216616d7c"
+      "chunk_id": "feae23b4b8974a81d0c9ea26e273d996"
     }
   ]
 }

@@ -66,7 +66,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--output-dir", "-o", default="raptor_output", help="Output directory")
 
     # Chunking
-    p.add_argument("--chunk-size", type=int, default=100, help="Target chunk size in tokens (paper: 100)")
+    p.add_argument("--chunk-size", type=int, default=500, help="Target chunk size in tokens (paper: 100)")
     p.add_argument("--chunk-overlap", type=int, default=0, help="Overlap in tokens (paper: 0)")
 
     # Tree building
@@ -75,6 +75,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--max-k", type=int, default=20, help="Max GMM clusters per level")
     p.add_argument("--membership-threshold", type=float, default=0.1, help="Soft clustering threshold")
     p.add_argument("--max-context-tokens", type=int, default=4096, help="Max tokens per summarization call")
+    p.add_argument("--max-workers", type=int, default=4, help="Parallel LLM summarization workers per level")
 
     # Override .env (optional)
     p.add_argument("--embed-url", default=None, help="Embedding server URL (overrides EMBED_URL env var)")
@@ -133,6 +134,7 @@ def main():
         max_k=args.max_k,
         membership_threshold=args.membership_threshold,
         max_context_tokens=args.max_context_tokens,
+        max_workers=args.max_workers,
     )
 
     logger.info(

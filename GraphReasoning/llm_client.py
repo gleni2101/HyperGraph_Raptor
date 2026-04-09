@@ -17,6 +17,7 @@ LLM:
 Embeddings:
     EMBED_URL        – Embedding server base URL   (default: http://127.0.0.1:8080)
     EMBED_MODEL      – Embedding model name        (default: BAAI/bge-m3)
+    EMBED_MAX_CHARS  – Max input characters        (default: 16000)
 """
 from __future__ import annotations
 
@@ -24,6 +25,7 @@ import logging
 import os
 import ssl
 import time
+import re
 from pathlib import Path
 from typing import Any
 
@@ -45,7 +47,11 @@ load_dotenv(dotenv_path=_REPO_ROOT / ".env")
 # ---------------------------------------------------------------------------
 
 class LocalBGEClient:
-    """Embedding client for a local BGE-M3 (or compatible) server."""
+    """Embedding client for a local BGE-M3 (or compatible) server.
+
+    BGE-M3 supports up to 8192 tokens (~19k chars). The default
+    EMBED_MAX_CHARS of 16000 (~6500 tokens) leaves comfortable headroom.
+    """
 
     def __init__(
         self,
@@ -57,40 +63,101 @@ class LocalBGEClient:
         self.base_url = (base_url or os.getenv("EMBED_URL", "http://127.0.0.1:8080")).rstrip("/")
         self.model = model or os.getenv("EMBED_MODEL", "BAAI/bge-m3")
         self.client = httpx.Client(timeout=timeout)
-        # Server batch size limits how many tokens can be processed at once.
-        # 512 tokens ≈ ~1200 chars (conservative estimate for mixed content).
-        self.max_input_chars = max_input_chars or int(os.getenv("EMBED_MAX_CHARS", "1200"))
+        # BGE-M3 max context = 8192 tokens ≈ ~19k chars.
+        # Default to 16000 chars (~6500 tokens) for safe headroom.
+        self.max_input_chars = max_input_chars if max_input_chars is not None else int(os.getenv("EMBED_MAX_CHARS", "16000"))
 
-    def encode(self, text: str, *, max_retries: int = 3) -> np.ndarray:
+    _TOKEN_LIMIT_RE = re.compile(
+        r"too\s+large\s+to\s+process|too\s+many\s+tokens|token\s+limit|maximum\s+context",
+        re.IGNORECASE,
+    )
+
+    def _is_token_limit_error(self, status_code: int, body: str) -> bool:
+        return status_code in (400, 413, 422, 500) and bool(self._TOKEN_LIMIT_RE.search(body or ""))
+
+    def encode(
+        self,
+        text: str,
+        *,
+        max_retries: int = 3,
+        max_shrinks: int = 8,
+        min_chars: int = 128,
+    ) -> np.ndarray:
         log = logging.getLogger(__name__)
         if len(text) > self.max_input_chars:
             log.warning("Truncating embedding input from %d to %d chars",
                         len(text), self.max_input_chars)
             text = text[: self.max_input_chars]
         log.debug("Embedding request: %d chars", len(text))
-        for attempt in range(1, max_retries + 1):
+
+        resp = None
+        transport_attempt = 0
+        shrink_attempt = 0
+
+        while True:
             resp = self.client.post(
                 f"{self.base_url}/v1/embeddings",
                 json={"model": self.model, "input": text},
             )
+
             if resp.status_code == 200:
                 return np.array(resp.json()["data"][0]["embedding"], dtype=np.float32)
-            # Token-limit error: halve the text and retry immediately
-            if resp.status_code == 500 and "too large to process" in resp.text:
-                text = text[: len(text) // 2]
-                log.warning("Input too many tokens, shrinking to %d chars (attempt %d/%d)",
-                            len(text), attempt, max_retries)
+
+            # Token-limit style failures should retry with smaller text without
+            # consuming transport retry budget.
+            if self._is_token_limit_error(resp.status_code, resp.text):
+                if shrink_attempt >= max_shrinks or len(text) <= min_chars:
+                    break
+
+                new_len = max(min_chars, len(text) // 2)
+                if new_len >= len(text):
+                    break
+
+                shrink_attempt += 1
+                text = text[:new_len]
+                log.warning(
+                    "Input too many tokens, shrinking to %d chars (shrink %d/%d)",
+                    len(text), shrink_attempt, max_shrinks,
+                )
                 continue
-            if resp.status_code >= 500 and attempt < max_retries:
-                wait = 2 ** attempt
-                log.warning("Embedding server returned %s, retrying in %ds (attempt %d/%d)",
-                            resp.status_code, wait, attempt, max_retries)
+
+            # Non-token-limit server failures use exponential-backoff retries.
+            if resp.status_code >= 500 and transport_attempt < max_retries:
+                transport_attempt += 1
+                wait = 2 ** transport_attempt
+                log.warning(
+                    "Embedding server returned %s, retrying in %ds (attempt %d/%d)",
+                    resp.status_code, wait, transport_attempt, max_retries,
+                )
                 time.sleep(wait)
                 continue
-            log.error("Embedding failed (HTTP %d), text length: %d chars, "
-                      "response: %s", resp.status_code, len(text),
-                      resp.text[:500])
+
+            break
+
+        log.error("Embedding failed (HTTP %d), text length: %d chars, "
+                  "response: %s", resp.status_code, len(text),
+                  resp.text[:500])
+        try:
             resp.raise_for_status()
+        except Exception as exc:
+            raise RuntimeError(
+                f"Embedding failed after retries/shrinks "
+                f"(status: {resp.status_code}, text length: {len(text)} chars)"
+            ) from exc
+
+        raise RuntimeError(
+            f"Embedding failed after retries/shrinks "
+            f"(status: {resp.status_code}, text length: {len(text)} chars)"
+        )
+
+    def close(self):
+        self.client.close()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        self.close()
 
 
 # ---------------------------------------------------------------------------
@@ -159,6 +226,7 @@ def create_embed_client(
     base_url: str | None = None,
     model: str | None = None,
     timeout: float = 120.0,
+    max_input_chars: int | None = None,
 ) -> LocalBGEClient:
     """Create a LocalBGEClient using env vars as defaults."""
-    return LocalBGEClient(base_url=base_url, model=model, timeout=timeout)
+    return LocalBGEClient(base_url=base_url, model=model, timeout=timeout, max_input_chars=max_input_chars)

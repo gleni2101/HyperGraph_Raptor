@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Hypergraph Visualization</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:#0f172a;color:#e2e8f0;font-family:Segoe UI,Arial,sans-serif;overflow:hidden}
+    #canvas{position:absolute;inset:0;width:100%;height:100vh}
+    svg{width:100%;height:100%}
+    .panel{
+      position:absolute;z-index:20;background:rgba(15,23,42,0.88);
+      border:1px solid rgba(148,163,184,0.18);border-radius:12px;
+      padding:12px 14px;backdrop-filter:blur(8px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.3);
+    }
+    #controls{top:16px;left:16px;width:310px}
+    #details{left:16px;bottom:16px;width:420px;max-height:220px;overflow:auto}
+    #stats{top:16px;right:16px;min-width:200px}
+    h2{font-size:17px;margin-bottom:8px;color:#e2e8f0}
+    .muted{color:#94a3b8;font-size:11px}
+    .legend{display:flex;gap:14px;margin:8px 0;font-size:11px;flex-wrap:wrap}
+    .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+    input{width:100%;padding:8px 10px;border:1px solid rgba(148,163,184,0.24);border-radius:8px;background:rgba(30,41,59,0.9);color:#fff;font-size:12px;margin:6px 0}
+    .row{margin:5px 0;font-size:12px}
+    .mono{font-family:Consolas,monospace;word-break:break-word;font-size:11px}
+    .he-label{fill:white;font-size:11px;pointer-events:none;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.8)}
+    .node-label{fill:#e2e8f0;font-size:10px;pointer-events:none}
+    .arrow-marker{}
+  </style>
+</head>
+<body>
+  <div id="canvas"><svg id="svg"></svg></div>
+  <div id="controls" class="panel">
+    <h2>Hypergraph Viewer</h2>
+    <div class="muted">Each coloured blob is a hyperedge — a set of nodes connected by one relation.<br>Arrow shows source → target direction inside the blob.</div>
+    <div class="legend">
+      <div><span class="dot" style="background:#60a5fa"></span>Entity node</div>
+      <div><span class="dot" style="background:rgba(200,150,80,0.7);border:2px solid #f59e0b"></span>Hyperedge blob</div>
+    </div>
+    <input id="searchInput" type="text" placeholder="Search node labels..."/>
+    <div class="muted">Hover blob/node for details · Drag nodes · Scroll to zoom</div>
+  </div>
+  <div id="stats" class="panel"></div>
+  <div id="details" class="panel">Hover over a node or hyperedge blob to inspect.</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script>
+  (function(){
+    const RAW = {"nodes": [{"id": "n_dc93113a", "label": "Cars", "type": "concept"}, {"id": "n_50a515f2", "label": "2006", "type": "concept"}, {"id": "n_3e867c17", "label": "Pixar", "type": "concept"}, {"id": "n_8fcfdc81", "label": "John Lasseter", "type": "concept"}, {"id": "n_3d2216fa", "label": "road trip with his kids", "type": "concept"}, {"id": "n_5058c47c", "label": "kids staring at screens", "type": "concept"}, {"id": "n_c871df93", "label": "slowing down", "type": "concept"}, {"id": "n_c02caff8", "label": "no humans", "type": "concept"}, {"id": "n_4809ef46", "label": "Lightning McQueen", "type": "concept"}, {"id": "n_e25faa23", "label": "Owen Wilson", "type": "concept"}, {"id": "n_934161ce", "label": "red rookie", "type": "concept"}, {"id": "n_c746c518", "label": "95", "type": "concept"}, {"id": "n_b32f638c", "label": "stock car", "type": "concept"}, {"id": "n_dc589635", "label": "ka-chow", "type": "concept"}, {"id": "n_ec3a4fcc", "label": "Chick Hicks", "type": "concept"}, {"id": "n_01228f5b", "label": "The King", "type": "concept"}, {"id": "n_9b4b22c4", "label": "Piston Cup", "type": "concept"}, {"id": "n_dbb491a3", "label": "green aggressive guy", "type": "concept"}, {"id": "n_1a7b7901", "label": "Strip Weathers", "type": "concept"}, {"id": "n_d7305ab7", "label": "Richard Petty", "type": "concept"}, {"id": "n_10356513", "label": "Plymouth Superbird", "type": "concept"}, {"id": "n_2bdd3dc1", "label": "Mack", "type": "concept"}, {"id": "n_d9bb8e0e", "label": "interstate", "type": "concept"}, {"id": "n_dd649b1b", "label": "trailer", "type": "concept"}, {"id": "n_a9d9e1ff", "label": "Radiator Springs", "type": "concept"}, {"id": "n_7814e0db", "label": "Route 66", "type": "concept"}, {"id": "n_be8b33a3", "label": "dying", "type": "concept"}, {"id": "n_fa82edbc", "label": "Sheriff", "type": "concept"}, {"id": "n_00d3ded4", "label": "tearing up the road", "type": "concept"}, {"id": "n_7e610896", "label": "Doc Hudson", "type": "concept"}, {"id": "n_a69c1a2e", "label": "judge", "type": "concept"}, {"id": "n_dcc15206", "label": "Paul Newman", "type": "concept"}, {"id": "n_8e85ed30", "label": "old Hudson Hornet", "type": "concept"}, {"id": "n_09bebd1f", "label": "Hudson Hornet", "type": "concept"}, {"id": "n_cf647819", "label": "51HHDBN", "type": "concept"}, {"id": "n_8f893f2f", "label": "2008", "type": "concept"}, {"id": "n_89545259", "label": "Sally", "type": "concept"}, {"id": "n_0686bc1d", "label": "blue Porsche", "type": "concept"}, {"id": "n_8c5f2b81", "label": "Porsche 911", "type": "concept"}, {"id": "n_2323352c", "label": "make him fix the road", "type": "concept"}, {"id": "n_958d9ea4", "label": "Bessie", "type": "concept"}, {"id": "n_20af0ef2", "label": "Mater", "type": "concept"}, {"id": "n_c72293cd", "label": "Larry the Cable Guy", "type": "concept"}, {"id": "n_bbb2b1b6", "label": "tow truck", "type": "concept"}, {"id": "n_d37f95e8", "label": "Luigi", "type": "concept"}, {"id": "n_030468aa", "label": "Fillmore", "type": "concept"}, {"id": "n_dd38e5f7", "label": "Sarge", "type": "concept"}, {"id": "n_370b629f", "label": "Ramone", "type": "concept"}, {"id": "n_695169c7", "label": "Wheel Well Motel", "type": "concept"}, {"id": "n_31d7bac4", "label": "Doc's secret", "type": "concept"}, {"id": "n_2c585366", "label": "three times", "type": "concept"}, {"id": "n_89d0f522", "label": "50s", "type": "concept"}, {"id": "n_57413203", "label": "crew chief", "type": "concept"}, {"id": "n_94f36847", "label": "hero", "type": "concept"}, {"id": "n_f8948d62", "label": "comes back to life", "type": "concept"}, {"id": "n_f428a659", "label": "tourists", "type": "concept"}, {"id": "n_fa04771e", "label": "new lighting rigs", "type": "concept"}, {"id": "n_2660db11", "label": "Randy Newman", "type": "concept"}, {"id": "n_2e641039", "label": "Sheryl Crow", "type": "concept"}, {"id": "n_86a81770", "label": "460 million worldwide", "type": "concept"}, {"id": "n_10c08f8a", "label": "120 million", "type": "concept"}, {"id": "n_5f4602cd", "label": "Disney", "type": "concept"}, {"id": "n_4cd87a98", "label": "two more", "type": "concept"}, {"id": "n_d2860ebb", "label": "planes", "type": "concept"}, {"id": "n_efb3e8cc", "label": "Cars Land", "type": "concept"}, {"id": "n_2de947cf", "label": "California", "type": "concept"}, {"id": "n_bc2160cd", "label": "A113", "type": "concept"}, {"id": "n_0a308e94", "label": "Forks", "type": "concept"}, {"id": "n_8fff1df5", "label": "animals", "type": "concept"}, {"id": "n_b2643719", "label": "Tractors", "type": "concept"}, {"id": "n_23cfba51", "label": "cows", "type": "concept"}, {"id": "n_029cbf0e", "label": "directing", "type": "concept"}, {"id": "n_73b9aadf", "label": "together", "type": "concept"}, {"id": "n_1c602964", "label": "Guido", "type": "concept"}], "hyperedges": [{"id": "e_b6103463", "label": "released_in", "source_ids": ["n_dc93113a"], "target_ids": ["n_50a515f2"], "member_ids": ["n_dc93113a", "n_50a515f2"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_53ca71b0", "label": "produced_by", "source_ids": ["n_dc93113a"], "target_ids": ["n_3e867c17"], "member_ids": ["n_dc93113a", "n_3e867c17"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_1013346c", "label": "drove_project", "source_ids": ["n_8fcfdc81"], "target_ids": ["n_dc93113a"], "member_ids": ["n_8fcfdc81", "n_dc93113a"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_45c8cb3c", "label": "inspired_by", "source_ids": ["n_8fcfdc81"], "target_ids": ["n_3d2216fa"], "member_ids": ["n_8fcfdc81", "n_3d2216fa"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_fe72c5ea", "label": "noticed", "source_ids": ["n_8fcfdc81"], "target_ids": ["n_5058c47c"], "member_ids": ["n_8fcfdc81", "n_5058c47c"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_676087db", "label": "explores_theme", "source_ids": ["n_dc93113a"], "target_ids": ["n_c871df93"], "member_ids": ["n_dc93113a", "n_c871df93"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_e373b7ab", "label": "has_setting_constraint", "source_ids": ["n_dc93113a"], "target_ids": ["n_c02caff8"], "member_ids": ["n_dc93113a", "n_c02caff8"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_7d5c2163", "label": "voiced_by", "source_ids": ["n_4809ef46"], "target_ids": ["n_e25faa23"], "member_ids": ["n_4809ef46", "n_e25faa23"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_225bd554", "label": "has_description", "source_ids": ["n_4809ef46"], "target_ids": ["n_934161ce"], "member_ids": ["n_4809ef46", "n_934161ce"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_8d26ea2b", "label": "has_number", "source_ids": ["n_4809ef46"], "target_ids": ["n_c746c518"], "member_ids": ["n_4809ef46", "n_c746c518"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_cf17a008", "label": "modeled_after", "source_ids": ["n_4809ef46"], "target_ids": ["n_b32f638c"], "member_ids": ["n_4809ef46", "n_b32f638c"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_9ef67342", "label": "has_catchphrase", "source_ids": ["n_4809ef46"], "target_ids": ["n_dc589635"], "member_ids": ["n_4809ef46", "n_dc589635"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_16ce4660", "label": "tied_in_season_for", "source_ids": ["n_4809ef46", "n_ec3a4fcc", "n_01228f5b"], "target_ids": ["n_9b4b22c4"], "member_ids": ["n_4809ef46", "n_ec3a4fcc", "n_01228f5b", "n_9b4b22c4"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_4ee45799", "label": "has_description", "source_ids": ["n_ec3a4fcc"], "target_ids": ["n_dbb491a3"], "member_ids": ["n_ec3a4fcc", "n_dbb491a3"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_3bb8d348", "label": "also_known_as", "source_ids": ["n_01228f5b"], "target_ids": ["n_1a7b7901"], "member_ids": ["n_01228f5b", "n_1a7b7901"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_ebcb1653", "label": "voiced_by", "source_ids": ["n_01228f5b"], "target_ids": ["n_d7305ab7"], "member_ids": ["n_01228f5b", "n_d7305ab7"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_8ce8d001", "label": "modeled_after", "source_ids": ["n_01228f5b"], "target_ids": ["n_10356513"], "member_ids": ["n_01228f5b", "n_10356513"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_1d430b6d", "label": "transports", "source_ids": ["n_2bdd3dc1"], "target_ids": ["n_4809ef46"], "member_ids": ["n_2bdd3dc1", "n_4809ef46"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_758996dc", "label": "falls_asleep_on", "source_ids": ["n_2bdd3dc1"], "target_ids": ["n_d9bb8e0e"], "member_ids": ["n_2bdd3dc1", "n_d9bb8e0e"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_096e18c2", "label": "falls_out_of", "source_ids": ["n_4809ef46"], "target_ids": ["n_dd649b1b"], "member_ids": ["n_4809ef46", "n_dd649b1b"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_1108d238", "label": "ends_up_in", "source_ids": ["n_4809ef46"], "target_ids": ["n_a9d9e1ff"], "member_ids": ["n_4809ef46", "n_a9d9e1ff"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_d73871ce", "label": "located_on", "source_ids": ["n_a9d9e1ff"], "target_ids": ["n_7814e0db"], "member_ids": ["n_a9d9e1ff", "n_7814e0db"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_6baea4da", "label": "has_status", "source_ids": ["n_a9d9e1ff"], "target_ids": ["n_be8b33a3"], "member_ids": ["n_a9d9e1ff", "n_be8b33a3"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_60d90cb6", "label": "bypassed_and_killed", "source_ids": ["n_d9bb8e0e"], "target_ids": ["n_a9d9e1ff"], "member_ids": ["n_d9bb8e0e", "n_a9d9e1ff"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_89c46356", "label": "arrests", "source_ids": ["n_fa82edbc"], "target_ids": ["n_4809ef46"], "member_ids": ["n_fa82edbc", "n_4809ef46"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_b55e1cf1", "label": "charge_for", "source_ids": ["n_fa82edbc"], "target_ids": ["n_00d3ded4"], "member_ids": ["n_fa82edbc", "n_00d3ded4"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_848399fa", "label": "acts_as", "source_ids": ["n_7e610896"], "target_ids": ["n_a69c1a2e"], "member_ids": ["n_7e610896", "n_a69c1a2e"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_8e31b6ea", "label": "voiced_by", "source_ids": ["n_7e610896"], "target_ids": ["n_dcc15206"], "member_ids": ["n_7e610896", "n_dcc15206"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_fe8954ed", "label": "has_description", "source_ids": ["n_7e610896"], "target_ids": ["n_8e85ed30"], "member_ids": ["n_7e610896", "n_8e85ed30"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_38b18d33", "label": "modeled_after", "source_ids": ["n_7e610896"], "target_ids": ["n_09bebd1f"], "member_ids": ["n_7e610896", "n_09bebd1f"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_85576c55", "label": "has_license_plate", "source_ids": ["n_7e610896"], "target_ids": ["n_cf647819"], "member_ids": ["n_7e610896", "n_cf647819"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_a0aa45fc", "label": "died_in", "source_ids": ["n_dcc15206"], "target_ids": ["n_8f893f2f"], "member_ids": ["n_dcc15206", "n_8f893f2f"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_37bd1be7", "label": "has_description", "source_ids": ["n_89545259"], "target_ids": ["n_0686bc1d"], "member_ids": ["n_89545259", "n_0686bc1d"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_ccf89e8f", "label": "modeled_after", "source_ids": ["n_89545259"], "target_ids": ["n_8c5f2b81"], "member_ids": ["n_89545259", "n_8c5f2b81"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_f7455b92", "label": "suggests_sentence", "source_ids": ["n_89545259"], "target_ids": ["n_2323352c"], "member_ids": ["n_89545259", "n_2323352c"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_613987f2", "label": "uses_to_fix_road", "source_ids": ["n_4809ef46"], "target_ids": ["n_958d9ea4"], "member_ids": ["n_4809ef46", "n_958d9ea4"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_5cb39965", "label": "meets", "source_ids": ["n_4809ef46"], "target_ids": ["n_20af0ef2"], "member_ids": ["n_4809ef46", "n_20af0ef2"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_23446b3d", "label": "voiced_by", "source_ids": ["n_20af0ef2"], "target_ids": ["n_c72293cd"], "member_ids": ["n_20af0ef2", "n_c72293cd"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_e8e982ba", "label": "has_description", "source_ids": ["n_20af0ef2"], "target_ids": ["n_bbb2b1b6"], "member_ids": ["n_20af0ef2", "n_bbb2b1b6"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_4a8a9734", "label": "meets", "source_ids": ["n_4809ef46"], "target_ids": ["n_d37f95e8"], "member_ids": ["n_4809ef46", "n_d37f95e8"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_a46450f3", "label": "meets", "source_ids": ["n_4809ef46"], "target_ids": ["n_030468aa"], "member_ids": ["n_4809ef46", "n_030468aa"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_60bdf8b3", "label": "meets", "source_ids": ["n_4809ef46"], "target_ids": ["n_dd38e5f7"], "member_ids": ["n_4809ef46", "n_dd38e5f7"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_afa107bb", "label": "paints", "source_ids": ["n_370b629f"], "target_ids": ["n_4809ef46"], "member_ids": ["n_370b629f", "n_4809ef46"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_6f459120", "label": "shows_view_to", "source_ids": ["n_89545259"], "target_ids": ["n_4809ef46"], "member_ids": ["n_89545259", "n_4809ef46"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_48bb5c83", "label": "takes_to", "source_ids": ["n_89545259"], "target_ids": ["n_695169c7"], "member_ids": ["n_89545259", "n_695169c7"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_7115117f", "label": "discovers", "source_ids": ["n_4809ef46"], "target_ids": ["n_31d7bac4"], "member_ids": ["n_4809ef46", "n_31d7bac4"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_486c4f99", "label": "was_champion", "source_ids": ["n_7e610896"], "target_ids": ["n_2c585366"], "member_ids": ["n_7e610896", "n_2c585366"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_2e98c84c", "label": "crashed_out_in", "source_ids": ["n_7e610896"], "target_ids": ["n_89d0f522"], "member_ids": ["n_7e610896", "n_89d0f522"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_946f507d", "label": "teaches", "source_ids": ["n_7e610896"], "target_ids": ["n_4809ef46"], "member_ids": ["n_7e610896", "n_4809ef46"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_5c569121", "label": "disguises_as", "source_ids": ["n_7e610896"], "target_ids": ["n_57413203"], "member_ids": ["n_7e610896", "n_57413203"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_bbe0b747", "label": "causes_crash_of", "source_ids": ["n_ec3a4fcc"], "target_ids": ["n_01228f5b"], "member_ids": ["n_ec3a4fcc", "n_01228f5b"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_2f496e28", "label": "pushes_across_line", "source_ids": ["n_4809ef46"], "target_ids": ["n_01228f5b"], "member_ids": ["n_4809ef46", "n_01228f5b"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_6270ac3e", "label": "wins_technically", "source_ids": ["n_ec3a4fcc"], "target_ids": ["n_9b4b22c4"], "member_ids": ["n_ec3a4fcc", "n_9b4b22c4"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_895419f6", "label": "becomes", "source_ids": ["n_4809ef46"], "target_ids": ["n_94f36847"], "member_ids": ["n_4809ef46", "n_94f36847"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_5a82745c", "label": "moves_headquarters_to", "source_ids": ["n_4809ef46"], "target_ids": ["n_a9d9e1ff"], "member_ids": ["n_4809ef46", "n_a9d9e1ff"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_64731ff1", "label": "status_change", "source_ids": ["n_a9d9e1ff"], "target_ids": ["n_f8948d62"], "member_ids": ["n_a9d9e1ff", "n_f8948d62"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_5aad9c33", "label": "gets", "source_ids": ["n_7814e0db"], "target_ids": ["n_f428a659"], "member_ids": ["n_7814e0db", "n_f428a659"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_6dc79d79", "label": "uses_technology", "source_ids": ["n_dc93113a"], "target_ids": ["n_fa04771e"], "member_ids": ["n_dc93113a", "n_fa04771e"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_5abc772e", "label": "has_music_by", "source_ids": ["n_dc93113a"], "target_ids": ["n_2660db11"], "member_ids": ["n_dc93113a", "n_2660db11"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_ced5d111", "label": "has_opening_song_by", "source_ids": ["n_dc93113a"], "target_ids": ["n_2e641039"], "member_ids": ["n_dc93113a", "n_2e641039"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_b194a7c8", "label": "has_box_office", "source_ids": ["n_dc93113a"], "target_ids": ["n_86a81770"], "member_ids": ["n_dc93113a", "n_86a81770"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_2f18ecef", "label": "has_budget", "source_ids": ["n_dc93113a"], "target_ids": ["n_10c08f8a"], "member_ids": ["n_dc93113a", "n_10c08f8a"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_0f748cd8", "label": "acquired", "source_ids": ["n_5f4602cd"], "target_ids": ["n_3e867c17"], "member_ids": ["n_5f4602cd", "n_3e867c17"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_17a4d464", "label": "acquired_in", "source_ids": ["n_5f4602cd"], "target_ids": ["n_50a515f2"], "member_ids": ["n_5f4602cd", "n_50a515f2"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_afdc4459", "label": "spawned_sequel", "source_ids": ["n_dc93113a"], "target_ids": ["n_4cd87a98"], "member_ids": ["n_dc93113a", "n_4cd87a98"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_85958ce1", "label": "spawned_spin_off", "source_ids": ["n_dc93113a"], "target_ids": ["n_d2860ebb"], "member_ids": ["n_dc93113a", "n_d2860ebb"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_45121550", "label": "has_theme_park_ride", "source_ids": ["n_dc93113a"], "target_ids": ["n_efb3e8cc"], "member_ids": ["n_dc93113a", "n_efb3e8cc"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_94f005e0", "label": "located_in", "source_ids": ["n_efb3e8cc"], "target_ids": ["n_2de947cf"], "member_ids": ["n_efb3e8cc", "n_2de947cf"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_9d4c847d", "label": "contains_easter_egg", "source_ids": ["n_dc93113a"], "target_ids": ["n_bc2160cd"], "member_ids": ["n_dc93113a", "n_bc2160cd"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_155b8cfa", "label": "represent_in_world", "source_ids": ["n_0a308e94"], "target_ids": ["n_8fff1df5"], "member_ids": ["n_0a308e94", "n_8fff1df5"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_a64501a6", "label": "represent_in_world", "source_ids": ["n_b2643719"], "target_ids": ["n_23cfba51"], "member_ids": ["n_b2643719", "n_23cfba51"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_cca2fa08", "label": "stepped_back_from", "source_ids": ["n_8fcfdc81"], "target_ids": ["n_029cbf0e"], "member_ids": ["n_8fcfdc81", "n_029cbf0e"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_708fc328", "label": "ends_up", "source_ids": ["n_4809ef46", "n_89545259"], "target_ids": ["n_73b9aadf"], "member_ids": ["n_4809ef46", "n_89545259", "n_73b9aadf"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}, {"id": "e_e1d01467", "label": "changes_tires_for", "source_ids": ["n_1c602964"], "target_ids": ["n_4809ef46"], "member_ids": ["n_1c602964", "n_4809ef46"], "chunk_id": "2e2d92c616df0e6f276ff21f37093325", "weight": 1.0}]};
+    const NODE_R = 14;
+    const PALETTE = [
+      "#7c3aed","#0ea5e9","#10b981","#f59e0b","#ef4444","#ec4899",
+      "#14b8a6","#f97316","#6366f1","#84cc16","#06b6d4","#a855f7"
+    ];
+
+    // ── build lookup ──────────────────────────────────────────────────────────
+    const nodeById = {};
+    RAW.nodes.forEach(n => { nodeById[n.id] = n; });
+
+    // ── D3 simulation nodes (mutable x,y) ─────────────────────────────────────
+    const simNodes = RAW.nodes.map(n => ({...n}));
+    const simNodeMap = {};
+    simNodes.forEach(n => { simNodeMap[n.id] = n; });
+
+    // ── edges for force layout (binary links within each hyperedge member set) ─
+    const simLinks = [];
+    RAW.hyperedges.forEach(he => {
+      const members = he.member_ids;
+      for (let i = 0; i < members.length; i++) {
+        for (let j = i+1; j < members.length; j++) {
+          simLinks.push({ source: members[i], target: members[j], he: he.id });
+        }
+      }
+    });
+
+    const W = window.innerWidth, H = window.innerHeight;
+    const svg = d3.select("#svg")
+      .attr("viewBox", `0 0 ${W} ${H}`)
+      .attr("preserveAspectRatio","xMidYMid meet");
+
+    // marker
+    svg.append("defs").append("marker")
+      .attr("id","arrowhead")
+      .attr("viewBox","0 -5 10 10")
+      .attr("refX",18).attr("refY",0)
+      .attr("markerWidth",6).attr("markerHeight",6)
+      .attr("orient","auto")
+      .append("path").attr("d","M0,-5L10,0L0,5").attr("fill","rgba(255,255,255,0.7)");
+
+    const gBlobs  = svg.append("g").attr("class","blobs");
+    const gArrows = svg.append("g").attr("class","arrows");
+    const gLabels = svg.append("g").attr("class","he-labels");
+    const gNodes  = svg.append("g").attr("class","nodes");
+    const gNLabels= svg.append("g").attr("class","node-labels");
+
+    // ── zoom / pan ────────────────────────────────────────────────────────────
+    const zoom = d3.zoom().scaleExtent([0.05,5]).on("zoom", e => {
+      [gBlobs,gArrows,gLabels,gNodes,gNLabels].forEach(g => g.attr("transform", e.transform));
+    });
+    svg.call(zoom);
+
+    // ── force simulation ──────────────────────────────────────────────────────
+    const sim = d3.forceSimulation(simNodes)
+      .force("link", d3.forceLink(simLinks).id(d=>d.id).distance(90).strength(0.25))
+      .force("charge", d3.forceManyBody().strength(-220))
+      .force("center", d3.forceCenter(W/2, H/2))
+      .force("collision", d3.forceCollide(NODE_R + 6))
+      .on("tick", ticked);
+
+    // ── convex-hull blob ──────────────────────────────────────────────────────
+    function hullPoints(ids, padding) {
+      const pts = [];
+      ids.forEach(id => {
+        const n = simNodeMap[id];
+        if (!n) return;
+        for (let a = 0; a < 8; a++) {
+          pts.push([n.x + Math.cos(a*Math.PI/4)*padding,
+                    n.y + Math.sin(a*Math.PI/4)*padding]);
+        }
+      });
+      if (pts.length < 3) {
+        // single node – draw a circle
+        const n = simNodeMap[ids[0]];
+        if (!n) return null;
+        for (let a = 0; a < 16; a++)
+          pts.push([n.x + Math.cos(a*Math.PI/8)*(padding+4),
+                    n.y + Math.sin(a*Math.PI/8)*(padding+4)]);
+      }
+      const hull = d3.polygonHull(pts);
+      return hull ? d3.line().x(d=>d[0]).y(d=>d[1]).curve(d3.curveCatmullRomClosed.alpha(0.5))(hull) : null;
+    }
+
+    function groupCentroid(ids) {
+      let sx=0,sy=0,c=0;
+      ids.forEach(id => {
+        const n = simNodeMap[id];
+        if (n){ sx+=n.x; sy+=n.y; c++; }
+      });
+      return c ? [sx/c, sy/c] : [W/2,H/2];
+    }
+
+    // ── render elements ───────────────────────────────────────────────────────
+    const highlightSet = new Set();  // ids that should be highlighted
+    let searchQuery = "";
+
+    const blobPaths = gBlobs.selectAll("path.blob")
+      .data(RAW.hyperedges).enter().append("path")
+      .attr("class","blob")
+      .attr("fill", (d,i) => PALETTE[i % PALETTE.length] + "28")
+      .attr("stroke", (d,i) => PALETTE[i % PALETTE.length])
+      .attr("stroke-width", 2)
+      .attr("stroke-linejoin","round")
+      .style("cursor","pointer")
+      .on("mouseover", showHEDetail)
+      .on("mouseout", clearDetail)
+      .on("click", (e,d) => e.stopPropagation());
+
+    const arrowLines = gArrows.selectAll("line.arrow")
+      .data(RAW.hyperedges).enter().append("line")
+      .attr("class","arrow")
+      .attr("stroke","rgba(255,255,255,0.55)")
+      .attr("stroke-width",1.5)
+      .attr("stroke-dasharray","5,3")
+      .attr("marker-end","url(#arrowhead)");
+
+    const heLabelTexts = gLabels.selectAll("text.he-label")
+      .data(RAW.hyperedges).enter().append("text")
+      .attr("class","he-label")
+      .attr("text-anchor","middle")
+      .attr("dy","0.35em")
+      .text(d => d.label)
+      .style("cursor","pointer")
+      .on("mouseover", showHEDetail)
+      .on("mouseout", clearDetail);
+
+    const nodeSel = gNodes.selectAll("circle.node")
+      .data(simNodes).enter().append("circle")
+      .attr("class","node")
+      .attr("r", NODE_R)
+      .attr("fill", "#60a5fa")
+      .attr("stroke","#0f172a")
+      .attr("stroke-width",2)
+      .style("cursor","grab")
+      .call(
+        d3.drag()
+          .on("start", (e,d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+          .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
+          .on("end",   (e,d) => { if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; })
+      )
+      .on("mouseover", showNodeDetail)
+      .on("mouseout", clearDetail);
+
+    const nodeLabelSel = gNLabels.selectAll("text.node-label")
+      .data(simNodes).enter().append("text")
+      .attr("class","node-label")
+      .attr("text-anchor","middle")
+      .attr("dy","0.35em")
+      .text(d => d.label)
+      .style("pointer-events","none");
+
+    function ticked() {
+      blobPaths.each(function(d) {
+        const path = hullPoints(d.member_ids, NODE_R + 20);
+        d3.select(this).attr("d", path || "");
+      });
+
+      arrowLines.each(function(d) {
+        const sc = groupCentroid(d.source_ids.length ? d.source_ids : d.member_ids);
+        const tc = groupCentroid(d.target_ids.length ? d.target_ids : d.member_ids);
+        d3.select(this)
+          .attr("x1",sc[0]).attr("y1",sc[1])
+          .attr("x2",tc[0]).attr("y2",tc[1]);
+      });
+
+      heLabelTexts.each(function(d) {
+        const c = groupCentroid(d.member_ids);
+        d3.select(this).attr("x",c[0]).attr("y",c[1]-NODE_R-24);
+      });
+
+      nodeSel.attr("cx",d=>d.x).attr("cy",d=>d.y);
+      nodeLabelSel.attr("x",d=>d.x).attr("y",d=>d.y);
+
+      applySearch();
+      updateStats();
+    }
+
+    // ── detail panel ─────────────────────────────────────────────────────────
+    const det = document.getElementById("details");
+
+    function showHEDetail(e,d) {
+      det.innerHTML = `
+        <div class="row"><strong style="font-size:13px">${d.label}</strong> <span class="muted">(hyperedge)</span></div>
+        <div class="row"><strong>Sources:</strong> <span class="mono">${d.source_ids.map(id=>nodeById[id]?.label||id).join(", ")||"—"}</span></div>
+        <div class="row"><strong>Targets:</strong> <span class="mono">${d.target_ids.map(id=>nodeById[id]?.label||id).join(", ")||"—"}</span></div>
+        <div class="row"><strong>All members:</strong> <span class="mono">${d.member_ids.map(id=>nodeById[id]?.label||id).join(", ")}</span></div>
+        <div class="row"><strong>Chunk:</strong> <span class="mono">${d.chunk_id}</span></div>
+      `;
+    }
+
+    function showNodeDetail(e,d) {
+      det.innerHTML = `
+        <div class="row"><strong style="font-size:13px">${d.label}</strong></div>
+        <div class="row"><strong>Type:</strong> <span class="mono">${d.type||"concept"}</span></div>
+        <div class="row"><strong>ID:</strong> <span class="mono">${d.id}</span></div>
+      `;
+    }
+
+    function clearDetail() {
+      det.innerHTML = "Hover over a node or hyperedge blob to inspect.";
+    }
+
+    // ── stats panel ───────────────────────────────────────────────────────────
+    const statEl = document.getElementById("stats");
+    function updateStats() {
+      const vis = simNodes.filter(n=>!n._hidden).length;
+      statEl.innerHTML = `
+        <div class="row"><strong>Nodes:</strong> ${RAW.nodes.length}</div>
+        <div class="row"><strong>Hyperedges:</strong> ${RAW.hyperedges.length}</div>
+        <div class="row"><strong>Visible:</strong> ${vis} nodes</div>
+      `;
+    }
+
+    // ── search ────────────────────────────────────────────────────────────────
+    document.getElementById("searchInput").addEventListener("input", e => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      applySearch();
+    });
+
+    function applySearch() {
+      if (!searchQuery) {
+        nodeSel.attr("opacity",1);
+        nodeLabelSel.attr("opacity",1);
+        blobPaths.attr("opacity",1);
+        arrowLines.attr("opacity",1);
+        heLabelTexts.attr("opacity",1);
+        simNodes.forEach(n=>n._hidden=false);
+        return;
+      }
+      simNodes.forEach(n => { n._hidden = !n.label.toLowerCase().includes(searchQuery); });
+      nodeSel.attr("opacity",d=>d._hidden?0.12:1);
+      nodeLabelSel.attr("opacity",d=>d._hidden?0.05:1);
+
+      // dim hyperedges whose members are all hidden
+      blobPaths.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 0.85 : 0.08;
+      });
+      arrowLines.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 0.7 : 0.05;
+      });
+      heLabelTexts.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 1 : 0.05;
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

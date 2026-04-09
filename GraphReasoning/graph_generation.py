@@ -2,6 +2,7 @@ from GraphReasoning.graph_tools import *
 from GraphReasoning.utils import *
 from GraphReasoning.graph_analysis import *
 from GraphReasoning.prompt_config import get_prompt
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from IPython.display import display, Markdown
 import pandas as pd
@@ -39,7 +40,7 @@ except ImportError:
 from pathlib import Path
 import random
 from pyvis.network import Network
-from tqdm.notebook import tqdm
+from tqdm.auto import tqdm
 
 import seaborn as sns
 
@@ -159,24 +160,44 @@ def documents2Dataframe(documents) -> pd.DataFrame:
 
 
 def df2Graph(df: pd.DataFrame, generate, generate_figure=None, image_list=None, repeat_refine=0, do_distill=True, do_relabel = False, verbatim=False,
+            max_workers: int = 4,
           
             ) -> nx.DiGraph:
     
     subgraph_list = []
-    for _, row in df.iterrows():
-        subgraph = graphPrompt(
-            row.text, 
-            generate,
-            generate_figure, 
-            image_list,
-            {"chunk_id": row.chunk_id}, 
-            do_distill=do_distill,
-            do_relabel=do_relabel,
-            repeat_refine=repeat_refine, 
-            verbatim=verbatim,
-        )
-        print(subgraph, type(subgraph))
-        subgraph_list.append(subgraph)
+    rows = list(df.itertuples(index=False))
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_chunk = {
+            executor.submit(
+                graphPrompt,
+                row.text,
+                generate,
+                generate_figure,
+                image_list,
+                {"chunk_id": row.chunk_id},
+                do_distill=do_distill,
+                do_relabel=do_relabel,
+                repeat_refine=repeat_refine,
+                verbatim=verbatim,
+            ): row.chunk_id
+            for row in rows
+        }
+
+        for future in tqdm(
+            as_completed(future_to_chunk),
+            total=len(future_to_chunk),
+            desc="Extracting graph chunks",
+            unit="chunk",
+            leave=True,
+        ):
+            chunk_id = future_to_chunk[future]
+            try:
+                subgraph = future.result()
+                print(subgraph, type(subgraph))
+                subgraph_list.append(subgraph)
+            except Exception as exc:
+                print(f"Exception while processing chunk {chunk_id}: {exc}")
 
         
     G = nx.DiGraph()
@@ -195,13 +216,18 @@ def df2hypergraph(
     do_distill: bool = True,
     do_relabel: bool = False,
     verbatim: bool = False,
+    max_workers: int = 4,
 ) -> HypergraphBuilder:
     """Build a merged HypergraphBuilder from all chunks in *df*."""
     merged: HypergraphBuilder | None = None
+    chunk_builders: list[HypergraphBuilder] = []
 
-    for _, row in df.iterrows():
-        try:
-            chunk_builder = hypergraphPrompt(
+    rows = list(df.itertuples(index=False))
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_chunk = {
+            executor.submit(
+                hypergraphPrompt,
                 row.text,
                 generate,
                 generate_figure,
@@ -211,16 +237,32 @@ def df2hypergraph(
                 do_relabel=do_relabel,
                 repeat_refine=repeat_refine,
                 verbatim=verbatim,
-            )
-            if chunk_builder is None:
-                print(f"Skipping chunk {row.chunk_id} – no events extracted.")
-                continue
-            if merged is None:
-                merged = chunk_builder
-            else:
-                merged.merge(chunk_builder)
-        except Exception as exc:
-            print(f"Exception while processing chunk {row.chunk_id}: {exc}")
+            ): row.chunk_id
+            for row in rows
+        }
+
+        for future in tqdm(
+            as_completed(future_to_chunk),
+            total=len(future_to_chunk),
+            desc="Extracting hypergraph chunks",
+            unit="chunk",
+            leave=True,
+        ):
+            chunk_id = future_to_chunk[future]
+            try:
+                chunk_builder = future.result()
+                if chunk_builder is None:
+                    print(f"Skipping chunk {chunk_id} – no events extracted.")
+                    continue
+                chunk_builders.append(chunk_builder)
+            except Exception as exc:
+                print(f"Exception while processing chunk {chunk_id}: {exc}")
+
+    for chunk_builder in chunk_builders:
+        if merged is None:
+            merged = chunk_builder
+        else:
+            merged.merge(chunk_builder)
 
     if merged is None:
         print("No valid subgraphs found. Returning empty HypergraphBuilder.")
@@ -562,6 +604,7 @@ def make_hypergraph_from_text(
     verbatim=False,
     data_dir='./data_output_KG/',
     force_rebuild=False,
+    max_workers: int = 4,
 ):
     """
     Builds or loads a graph stored in a .pkl file.
@@ -628,6 +671,7 @@ def make_hypergraph_from_text(
         do_relabel=do_relabel,
         repeat_refine=repeat_refine,
         verbatim=verbatim,
+        max_workers=max_workers,
     )
     G.graph.metadata["source_document"] = graph_root
 

@@ -13,6 +13,7 @@ both strict-tree and DAG serialization for D3.js visualization.
 """
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 import re
 import uuid
@@ -23,6 +24,7 @@ from GraphReasoning.prompt_config import get_prompt
 
 import numpy as np
 from sklearn.mixture import GaussianMixture
+from tqdm.auto import tqdm
 
 logger = logging.getLogger(__name__)
 
@@ -214,7 +216,7 @@ def embed_nodes(
     embed_client: EmbeddingClient,
 ) -> None:
     """Embed each node's text in-place using *embed_client*."""
-    for node in nodes:
+    for node in tqdm(nodes, desc="Embedding nodes", unit="node", leave=False):
         if node.embedding is None:
             node.embedding = np.asarray(embed_client.encode(node.text), dtype=np.float32)
 
@@ -525,6 +527,7 @@ def build_raptor_index(
     n_neighbors_global: int = -1,
     n_neighbors_local: int = 10,
     encoding_name: str = "cl100k_base",
+    max_workers: int = 4,
 ) -> RaptorIndex:
     """Build a full RAPTOR hierarchical index from raw text.
 
@@ -601,7 +604,7 @@ def build_raptor_index(
     # ----- Steps 3–5: Recursive clustering + summarization -------------------
     current_level_nodes = leaves
 
-    for depth in range(1, max_depth + 1):
+    for depth in tqdm(range(1, max_depth + 1), desc="RAPTOR levels", unit="level", leave=True):
         n = len(current_level_nodes)
         if n < min_cluster_input:
             logger.info("Stopping at level %d: only %d nodes (< %d)", depth, n, min_cluster_input)
@@ -634,12 +637,16 @@ def build_raptor_index(
 
         # Build parent nodes for each cluster
         new_parents: list[RaptorNode] = []
+        new_edges: list[RaptorEdge] = []
         node_map = {n.id: n for n in current_level_nodes}
 
-        for cluster_label, members in clusters.items():
+        def _summarize_cluster_task(
+            cluster_label: int,
+            members: list[tuple[str, float]],
+        ) -> tuple[list[RaptorNode], list[RaptorEdge]]:
             child_nodes = [node_map[nid] for nid, _ in members if nid in node_map]
             if not child_nodes:
-                continue
+                return [], []
 
             # Check token budget — recluster if needed
             combined_tokens = sum(cn.token_count for cn in child_nodes)
@@ -651,6 +658,9 @@ def build_raptor_index(
                 )
             else:
                 text_chunks = ["\n---\n".join(cn.text for cn in child_nodes)]
+
+            task_parents: list[RaptorNode] = []
+            task_edges: list[RaptorEdge] = []
 
             # Summarize each text chunk into a parent
             for chunk_i, chunk_text_str in enumerate(text_chunks):
@@ -673,18 +683,35 @@ def build_raptor_index(
                         "cluster_label": cluster_label,
                     },
                 )
-                index.nodes[parent_node.id] = parent_node
-                new_parents.append(parent_node)
+                task_parents.append(parent_node)
 
                 # Create edges from parent to children
                 for child_id, weight in members:
-                    index.edges.append(
-                        RaptorEdge(
-                            source=parent_node.id,
-                            target=child_id,
-                            weight=weight,
-                        )
+                    task_edges.append(
+                        RaptorEdge(source=parent_node.id, target=child_id, weight=weight)
                     )
+
+            return task_parents, task_edges
+
+        futures = []
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            for cluster_label, members in clusters.items():
+                futures.append(executor.submit(_summarize_cluster_task, cluster_label, members))
+
+            for future in tqdm(
+                as_completed(futures),
+                total=len(futures),
+                desc=f"Summarizing level {depth}",
+                unit="cluster",
+                leave=True,
+            ):
+                parents, edges = future.result()
+                new_parents.extend(parents)
+                new_edges.extend(edges)
+
+        for parent_node in new_parents:
+            index.nodes[parent_node.id] = parent_node
+        index.edges.extend(new_edges)
 
         if not new_parents:
             logger.info("Stopping at level %d: no parents created", depth)

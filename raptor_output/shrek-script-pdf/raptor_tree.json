@@ -1,0 +1,358 @@
+{
+  "id": "raptor_root",
+  "name": "RAPTOR Index Root",
+  "level": 2,
+  "type": "root",
+  "token_count": 0,
+  "children": [
+    {
+      "id": "raptor_L1_0000",
+      "name": "\n\nAt a fairy tale creature roundup where Little Bear cries his cage is too small, a Head Guard pays bounties including 2...",
+      "level": 1,
+      "type": "summary",
+      "token_count": 452,
+      "children": [
+        {
+          "id": "raptor_L0_0001",
+          "name": "Fairy tale creatures.\"(He sighs and throws the paper over his shoulder.) ``` ## `THE NEXT DAY` ``` There is a line of fa...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0002",
+          "name": "Talk, you boneheaded dolt... ``` ``` HEAD GUARD That's it. I've heard enough. Guards! ``` ``` OLD WOMAN No, no, he talks...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0003",
+          "name": "``` ``` DONKEY ``` ``` Can I say something to you? Listen, you was really, really, really somethin' back here. Incredibl...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 494
+        },
+        {
+          "id": "raptor_L0_0004",
+          "name": "``` ## `DONKEY` ``` Wow. Only a true friend would be that cruelly honest. ``` ``` 7. ``` ``` SHREK Listen, little donkey...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 499
+        },
+        {
+          "id": "raptor_L0_0005",
+          "name": "Please! ``` ``` SHREK ``` ``` Okay! Okay! But one night only. ``` ## `DONKEY` ``` Ah! Thank you! (he runs inside the cot...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 500
+        },
+        {
+          "id": "raptor_L0_0006",
+          "name": "``` ``` GORDO Blah! Awful stuff. ``` ``` BLIND MOUSE1 Is that you, Gordo? ``` ``` GORDO How did you know? ``` ``` SHREK ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 489
+        },
+        {
+          "id": "raptor_L0_0011",
+          "name": "Shrek and Donkey look at him then continue on into DuLoc.) ``` ``` DULOC ``` ``` They look around but all is quiet. ``` ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 500
+        },
+        {
+          "id": "raptor_L0_0012",
+          "name": "``` ``` FARQUAAD ``` ``` Indeed. Knights, new plan! The one who kills the ogre will be named champion! Have it him! ``` ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 494
+        },
+        {
+          "id": "raptor_L0_0013",
+          "name": "People of DuLoc, I give you our champion! ``` ``` SHREK ``` ``` What? ``` ``` FARQUAAD ``` ``` Congratulations, ogre. Yo...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 497
+        },
+        {
+          "id": "raptor_L0_0014",
+          "name": "``` ``` (he holds out his onion) ``` ``` DONKEY ``` ``` (sniffs the onion) They stink? ``` ``` SHREK Yes - - No! ``` ```...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 496
+        },
+        {
+          "id": "raptor_L0_0015",
+          "name": "``` ## `SHREK` ``` Believe me, Donkey, if it was me, you'd be dead. (sniffs) It's brimstone. We must be getting close. `...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0016",
+          "name": "``` ``` DONKEY ``` ``` But I know that half is safe! ``` ``` SHREK Okay, fine. I don't have time for this. You go back. ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0017",
+          "name": "``` ``` DONKEY Stairs? I thought we was lookin' for the princess. ``` ``` SHREK (putting on a helmet) The princess will ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0025",
+          "name": "Look, there's Bloodnut, the Flatulent. You can guess what he's famous for. ``` ``` DONKEY ``` ``` I know you're making t...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0026",
+          "name": "Neither of the guys see her. ``` ## `SHREK` ``` Oh! For the love of Pete! (gets up and walks over to the edge of the cli...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 493
+        },
+        {
+          "id": "raptor_L0_0039",
+          "name": "``` ## `SHREK` ``` Donkey? (Donkey ignores him and continues with what he's doing.) What are you doing? ``` ``` DONKEY `...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 495
+        },
+        {
+          "id": "raptor_L0_0040",
+          "name": "``` ## `SHREK` ``` (os) Go away! ``` ## `DONKEY` ``` There you are , doing it again just like you did to Fiona. (MORE) `...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 488
+        },
+        {
+          "id": "raptor_L0_0045",
+          "name": "``` ## `GINGERBREAD MAN` ``` God bless us, every one. ``` ## `DONKEY` ``` (as he's done singing and we fade to black) Oh...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 63
+        }
+      ]
+    },
+    {
+      "id": "raptor_L1_0001",
+      "name": "\n\nOnce upon a time, a princess enchanted to become a beast nightly was locked in a dragon's keep in the highest room of ...",
+      "level": 1,
+      "type": "summary",
+      "token_count": 448,
+      "children": [
+        {
+          "id": "raptor_L0_0000",
+          "name": "## `SHREK` ## `Written by` ``` Ted Elliott Terry Rossio Joe Stillman Roger S.H. Schulman ``` ``` Based on the book by Wi...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 472
+        },
+        {
+          "id": "raptor_L0_0007",
+          "name": "``` ``` PINOCCHIO Oh, gosh, no one invited us. ``` ``` SHREK ``` ``` What? ``` ``` PINOCCHIO ``` ``` We were forced to c...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 485
+        },
+        {
+          "id": "raptor_L0_0008",
+          "name": "``` ``` The Gingerbread Man is pulled out of the milk and slammed down onto a cookie sheet. Farquaad laughs as he walks ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0009",
+          "name": "It is the Magic Mirror. ``` ## `GINGERBREAD MAN` ``` (in awe) Ohhhh... ``` ## `FARQUAAD` ``` Magic mirror... ``` ``` GIN...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 499
+        },
+        {
+          "id": "raptor_L0_0010",
+          "name": "``` ## `FARQUAAD` ``` Three? One? Three? ``` ## `THELONIUS` ``` Three! (holds up 2 fingers) Pick number three, my lord! ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 473
+        },
+        {
+          "id": "raptor_L0_0022",
+          "name": "``` ``` FIONA (CONT'D) A princess locked in a tower and beset by a dragon is rescued by a brave knight, and then they sh...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 491
+        },
+        {
+          "id": "raptor_L0_0035",
+          "name": "This shall be the norm... until you find true love's first kiss... and then take love's true form.\" ``` ## `DONKEY` ``` ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 491
+        },
+        {
+          "id": "raptor_L0_0036",
+          "name": "I mean, really, who can ever love a beast so hideous and ugly? \"Princess\" and \"ugly\" don't go together. That's why I can...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 500
+        },
+        {
+          "id": "raptor_L0_0037",
+          "name": "I heard enough last night. ``` ``` FIONA You heard what I said? ``` ``` SHREK Every word. ``` ``` FIONA I thought you'd ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 494
+        },
+        {
+          "id": "raptor_L0_0038",
+          "name": "I ask your hand in marriage. Will you be the perfect bride for the perfect groom? ``` ``` FIONA Lord Farquaad, I accept....",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 491
+        },
+        {
+          "id": "raptor_L0_0041",
+          "name": "``` ``` DULOC - CHURCH ``` ``` Fiona and Farquaad are getting married. The whole town is there. The prompter card guy ho...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 486
+        },
+        {
+          "id": "raptor_L0_0042",
+          "name": "``` ``` Inside ``` ``` PRIEST I now pronounce you husband and wife... ``` ``` Outside ``` ``` DONKEY They're at the alta...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 481
+        },
+        {
+          "id": "raptor_L0_0043",
+          "name": "Fiona, my love, we're but a kiss away from our \"happily ever after.\" Now kiss me! (puckers his lips and leans toward her...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 497
+        },
+        {
+          "id": "raptor_L0_0044",
+          "name": "``` ``` The dragon belches and Farquaad's crown flies out of her mouth and falls to the ground. ``` ``` DONKEY (CONT’D) ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        }
+      ]
+    },
+    {
+      "id": "raptor_L1_0002",
+      "name": "\n\nAfter a female dragon attracted to Donkey's feminine beauty blows a smoke ring heart and ignores his claims of asthma ...",
+      "level": 1,
+      "type": "summary",
+      "token_count": 373,
+      "children": [
+        {
+          "id": "raptor_L0_0018",
+          "name": "You're - - You're a girl dragon! Oh, sure! I mean, of course you're a girl dragon. You're just reeking of feminine beaut...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 497
+        },
+        {
+          "id": "raptor_L0_0019",
+          "name": "``` ``` FIONA (CONT’D) But we have to savor this moment! You could recite an epic poem for me. A ballad? A sonnet! A lim...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 500
+        },
+        {
+          "id": "raptor_L0_0020",
+          "name": "We really should get to know each other first as friends or pen pals. I'm on the road a lot, but I just love receiving c...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 484
+        },
+        {
+          "id": "raptor_L0_0021",
+          "name": "``` **==> picture [173 x 23] intentionally omitted <==** ``` They all take off running for the exit with the dragon in h...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 469
+        },
+        {
+          "id": "raptor_L0_0023",
+          "name": "I'm no one's messenger boy, all right? (ominous) I'm a delivery boy. (he swiftly picks her up and swings her over his sh...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 498
+        },
+        {
+          "id": "raptor_L0_0024",
+          "name": "We can keep going. ``` ``` FIONA ``` ``` But there's robbers in the woods. ``` ``` DONKEY ``` ``` Whoa! Time out, Shrek!...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 497
+        },
+        {
+          "id": "raptor_L0_0027",
+          "name": "Suddenly the pressure of the note is too big and the bird explodes. Fiona looks a little sheepish, but she eyes the eggs...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 493
+        },
+        {
+          "id": "raptor_L0_0028",
+          "name": "``` ## `SHREK` ``` Princess! ``` ``` FIONA (to Robin Hood) What are you doing? ``` ``` ROBIN HOOD Be still, mon cherie, ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 497
+        },
+        {
+          "id": "raptor_L0_0029",
+          "name": "``` ``` Shrek looks at her in admiration. ``` ``` MERRY MAN Oh, you little- - (shoots an arrow at Fiona but she ducks ou...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 493
+        },
+        {
+          "id": "raptor_L0_0030",
+          "name": "``` ``` DONKEY (CONT'D) Don't die Shrek. If you see a long tunnel, stay away from the light! ``` ``` SHREK & FIONA Donke...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 494
+        },
+        {
+          "id": "raptor_L0_0031",
+          "name": "We were just, uh - - ``` ## `DONKEY` ``` Look, if you wanted to be alone, all you had to do was ask. Okay? ``` ``` SHREK...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 496
+        },
+        {
+          "id": "raptor_L0_0032",
+          "name": "He doesn't look so good. ``` ``` DONKEY What are you talking about? I'm fine. ``` ``` FIONA ``` ``` (kneels to look him ...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 499
+        },
+        {
+          "id": "raptor_L0_0033",
+          "name": "``` ## `DONKEY` ``` (chuckles) Man, isn't this romantic? Just look at that sunset. FIONA (jumps up) Sunset? Oh, no! I me...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 483
+        },
+        {
+          "id": "raptor_L0_0034",
+          "name": "``` ``` TIME LAPSE ``` ``` Donkey opens the door to the Windmill and walks in. Fiona is nowhere to be seen. ``` ``` DONK...",
+          "level": 0,
+          "type": "leaf",
+          "token_count": 495
+        }
+      ]
+    }
+  ]
+}

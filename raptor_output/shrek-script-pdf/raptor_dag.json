@@ -1,0 +1,579 @@
+{
+  "nodes": [
+    {
+      "id": "raptor_L0_0000",
+      "level": 0,
+      "type": "leaf",
+      "name": "## `SHREK` ## `Written by` ``` Ted Elliott Terry Rossio Joe Stillman Roger S.H. Schulman ``` ``` Based on the book by Wi...",
+      "token_count": 472
+    },
+    {
+      "id": "raptor_L0_0001",
+      "level": 0,
+      "type": "leaf",
+      "name": "Fairy tale creatures.\"(He sighs and throws the paper over his shoulder.) ``` ## `THE NEXT DAY` ``` There is a line of fa...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0002",
+      "level": 0,
+      "type": "leaf",
+      "name": "Talk, you boneheaded dolt... ``` ``` HEAD GUARD That's it. I've heard enough. Guards! ``` ``` OLD WOMAN No, no, he talks...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0003",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` DONKEY ``` ``` Can I say something to you? Listen, you was really, really, really somethin' back here. Incredibl...",
+      "token_count": 494
+    },
+    {
+      "id": "raptor_L0_0004",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `DONKEY` ``` Wow. Only a true friend would be that cruelly honest. ``` ``` 7. ``` ``` SHREK Listen, little donkey...",
+      "token_count": 499
+    },
+    {
+      "id": "raptor_L0_0005",
+      "level": 0,
+      "type": "leaf",
+      "name": "Please! ``` ``` SHREK ``` ``` Okay! Okay! But one night only. ``` ## `DONKEY` ``` Ah! Thank you! (he runs inside the cot...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0006",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` GORDO Blah! Awful stuff. ``` ``` BLIND MOUSE1 Is that you, Gordo? ``` ``` GORDO How did you know? ``` ``` SHREK ...",
+      "token_count": 489
+    },
+    {
+      "id": "raptor_L0_0007",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` PINOCCHIO Oh, gosh, no one invited us. ``` ``` SHREK ``` ``` What? ``` ``` PINOCCHIO ``` ``` We were forced to c...",
+      "token_count": 485
+    },
+    {
+      "id": "raptor_L0_0008",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` The Gingerbread Man is pulled out of the milk and slammed down onto a cookie sheet. Farquaad laughs as he walks ...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0009",
+      "level": 0,
+      "type": "leaf",
+      "name": "It is the Magic Mirror. ``` ## `GINGERBREAD MAN` ``` (in awe) Ohhhh... ``` ## `FARQUAAD` ``` Magic mirror... ``` ``` GIN...",
+      "token_count": 499
+    },
+    {
+      "id": "raptor_L0_0010",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `FARQUAAD` ``` Three? One? Three? ``` ## `THELONIUS` ``` Three! (holds up 2 fingers) Pick number three, my lord! ...",
+      "token_count": 473
+    },
+    {
+      "id": "raptor_L0_0011",
+      "level": 0,
+      "type": "leaf",
+      "name": "Shrek and Donkey look at him then continue on into DuLoc.) ``` ``` DULOC ``` ``` They look around but all is quiet. ``` ...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0012",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` FARQUAAD ``` ``` Indeed. Knights, new plan! The one who kills the ogre will be named champion! Have it him! ``` ...",
+      "token_count": 494
+    },
+    {
+      "id": "raptor_L0_0013",
+      "level": 0,
+      "type": "leaf",
+      "name": "People of DuLoc, I give you our champion! ``` ``` SHREK ``` ``` What? ``` ``` FARQUAAD ``` ``` Congratulations, ogre. Yo...",
+      "token_count": 497
+    },
+    {
+      "id": "raptor_L0_0014",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` (he holds out his onion) ``` ``` DONKEY ``` ``` (sniffs the onion) They stink? ``` ``` SHREK Yes - - No! ``` ```...",
+      "token_count": 496
+    },
+    {
+      "id": "raptor_L0_0015",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `SHREK` ``` Believe me, Donkey, if it was me, you'd be dead. (sniffs) It's brimstone. We must be getting close. `...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0016",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` DONKEY ``` ``` But I know that half is safe! ``` ``` SHREK Okay, fine. I don't have time for this. You go back. ...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0017",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` DONKEY Stairs? I thought we was lookin' for the princess. ``` ``` SHREK (putting on a helmet) The princess will ...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0018",
+      "level": 0,
+      "type": "leaf",
+      "name": "You're - - You're a girl dragon! Oh, sure! I mean, of course you're a girl dragon. You're just reeking of feminine beaut...",
+      "token_count": 497
+    },
+    {
+      "id": "raptor_L0_0019",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` FIONA (CONT’D) But we have to savor this moment! You could recite an epic poem for me. A ballad? A sonnet! A lim...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0020",
+      "level": 0,
+      "type": "leaf",
+      "name": "We really should get to know each other first as friends or pen pals. I'm on the road a lot, but I just love receiving c...",
+      "token_count": 484
+    },
+    {
+      "id": "raptor_L0_0021",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` **==> picture [173 x 23] intentionally omitted <==** ``` They all take off running for the exit with the dragon in h...",
+      "token_count": 469
+    },
+    {
+      "id": "raptor_L0_0022",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` FIONA (CONT'D) A princess locked in a tower and beset by a dragon is rescued by a brave knight, and then they sh...",
+      "token_count": 491
+    },
+    {
+      "id": "raptor_L0_0023",
+      "level": 0,
+      "type": "leaf",
+      "name": "I'm no one's messenger boy, all right? (ominous) I'm a delivery boy. (he swiftly picks her up and swings her over his sh...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0024",
+      "level": 0,
+      "type": "leaf",
+      "name": "We can keep going. ``` ``` FIONA ``` ``` But there's robbers in the woods. ``` ``` DONKEY ``` ``` Whoa! Time out, Shrek!...",
+      "token_count": 497
+    },
+    {
+      "id": "raptor_L0_0025",
+      "level": 0,
+      "type": "leaf",
+      "name": "Look, there's Bloodnut, the Flatulent. You can guess what he's famous for. ``` ``` DONKEY ``` ``` I know you're making t...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0026",
+      "level": 0,
+      "type": "leaf",
+      "name": "Neither of the guys see her. ``` ## `SHREK` ``` Oh! For the love of Pete! (gets up and walks over to the edge of the cli...",
+      "token_count": 493
+    },
+    {
+      "id": "raptor_L0_0027",
+      "level": 0,
+      "type": "leaf",
+      "name": "Suddenly the pressure of the note is too big and the bird explodes. Fiona looks a little sheepish, but she eyes the eggs...",
+      "token_count": 493
+    },
+    {
+      "id": "raptor_L0_0028",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `SHREK` ``` Princess! ``` ``` FIONA (to Robin Hood) What are you doing? ``` ``` ROBIN HOOD Be still, mon cherie, ...",
+      "token_count": 497
+    },
+    {
+      "id": "raptor_L0_0029",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` Shrek looks at her in admiration. ``` ``` MERRY MAN Oh, you little- - (shoots an arrow at Fiona but she ducks ou...",
+      "token_count": 493
+    },
+    {
+      "id": "raptor_L0_0030",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` DONKEY (CONT'D) Don't die Shrek. If you see a long tunnel, stay away from the light! ``` ``` SHREK & FIONA Donke...",
+      "token_count": 494
+    },
+    {
+      "id": "raptor_L0_0031",
+      "level": 0,
+      "type": "leaf",
+      "name": "We were just, uh - - ``` ## `DONKEY` ``` Look, if you wanted to be alone, all you had to do was ask. Okay? ``` ``` SHREK...",
+      "token_count": 496
+    },
+    {
+      "id": "raptor_L0_0032",
+      "level": 0,
+      "type": "leaf",
+      "name": "He doesn't look so good. ``` ``` DONKEY What are you talking about? I'm fine. ``` ``` FIONA ``` ``` (kneels to look him ...",
+      "token_count": 499
+    },
+    {
+      "id": "raptor_L0_0033",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `DONKEY` ``` (chuckles) Man, isn't this romantic? Just look at that sunset. FIONA (jumps up) Sunset? Oh, no! I me...",
+      "token_count": 483
+    },
+    {
+      "id": "raptor_L0_0034",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` TIME LAPSE ``` ``` Donkey opens the door to the Windmill and walks in. Fiona is nowhere to be seen. ``` ``` DONK...",
+      "token_count": 495
+    },
+    {
+      "id": "raptor_L0_0035",
+      "level": 0,
+      "type": "leaf",
+      "name": "This shall be the norm... until you find true love's first kiss... and then take love's true form.\" ``` ## `DONKEY` ``` ...",
+      "token_count": 491
+    },
+    {
+      "id": "raptor_L0_0036",
+      "level": 0,
+      "type": "leaf",
+      "name": "I mean, really, who can ever love a beast so hideous and ugly? \"Princess\" and \"ugly\" don't go together. That's why I can...",
+      "token_count": 500
+    },
+    {
+      "id": "raptor_L0_0037",
+      "level": 0,
+      "type": "leaf",
+      "name": "I heard enough last night. ``` ``` FIONA You heard what I said? ``` ``` SHREK Every word. ``` ``` FIONA I thought you'd ...",
+      "token_count": 494
+    },
+    {
+      "id": "raptor_L0_0038",
+      "level": 0,
+      "type": "leaf",
+      "name": "I ask your hand in marriage. Will you be the perfect bride for the perfect groom? ``` ``` FIONA Lord Farquaad, I accept....",
+      "token_count": 491
+    },
+    {
+      "id": "raptor_L0_0039",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `SHREK` ``` Donkey? (Donkey ignores him and continues with what he's doing.) What are you doing? ``` ``` DONKEY `...",
+      "token_count": 495
+    },
+    {
+      "id": "raptor_L0_0040",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `SHREK` ``` (os) Go away! ``` ## `DONKEY` ``` There you are , doing it again just like you did to Fiona. (MORE) `...",
+      "token_count": 488
+    },
+    {
+      "id": "raptor_L0_0041",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` DULOC - CHURCH ``` ``` Fiona and Farquaad are getting married. The whole town is there. The prompter card guy ho...",
+      "token_count": 486
+    },
+    {
+      "id": "raptor_L0_0042",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` Inside ``` ``` PRIEST I now pronounce you husband and wife... ``` ``` Outside ``` ``` DONKEY They're at the alta...",
+      "token_count": 481
+    },
+    {
+      "id": "raptor_L0_0043",
+      "level": 0,
+      "type": "leaf",
+      "name": "Fiona, my love, we're but a kiss away from our \"happily ever after.\" Now kiss me! (puckers his lips and leans toward her...",
+      "token_count": 497
+    },
+    {
+      "id": "raptor_L0_0044",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ``` The dragon belches and Farquaad's crown flies out of her mouth and falls to the ground. ``` ``` DONKEY (CONT’D) ...",
+      "token_count": 498
+    },
+    {
+      "id": "raptor_L0_0045",
+      "level": 0,
+      "type": "leaf",
+      "name": "``` ## `GINGERBREAD MAN` ``` God bless us, every one. ``` ## `DONKEY` ``` (as he's done singing and we fade to black) Oh...",
+      "token_count": 63
+    },
+    {
+      "id": "raptor_L1_0001",
+      "level": 1,
+      "type": "summary",
+      "name": "\n\nOnce upon a time, a princess enchanted to become a beast nightly was locked in a dragon's keep in the highest room of ...",
+      "token_count": 448
+    },
+    {
+      "id": "raptor_L1_0002",
+      "level": 1,
+      "type": "summary",
+      "name": "\n\nAfter a female dragon attracted to Donkey's feminine beauty blows a smoke ring heart and ignores his claims of asthma ...",
+      "token_count": 373
+    },
+    {
+      "id": "raptor_L1_0000",
+      "level": 1,
+      "type": "summary",
+      "name": "\n\nAt a fairy tale creature roundup where Little Bear cries his cage is too small, a Head Guard pays bounties including 2...",
+      "token_count": 452
+    }
+  ],
+  "links": [
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0000",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0007",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0008",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0009",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0010",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0022",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0035",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0036",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0037",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0038",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0041",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0042",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0043",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0001",
+      "target": "raptor_L0_0044",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0018",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0019",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0020",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0021",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0023",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0024",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0027",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0028",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0029",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0030",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0031",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0032",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0033",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0002",
+      "target": "raptor_L0_0034",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0001",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0002",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0003",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0004",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0005",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0006",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0011",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0012",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0013",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0014",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0015",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0016",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0017",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0025",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0026",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0039",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0040",
+      "weight": 1.0
+    },
+    {
+      "source": "raptor_L1_0000",
+      "target": "raptor_L0_0045",
+      "weight": 1.0
+    }
+  ]
+}

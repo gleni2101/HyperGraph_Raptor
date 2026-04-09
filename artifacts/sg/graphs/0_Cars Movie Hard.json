@@ -1,0 +1,1272 @@
+{
+  "metadata": {
+    "created_at": "2026-04-08T09:57:06.269655",
+    "source_document": "0_Cars Movie Hard",
+    "version": "2.0"
+  },
+  "nodes": {
+    "n_dc93113a": {
+      "id": "n_dc93113a",
+      "label": "Cars",
+      "type": "concept"
+    },
+    "n_50a515f2": {
+      "id": "n_50a515f2",
+      "label": "2006",
+      "type": "concept"
+    },
+    "n_3e867c17": {
+      "id": "n_3e867c17",
+      "label": "Pixar",
+      "type": "concept"
+    },
+    "n_8fcfdc81": {
+      "id": "n_8fcfdc81",
+      "label": "John Lasseter",
+      "type": "concept"
+    },
+    "n_3d2216fa": {
+      "id": "n_3d2216fa",
+      "label": "road trip with his kids",
+      "type": "concept"
+    },
+    "n_5058c47c": {
+      "id": "n_5058c47c",
+      "label": "kids staring at screens",
+      "type": "concept"
+    },
+    "n_c871df93": {
+      "id": "n_c871df93",
+      "label": "slowing down",
+      "type": "concept"
+    },
+    "n_c02caff8": {
+      "id": "n_c02caff8",
+      "label": "no humans",
+      "type": "concept"
+    },
+    "n_4809ef46": {
+      "id": "n_4809ef46",
+      "label": "Lightning McQueen",
+      "type": "concept"
+    },
+    "n_e25faa23": {
+      "id": "n_e25faa23",
+      "label": "Owen Wilson",
+      "type": "concept"
+    },
+    "n_934161ce": {
+      "id": "n_934161ce",
+      "label": "red rookie",
+      "type": "concept"
+    },
+    "n_c746c518": {
+      "id": "n_c746c518",
+      "label": "95",
+      "type": "concept"
+    },
+    "n_b32f638c": {
+      "id": "n_b32f638c",
+      "label": "stock car",
+      "type": "concept"
+    },
+    "n_dc589635": {
+      "id": "n_dc589635",
+      "label": "ka-chow",
+      "type": "concept"
+    },
+    "n_ec3a4fcc": {
+      "id": "n_ec3a4fcc",
+      "label": "Chick Hicks",
+      "type": "concept"
+    },
+    "n_01228f5b": {
+      "id": "n_01228f5b",
+      "label": "The King",
+      "type": "concept"
+    },
+    "n_9b4b22c4": {
+      "id": "n_9b4b22c4",
+      "label": "Piston Cup",
+      "type": "concept"
+    },
+    "n_dbb491a3": {
+      "id": "n_dbb491a3",
+      "label": "green aggressive guy",
+      "type": "concept"
+    },
+    "n_1a7b7901": {
+      "id": "n_1a7b7901",
+      "label": "Strip Weathers",
+      "type": "concept"
+    },
+    "n_d7305ab7": {
+      "id": "n_d7305ab7",
+      "label": "Richard Petty",
+      "type": "concept"
+    },
+    "n_10356513": {
+      "id": "n_10356513",
+      "label": "Plymouth Superbird",
+      "type": "concept"
+    },
+    "n_2bdd3dc1": {
+      "id": "n_2bdd3dc1",
+      "label": "Mack",
+      "type": "concept"
+    },
+    "n_d9bb8e0e": {
+      "id": "n_d9bb8e0e",
+      "label": "interstate",
+      "type": "concept"
+    },
+    "n_dd649b1b": {
+      "id": "n_dd649b1b",
+      "label": "trailer",
+      "type": "concept"
+    },
+    "n_a9d9e1ff": {
+      "id": "n_a9d9e1ff",
+      "label": "Radiator Springs",
+      "type": "concept"
+    },
+    "n_7814e0db": {
+      "id": "n_7814e0db",
+      "label": "Route 66",
+      "type": "concept"
+    },
+    "n_be8b33a3": {
+      "id": "n_be8b33a3",
+      "label": "dying",
+      "type": "concept"
+    },
+    "n_fa82edbc": {
+      "id": "n_fa82edbc",
+      "label": "Sheriff",
+      "type": "concept"
+    },
+    "n_00d3ded4": {
+      "id": "n_00d3ded4",
+      "label": "tearing up the road",
+      "type": "concept"
+    },
+    "n_7e610896": {
+      "id": "n_7e610896",
+      "label": "Doc Hudson",
+      "type": "concept"
+    },
+    "n_a69c1a2e": {
+      "id": "n_a69c1a2e",
+      "label": "judge",
+      "type": "concept"
+    },
+    "n_dcc15206": {
+      "id": "n_dcc15206",
+      "label": "Paul Newman",
+      "type": "concept"
+    },
+    "n_8e85ed30": {
+      "id": "n_8e85ed30",
+      "label": "old Hudson Hornet",
+      "type": "concept"
+    },
+    "n_09bebd1f": {
+      "id": "n_09bebd1f",
+      "label": "Hudson Hornet",
+      "type": "concept"
+    },
+    "n_cf647819": {
+      "id": "n_cf647819",
+      "label": "51HHDBN",
+      "type": "concept"
+    },
+    "n_8f893f2f": {
+      "id": "n_8f893f2f",
+      "label": "2008",
+      "type": "concept"
+    },
+    "n_89545259": {
+      "id": "n_89545259",
+      "label": "Sally",
+      "type": "concept"
+    },
+    "n_0686bc1d": {
+      "id": "n_0686bc1d",
+      "label": "blue Porsche",
+      "type": "concept"
+    },
+    "n_8c5f2b81": {
+      "id": "n_8c5f2b81",
+      "label": "Porsche 911",
+      "type": "concept"
+    },
+    "n_2323352c": {
+      "id": "n_2323352c",
+      "label": "make him fix the road",
+      "type": "concept"
+    },
+    "n_958d9ea4": {
+      "id": "n_958d9ea4",
+      "label": "Bessie",
+      "type": "concept"
+    },
+    "n_20af0ef2": {
+      "id": "n_20af0ef2",
+      "label": "Mater",
+      "type": "concept"
+    },
+    "n_c72293cd": {
+      "id": "n_c72293cd",
+      "label": "Larry the Cable Guy",
+      "type": "concept"
+    },
+    "n_bbb2b1b6": {
+      "id": "n_bbb2b1b6",
+      "label": "tow truck",
+      "type": "concept"
+    },
+    "n_d37f95e8": {
+      "id": "n_d37f95e8",
+      "label": "Luigi",
+      "type": "concept"
+    },
+    "n_030468aa": {
+      "id": "n_030468aa",
+      "label": "Fillmore",
+      "type": "concept"
+    },
+    "n_dd38e5f7": {
+      "id": "n_dd38e5f7",
+      "label": "Sarge",
+      "type": "concept"
+    },
+    "n_370b629f": {
+      "id": "n_370b629f",
+      "label": "Ramone",
+      "type": "concept"
+    },
+    "n_695169c7": {
+      "id": "n_695169c7",
+      "label": "Wheel Well Motel",
+      "type": "concept"
+    },
+    "n_31d7bac4": {
+      "id": "n_31d7bac4",
+      "label": "Doc's secret",
+      "type": "concept"
+    },
+    "n_2c585366": {
+      "id": "n_2c585366",
+      "label": "three times",
+      "type": "concept"
+    },
+    "n_89d0f522": {
+      "id": "n_89d0f522",
+      "label": "50s",
+      "type": "concept"
+    },
+    "n_57413203": {
+      "id": "n_57413203",
+      "label": "crew chief",
+      "type": "concept"
+    },
+    "n_94f36847": {
+      "id": "n_94f36847",
+      "label": "hero",
+      "type": "concept"
+    },
+    "n_f8948d62": {
+      "id": "n_f8948d62",
+      "label": "comes back to life",
+      "type": "concept"
+    },
+    "n_f428a659": {
+      "id": "n_f428a659",
+      "label": "tourists",
+      "type": "concept"
+    },
+    "n_fa04771e": {
+      "id": "n_fa04771e",
+      "label": "new lighting rigs",
+      "type": "concept"
+    },
+    "n_2660db11": {
+      "id": "n_2660db11",
+      "label": "Randy Newman",
+      "type": "concept"
+    },
+    "n_2e641039": {
+      "id": "n_2e641039",
+      "label": "Sheryl Crow",
+      "type": "concept"
+    },
+    "n_86a81770": {
+      "id": "n_86a81770",
+      "label": "460 million worldwide",
+      "type": "concept"
+    },
+    "n_10c08f8a": {
+      "id": "n_10c08f8a",
+      "label": "120 million",
+      "type": "concept"
+    },
+    "n_5f4602cd": {
+      "id": "n_5f4602cd",
+      "label": "Disney",
+      "type": "concept"
+    },
+    "n_4cd87a98": {
+      "id": "n_4cd87a98",
+      "label": "two more",
+      "type": "concept"
+    },
+    "n_d2860ebb": {
+      "id": "n_d2860ebb",
+      "label": "planes",
+      "type": "concept"
+    },
+    "n_efb3e8cc": {
+      "id": "n_efb3e8cc",
+      "label": "Cars Land",
+      "type": "concept"
+    },
+    "n_2de947cf": {
+      "id": "n_2de947cf",
+      "label": "California",
+      "type": "concept"
+    },
+    "n_bc2160cd": {
+      "id": "n_bc2160cd",
+      "label": "A113",
+      "type": "concept"
+    },
+    "n_0a308e94": {
+      "id": "n_0a308e94",
+      "label": "Forks",
+      "type": "concept"
+    },
+    "n_8fff1df5": {
+      "id": "n_8fff1df5",
+      "label": "animals",
+      "type": "concept"
+    },
+    "n_b2643719": {
+      "id": "n_b2643719",
+      "label": "Tractors",
+      "type": "concept"
+    },
+    "n_23cfba51": {
+      "id": "n_23cfba51",
+      "label": "cows",
+      "type": "concept"
+    },
+    "n_029cbf0e": {
+      "id": "n_029cbf0e",
+      "label": "directing",
+      "type": "concept"
+    },
+    "n_73b9aadf": {
+      "id": "n_73b9aadf",
+      "label": "together",
+      "type": "concept"
+    },
+    "n_1c602964": {
+      "id": "n_1c602964",
+      "label": "Guido",
+      "type": "concept"
+    }
+  },
+  "hyperedges": [
+    {
+      "id": "e_b6103463",
+      "label": "released_in",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "2006"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_53ca71b0",
+      "label": "produced_by",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "Pixar"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_1013346c",
+      "label": "drove_project",
+      "source": [
+        "John Lasseter"
+      ],
+      "target": [
+        "Cars"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_45c8cb3c",
+      "label": "inspired_by",
+      "source": [
+        "John Lasseter"
+      ],
+      "target": [
+        "road trip with his kids"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_fe72c5ea",
+      "label": "noticed",
+      "source": [
+        "John Lasseter"
+      ],
+      "target": [
+        "kids staring at screens"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_676087db",
+      "label": "explores_theme",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "slowing down"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_e373b7ab",
+      "label": "has_setting_constraint",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "no humans"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_7d5c2163",
+      "label": "voiced_by",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Owen Wilson"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_225bd554",
+      "label": "has_description",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "red rookie"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_8d26ea2b",
+      "label": "has_number",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "95"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_cf17a008",
+      "label": "modeled_after",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "stock car"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_9ef67342",
+      "label": "has_catchphrase",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "ka-chow"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_16ce4660",
+      "label": "tied_in_season_for",
+      "source": [
+        "Lightning McQueen",
+        "Chick Hicks",
+        "The King"
+      ],
+      "target": [
+        "Piston Cup"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_4ee45799",
+      "label": "has_description",
+      "source": [
+        "Chick Hicks"
+      ],
+      "target": [
+        "green aggressive guy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_3bb8d348",
+      "label": "also_known_as",
+      "source": [
+        "The King"
+      ],
+      "target": [
+        "Strip Weathers"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_ebcb1653",
+      "label": "voiced_by",
+      "source": [
+        "The King"
+      ],
+      "target": [
+        "Richard Petty"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_8ce8d001",
+      "label": "modeled_after",
+      "source": [
+        "The King"
+      ],
+      "target": [
+        "Plymouth Superbird"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_1d430b6d",
+      "label": "transports",
+      "source": [
+        "Mack"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_758996dc",
+      "label": "falls_asleep_on",
+      "source": [
+        "Mack"
+      ],
+      "target": [
+        "interstate"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_096e18c2",
+      "label": "falls_out_of",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "trailer"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_1108d238",
+      "label": "ends_up_in",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_d73871ce",
+      "label": "located_on",
+      "source": [
+        "Radiator Springs"
+      ],
+      "target": [
+        "Route 66"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_6baea4da",
+      "label": "has_status",
+      "source": [
+        "Radiator Springs"
+      ],
+      "target": [
+        "dying"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_60d90cb6",
+      "label": "bypassed_and_killed",
+      "source": [
+        "interstate"
+      ],
+      "target": [
+        "Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_89c46356",
+      "label": "arrests",
+      "source": [
+        "Sheriff"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_b55e1cf1",
+      "label": "charge_for",
+      "source": [
+        "Sheriff"
+      ],
+      "target": [
+        "tearing up the road"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_848399fa",
+      "label": "acts_as",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "judge"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_8e31b6ea",
+      "label": "voiced_by",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "Paul Newman"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_fe8954ed",
+      "label": "has_description",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "old Hudson Hornet"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_38b18d33",
+      "label": "modeled_after",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "Hudson Hornet"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_85576c55",
+      "label": "has_license_plate",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "51HHDBN"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_a0aa45fc",
+      "label": "died_in",
+      "source": [
+        "Paul Newman"
+      ],
+      "target": [
+        "2008"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_37bd1be7",
+      "label": "has_description",
+      "source": [
+        "Sally"
+      ],
+      "target": [
+        "blue Porsche"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_ccf89e8f",
+      "label": "modeled_after",
+      "source": [
+        "Sally"
+      ],
+      "target": [
+        "Porsche 911"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_f7455b92",
+      "label": "suggests_sentence",
+      "source": [
+        "Sally"
+      ],
+      "target": [
+        "make him fix the road"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_613987f2",
+      "label": "uses_to_fix_road",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Bessie"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_5cb39965",
+      "label": "meets",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Mater"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_23446b3d",
+      "label": "voiced_by",
+      "source": [
+        "Mater"
+      ],
+      "target": [
+        "Larry the Cable Guy"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_e8e982ba",
+      "label": "has_description",
+      "source": [
+        "Mater"
+      ],
+      "target": [
+        "tow truck"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_4a8a9734",
+      "label": "meets",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Luigi"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_a46450f3",
+      "label": "meets",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Fillmore"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_60bdf8b3",
+      "label": "meets",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Sarge"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_afa107bb",
+      "label": "paints",
+      "source": [
+        "Ramone"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_6f459120",
+      "label": "shows_view_to",
+      "source": [
+        "Sally"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_48bb5c83",
+      "label": "takes_to",
+      "source": [
+        "Sally"
+      ],
+      "target": [
+        "Wheel Well Motel"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_7115117f",
+      "label": "discovers",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Doc's secret"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_486c4f99",
+      "label": "was_champion",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "three times"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_2e98c84c",
+      "label": "crashed_out_in",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "50s"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_946f507d",
+      "label": "teaches",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_5c569121",
+      "label": "disguises_as",
+      "source": [
+        "Doc Hudson"
+      ],
+      "target": [
+        "crew chief"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_bbe0b747",
+      "label": "causes_crash_of",
+      "source": [
+        "Chick Hicks"
+      ],
+      "target": [
+        "The King"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_2f496e28",
+      "label": "pushes_across_line",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "The King"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_6270ac3e",
+      "label": "wins_technically",
+      "source": [
+        "Chick Hicks"
+      ],
+      "target": [
+        "Piston Cup"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_895419f6",
+      "label": "becomes",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "hero"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_5a82745c",
+      "label": "moves_headquarters_to",
+      "source": [
+        "Lightning McQueen"
+      ],
+      "target": [
+        "Radiator Springs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_64731ff1",
+      "label": "status_change",
+      "source": [
+        "Radiator Springs"
+      ],
+      "target": [
+        "comes back to life"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_5aad9c33",
+      "label": "gets",
+      "source": [
+        "Route 66"
+      ],
+      "target": [
+        "tourists"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_6dc79d79",
+      "label": "uses_technology",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "new lighting rigs"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_5abc772e",
+      "label": "has_music_by",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "Randy Newman"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_ced5d111",
+      "label": "has_opening_song_by",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "Sheryl Crow"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_b194a7c8",
+      "label": "has_box_office",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "460 million worldwide"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_2f18ecef",
+      "label": "has_budget",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "120 million"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_0f748cd8",
+      "label": "acquired",
+      "source": [
+        "Disney"
+      ],
+      "target": [
+        "Pixar"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_17a4d464",
+      "label": "acquired_in",
+      "source": [
+        "Disney"
+      ],
+      "target": [
+        "2006"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_afdc4459",
+      "label": "spawned_sequel",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "two more"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_85958ce1",
+      "label": "spawned_spin_off",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "planes"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_45121550",
+      "label": "has_theme_park_ride",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "Cars Land"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_94f005e0",
+      "label": "located_in",
+      "source": [
+        "Cars Land"
+      ],
+      "target": [
+        "California"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_9d4c847d",
+      "label": "contains_easter_egg",
+      "source": [
+        "Cars"
+      ],
+      "target": [
+        "A113"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_155b8cfa",
+      "label": "represent_in_world",
+      "source": [
+        "Forks"
+      ],
+      "target": [
+        "animals"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_a64501a6",
+      "label": "represent_in_world",
+      "source": [
+        "Tractors"
+      ],
+      "target": [
+        "cows"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_cca2fa08",
+      "label": "stepped_back_from",
+      "source": [
+        "John Lasseter"
+      ],
+      "target": [
+        "directing"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_708fc328",
+      "label": "ends_up",
+      "source": [
+        "Lightning McQueen",
+        "Sally"
+      ],
+      "target": [
+        "together"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    },
+    {
+      "id": "e_e1d01467",
+      "label": "changes_tires_for",
+      "source": [
+        "Guido"
+      ],
+      "target": [
+        "Lightning McQueen"
+      ],
+      "weight": 1.0,
+      "chunk_id": "2e2d92c616df0e6f276ff21f37093325"
+    }
+  ]
+}

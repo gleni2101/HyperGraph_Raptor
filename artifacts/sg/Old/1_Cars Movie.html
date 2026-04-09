@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Hypergraph Visualization</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:#0f172a;color:#e2e8f0;font-family:Segoe UI,Arial,sans-serif;overflow:hidden}
+    #canvas{position:absolute;inset:0;width:100%;height:100vh}
+    svg{width:100%;height:100%}
+    .panel{
+      position:absolute;z-index:20;background:rgba(15,23,42,0.88);
+      border:1px solid rgba(148,163,184,0.18);border-radius:12px;
+      padding:12px 14px;backdrop-filter:blur(8px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.3);
+    }
+    #controls{top:16px;left:16px;width:310px}
+    #details{left:16px;bottom:16px;width:420px;max-height:220px;overflow:auto}
+    #stats{top:16px;right:16px;min-width:200px}
+    h2{font-size:17px;margin-bottom:8px;color:#e2e8f0}
+    .muted{color:#94a3b8;font-size:11px}
+    .legend{display:flex;gap:14px;margin:8px 0;font-size:11px;flex-wrap:wrap}
+    .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+    input{width:100%;padding:8px 10px;border:1px solid rgba(148,163,184,0.24);border-radius:8px;background:rgba(30,41,59,0.9);color:#fff;font-size:12px;margin:6px 0}
+    .row{margin:5px 0;font-size:12px}
+    .mono{font-family:Consolas,monospace;word-break:break-word;font-size:11px}
+    .he-label{fill:white;font-size:11px;pointer-events:none;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.8)}
+    .node-label{fill:#e2e8f0;font-size:10px;pointer-events:none}
+    .arrow-marker{}
+  </style>
+</head>
+<body>
+  <div id="canvas"><svg id="svg"></svg></div>
+  <div id="controls" class="panel">
+    <h2>Hypergraph Viewer</h2>
+    <div class="muted">Each coloured blob is a hyperedge — a set of nodes connected by one relation.<br>Arrow shows source → target direction inside the blob.</div>
+    <div class="legend">
+      <div><span class="dot" style="background:#60a5fa"></span>Entity node</div>
+      <div><span class="dot" style="background:rgba(200,150,80,0.7);border:2px solid #f59e0b"></span>Hyperedge blob</div>
+    </div>
+    <input id="searchInput" type="text" placeholder="Search node labels..."/>
+    <div class="muted">Hover blob/node for details · Drag nodes · Scroll to zoom</div>
+  </div>
+  <div id="stats" class="panel"></div>
+  <div id="details" class="panel">Hover over a node or hyperedge blob to inspect.</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script>
+  (function(){
+    const RAW = {"nodes": [{"id": "n_f9966cd9", "label": "Pixar Animation Studios", "type": "concept"}, {"id": "n_7f0fe603", "label": "Walt Disney Pictures", "type": "concept"}, {"id": "n_a51011c4", "label": "Cars", "type": "concept"}, {"id": "n_f9a30e50", "label": "John Lasseter", "type": "concept"}, {"id": "n_a698a4b3", "label": "Joe Ranft", "type": "concept"}, {"id": "n_f031371a", "label": "Jorgen Klubien", "type": "concept"}, {"id": "n_623b8007", "label": "Randy Newman", "type": "concept"}, {"id": "n_95b1ace6", "label": "June 9, 2006", "type": "concept"}, {"id": "n_5878d2cd", "label": "117 Minutes", "type": "concept"}, {"id": "n_f56895b3", "label": "G (General Audiences)", "type": "concept"}, {"id": "n_d936995c", "label": "$462 Million Worldwide", "type": "concept"}, {"id": "n_be3caccc", "label": "sentient vehicles", "type": "concept"}, {"id": "n_900d7576", "label": "alternate version of Earth", "type": "concept"}, {"id": "n_c3590a3b", "label": "Forklifts", "type": "concept"}, {"id": "n_48b96989", "label": "cows", "type": "concept"}, {"id": "n_3f583fdf", "label": "Jeeps", "type": "concept"}, {"id": "n_18873eb1", "label": "military personnel", "type": "concept"}, {"id": "n_b0c89708", "label": "Owen Wilson", "type": "concept"}, {"id": "n_b26fb11b", "label": "Lightning McQueen", "type": "concept"}, {"id": "n_b7d60393", "label": "Larry the Cable Guy", "type": "concept"}, {"id": "n_0b761b49", "label": "Mater", "type": "concept"}, {"id": "n_2e5fd692", "label": "Bonnie Hunt", "type": "concept"}, {"id": "n_7a3effa6", "label": "Sally Carrera", "type": "concept"}, {"id": "n_caa4c8ad", "label": "Paul Newman", "type": "concept"}, {"id": "n_e0744487", "label": "Doc Hudson", "type": "concept"}, {"id": "n_f9fff168", "label": "Michael Keaton", "type": "concept"}, {"id": "n_181891e6", "label": "Chick Hicks", "type": "concept"}, {"id": "n_11f069fa", "label": "Richard Petty", "type": "concept"}, {"id": "n_4b9ecc24", "label": "The King (Strip Weathers)", "type": "concept"}, {"id": "n_e238379e", "label": "John Ratzenberger", "type": "concept"}, {"id": "n_f0a996cb", "label": "Mack", "type": "concept"}, {"id": "n_1af8ff40", "label": "Michael Wallis", "type": "concept"}, {"id": "n_b7dcda9d", "label": "Sheriff", "type": "concept"}, {"id": "n_fa6f425f", "label": "The King", "type": "concept"}, {"id": "n_31764ad7", "label": "Piston Cup season final race", "type": "concept"}, {"id": "n_6532dc5a", "label": "Los Angeles International Speedway", "type": "concept"}, {"id": "n_a6219b19", "label": "pit stop tire change", "type": "concept"}, {"id": "n_f1cfe2d1", "label": "dead heat finish", "type": "concept"}, {"id": "n_83db2e70", "label": "tie-breaker race in California", "type": "concept"}, {"id": "n_820c1d23", "label": "fell_asleep_at_wheel", "type": "concept"}, {"id": "n_9305438a", "label": "trailer ramp lever", "type": "concept"}, {"id": "n_9348443a", "label": "highway", "type": "concept"}, {"id": "n_1f85e15c", "label": "Radiator Springs", "type": "concept"}, {"id": "n_62d7679c", "label": "main road", "type": "concept"}, {"id": "n_fec28df1", "label": "Sally", "type": "concept"}, {"id": "n_027ae774", "label": "Bessie", "type": "concept"}, {"id": "n_d503fb53", "label": "road repair", "type": "concept"}, {"id": "n_9805cb32", "label": "asphalt", "type": "concept"}, {"id": "n_e9757440", "label": "cracked immediately", "type": "concept"}, {"id": "n_597073a1", "label": "Tractor Tipping", "type": "concept"}, {"id": "n_41eda0bd", "label": "Luigi", "type": "concept"}, {"id": "n_daf21162", "label": "Ramone", "type": "concept"}, {"id": "n_a141649d", "label": "Route 66", "type": "concept"}, {"id": "n_e4a488c4", "label": "Interstate Highway", "type": "concept"}, {"id": "n_aafe0811", "label": "three-time Piston Cup champion", "type": "concept"}, {"id": "n_6b4fdddd", "label": "massive crash", "type": "concept"}, {"id": "n_af21dd79", "label": "Doc Hudson career", "type": "concept"}, {"id": "n_ca4163b5", "label": "press", "type": "concept"}, {"id": "n_fa9a51d7", "label": "crew chief disguise", "type": "concept"}, {"id": "n_623c3127", "label": "infield grass", "type": "concept"}, {"id": "n_80902699", "label": "finish line", "type": "concept"}, {"id": "n_81513d5d", "label": "Piston Cup", "type": "concept"}, {"id": "n_4836d75a", "label": "crowd", "type": "concept"}, {"id": "n_136242a5", "label": "racing mentor", "type": "concept"}, {"id": "n_73087bee", "label": "Interstate", "type": "concept"}, {"id": "n_238bfe1c", "label": "efficiency, speed, ignoring surroundings", "type": "concept"}, {"id": "n_5d95750a", "label": "history, connection, enjoying the view", "type": "concept"}, {"id": "n_a6cc4f63", "label": "cross-country road trip with family", "type": "concept"}, {"id": "n_6996761d", "label": "2000", "type": "concept"}, {"id": "n_d439a923", "label": "film about slowing down", "type": "concept"}, {"id": "n_e7de0754", "label": "metal surfaces", "type": "concept"}, {"id": "n_98aa45c9", "label": "complex lighting rigs", "type": "concept"}, {"id": "n_bcc8dfda", "label": "windshield angle", "type": "concept"}, {"id": "n_827ec445", "label": "tire movement", "type": "concept"}, {"id": "n_4c4b3d88", "label": "grille", "type": "concept"}, {"id": "n_eb0f08fd", "label": "car emotions", "type": "concept"}, {"id": "n_563d4a75", "label": "dust effects", "type": "concept"}, {"id": "n_9cd297fc", "label": "major computational challenge", "type": "concept"}, {"id": "n_efd3dcd9", "label": "orchestral scores mixed with American roots music", "type": "concept"}, {"id": "n_408f3cb2", "label": "Sheryl Crow", "type": "concept"}, {"id": "n_ccec6b1e", "label": "Real Gone", "type": "concept"}, {"id": "n_3994c4f0", "label": "Rascal Flatts", "type": "concept"}, {"id": "n_54b1e944", "label": "Brad Paisley", "type": "concept"}, {"id": "n_fb366e17", "label": "Chuck Berry", "type": "concept"}, {"id": "n_506fe67d", "label": "Cars soundtrack", "type": "concept"}, {"id": "n_b73a7838", "label": "2008", "type": "concept"}, {"id": "n_00eced65", "label": "Characters", "type": "concept"}, {"id": "n_66514f47", "label": "real car models", "type": "concept"}, {"id": "n_e0441cf2", "label": "Porsche 911", "type": "concept"}, {"id": "n_18eb5a33", "label": "Doc", "type": "concept"}, {"id": "n_8952ca65", "label": "Hudson Hornet", "type": "concept"}, {"id": "n_1215562d", "label": "Plymouth Superbird", "type": "concept"}, {"id": "n_48d0de9d", "label": "The film", "type": "concept"}, {"id": "n_08ddb62d", "label": "A113", "type": "concept"}, {"id": "n_44f92733", "label": "train crossing", "type": "concept"}, {"id": "n_254248ec", "label": "CalArts", "type": "concept"}, {"id": "n_c5e2abb9", "label": "51HHDBN", "type": "concept"}, {"id": "n_52ff078f", "label": "51 Hudson Hornet", "type": "concept"}, {"id": "n_b0291df7", "label": "Cars 2", "type": "concept"}, {"id": "n_fa2f4595", "label": "Cars 3", "type": "concept"}, {"id": "n_cace4b25", "label": "2011", "type": "concept"}, {"id": "n_4082881e", "label": "spy thriller", "type": "concept"}, {"id": "n_c7d60891", "label": "2017", "type": "concept"}, {"id": "n_ffd40a28", "label": "racing roots", "type": "concept"}, {"id": "n_a5f04591", "label": "aging", "type": "concept"}, {"id": "n_6519219c", "label": "historic Route 66 landmarks", "type": "concept"}, {"id": "n_362c3216", "label": "United States", "type": "concept"}, {"id": "n_86fc2bfd", "label": "generally positive reviews", "type": "concept"}, {"id": "n_c7e00ad0", "label": "Critics", "type": "concept"}, {"id": "n_777ee552", "label": "animation quality", "type": "concept"}, {"id": "n_00cda364", "label": "voice acting", "type": "concept"}, {"id": "n_a09df18c", "label": "heartfelt story", "type": "concept"}, {"id": "n_009b8ef0", "label": "plot", "type": "concept"}, {"id": "n_77222919", "label": "predictable", "type": "concept"}, {"id": "n_2a64a2b8", "label": "Doc Hollywood", "type": "concept"}, {"id": "n_c5ab2cf6", "label": "commercially successful", "type": "concept"}, {"id": "n_df05e997", "label": "younger audiences", "type": "concept"}, {"id": "n_0730d143", "label": "74%", "type": "concept"}, {"id": "n_d4717783", "label": "Rotten Tomatoes", "type": "concept"}, {"id": "n_918e184a", "label": "A", "type": "concept"}, {"id": "n_e4d5cf84", "label": "CinemaScore", "type": "concept"}], "hyperedges": [{"id": "e_391b3c7c", "label": "produced_film", "source_ids": ["n_f9966cd9", "n_7f0fe603"], "target_ids": ["n_a51011c4"], "member_ids": ["n_f9966cd9", "n_7f0fe603", "n_a51011c4"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_1f7c1b73", "label": "directed_film", "source_ids": ["n_f9a30e50"], "target_ids": ["n_a51011c4"], "member_ids": ["n_f9a30e50", "n_a51011c4"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_a0aca4fb", "label": "co_directed_film", "source_ids": ["n_a698a4b3"], "target_ids": ["n_a51011c4"], "member_ids": ["n_a698a4b3", "n_a51011c4"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_795404c6", "label": "wrote_screenplay_for", "source_ids": ["n_f9a30e50", "n_a698a4b3", "n_f031371a"], "target_ids": ["n_a51011c4"], "member_ids": ["n_f9a30e50", "n_a698a4b3", "n_f031371a", "n_a51011c4"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_42fa3351", "label": "composed_music_for", "source_ids": ["n_623b8007"], "target_ids": ["n_a51011c4"], "member_ids": ["n_623b8007", "n_a51011c4"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_e0ab3cc0", "label": "released_on", "source_ids": ["n_a51011c4"], "target_ids": ["n_95b1ace6"], "member_ids": ["n_a51011c4", "n_95b1ace6"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_8a9b64b2", "label": "has_runtime", "source_ids": ["n_a51011c4"], "target_ids": ["n_5878d2cd"], "member_ids": ["n_a51011c4", "n_5878d2cd"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_5e4454de", "label": "has_rating", "source_ids": ["n_a51011c4"], "target_ids": ["n_f56895b3"], "member_ids": ["n_a51011c4", "n_f56895b3"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_92c2273a", "label": "earned_box_office", "source_ids": ["n_a51011c4"], "target_ids": ["n_d936995c"], "member_ids": ["n_a51011c4", "n_d936995c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_998ebb0d", "label": "populate_world_of", "source_ids": ["n_be3caccc"], "target_ids": ["n_900d7576"], "member_ids": ["n_be3caccc", "n_900d7576"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_537771ba", "label": "represent_animals_as", "source_ids": ["n_c3590a3b"], "target_ids": ["n_48b96989"], "member_ids": ["n_c3590a3b", "n_48b96989"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_f8d1c885", "label": "represent_animals_as", "source_ids": ["n_3f583fdf"], "target_ids": ["n_18873eb1"], "member_ids": ["n_3f583fdf", "n_18873eb1"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_265c12ff", "label": "voiced_character", "source_ids": ["n_b0c89708"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_b0c89708", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_5620b7c9", "label": "voiced_character", "source_ids": ["n_b7d60393"], "target_ids": ["n_0b761b49"], "member_ids": ["n_b7d60393", "n_0b761b49"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_77a9e356", "label": "voiced_character", "source_ids": ["n_2e5fd692"], "target_ids": ["n_7a3effa6"], "member_ids": ["n_2e5fd692", "n_7a3effa6"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_ec242a72", "label": "voiced_character", "source_ids": ["n_caa4c8ad"], "target_ids": ["n_e0744487"], "member_ids": ["n_caa4c8ad", "n_e0744487"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_f38e43a5", "label": "voiced_character", "source_ids": ["n_f9fff168"], "target_ids": ["n_181891e6"], "member_ids": ["n_f9fff168", "n_181891e6"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_25676e7e", "label": "voiced_character", "source_ids": ["n_11f069fa"], "target_ids": ["n_4b9ecc24"], "member_ids": ["n_11f069fa", "n_4b9ecc24"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_0afd23ca", "label": "voiced_character", "source_ids": ["n_e238379e"], "target_ids": ["n_f0a996cb"], "member_ids": ["n_e238379e", "n_f0a996cb"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_a17b2073", "label": "voiced_character", "source_ids": ["n_1af8ff40"], "target_ids": ["n_b7dcda9d"], "member_ids": ["n_1af8ff40", "n_b7dcda9d"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_52df131c", "label": "competed_in", "source_ids": ["n_fa6f425f", "n_181891e6", "n_b26fb11b"], "target_ids": ["n_31764ad7"], "member_ids": ["n_fa6f425f", "n_181891e6", "n_b26fb11b", "n_31764ad7"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_0eb6a793", "label": "hosted_race", "source_ids": ["n_6532dc5a"], "target_ids": ["n_31764ad7"], "member_ids": ["n_6532dc5a", "n_31764ad7"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_b2127e08", "label": "refused_during_race", "source_ids": ["n_b26fb11b"], "target_ids": ["n_a6219b19"], "member_ids": ["n_b26fb11b", "n_a6219b19"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_d8926e86", "label": "ended_race_in", "source_ids": ["n_fa6f425f", "n_181891e6", "n_b26fb11b"], "target_ids": ["n_f1cfe2d1"], "member_ids": ["n_fa6f425f", "n_181891e6", "n_b26fb11b", "n_f1cfe2d1"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_3e3c9676", "label": "scheduled", "source_ids": ["n_f1cfe2d1"], "target_ids": ["n_83db2e70"], "member_ids": ["n_f1cfe2d1", "n_83db2e70"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_ee913d54", "label": "transported_to_California", "source_ids": ["n_f0a996cb"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_f0a996cb", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_9ad26439", "label": "caused_by_exhaustion", "source_ids": ["n_f0a996cb"], "target_ids": ["n_820c1d23"], "member_ids": ["n_f0a996cb", "n_820c1d23"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_565f2fff", "label": "accidentally_hit", "source_ids": ["n_b26fb11b"], "target_ids": ["n_9305438a"], "member_ids": ["n_b26fb11b", "n_9305438a"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_4a843696", "label": "rolled_out_onto", "source_ids": ["n_b26fb11b"], "target_ids": ["n_9348443a"], "member_ids": ["n_b26fb11b", "n_9348443a"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_578b96f5", "label": "sped_through", "source_ids": ["n_b26fb11b"], "target_ids": ["n_1f85e15c"], "member_ids": ["n_b26fb11b", "n_1f85e15c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_a0915156", "label": "tore_up", "source_ids": ["n_b26fb11b"], "target_ids": ["n_62d7679c"], "member_ids": ["n_b26fb11b", "n_62d7679c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_af70d36b", "label": "arrested_and_impounded", "source_ids": ["n_b7dcda9d"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_b7dcda9d", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_88fdb9ed", "label": "wanted_removed_from_town", "source_ids": ["n_e0744487"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_e0744487", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_370a7493", "label": "suggested_fix_road", "source_ids": ["n_fec28df1"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_fec28df1", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_947bcae8", "label": "used_for", "source_ids": ["n_027ae774"], "target_ids": ["n_d503fb53"], "member_ids": ["n_027ae774", "n_d503fb53"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_7337f6f9", "label": "laid_poor_quality", "source_ids": ["n_b26fb11b"], "target_ids": ["n_9805cb32"], "member_ids": ["n_b26fb11b", "n_9805cb32"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_21a56024", "label": "failed", "source_ids": ["n_9805cb32"], "target_ids": ["n_e9757440"], "member_ids": ["n_9805cb32", "n_e9757440"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_732e2f84", "label": "taught_to_drive_backward", "source_ids": ["n_0b761b49"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_0b761b49", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_6c4db6a0", "label": "participated_in", "source_ids": ["n_0b761b49", "n_b26fb11b"], "target_ids": ["n_597073a1"], "member_ids": ["n_0b761b49", "n_b26fb11b", "n_597073a1"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_25f10484", "label": "fitted_with_high_quality_tires", "source_ids": ["n_41eda0bd"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_41eda0bd", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_df7cc51c", "label": "gave_new_paint_job", "source_ids": ["n_daf21162"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_daf21162", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_d432c525", "label": "took_on_drive_to_Wheel_Well_Motel", "source_ids": ["n_fec28df1"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_fec28df1", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_c3f0eec0", "label": "was_bustling_stop_for", "source_ids": ["n_a141649d"], "target_ids": ["n_1f85e15c"], "member_ids": ["n_a141649d", "n_1f85e15c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_be734d6a", "label": "caused_traffic_bypass_and_ruin", "source_ids": ["n_e4a488c4"], "target_ids": ["n_1f85e15c"], "member_ids": ["n_e4a488c4", "n_1f85e15c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_20d7bfa7", "label": "was_in_1950s", "source_ids": ["n_e0744487"], "target_ids": ["n_aafe0811"], "member_ids": ["n_e0744487", "n_aafe0811"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_a809e987", "label": "ended", "source_ids": ["n_6b4fdddd"], "target_ids": ["n_af21dd79"], "member_ids": ["n_6b4fdddd", "n_af21dd79"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_54ee5e54", "label": "left_after_finishing_road", "source_ids": ["n_b26fb11b"], "target_ids": ["n_1f85e15c"], "member_ids": ["n_b26fb11b", "n_1f85e15c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_1859cea2", "label": "called_to_reveal_McQueen_location", "source_ids": ["n_e0744487"], "target_ids": ["n_ca4163b5"], "member_ids": ["n_e0744487", "n_ca4163b5"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_6f6b38ad", "label": "retrieved_for_race", "source_ids": ["n_f0a996cb"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_f0a996cb", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_6bebc032", "label": "arrived_at_track_as", "source_ids": ["n_e0744487"], "target_ids": ["n_fa9a51d7"], "member_ids": ["n_e0744487", "n_fa9a51d7"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_8db8155e", "label": "taught_to_race_with_team", "source_ids": ["n_e0744487"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_e0744487", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_918a165d", "label": "rammed_causing_crash", "source_ids": ["n_181891e6"], "target_ids": ["n_fa6f425f"], "member_ids": ["n_181891e6", "n_fa6f425f"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_ac66e44c", "label": "spun_out_onto", "source_ids": ["n_fa6f425f"], "target_ids": ["n_623c3127"], "member_ids": ["n_fa6f425f", "n_623c3127"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_cf3c8b8d", "label": "slammed_brakes_before", "source_ids": ["n_b26fb11b"], "target_ids": ["n_80902699"], "member_ids": ["n_b26fb11b", "n_80902699"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_3ed648e0", "label": "pushed_across_finish_line", "source_ids": ["n_b26fb11b"], "target_ids": ["n_fa6f425f"], "member_ids": ["n_b26fb11b", "n_fa6f425f"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_49851985", "label": "won", "source_ids": ["n_181891e6"], "target_ids": ["n_81513d5d"], "member_ids": ["n_181891e6", "n_81513d5d"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_018d2363", "label": "booed", "source_ids": ["n_4836d75a"], "target_ids": ["n_181891e6"], "member_ids": ["n_4836d75a", "n_181891e6"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_2fa29989", "label": "hailed_as_hero", "source_ids": ["n_4836d75a"], "target_ids": ["n_b26fb11b"], "member_ids": ["n_4836d75a", "n_b26fb11b"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_7d774d4e", "label": "returned_to_and_set_up_headquarters", "source_ids": ["n_b26fb11b"], "target_ids": ["n_1f85e15c"], "member_ids": ["n_b26fb11b", "n_1f85e15c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_257120b3", "label": "brought_traffic_and_life_back_to", "source_ids": ["n_b26fb11b"], "target_ids": ["n_1f85e15c"], "member_ids": ["n_b26fb11b", "n_1f85e15c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_9c413a8c", "label": "returned_to_role_as", "source_ids": ["n_e0744487"], "target_ids": ["n_136242a5"], "member_ids": ["n_e0744487", "n_136242a5"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_ae3b37b5", "label": "represents", "source_ids": ["n_73087bee"], "target_ids": ["n_238bfe1c"], "member_ids": ["n_73087bee", "n_238bfe1c"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_e14c05c2", "label": "represents", "source_ids": ["n_a141649d"], "target_ids": ["n_5d95750a"], "member_ids": ["n_a141649d", "n_5d95750a"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_c33f78de", "label": "conceived_idea_during", "source_ids": ["n_f9a30e50"], "target_ids": ["n_a6cc4f63"], "member_ids": ["n_f9a30e50", "n_a6cc4f63"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_aa1925a7", "label": "took_inspiration_trip_in", "source_ids": ["n_f9a30e50"], "target_ids": ["n_6996761d"], "member_ids": ["n_f9a30e50", "n_6996761d"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_8f08adc1", "label": "wanted_to_make", "source_ids": ["n_f9a30e50"], "target_ids": ["n_d439a923"], "member_ids": ["n_f9a30e50", "n_d439a923"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_a16c9e1d", "label": "wanted_to_honor", "source_ids": ["n_f9a30e50"], "target_ids": ["n_a141649d"], "member_ids": ["n_f9a30e50", "n_a141649d"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_d9a8c533", "label": "required_for_realistic_animation", "source_ids": ["n_e7de0754"], "target_ids": ["n_98aa45c9"], "member_ids": ["n_e7de0754", "n_98aa45c9"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_34a7aa12", "label": "conveyed_through", "source_ids": ["n_bcc8dfda", "n_827ec445", "n_4c4b3d88"], "target_ids": ["n_eb0f08fd"], "member_ids": ["n_bcc8dfda", "n_827ec445", "n_4c4b3d88", "n_eb0f08fd"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_8b04d9c1", "label": "posed", "source_ids": ["n_563d4a75"], "target_ids": ["n_9cd297fc"], "member_ids": ["n_563d4a75", "n_9cd297fc"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_847ff512", "label": "composed_score_featuring", "source_ids": ["n_623b8007"], "target_ids": ["n_efd3dcd9"], "member_ids": ["n_623b8007", "n_efd3dcd9"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_bad05e34", "label": "performed_opening_song", "source_ids": ["n_408f3cb2"], "target_ids": ["n_ccec6b1e"], "member_ids": ["n_408f3cb2", "n_ccec6b1e"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_2939ac21", "label": "contributed_songs_to", "source_ids": ["n_3994c4f0", "n_54b1e944", "n_fb366e17"], "target_ids": ["n_506fe67d"], "member_ids": ["n_3994c4f0", "n_54b1e944", "n_fb366e17", "n_506fe67d"], "chunk_id": "027bd91a2f3d3322404614ec8a02a910", "weight": 1.0}, {"id": "e_7a544b65", "label": "was_final_acting_role_for_before_death_in", "source_ids": ["n_caa4c8ad", "n_e0744487"], "target_ids": ["n_b73a7838"], "member_ids": ["n_caa4c8ad", "n_e0744487", "n_b73a7838"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_d5db698d", "label": "are_based_on", "source_ids": ["n_00eced65"], "target_ids": ["n_66514f47"], "member_ids": ["n_00eced65", "n_66514f47"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_77372d7f", "label": "is_modeled_as", "source_ids": ["n_fec28df1"], "target_ids": ["n_e0441cf2"], "member_ids": ["n_fec28df1", "n_e0441cf2"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_4112dcc2", "label": "is_modeled_as", "source_ids": ["n_18eb5a33"], "target_ids": ["n_8952ca65"], "member_ids": ["n_18eb5a33", "n_8952ca65"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_9c7e18ea", "label": "is_modeled_as", "source_ids": ["n_fa6f425f"], "target_ids": ["n_1215562d"], "member_ids": ["n_fa6f425f", "n_1215562d"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_156feb18", "label": "contains_reference_on", "source_ids": ["n_48d0de9d"], "target_ids": ["n_08ddb62d", "n_44f92733"], "member_ids": ["n_48d0de9d", "n_08ddb62d", "n_44f92733"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_30465790", "label": "represents_classroom_number_at", "source_ids": ["n_08ddb62d"], "target_ids": ["n_254248ec"], "member_ids": ["n_08ddb62d", "n_254248ec"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_eeb335b0", "label": "has_license_plate_reading", "source_ids": ["n_e0744487"], "target_ids": ["n_c5e2abb9"], "member_ids": ["n_e0744487", "n_c5e2abb9"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_88355c8f", "label": "encodes_reference_to", "source_ids": ["n_c5e2abb9"], "target_ids": ["n_52ff078f"], "member_ids": ["n_c5e2abb9", "n_52ff078f"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_da333b51", "label": "spawned_sequels", "source_ids": ["n_48d0de9d"], "target_ids": ["n_b0291df7", "n_fa2f4595"], "member_ids": ["n_48d0de9d", "n_b0291df7", "n_fa2f4595"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_67ad92d8", "label": "was_released_in_year_with_genre", "source_ids": ["n_b0291df7"], "target_ids": ["n_cace4b25", "n_4082881e"], "member_ids": ["n_b0291df7", "n_cace4b25", "n_4082881e"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_9ded38db", "label": "was_released_in_year_with_theme", "source_ids": ["n_fa2f4595"], "target_ids": ["n_c7d60891", "n_ffd40a28", "n_a5f04591"], "member_ids": ["n_fa2f4595", "n_c7d60891", "n_ffd40a28", "n_a5f04591"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_7c80fc53", "label": "sparked_renewed_interest_in_preserving", "source_ids": ["n_48d0de9d"], "target_ids": ["n_6519219c", "n_362c3216"], "member_ids": ["n_48d0de9d", "n_6519219c", "n_362c3216"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_3af99a30", "label": "received_reviews_of_type", "source_ids": ["n_a51011c4"], "target_ids": ["n_86fc2bfd"], "member_ids": ["n_a51011c4", "n_86fc2bfd"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_259d87db", "label": "praised_elements_in", "source_ids": ["n_c7e00ad0"], "target_ids": ["n_a51011c4", "n_777ee552", "n_00cda364", "n_a09df18c"], "member_ids": ["n_c7e00ad0", "n_a51011c4", "n_777ee552", "n_00cda364", "n_a09df18c"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_be91b97b", "label": "included_performances_by", "source_ids": ["n_00cda364"], "target_ids": ["n_caa4c8ad", "n_b0c89708"], "member_ids": ["n_00cda364", "n_caa4c8ad", "n_b0c89708"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_d4cea000", "label": "felt_plot_in_was_similar_to", "source_ids": ["n_c7e00ad0"], "target_ids": ["n_a51011c4", "n_009b8ef0", "n_77222919", "n_2a64a2b8"], "member_ids": ["n_c7e00ad0", "n_a51011c4", "n_009b8ef0", "n_77222919", "n_2a64a2b8"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_b60ba253", "label": "was_successful_and_remains_favorite_among", "source_ids": ["n_a51011c4"], "target_ids": ["n_c5ab2cf6", "n_df05e997"], "member_ids": ["n_a51011c4", "n_c5ab2cf6", "n_df05e997"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_b8b71f0d", "label": "received_score_on_platform", "source_ids": ["n_a51011c4"], "target_ids": ["n_0730d143", "n_d4717783"], "member_ids": ["n_a51011c4", "n_0730d143", "n_d4717783"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}, {"id": "e_3d34fb98", "label": "received_score_on_platform", "source_ids": ["n_a51011c4"], "target_ids": ["n_918e184a", "n_e4d5cf84"], "member_ids": ["n_a51011c4", "n_918e184a", "n_e4d5cf84"], "chunk_id": "755ab4ed520905acaf49f694ffa64912", "weight": 1.0}]};
+    const NODE_R = 14;
+    const PALETTE = [
+      "#7c3aed","#0ea5e9","#10b981","#f59e0b","#ef4444","#ec4899",
+      "#14b8a6","#f97316","#6366f1","#84cc16","#06b6d4","#a855f7"
+    ];
+
+    // ── build lookup ──────────────────────────────────────────────────────────
+    const nodeById = {};
+    RAW.nodes.forEach(n => { nodeById[n.id] = n; });
+
+    // ── D3 simulation nodes (mutable x,y) ─────────────────────────────────────
+    const simNodes = RAW.nodes.map(n => ({...n}));
+    const simNodeMap = {};
+    simNodes.forEach(n => { simNodeMap[n.id] = n; });
+
+    // ── edges for force layout (binary links within each hyperedge member set) ─
+    const simLinks = [];
+    RAW.hyperedges.forEach(he => {
+      const members = he.member_ids;
+      for (let i = 0; i < members.length; i++) {
+        for (let j = i+1; j < members.length; j++) {
+          simLinks.push({ source: members[i], target: members[j], he: he.id });
+        }
+      }
+    });
+
+    const W = window.innerWidth, H = window.innerHeight;
+    const svg = d3.select("#svg")
+      .attr("viewBox", `0 0 ${W} ${H}`)
+      .attr("preserveAspectRatio","xMidYMid meet");
+
+    // marker
+    svg.append("defs").append("marker")
+      .attr("id","arrowhead")
+      .attr("viewBox","0 -5 10 10")
+      .attr("refX",18).attr("refY",0)
+      .attr("markerWidth",6).attr("markerHeight",6)
+      .attr("orient","auto")
+      .append("path").attr("d","M0,-5L10,0L0,5").attr("fill","rgba(255,255,255,0.7)");
+
+    const gBlobs  = svg.append("g").attr("class","blobs");
+    const gArrows = svg.append("g").attr("class","arrows");
+    const gLabels = svg.append("g").attr("class","he-labels");
+    const gNodes  = svg.append("g").attr("class","nodes");
+    const gNLabels= svg.append("g").attr("class","node-labels");
+
+    // ── zoom / pan ────────────────────────────────────────────────────────────
+    const zoom = d3.zoom().scaleExtent([0.05,5]).on("zoom", e => {
+      [gBlobs,gArrows,gLabels,gNodes,gNLabels].forEach(g => g.attr("transform", e.transform));
+    });
+    svg.call(zoom);
+
+    // ── force simulation ──────────────────────────────────────────────────────
+    const sim = d3.forceSimulation(simNodes)
+      .force("link", d3.forceLink(simLinks).id(d=>d.id).distance(90).strength(0.25))
+      .force("charge", d3.forceManyBody().strength(-220))
+      .force("center", d3.forceCenter(W/2, H/2))
+      .force("collision", d3.forceCollide(NODE_R + 6))
+      .on("tick", ticked);
+
+    // ── convex-hull blob ──────────────────────────────────────────────────────
+    function hullPoints(ids, padding) {
+      const pts = [];
+      ids.forEach(id => {
+        const n = simNodeMap[id];
+        if (!n) return;
+        for (let a = 0; a < 8; a++) {
+          pts.push([n.x + Math.cos(a*Math.PI/4)*padding,
+                    n.y + Math.sin(a*Math.PI/4)*padding]);
+        }
+      });
+      if (pts.length < 3) {
+        // single node – draw a circle
+        const n = simNodeMap[ids[0]];
+        if (!n) return null;
+        for (let a = 0; a < 16; a++)
+          pts.push([n.x + Math.cos(a*Math.PI/8)*(padding+4),
+                    n.y + Math.sin(a*Math.PI/8)*(padding+4)]);
+      }
+      const hull = d3.polygonHull(pts);
+      return hull ? d3.line().x(d=>d[0]).y(d=>d[1]).curve(d3.curveCatmullRomClosed.alpha(0.5))(hull) : null;
+    }
+
+    function groupCentroid(ids) {
+      let sx=0,sy=0,c=0;
+      ids.forEach(id => {
+        const n = simNodeMap[id];
+        if (n){ sx+=n.x; sy+=n.y; c++; }
+      });
+      return c ? [sx/c, sy/c] : [W/2,H/2];
+    }
+
+    // ── render elements ───────────────────────────────────────────────────────
+    const highlightSet = new Set();  // ids that should be highlighted
+    let searchQuery = "";
+
+    const blobPaths = gBlobs.selectAll("path.blob")
+      .data(RAW.hyperedges).enter().append("path")
+      .attr("class","blob")
+      .attr("fill", (d,i) => PALETTE[i % PALETTE.length] + "28")
+      .attr("stroke", (d,i) => PALETTE[i % PALETTE.length])
+      .attr("stroke-width", 2)
+      .attr("stroke-linejoin","round")
+      .style("cursor","pointer")
+      .on("mouseover", showHEDetail)
+      .on("mouseout", clearDetail)
+      .on("click", (e,d) => e.stopPropagation());
+
+    const arrowLines = gArrows.selectAll("line.arrow")
+      .data(RAW.hyperedges).enter().append("line")
+      .attr("class","arrow")
+      .attr("stroke","rgba(255,255,255,0.55)")
+      .attr("stroke-width",1.5)
+      .attr("stroke-dasharray","5,3")
+      .attr("marker-end","url(#arrowhead)");
+
+    const heLabelTexts = gLabels.selectAll("text.he-label")
+      .data(RAW.hyperedges).enter().append("text")
+      .attr("class","he-label")
+      .attr("text-anchor","middle")
+      .attr("dy","0.35em")
+      .text(d => d.label)
+      .style("cursor","pointer")
+      .on("mouseover", showHEDetail)
+      .on("mouseout", clearDetail);
+
+    const nodeSel = gNodes.selectAll("circle.node")
+      .data(simNodes).enter().append("circle")
+      .attr("class","node")
+      .attr("r", NODE_R)
+      .attr("fill", "#60a5fa")
+      .attr("stroke","#0f172a")
+      .attr("stroke-width",2)
+      .style("cursor","grab")
+      .call(
+        d3.drag()
+          .on("start", (e,d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+          .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
+          .on("end",   (e,d) => { if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; })
+      )
+      .on("mouseover", showNodeDetail)
+      .on("mouseout", clearDetail);
+
+    const nodeLabelSel = gNLabels.selectAll("text.node-label")
+      .data(simNodes).enter().append("text")
+      .attr("class","node-label")
+      .attr("text-anchor","middle")
+      .attr("dy","0.35em")
+      .text(d => d.label)
+      .style("pointer-events","none");
+
+    function ticked() {
+      blobPaths.each(function(d) {
+        const path = hullPoints(d.member_ids, NODE_R + 20);
+        d3.select(this).attr("d", path || "");
+      });
+
+      arrowLines.each(function(d) {
+        const sc = groupCentroid(d.source_ids.length ? d.source_ids : d.member_ids);
+        const tc = groupCentroid(d.target_ids.length ? d.target_ids : d.member_ids);
+        d3.select(this)
+          .attr("x1",sc[0]).attr("y1",sc[1])
+          .attr("x2",tc[0]).attr("y2",tc[1]);
+      });
+
+      heLabelTexts.each(function(d) {
+        const c = groupCentroid(d.member_ids);
+        d3.select(this).attr("x",c[0]).attr("y",c[1]-NODE_R-24);
+      });
+
+      nodeSel.attr("cx",d=>d.x).attr("cy",d=>d.y);
+      nodeLabelSel.attr("x",d=>d.x).attr("y",d=>d.y);
+
+      applySearch();
+      updateStats();
+    }
+
+    // ── detail panel ─────────────────────────────────────────────────────────
+    const det = document.getElementById("details");
+
+    function showHEDetail(e,d) {
+      det.innerHTML = `
+        <div class="row"><strong style="font-size:13px">${d.label}</strong> <span class="muted">(hyperedge)</span></div>
+        <div class="row"><strong>Sources:</strong> <span class="mono">${d.source_ids.map(id=>nodeById[id]?.label||id).join(", ")||"—"}</span></div>
+        <div class="row"><strong>Targets:</strong> <span class="mono">${d.target_ids.map(id=>nodeById[id]?.label||id).join(", ")||"—"}</span></div>
+        <div class="row"><strong>All members:</strong> <span class="mono">${d.member_ids.map(id=>nodeById[id]?.label||id).join(", ")}</span></div>
+        <div class="row"><strong>Chunk:</strong> <span class="mono">${d.chunk_id}</span></div>
+      `;
+    }
+
+    function showNodeDetail(e,d) {
+      det.innerHTML = `
+        <div class="row"><strong style="font-size:13px">${d.label}</strong></div>
+        <div class="row"><strong>Type:</strong> <span class="mono">${d.type||"concept"}</span></div>
+        <div class="row"><strong>ID:</strong> <span class="mono">${d.id}</span></div>
+      `;
+    }
+
+    function clearDetail() {
+      det.innerHTML = "Hover over a node or hyperedge blob to inspect.";
+    }
+
+    // ── stats panel ───────────────────────────────────────────────────────────
+    const statEl = document.getElementById("stats");
+    function updateStats() {
+      const vis = simNodes.filter(n=>!n._hidden).length;
+      statEl.innerHTML = `
+        <div class="row"><strong>Nodes:</strong> ${RAW.nodes.length}</div>
+        <div class="row"><strong>Hyperedges:</strong> ${RAW.hyperedges.length}</div>
+        <div class="row"><strong>Visible:</strong> ${vis} nodes</div>
+      `;
+    }
+
+    // ── search ────────────────────────────────────────────────────────────────
+    document.getElementById("searchInput").addEventListener("input", e => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      applySearch();
+    });
+
+    function applySearch() {
+      if (!searchQuery) {
+        nodeSel.attr("opacity",1);
+        nodeLabelSel.attr("opacity",1);
+        blobPaths.attr("opacity",1);
+        arrowLines.attr("opacity",1);
+        heLabelTexts.attr("opacity",1);
+        simNodes.forEach(n=>n._hidden=false);
+        return;
+      }
+      simNodes.forEach(n => { n._hidden = !n.label.toLowerCase().includes(searchQuery); });
+      nodeSel.attr("opacity",d=>d._hidden?0.12:1);
+      nodeLabelSel.attr("opacity",d=>d._hidden?0.05:1);
+
+      // dim hyperedges whose members are all hidden
+      blobPaths.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 0.85 : 0.08;
+      });
+      arrowLines.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 0.7 : 0.05;
+      });
+      heLabelTexts.attr("opacity",(d) => {
+        const anyVis = d.member_ids.some(id => !simNodeMap[id]?._hidden);
+        return anyVis ? 1 : 0.05;
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

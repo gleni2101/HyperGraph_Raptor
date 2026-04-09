@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "created_at": "2026-04-09T10:11:37.135231",
+    "source_document": "raptor_tree",
+    "version": "2.0"
+  },
+  "nodes": {
+    "n_a4b66a86": {
+      "id": "n_a4b66a86",
+      "label": "## `SHREK` ## `Written by` ``` Ted Elliott Terry Rossio...",
+      "type": "concept"
+    },
+    "n_0dae32ae": {
+      "id": "n_0dae32ae",
+      "label": "``` ``` PINOCCHIO Oh, gosh, no one invited us. ``` ```...",
+      "type": "concept"
+    },
+    "n_760e0e39": {
+      "id": "n_760e0e39",
+      "label": "``` ``` The Gingerbread Man is pulled out of the milk a...",
+      "type": "concept"
+    },
+    "n_a3258f21": {
+      "id": "n_a3258f21",
+      "label": "It is the Magic Mirror. ``` ## `GINGERBREAD MAN` ``` (i...",
+      "type": "concept"
+    },
+    "n_4ea3d6d5": {
+      "id": "n_4ea3d6d5",
+      "label": "``` ## `FARQUAAD` ``` Three? One? Three? ``` ## `THELON...",
+      "type": "concept"
+    },
+    "n_aec5f457": {
+      "id": "n_aec5f457",
+      "label": "``` ``` FIONA (CONT'D) A princess locked in a tower and...",
+      "type": "concept"
+    },
+    "n_233502a0": {
+      "id": "n_233502a0",
+      "label": "This shall be the norm... until you find true love's fi...",
+      "type": "concept"
+    },
+    "n_8403896f": {
+      "id": "n_8403896f",
+      "label": "I mean, really, who can ever love a beast so hideous an...",
+      "type": "concept"
+    },
+    "n_40150214": {
+      "id": "n_40150214",
+      "label": "I heard enough last night. ``` ``` FIONA You heard what...",
+      "type": "concept"
+    },
+    "n_8098dd73": {
+      "id": "n_8098dd73",
+      "label": "I ask your hand in marriage. Will you be the perfect br...",
+      "type": "concept"
+    },
+    "n_70ad8148": {
+      "id": "n_70ad8148",
+      "label": "``` ``` DULOC - CHURCH ``` ``` Fiona and Farquaad are g...",
+      "type": "concept"
+    },
+    "n_4d043775": {
+      "id": "n_4d043775",
+      "label": "``` ``` Inside ``` ``` PRIEST I now pronounce you husba...",
+      "type": "concept"
+    },
+    "n_8bc8ceb2": {
+      "id": "n_8bc8ceb2",
+      "label": "Fiona, my love, we're but a kiss away from our \"happily...",
+      "type": "concept"
+    },
+    "n_7e229ce6": {
+      "id": "n_7e229ce6",
+      "label": "``` ``` The dragon belches and Farquaad's crown flies o...",
+      "type": "concept"
+    },
+    "n_0db9ba7a": {
+      "id": "n_0db9ba7a",
+      "label": "Once upon a time, a princess enchanted to become a be...",
+      "type": "concept"
+    },
+    "n_2a51100b": {
+      "id": "n_2a51100b",
+      "label": "You're - - You're a girl dragon! Oh, sure! I mean, of c...",
+      "type": "concept"
+    },
+    "n_8dc218d3": {
+      "id": "n_8dc218d3",
+      "label": "``` ``` FIONA (CONT’D) But we have to savor this moment...",
+      "type": "concept"
+    },
+    "n_68bf77d9": {
+      "id": "n_68bf77d9",
+      "label": "We really should get to know each other first as friend...",
+      "type": "concept"
+    },
+    "n_1c66e04a": {
+      "id": "n_1c66e04a",
+      "label": "``` **==> picture [173 x 23] intentionally omitted <==*...",
+      "type": "concept"
+    },
+    "n_9cc73dda": {
+      "id": "n_9cc73dda",
+      "label": "I'm no one's messenger boy, all right? (ominous) I'm a...",
+      "type": "concept"
+    },
+    "n_e5a16cbe": {
+      "id": "n_e5a16cbe",
+      "label": "We can keep going. ``` ``` FIONA ``` ``` But there's ro...",
+      "type": "concept"
+    },
+    "n_c395b399": {
+      "id": "n_c395b399",
+      "label": "Suddenly the pressure of the note is too big and the bi...",
+      "type": "concept"
+    },
+    "n_c4454794": {
+      "id": "n_c4454794",
+      "label": "``` ## `SHREK` ``` Princess! ``` ``` FIONA (to Robin Ho...",
+      "type": "concept"
+    },
+    "n_50e6021f": {
+      "id": "n_50e6021f",
+      "label": "``` ``` Shrek looks at her in admiration. ``` ``` MERRY...",
+      "type": "concept"
+    },
+    "n_8d7738e2": {
+      "id": "n_8d7738e2",
+      "label": "``` ``` DONKEY (CONT'D) Don't die Shrek. If you see a l...",
+      "type": "concept"
+    },
+    "n_b8d353d0": {
+      "id": "n_b8d353d0",
+      "label": "We were just, uh - - ``` ## `DONKEY` ``` Look, if you w...",
+      "type": "concept"
+    },
+    "n_9148d0f4": {
+      "id": "n_9148d0f4",
+      "label": "He doesn't look so good. ``` ``` DONKEY What are you ta...",
+      "type": "concept"
+    },
+    "n_d247bde5": {
+      "id": "n_d247bde5",
+      "label": "``` ## `DONKEY` ``` (chuckles) Man, isn't this romantic...",
+      "type": "concept"
+    },
+    "n_df254712": {
+      "id": "n_df254712",
+      "label": "``` ``` TIME LAPSE ``` ``` Donkey opens the door to the...",
+      "type": "concept"
+    },
+    "n_cb9e4cce": {
+      "id": "n_cb9e4cce",
+      "label": "After a female dragon attracted to Donkey's feminine...",
+      "type": "concept"
+    },
+    "n_31a1db3f": {
+      "id": "n_31a1db3f",
+      "label": "Fairy tale creatures.\"(He sighs and throws the paper ov...",
+      "type": "concept"
+    },
+    "n_68b1c7cd": {
+      "id": "n_68b1c7cd",
+      "label": "Talk, you boneheaded dolt... ``` ``` HEAD GUARD That's...",
+      "type": "concept"
+    },
+    "n_28701670": {
+      "id": "n_28701670",
+      "label": "``` ``` DONKEY ``` ``` Can I say something to you? List...",
+      "type": "concept"
+    },
+    "n_1bfd02b4": {
+      "id": "n_1bfd02b4",
+      "label": "``` ## `DONKEY` ``` Wow. Only a true friend would be th...",
+      "type": "concept"
+    },
+    "n_79af4adc": {
+      "id": "n_79af4adc",
+      "label": "Please! ``` ``` SHREK ``` ``` Okay! Okay! But one night...",
+      "type": "concept"
+    },
+    "n_fb22b691": {
+      "id": "n_fb22b691",
+      "label": "``` ``` GORDO Blah! Awful stuff. ``` ``` BLIND MOUSE1 I...",
+      "type": "concept"
+    },
+    "n_f45e1c0e": {
+      "id": "n_f45e1c0e",
+      "label": "Shrek and Donkey look at him then continue on into DuLo...",
+      "type": "concept"
+    },
+    "n_e24c97bb": {
+      "id": "n_e24c97bb",
+      "label": "``` ``` FARQUAAD ``` ``` Indeed. Knights, new plan! The...",
+      "type": "concept"
+    },
+    "n_951cde2d": {
+      "id": "n_951cde2d",
+      "label": "People of DuLoc, I give you our champion! ``` ``` SHREK...",
+      "type": "concept"
+    },
+    "n_60a8fd88": {
+      "id": "n_60a8fd88",
+      "label": "``` ``` (he holds out his onion) ``` ``` DONKEY ``` ```...",
+      "type": "concept"
+    },
+    "n_b75441ec": {
+      "id": "n_b75441ec",
+      "label": "``` ## `SHREK` ``` Believe me, Donkey, if it was me, yo...",
+      "type": "concept"
+    },
+    "n_d87bccf6": {
+      "id": "n_d87bccf6",
+      "label": "``` ``` DONKEY ``` ``` But I know that half is safe! ``...",
+      "type": "concept"
+    },
+    "n_a9771a14": {
+      "id": "n_a9771a14",
+      "label": "``` ``` DONKEY Stairs? I thought we was lookin' for the...",
+      "type": "concept"
+    },
+    "n_94ccbf67": {
+      "id": "n_94ccbf67",
+      "label": "Look, there's Bloodnut, the Flatulent. You can guess wh...",
+      "type": "concept"
+    },
+    "n_6d4e87b9": {
+      "id": "n_6d4e87b9",
+      "label": "Neither of the guys see her. ``` ## `SHREK` ``` Oh! For...",
+      "type": "concept"
+    },
+    "n_1a8a3dc0": {
+      "id": "n_1a8a3dc0",
+      "label": "``` ## `SHREK` ``` Donkey? (Donkey ignores him and cont...",
+      "type": "concept"
+    },
+    "n_19e1bcf8": {
+      "id": "n_19e1bcf8",
+      "label": "``` ## `SHREK` ``` (os) Go away! ``` ## `DONKEY` ``` Th...",
+      "type": "concept"
+    },
+    "n_f5c3cb2f": {
+      "id": "n_f5c3cb2f",
+      "label": "``` ## `GINGERBREAD MAN` ``` God bless us, every one. `...",
+      "type": "concept"
+    },
+    "n_5121c1c2": {
+      "id": "n_5121c1c2",
+      "label": "At a fairy tale creature roundup where Little Bear cr...",
+      "type": "concept"
+    }
+  },
+  "hyperedges": [
+    {
+      "id": "e_ddfcc294",
+      "label": "Once upon a time, a princess enchanted to become a beast n",
+      "source": [
+        "## `SHREK` ## `Written by` ``` Ted Elliott Terry Rossio...",
+        "``` ``` PINOCCHIO Oh, gosh, no one invited us. ``` ```...",
+        "``` ``` The Gingerbread Man is pulled out of the milk a...",
+        "It is the Magic Mirror. ``` ## `GINGERBREAD MAN` ``` (i...",
+        "``` ## `FARQUAAD` ``` Three? One? Three? ``` ## `THELON...",
+        "``` ``` FIONA (CONT'D) A princess locked in a tower and...",
+        "This shall be the norm... until you find true love's fi...",
+        "I mean, really, who can ever love a beast so hideous an...",
+        "I heard enough last night. ``` ``` FIONA You heard what...",
+        "I ask your hand in marriage. Will you be the perfect br...",
+        "``` ``` DULOC - CHURCH ``` ``` Fiona and Farquaad are g...",
+        "``` ``` Inside ``` ``` PRIEST I now pronounce you husba...",
+        "Fiona, my love, we're but a kiss away from our \"happily...",
+        "``` ``` The dragon belches and Farquaad's crown flies o..."
+      ],
+      "target": [
+        "Once upon a time, a princess enchanted to become a be..."
+      ],
+      "weight": 1.0,
+      "chunk_id": "raptor_L1_0001"
+    },
+    {
+      "id": "e_08ffa2ba",
+      "label": "After a female dragon attracted to Donkey's feminine beaut",
+      "source": [
+        "You're - - You're a girl dragon! Oh, sure! I mean, of c...",
+        "``` ``` FIONA (CONT’D) But we have to savor this moment...",
+        "We really should get to know each other first as friend...",
+        "``` **==> picture [173 x 23] intentionally omitted <==*...",
+        "I'm no one's messenger boy, all right? (ominous) I'm a...",
+        "We can keep going. ``` ``` FIONA ``` ``` But there's ro...",
+        "Suddenly the pressure of the note is too big and the bi...",
+        "``` ## `SHREK` ``` Princess! ``` ``` FIONA (to Robin Ho...",
+        "``` ``` Shrek looks at her in admiration. ``` ``` MERRY...",
+        "``` ``` DONKEY (CONT'D) Don't die Shrek. If you see a l...",
+        "We were just, uh - - ``` ## `DONKEY` ``` Look, if you w...",
+        "He doesn't look so good. ``` ``` DONKEY What are you ta...",
+        "``` ## `DONKEY` ``` (chuckles) Man, isn't this romantic...",
+        "``` ``` TIME LAPSE ``` ``` Donkey opens the door to the..."
+      ],
+      "target": [
+        "After a female dragon attracted to Donkey's feminine..."
+      ],
+      "weight": 1.0,
+      "chunk_id": "raptor_L1_0002"
+    },
+    {
+      "id": "e_0dd752fc",
+      "label": "At a fairy tale creature roundup where Little Bear cries h",
+      "source": [
+        "Fairy tale creatures.\"(He sighs and throws the paper ov...",
+        "Talk, you boneheaded dolt... ``` ``` HEAD GUARD That's...",
+        "``` ``` DONKEY ``` ``` Can I say something to you? List...",
+        "``` ## `DONKEY` ``` Wow. Only a true friend would be th...",
+        "Please! ``` ``` SHREK ``` ``` Okay! Okay! But one night...",
+        "``` ``` GORDO Blah! Awful stuff. ``` ``` BLIND MOUSE1 I...",
+        "Shrek and Donkey look at him then continue on into DuLo...",
+        "``` ``` FARQUAAD ``` ``` Indeed. Knights, new plan! The...",
+        "People of DuLoc, I give you our champion! ``` ``` SHREK...",
+        "``` ``` (he holds out his onion) ``` ``` DONKEY ``` ```...",
+        "``` ## `SHREK` ``` Believe me, Donkey, if it was me, yo...",
+        "``` ``` DONKEY ``` ``` But I know that half is safe! ``...",
+        "``` ``` DONKEY Stairs? I thought we was lookin' for the...",
+        "Look, there's Bloodnut, the Flatulent. You can guess wh...",
+        "Neither of the guys see her. ``` ## `SHREK` ``` Oh! For...",
+        "``` ## `SHREK` ``` Donkey? (Donkey ignores him and cont...",
+        "``` ## `SHREK` ``` (os) Go away! ``` ## `DONKEY` ``` Th...",
+        "``` ## `GINGERBREAD MAN` ``` God bless us, every one. `..."
+      ],
+      "target": [
+        "At a fairy tale creature roundup where Little Bear cr..."
+      ],
+      "weight": 1.0,
+      "chunk_id": "raptor_L1_0000"
+    }
+  ]
+}

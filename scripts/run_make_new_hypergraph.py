@@ -50,6 +50,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-tokens", type=int, default=20000)
     parser.add_argument("--chunk-size", type=int, default=10000)
     parser.add_argument("--chunk-overlap", type=int, default=0)
+    parser.add_argument("--max-workers", type=int, default=4, help="Parallel LLM extraction workers per chunk batch")
     parser.add_argument("--similarity-threshold", type=float, default=0.9)
     parser.add_argument("--llm-timeout", type=float, default=120.0)
     parser.add_argument("--llm-retries", type=int, default=6)
@@ -374,6 +375,7 @@ def main() -> None:
                         repeat_refine=0,
                         verbatim=False,
                         data_dir=str(data_dir_path),
+                        max_workers=args.max_workers,
                     )
                     print(f"[generation] done in {datetime.now() - t0}")
                 except Exception as exc:

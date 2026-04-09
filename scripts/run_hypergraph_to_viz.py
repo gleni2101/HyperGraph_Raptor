@@ -43,11 +43,13 @@ def parse_args() -> argparse.Namespace:
         description="Generate hypergraph JSON and HTML visualization from Markdown documents."
     )
     parser.add_argument("--doc-data-dir", default="Data", help="Folder containing .md files")
+    parser.add_argument("--input", default=None, help="Path to a single .md file")
     parser.add_argument("--json-out-dir", default="artifacts/sg/graphs", help="Output folder for hypergraph JSON")
     parser.add_argument("--html-out-dir", default="artifacts/sg/html", help="Output folder for visualization HTML")
     parser.add_argument("--prompt-config", default=None)
-    parser.add_argument("--chunk-size", type=int, default=10000)
+    parser.add_argument("--chunk-size", type=int, default=2000)
     parser.add_argument("--chunk-overlap", type=int, default=0)
+    parser.add_argument("--max-workers", type=int, default=4, help="Parallel LLM extraction workers per chunk batch")
     parser.add_argument("--overwrite", action="store_true", help="Regenerate even if json/html already exists")
     return parser.parse_args()
 
@@ -71,13 +73,22 @@ def main() -> None:
 
     if args.prompt_config:
         os.environ["GRAPH_REASONING_PROMPT_CONFIG"] = str(resolve_path(args.prompt_config, workspace_root))
+    
+    if args.input:
+        single = resolve_path(args.input, workspace_root)
+        if not single.exists():
+            raise FileNotFoundError(f"Input file not found:{single}")
+        if not single.is_file():
+            raise ValueError(f"Input path is not a file: {single}")
+        docs = [single]
+    else:
+        docs = collect_markdown_files(doc_dir)
+        
+    if not docs:
+        raise FileNotFoundError(f"No markdown docs found in: {doc_dir}")
 
     os.makedirs(json_out_dir, exist_ok=True)
     os.makedirs(html_out_dir, exist_ok=True)
-
-    docs = collect_markdown_files(doc_dir)
-    if not docs:
-        raise FileNotFoundError(f"No markdown docs found in: {doc_dir}")
 
     client = create_llm()
 
@@ -120,6 +131,7 @@ def main() -> None:
             verbatim=False,
             data_dir=str(json_out_dir),
             force_rebuild=args.overwrite,
+            max_workers=args.max_workers,
         )
 
         if not isinstance(builder, HypergraphBuilder):
