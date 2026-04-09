@@ -185,7 +185,11 @@ def visualize_hypergraph(
       .force("charge", d3.forceManyBody().strength(-220))
       .force("center", d3.forceCenter(W/2, H/2))
       .force("collision", d3.forceCollide(NODE_R + 6))
-      .on("tick", ticked);
+      .on("tick", ticked)
+      .on("end", () => {{
+        // Pin every node once the layout has settled so the graph stops drifting
+        simNodes.forEach(n => {{ n.fx = n.x; n.fy = n.y; }});
+      }});
 
     // ── convex-hull blob ──────────────────────────────────────────────────────
     function hullPoints(ids, padding) {{
@@ -263,9 +267,9 @@ def visualize_hypergraph(
       .style("cursor","grab")
       .call(
         d3.drag()
-          .on("start", (e,d) => {{ if (!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; }})
-          .on("drag",  (e,d) => {{ d.fx=e.x; d.fy=e.y; }})
-          .on("end",   (e,d) => {{ if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }})
+          .on("start", (e,d) => {{ d.fx=d.x; d.fy=d.y; }})
+          .on("drag",  (e,d) => {{ d.fx=e.x; d.fy=e.y; d.x=e.x; d.y=e.y; ticked(); }})
+          .on("end",   (e,d) => {{ /* node stays pinned at new position */ }})
       )
       .on("mouseover", showNodeDetail)
       .on("mouseout", clearDetail);

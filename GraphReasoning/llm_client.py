@@ -17,22 +17,24 @@ LLM:
 Embeddings:
     EMBED_URL        – Embedding server base URL   (default: http://127.0.0.1:8080)
     EMBED_MODEL      – Embedding model name        (default: BAAI/bge-m3)
-    EMBED_MAX_CHARS  – Max input characters        (default: 16000)
+    EMBED_MAX_CHARS  – Max input characters        (default: 19000)
 """
 from __future__ import annotations
 
 import logging
 import os
+import random
 import ssl
 import time
 import re
 from pathlib import Path
-from typing import Any
+from typing import Any, Type
 
 import httpx
 import numpy as np
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
+from pydantic import BaseModel
 
 # ---------------------------------------------------------------------------
 # Auto-load .env from repo root
@@ -50,7 +52,7 @@ class LocalBGEClient:
     """Embedding client for a local BGE-M3 (or compatible) server.
 
     BGE-M3 supports up to 8192 tokens (~19k chars). The default
-    EMBED_MAX_CHARS of 16000 (~6500 tokens) leaves comfortable headroom.
+    EMBED_MAX_CHARS of 19000 chars (~8k tokens) uses the full capacity.
     """
 
     def __init__(
@@ -64,8 +66,8 @@ class LocalBGEClient:
         self.model = model or os.getenv("EMBED_MODEL", "BAAI/bge-m3")
         self.client = httpx.Client(timeout=timeout)
         # BGE-M3 max context = 8192 tokens ≈ ~19k chars.
-        # Default to 16000 chars (~6500 tokens) for safe headroom.
-        self.max_input_chars = max_input_chars if max_input_chars is not None else int(os.getenv("EMBED_MAX_CHARS", "16000"))
+        # Default to 19000 chars to use the full 8k token capacity.
+        self.max_input_chars = max_input_chars if max_input_chars is not None else int(os.getenv("EMBED_MAX_CHARS", "19000"))
 
     _TOKEN_LIMIT_RE = re.compile(
         r"too\s+large\s+to\s+process|too\s+many\s+tokens|token\s+limit|maximum\s+context",
@@ -230,3 +232,74 @@ def create_embed_client(
 ) -> LocalBGEClient:
     """Create a LocalBGEClient using env vars as defaults."""
     return LocalBGEClient(base_url=base_url, model=model, timeout=timeout, max_input_chars=max_input_chars)
+
+
+# ---------------------------------------------------------------------------
+# Structured generation with retry
+# ---------------------------------------------------------------------------
+
+def generate_structured(
+    client: ChatOpenAI,
+    system_prompt: str,
+    user_prompt: str,
+    response_model: Type[BaseModel],
+    *,
+    retries: int = 6,
+    retry_delay: float = 2.0,
+    retry_backoff: float = 2.0,
+    max_delay: float = 30.0,
+) -> BaseModel:
+    """Invoke *client* with structured output and exponential-backoff retry.
+
+    Parameters
+    ----------
+    client : ChatOpenAI
+        The LangChain ChatOpenAI instance.
+    system_prompt / user_prompt : str
+        Messages to send.
+    response_model : Type[BaseModel]
+        Pydantic model for ``with_structured_output``.
+    retries / retry_delay / retry_backoff / max_delay
+        Retry configuration.
+
+    Returns the parsed Pydantic object.
+    """
+    log = logging.getLogger(__name__)
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+    structured_llm = client.with_structured_output(response_model)
+    delay = max(0.0, retry_delay)
+    total_attempts = max(1, retries + 1)
+    last_exc: Exception | None = None
+
+    for attempt in range(1, total_attempts + 1):
+        t0 = time.time()
+        try:
+            resp = structured_llm.invoke(messages)
+            elapsed = time.time() - t0
+            if resp is None:
+                raise ValueError("with_structured_output returned None")
+            log.info(
+                "generate_structured OK (attempt %d/%d, %.1fs)",
+                attempt, total_attempts, elapsed,
+            )
+            return resp
+        except Exception as exc:
+            elapsed = time.time() - t0
+            last_exc = exc
+            if attempt >= total_attempts:
+                log.error(
+                    "generate_structured FAILED after %d attempts (%.1fs): %r",
+                    total_attempts, elapsed, exc,
+                )
+                break
+            log.warning(
+                "generate_structured attempt %d/%d failed (%.1fs): %r — retrying in %.1fs",
+                attempt, total_attempts, elapsed, exc, delay,
+            )
+            time.sleep(delay + random.uniform(0, 0.5))
+            delay = min(max_delay, max(0.1, delay * retry_backoff))
+
+    raise last_exc  # type: ignore[misc]
