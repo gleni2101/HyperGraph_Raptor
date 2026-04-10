@@ -10,7 +10,24 @@ import numpy as np
 import networkx as nx
 import os
 import re
+import shutil
 import importlib
+from typing import List
+from pydantic import BaseModel
+
+
+# ---------------------------------------------------------------------------
+# Shared Pydantic models for LLM structured output
+# ---------------------------------------------------------------------------
+
+class Event(BaseModel):
+    source: List[str]
+    target: List[str]
+    relation: str
+
+
+class HypergraphJSON(BaseModel):
+    events: List[Event]
 
 def _get_misc_properties(self):
     if "misc_properties" in self.columns:
@@ -942,3 +959,17 @@ def add_new_hypersubgraph_from_text(
     return integrated_json, H, G_to_add, node_embeddings, None
 
 
+# ---------------------------------------------------------------------------
+# Cache cleanup
+# ---------------------------------------------------------------------------
+
+def cleanup_cache_dir() -> None:
+    """Remove the chunk-extraction cache directory (``temp/`` by default).
+
+    Call this after a full build completes so intermediate files don't
+    clutter the repository.
+    """
+    cache_path = _cache_dir()
+    if cache_path.exists():
+        shutil.rmtree(cache_path, ignore_errors=True)
+        print(f"Cleaned up cache directory: {cache_path}")

@@ -1,23 +1,42 @@
+"""Build hypergraph JSON and HTML visualization from text/markdown files.
+
+Usage
+-----
+Single file:
+    python scripts/run_hypergraph_to_viz.py --input doc.md
+
+Batch (all .md in a folder):
+    python scripts/run_hypergraph_to_viz.py --doc-data-dir Data/
+
+From module:
+    python -m scripts.run_hypergraph_to_viz --input doc.md
+"""
+from __future__ import annotations
+
 import argparse
+import logging
 import os
 import sys
 from pathlib import Path
-from typing import List
 
-from pydantic import BaseModel
+# Ensure repo root is importable
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+)
+logger = logging.getLogger(__name__)
 
 
-class Event(BaseModel):
-    source: List[str]
-    target: List[str]
-    relation: str
-
-
-class HypergraphJSON(BaseModel):
-    events: List[Event]
-
+# ---------------------------------------------------------------------------
+# Shared helpers
+# ---------------------------------------------------------------------------
 
 def resolve_path(path_value: str, base_dir: Path) -> Path:
+    """Resolve *path_value* relative to *base_dir* (absolute paths pass through)."""
     path = Path(path_value).expanduser()
     if path.is_absolute():
         return path.resolve()
@@ -25,72 +44,96 @@ def resolve_path(path_value: str, base_dir: Path) -> Path:
 
 
 def collect_markdown_files(input_dir: Path) -> list[Path]:
+    """Collect .md files from *input_dir* (flat or one-deep subdirectories)."""
     docs = sorted(input_dir.glob("*.md"))
     if docs:
         return docs
+    for folder in sorted(d for d in input_dir.iterdir() if d.is_dir()):
+        candidate = folder / f"{folder.name}.md"
+        if candidate.exists():
+            docs.append(candidate)
+    return sorted(docs)
 
-    collected: list[Path] = []
-    for folder in sorted(input_dir.iterdir() if input_dir.exists() else []):
-        if folder.is_dir():
-            candidate = folder / f"{folder.name}.md"
-            if candidate.exists():
-                collected.append(candidate)
-    return collected
 
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Generate hypergraph JSON and HTML visualization from Markdown documents."
+    p = argparse.ArgumentParser(
+        description="Build hypergraph JSON and HTML visualization from text/markdown files."
     )
-    parser.add_argument("--doc-data-dir", default="Data", help="Folder containing .md files")
-    parser.add_argument("--input", default=None, help="Path to a single .md file")
-    parser.add_argument("--json-out-dir", default="artifacts/sg/graphs", help="Output folder for hypergraph JSON")
-    parser.add_argument("--html-out-dir", default="artifacts/sg/html", help="Output folder for visualization HTML")
-    parser.add_argument("--prompt-config", default=None)
-    parser.add_argument("--chunk-size", type=int, default=2000)
-    parser.add_argument("--chunk-overlap", type=int, default=0)
-    parser.add_argument("--max-workers", type=int, default=4, help="Parallel LLM extraction workers per chunk batch")
-    parser.add_argument("--overwrite", action="store_true", help="Regenerate even if json/html already exists")
-    return parser.parse_args()
+    # Input  (one of --input or --doc-data-dir is required)
+    inp = p.add_mutually_exclusive_group(required=True)
+    inp.add_argument("--input", "-i", default=None, help="Path to a single .md file")
+    inp.add_argument("--doc-data-dir", default=None, help="Folder containing .md files (batch mode)")
 
+    # Output
+    p.add_argument("--output-dir", "-o", default="Output/HyperGraph", help="Output directory")
+    p.add_argument("--overwrite", action="store_true", help="Rebuild even if output already exists")
+
+    # Chunking
+    p.add_argument("--chunk-size", type=int, default=2000, help="Chunk size in characters")
+    p.add_argument("--chunk-overlap", type=int, default=0, help="Overlap in characters")
+
+    # Parallelism
+    p.add_argument("--max-workers", type=int, default=4, help="Parallel LLM workers per chunk batch")
+
+    # Prompt config
+    p.add_argument("--prompt-config", default=None, help="Path to custom prompt_config.json")
+
+    # Override .env (optional)
+    p.add_argument("--llm-url", default=None, help="LLM server URL (overrides URL env var)")
+    p.add_argument("--llm-model", default=None, help="LLM model name (overrides MODEL_NAME env var)")
+    p.add_argument("--llm-temperature", type=float, default=None, help="LLM temperature")
+    p.add_argument("--embed-url", default=None, help="Embedding server URL (overrides EMBED_URL env var)")
+    p.add_argument("--embed-model", default=None, help="Embedding model name (overrides EMBED_MODEL env var)")
+
+    return p.parse_args()
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
 
 def main() -> None:
     args = parse_args()
-    workspace_root = Path(__file__).resolve().parent.parent
 
-    if str(workspace_root) not in sys.path:
-        sys.path.insert(0, str(workspace_root))
+    if args.prompt_config:
+        os.environ["GRAPH_REASONING_PROMPT_CONFIG"] = str(
+            resolve_path(args.prompt_config, _REPO_ROOT)
+        )
 
-    from GraphReasoning.llm_client import create_llm
-    from GraphReasoning.graph_generation import make_hypergraph_from_text
+    from GraphReasoning.llm_client import create_llm, generate_structured
+    from GraphReasoning.graph_generation import (
+        make_hypergraph_from_text, cleanup_cache_dir, HypergraphJSON,
+    )
     from GraphReasoning.hypergraph_store import HypergraphBuilder
     from GraphReasoning.hypergraph_viz import visualize_hypergraph
     from GraphReasoning.prompt_config import get_prompt
 
-    doc_dir = resolve_path(args.doc_data_dir, workspace_root)
-    json_out_dir = resolve_path(args.json_out_dir, workspace_root)
-    html_out_dir = resolve_path(args.html_out_dir, workspace_root)
+    output_dir = resolve_path(args.output_dir, _REPO_ROOT)
+    os.makedirs(output_dir, exist_ok=True)
 
-    if args.prompt_config:
-        os.environ["GRAPH_REASONING_PROMPT_CONFIG"] = str(resolve_path(args.prompt_config, workspace_root))
-    
+    # Resolve input(s)
     if args.input:
-        single = resolve_path(args.input, workspace_root)
-        if not single.exists():
-            raise FileNotFoundError(f"Input file not found:{single}")
-        if not single.is_file():
-            raise ValueError(f"Input path is not a file: {single}")
-        docs = [single]
+        docs = [resolve_path(args.input, _REPO_ROOT)]
     else:
-        docs = collect_markdown_files(doc_dir)
-        
+        docs = collect_markdown_files(resolve_path(args.doc_data_dir, _REPO_ROOT))
+
     if not docs:
-        raise FileNotFoundError(f"No markdown docs found in: {doc_dir}")
+        logger.error("No input documents found.")
+        sys.exit(1)
 
-    os.makedirs(json_out_dir, exist_ok=True)
-    os.makedirs(html_out_dir, exist_ok=True)
-
-    client = create_llm()
+    # Initialize LLM client (with optional CLI overrides)
+    llm_overrides = {}
+    if args.llm_url:
+        llm_overrides["base_url"] = args.llm_url
+    if args.llm_model:
+        llm_overrides["model"] = args.llm_model
+    if args.llm_temperature is not None:
+        llm_overrides["temperature"] = args.llm_temperature
+    client = create_llm(**llm_overrides)
 
     def generate(
         system_prompt: str | None = None,
@@ -98,24 +141,31 @@ def main() -> None:
         response_model=HypergraphJSON,
         **_: dict,
     ):
-        messages = [
-            {"role": "system", "content": system_prompt or get_prompt("runtime", "viz_system_prompt")},
-            {"role": "user", "content": prompt},
-        ]
-        return client.with_structured_output(response_model).invoke(messages)
+        return generate_structured(
+            client,
+            system_prompt or get_prompt("runtime", "viz_system_prompt"),
+            prompt,
+            response_model,
+        )
+
+    logger.info("Processing %d document(s) -> %s", len(docs), output_dir)
 
     for i, doc_path in enumerate(docs):
+        if not doc_path.exists():
+            logger.error("Input file not found: %s", doc_path)
+            continue
+
         title = doc_path.stem
         graph_root = f"{i}_{title[:100]}"
-        json_path = json_out_dir / f"{graph_root}.json"
-        html_path = html_out_dir / f"{graph_root}.html"
+        json_path = output_dir / f"{graph_root}.json"
+        html_path = output_dir / f"{graph_root}.html"
 
         if not args.overwrite and json_path.exists() and html_path.exists():
-            print(f"[skip] {title} (json+html already exist)")
+            logger.info("[skip] %s (output exists, use --overwrite to rebuild)", title)
             continue
 
         txt = doc_path.read_text(encoding="utf-8")
-        print(f"[build] {title}")
+        logger.info("[build] %s (%d chars)", title, len(txt))
 
         out_json, builder, _, _ = make_hypergraph_from_text(
             txt,
@@ -129,7 +179,7 @@ def main() -> None:
             do_relabel=False,
             repeat_refine=0,
             verbatim=False,
-            data_dir=str(json_out_dir),
+            data_dir=str(output_dir),
             force_rebuild=args.overwrite,
             max_workers=args.max_workers,
         )
@@ -138,9 +188,10 @@ def main() -> None:
             builder = HypergraphBuilder.load(out_json)
 
         visualize_hypergraph(builder, output_html=html_path)
-        print(f"[ok] json={out_json} | html={html_path}")
+        logger.info("[ok] json=%s | html=%s", out_json, html_path)
 
-    print("Done: hypergraph JSON + HTML visualization generated.")
+    cleanup_cache_dir()
+    logger.info("Done!")
 
 
 if __name__ == "__main__":

@@ -21,8 +21,12 @@ dist/
 *.egg
 pip-wheel-metadata/
 
-# --- Generated roject artifacts ---
+# --- Generated project artifacts ---
 temp/
+scripts/temp/
+Output/
+raptor_output/
+artifacts/
 
 # --- Logs / databases ---
 *.log

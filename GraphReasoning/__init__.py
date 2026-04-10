@@ -5,7 +5,8 @@ from GraphReasoning.graph_analysis import *  # noqa: F401, F403
 from GraphReasoning.hypergraph_store import HypergraphBuilder, Hypergraph, HyperNode, HyperEdge
 from GraphReasoning.hypergraph_viz import visualize_hypergraph
 from GraphReasoning.prompt_config import get_prompt, load_prompt_config
-from GraphReasoning.llm_client import create_llm, create_embed_client, LocalBGEClient
+from GraphReasoning.llm_client import create_llm, create_embed_client, LocalBGEClient, generate_structured
+from GraphReasoning.graph_generation import Event, HypergraphJSON, cleanup_cache_dir
 
 # RAPTOR hierarchical RAG index
 from GraphReasoning.raptor_tree import (

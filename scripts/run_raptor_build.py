@@ -1,11 +1,15 @@
-"""CLI entry point for building a RAPTOR hierarchical index.
+"""Build a RAPTOR hierarchical RAG index from text/markdown files.
 
 Usage
 -----
-    python -m scripts.run_raptor_build --input doc.md --output-dir raptor_out/
-
-Or from the repo root:
+Single file:
     python scripts/run_raptor_build.py --input doc.md
+
+Batch (all .md in a folder):
+    python scripts/run_raptor_build.py --doc-data-dir Data/
+
+From module:
+    python -m scripts.run_raptor_build --input doc.md
 """
 from __future__ import annotations
 
@@ -36,6 +40,30 @@ logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
+# Shared helpers
+# ---------------------------------------------------------------------------
+
+def resolve_path(path_value: str, base_dir: Path) -> Path:
+    """Resolve *path_value* relative to *base_dir* (absolute paths pass through)."""
+    path = Path(path_value).expanduser()
+    if path.is_absolute():
+        return path.resolve()
+    return (base_dir / path).resolve()
+
+
+def collect_markdown_files(input_dir: Path) -> list[Path]:
+    """Collect .md files from *input_dir* (flat or one-deep subdirectories)."""
+    docs = sorted(input_dir.glob("*.md"))
+    if docs:
+        return docs
+    for folder in sorted(d for d in input_dir.iterdir() if d.is_dir()):
+        candidate = folder / f"{folder.name}.md"
+        if candidate.exists():
+            docs.append(candidate)
+    return sorted(docs)
+
+
+# ---------------------------------------------------------------------------
 # LLM summarizer wrapper
 # ---------------------------------------------------------------------------
 
@@ -56,18 +84,21 @@ def make_llm_call(**overrides) -> callable:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="Build a RAPTOR hierarchical RAG index from a text/markdown file."
+        description="Build a RAPTOR hierarchical RAG index from text/markdown files."
     )
-    # Input
-    p.add_argument("--input", "-i", required=True, help="Path to input text/markdown file")
-    p.add_argument("--doc-id", default="", help="Document identifier for metadata")
+    # Input  (one of --input or --doc-data-dir is required)
+    inp = p.add_mutually_exclusive_group(required=True)
+    inp.add_argument("--input", "-i", default=None, help="Path to a single .md file")
+    inp.add_argument("--doc-data-dir", default=None, help="Folder containing .md files (batch mode)")
+    p.add_argument("--doc-id", default="", help="Document identifier for metadata (single-file mode)")
 
     # Output
-    p.add_argument("--output-dir", "-o", default="raptor_output", help="Output directory")
+    p.add_argument("--output-dir", "-o", default="Output/Raptor", help="Output directory")
+    p.add_argument("--overwrite", action="store_true", help="Rebuild even if output already exists")
 
     # Chunking
-    p.add_argument("--chunk-size", type=int, default=500, help="Target chunk size in tokens (paper: 100)")
-    p.add_argument("--chunk-overlap", type=int, default=0, help="Overlap in tokens (paper: 0)")
+    p.add_argument("--chunk-size", type=int, default=100, help="Target chunk size in tokens (per RAPTOR paper)")
+    p.add_argument("--chunk-overlap", type=int, default=0, help="Overlap in tokens")
 
     # Tree building
     p.add_argument("--max-depth", type=int, default=5, help="Max summarization levels")
@@ -75,14 +106,17 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--max-k", type=int, default=20, help="Max GMM clusters per level")
     p.add_argument("--membership-threshold", type=float, default=0.1, help="Soft clustering threshold")
     p.add_argument("--max-context-tokens", type=int, default=4096, help="Max tokens per summarization call")
-    p.add_argument("--max-workers", type=int, default=4, help="Parallel LLM summarization workers per level")
+    p.add_argument("--max-workers", type=int, default=4, help="Parallel LLM workers per level")
+
+    # Prompt config
+    p.add_argument("--prompt-config", default=None, help="Path to custom prompt_config.json")
 
     # Override .env (optional)
-    p.add_argument("--embed-url", default=None, help="Embedding server URL (overrides EMBED_URL env var)")
-    p.add_argument("--embed-model", default=None, help="Embedding model name (overrides EMBED_MODEL env var)")
     p.add_argument("--llm-url", default=None, help="LLM server URL (overrides URL env var)")
     p.add_argument("--llm-model", default=None, help="LLM model name (overrides MODEL_NAME env var)")
-    p.add_argument("--llm-temperature", type=float, default=None, help="LLM temperature (overrides LLM_TEMPERATURE env var)")
+    p.add_argument("--llm-temperature", type=float, default=None, help="LLM temperature")
+    p.add_argument("--embed-url", default=None, help="Embedding server URL (overrides EMBED_URL env var)")
+    p.add_argument("--embed-model", default=None, help="Embedding model name (overrides EMBED_MODEL env var)")
 
     # Query (optional demo)
     p.add_argument("--query", default=None, help="Optional query to run after building")
@@ -90,38 +124,31 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
-def main():
-    args = parse_args()
+# ---------------------------------------------------------------------------
+# Build one document
+# ---------------------------------------------------------------------------
 
-    # Read input
-    input_path = Path(args.input).resolve()
-    if not input_path.exists():
-        logger.error("Input file not found: %s", input_path)
-        sys.exit(1)
-
+def build_one(
+    input_path: Path,
+    args: argparse.Namespace,
+    embed_client,
+    llm_call,
+    output_root: Path,
+) -> None:
+    """Build a RAPTOR index for a single document."""
     text = input_path.read_text(encoding="utf-8")
+    doc_id = args.doc_id or input_path.stem
+    output_dir = output_root / input_path.stem
+
+    if not args.overwrite and (output_dir / "raptor_nodes.json").exists():
+        logger.info("[skip] %s (output exists, use --overwrite to rebuild)", input_path.stem)
+        return
+
+    output_dir.mkdir(parents=True, exist_ok=True)
     logger.info("Read %d characters from %s", len(text), input_path)
 
-    doc_id = args.doc_id or input_path.stem
-
-    # Output goes into a subfolder named after the input file
-    output_dir = Path(args.output_dir).resolve() / input_path.stem
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    # Initialize clients (from .env, with optional CLI overrides)
-    embed_client = create_embed_client(base_url=args.embed_url, model=args.embed_model)
-
-    llm_overrides = {}
-    if args.llm_url:
-        llm_overrides["base_url"] = args.llm_url
-    if args.llm_model:
-        llm_overrides["model"] = args.llm_model
-    if args.llm_temperature is not None:
-        llm_overrides["temperature"] = args.llm_temperature
-    llm_call = make_llm_call(**llm_overrides)
-
     # Build RAPTOR index
-    logger.info("Building RAPTOR index...")
+    logger.info("Building RAPTOR index for %s ...", input_path.stem)
     index = build_raptor_index(
         text=text,
         embed_client=embed_client,
@@ -147,7 +174,7 @@ def main():
     for name, p in paths.items():
         logger.info("  %s -> %s", name, p)
 
-    # Optional: demo query
+    # Optional demo query
     overlay = None
     if args.query:
         logger.info("Running demo query: %s", args.query)
@@ -173,7 +200,7 @@ def main():
             "scores": [s for _, s in results],
         }
 
-    # Visualization — original RAPTOR tree/DAG view
+    # Visualization
     viz_path = visualize_raptor(
         index,
         output_dir / "raptor_viz.html",
@@ -181,13 +208,59 @@ def main():
     )
     logger.info("RAPTOR tree viz -> %s", viz_path)
 
-    # Visualization — hypergraph view (for 1-1 comparison with hypergraph pipeline)
     hg_builder = raptor_to_hypergraph(index)
     hg_viz_path = visualize_hypergraph(
         hg_builder,
         output_dir / "raptor_as_hypergraph_viz.html",
     )
     logger.info("RAPTOR-as-hypergraph viz -> %s", hg_viz_path)
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+def main():
+    import os
+    args = parse_args()
+
+    if args.prompt_config:
+        os.environ["GRAPH_REASONING_PROMPT_CONFIG"] = str(
+            resolve_path(args.prompt_config, _REPO_ROOT)
+        )
+
+    output_root = resolve_path(args.output_dir, _REPO_ROOT)
+
+    # Initialize clients
+    embed_client = create_embed_client(base_url=args.embed_url, model=args.embed_model)
+
+    llm_overrides = {}
+    if args.llm_url:
+        llm_overrides["base_url"] = args.llm_url
+    if args.llm_model:
+        llm_overrides["model"] = args.llm_model
+    if args.llm_temperature is not None:
+        llm_overrides["temperature"] = args.llm_temperature
+    llm_call = make_llm_call(**llm_overrides)
+
+    # Resolve input(s)
+    if args.input:
+        docs = [resolve_path(args.input, _REPO_ROOT)]
+    else:
+        docs = collect_markdown_files(resolve_path(args.doc_data_dir, _REPO_ROOT))
+
+    if not docs:
+        logger.error("No input documents found.")
+        sys.exit(1)
+
+    logger.info("Processing %d document(s) -> %s", len(docs), output_root)
+
+    for doc_path in docs:
+        if not doc_path.exists():
+            logger.error("Input file not found: %s", doc_path)
+            continue
+        build_one(doc_path, args, embed_client, llm_call, output_root)
+
     logger.info("Done!")
 
 
